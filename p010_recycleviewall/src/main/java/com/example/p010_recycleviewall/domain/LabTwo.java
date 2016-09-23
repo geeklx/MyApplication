@@ -27,7 +27,7 @@ public class LabTwo {
         coupon_listBeanNew.add(new Coupon_listBeanNew("#FF8A00", "首减","满100减20"));
 //        coupon_listBeanNew.add(new Coupon_listBeanNew("#ffffff", "满减","减减减"));
     }
-    private LabTwo() {
+    public LabTwo() {
         ListViewLabShouyeLeft12();
         ListViewLabShouyeLeft122();
         mParent_model2.add(new PackageOneKeyBuyBeanNew("6", "1", "1", "1", "1", "1", 0.01, 1, 1, "1", "1", "1", 0.01, "1", 1, "1", null, Impressions, coupon_listBeanNew));
@@ -38,14 +38,14 @@ public class LabTwo {
     public List<PackageOneKeyBuyBeanNew> getmParent_model2() {
         return mParent_model2;
     }
-    public static LabTwo getmInstance() {
-        if (mInstance == null) {
-            synchronized (LabTwo.class) {
-                if (mInstance == null) {
-                    mInstance = new LabTwo();
-                }
-            }
-        }
-        return mInstance;
-    }
+//    public static LabTwo getmInstance() {
+//        if (mInstance == null) {
+//            synchronized (LabTwo.class) {
+//                if (mInstance == null) {
+//                    mInstance = new LabTwo();
+//                }
+//            }
+//        }
+//        return mInstance;
+//    }
 }

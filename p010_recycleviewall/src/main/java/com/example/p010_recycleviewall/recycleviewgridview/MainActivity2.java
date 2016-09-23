@@ -1,4 +1,4 @@
-package com.example.p010_recycleviewall.recycleviewlistview;
+package com.example.p010_recycleviewall.recycleviewgridview;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
@@ -14,7 +15,6 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
-import com.example.p010_recycleviewall.MainActivity;
 import com.example.p010_recycleviewall.R;
 import com.example.p010_recycleviewall.domain.FoodManagerApi;
 import com.example.p010_recycleviewall.domain.FoodmanagerrightgetParams;
@@ -34,14 +34,14 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity1 extends AppCompatActivity implements
+public class MainActivity2 extends AppCompatActivity implements
         View.OnClickListener, SwipeRefreshLayout.OnRefreshListener {
 
     //刷新bufen
     private SwipeRefreshLayout mSwipeLayout;
     //数据解析bufen
     private RecyclerView recyclerView;
-    private RecycleAdapter1 mAdapter;
+    private RecycleAdapter2 mAdapter;
     private List<PackageOneKeyBuyBeanNew> mratings;
     //分页bufen
     private static final int Len = 5;
@@ -53,14 +53,14 @@ public class MainActivity1 extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_recyclelistview);
+        setContentView(R.layout.activity_main_recyclegridview);
         findView();
         addlisteners();
         DataFirst();
     }
 
     private void DataFirst() {
-        ShowLoadingUtil.showProgressDialog2(MainActivity1.this, "正在加载...");
+        ShowLoadingUtil.showProgressDialog2(MainActivity2.this, "正在加载...");
         doNetWork(which_page);
     }
 
@@ -82,7 +82,7 @@ public class MainActivity1 extends AppCompatActivity implements
                         //假数据bufen
                         LabThree lt = new LabThree();
                         mratings =lt.getmParent_model1();
-                        Toast.makeText(MainActivity1.this, lt.getmParent_model1().size()+"",Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity2.this, lt.getmParent_model1().size()+"",Toast.LENGTH_LONG).show();
                         if (mratings != null && mratings.size() > 0) {
                             //布局bufen
 //                            right1();
@@ -136,7 +136,7 @@ public class MainActivity1 extends AppCompatActivity implements
 //                        mratings = LabOne.getmInstance().getmParent_model1();
                         LabOne lo = new LabOne();
                         mratings = lo.getmParent_model1();
-//                        Toast.makeText(MainActivity1.this, LabOne.getmInstance().
+//                        Toast.makeText(MainActivity2.this, LabOne.getmInstance().
 //                                getmParent_model1().size()+"",Toast.LENGTH_LONG).show();
                         if (mratings != null && mratings.size() > 0) {
                             //布局bufen
@@ -170,9 +170,10 @@ public class MainActivity1 extends AppCompatActivity implements
                 } else {
                     //第二页
                     if (!result.isOK()) {
-                        Toast.makeText(MainActivity1.this,"进来了",Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity2.this,"进来了",Toast.LENGTH_LONG).show();
                         List<PackageOneKeyBuyBeanNew> list = new ArrayList<PackageOneKeyBuyBeanNew>();
                         //假数据bufen
+//                        list = LabTwo.getmInstance().getmParent_model2();
                         LabTwo lt = new LabTwo();
                         list = lt.getmParent_model2();
                         if (list != null && list.size() > 0) {
@@ -197,10 +198,8 @@ public class MainActivity1 extends AppCompatActivity implements
     }
 
     private void createAdapter(){
-        mAdapter = new RecycleAdapter1(this);
-        LinearLayoutManager mLinearLayoutManager1 = new LinearLayoutManager(this);
-        mLinearLayoutManager1.setOrientation(OrientationHelper.VERTICAL);
-        recyclerView.setLayoutManager(mLinearLayoutManager1);
+        mAdapter = new RecycleAdapter2(this);
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         recyclerView.setAdapter(mAdapter);
     }
 
@@ -210,25 +209,18 @@ public class MainActivity1 extends AppCompatActivity implements
         createAdapter();
         which_page = 1;
 
-//        which_page = 1;
-////        GAdaptor = new FoodManagerGridViewRightAdapter(mContext);
-////        linearLayoutManager=new GridLayoutManager(mContext,4);
-////        linearLayoutManager.setOrientation(OrientationHelper.VERTICAL);
-//        gridViewRight.setLayoutManager(new GridLayoutManager(mContext, 3));
-//        GAdaptor = new FoodManagerRecyclerViewRightAdapter(mContext);
-//        gridViewRight.setAdapter(GAdaptor);
     }
 
 
     private void addlisteners() {
         //按分类
-        mAdapter.setOnItemClickLitener(new RecycleAdapter1.OnItemClickLitener() {
+        mAdapter.setOnItemClickLitener(new RecycleAdapter2.OnItemClickLitener() {
             @Override
             public void onItemClick(View view, int position) {
                 PackageOneKeyBuyBeanNew listItem = (PackageOneKeyBuyBeanNew)
                         mAdapter.getItem(position);
                 //请求服务器部分
-                Toast.makeText(MainActivity1.this, listItem.getGoods_id(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity2.this, listItem.getGoods_id(), Toast.LENGTH_LONG).show();
             }
         });
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {

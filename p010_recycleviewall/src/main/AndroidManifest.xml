@@ -19,6 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".recycleviewlistview.MainActivity1" />
+        <activity android:name=".recycleviewgridview.MainActivity2" />
+        <activity android:name=".recycleviewlistviewaddheadandfooter.MainActivity3" />
+        <activity android:name=".recycleviewgridviewaddheadandfooter.MainActivity4" />
     </application>
 
 </manifest>

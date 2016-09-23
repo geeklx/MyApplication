@@ -30,7 +30,7 @@ public class LabOne {
 //        coupon_listBeanNew.add(new Coupon_listBeanNew("#ffffff", "满减","减减减"));
     }
 
-    private LabOne() {
+    public LabOne() {
         ListViewLabShouyeLeft12();
         ListViewLabShouyeLeft122();
         mParent_model.add(new PackageOneKeyBuyBeanNew("1", "1", "1", "1", "1", "1", 0.01, 1, 1, "1", "1", "1", 0.01, "1", 1, "1", null, Impressions, coupon_listBeanNew));
@@ -45,14 +45,14 @@ public class LabOne {
         return mParent_model;
     }
 
-    public static LabOne getmInstance() {
-        if (mInstance == null) {
-            synchronized (LabOne.class) {
-                if (mInstance == null) {
-                    mInstance = new LabOne();
-                }
-            }
-        }
-        return mInstance;
-    }
+//    public static LabOne getmInstance() {
+//        if (mInstance == null) {
+//            synchronized (LabOne.class) {
+//                if (mInstance == null) {
+//                    mInstance = new LabOne();
+//                }
+//            }
+//        }
+//        return mInstance;
+//    }
 }

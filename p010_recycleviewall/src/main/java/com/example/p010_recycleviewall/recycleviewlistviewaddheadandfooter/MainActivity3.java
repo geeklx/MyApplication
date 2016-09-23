@@ -1,4 +1,4 @@
-package com.example.p010_recycleviewall.recycleviewlistview;
+package com.example.p010_recycleviewall.recycleviewlistviewaddheadandfooter;
 
 import android.annotation.TargetApi;
 import android.os.Build;
@@ -12,18 +12,18 @@ import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.example.p010_recycleviewall.MainActivity;
 import com.example.p010_recycleviewall.R;
 import com.example.p010_recycleviewall.domain.FoodManagerApi;
 import com.example.p010_recycleviewall.domain.FoodmanagerrightgetParams;
 import com.example.p010_recycleviewall.domain.LabOne;
 import com.example.p010_recycleviewall.domain.LabThree;
-import com.example.p010_recycleviewall.domain.LabTwo;
 import com.example.p010_recycleviewall.domain.PackageOneKeyBuyBeanNew;
 import com.example.p010_recycleviewall.domain.PackageOneKeyBuyBeanNewList;
 import com.example.p010_recycleviewall.net.Net;
+import com.example.p010_recycleviewall.recycleviewcommon.HeaderAndFooterWrapper;
 import com.example.p010_recycleviewall.utils.ParamsUtils;
 import com.example.p010_recycleviewall.utils.ShowLoadingUtil;
 
@@ -34,20 +34,24 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity1 extends AppCompatActivity implements
+public class MainActivity3 extends AppCompatActivity implements
         View.OnClickListener, SwipeRefreshLayout.OnRefreshListener {
 
     //刷新bufen
     private SwipeRefreshLayout mSwipeLayout;
     //数据解析bufen
     private RecyclerView recyclerView;
-    private RecycleAdapter1 mAdapter;
+    private RecycleAdapter3 mAdapter;
     private List<PackageOneKeyBuyBeanNew> mratings;
     //分页bufen
     private static final int Len = 5;
     private boolean allLoad = false;
     private int which_page = 1;
     private int mLastItemVisible;
+    //addheadbufen
+    private LinearLayout ll_header;
+    private LinearLayout ll_footer;
+    private HeaderAndFooterWrapper mHeaderAndFooterWrapper;
 
 
     @Override
@@ -60,7 +64,7 @@ public class MainActivity1 extends AppCompatActivity implements
     }
 
     private void DataFirst() {
-        ShowLoadingUtil.showProgressDialog2(MainActivity1.this, "正在加载...");
+        ShowLoadingUtil.showProgressDialog2(MainActivity3.this, "正在加载...");
         doNetWork(which_page);
     }
 
@@ -81,8 +85,8 @@ public class MainActivity1 extends AppCompatActivity implements
                         mratings = new ArrayList<PackageOneKeyBuyBeanNew>();
                         //假数据bufen
                         LabThree lt = new LabThree();
-                        mratings =lt.getmParent_model1();
-                        Toast.makeText(MainActivity1.this, lt.getmParent_model1().size()+"",Toast.LENGTH_LONG).show();
+                        mratings = lt.getmParent_model1();
+                        Toast.makeText(MainActivity3.this, lt.getmParent_model1().size() + "", Toast.LENGTH_LONG).show();
                         if (mratings != null && mratings.size() > 0) {
                             //布局bufen
 //                            right1();
@@ -91,6 +95,7 @@ public class MainActivity1 extends AppCompatActivity implements
                                 public void run() {
                                     mAdapter.setContacts(mratings);
                                     mAdapter.notifyDataSetChanged();
+                                    addAdapter();
                                 }
                             });
                             if (mratings.size() < Len) {
@@ -136,8 +141,8 @@ public class MainActivity1 extends AppCompatActivity implements
 //                        mratings = LabOne.getmInstance().getmParent_model1();
                         LabOne lo = new LabOne();
                         mratings = lo.getmParent_model1();
-//                        Toast.makeText(MainActivity1.this, LabOne.getmInstance().
-//                                getmParent_model1().size()+"",Toast.LENGTH_LONG).show();
+//                        Toast.makeText(MainActivity4.this, LabOne.getmInstance().
+//                                getmParent_model1().size() + "", Toast.LENGTH_LONG).show();
                         if (mratings != null && mratings.size() > 0) {
                             //布局bufen
 //                            right1();
@@ -146,6 +151,7 @@ public class MainActivity1 extends AppCompatActivity implements
                                 public void run() {
                                     mAdapter.setContacts(mratings);
                                     mAdapter.notifyDataSetChanged();
+                                    addAdapter();
                                 }
                             });
                             if (mratings.size() < Len) {
@@ -167,41 +173,29 @@ public class MainActivity1 extends AppCompatActivity implements
                     mSwipeLayout.setRefreshing(false);
                     //这里给大家封装了一个loading的自定义控件 直接独立出来就能用 ，注意导包和style，xml就行了~
                     ShowLoadingUtil.dismissProgressDialog2();
-                } else {
-                    //第二页
-                    if (!result.isOK()) {
-                        Toast.makeText(MainActivity1.this,"进来了",Toast.LENGTH_LONG).show();
-                        List<PackageOneKeyBuyBeanNew> list = new ArrayList<PackageOneKeyBuyBeanNew>();
-                        //假数据bufen
-                        LabTwo lt = new LabTwo();
-                        list = lt.getmParent_model2();
-                        if (list != null && list.size() > 0) {
-                            mAdapter.addConstacts(list);
-                            mAdapter.notifyDataSetChanged();
-                            if (list.size() < Len) {
-                                allLoad = true;
-//                            hideListFooter();
-                            } else {
-                                allLoad = false;
-                            }
-                        } else {
-//                            resetListFooter();
-                        }
-                    } else {
-//                    ToastUtil.showToastLong(result.getMessage());
-                    }
-                    ShowLoadingUtil.dismissProgressDialog2();
                 }
             }
         });
     }
 
-    private void createAdapter(){
-        mAdapter = new RecycleAdapter1(this);
+    private void createAdapter() {
+        ll_header = (LinearLayout) View.inflate(this,
+                R.layout.activity_addheader, null);
+        ll_footer = (LinearLayout) View.inflate(this,
+                R.layout.activity_addfooter, null);
+        mAdapter = new RecycleAdapter3(this);
         LinearLayoutManager mLinearLayoutManager1 = new LinearLayoutManager(this);
         mLinearLayoutManager1.setOrientation(OrientationHelper.VERTICAL);
         recyclerView.setLayoutManager(mLinearLayoutManager1);
-        recyclerView.setAdapter(mAdapter);
+//        recyclerView.setAdapter(mAdapter);
+
+    }
+
+    private void addAdapter() {
+        mHeaderAndFooterWrapper = new HeaderAndFooterWrapper(mAdapter);
+        mHeaderAndFooterWrapper.addHeaderView(ll_header);
+        mHeaderAndFooterWrapper.addFootView(ll_footer);
+        recyclerView.setAdapter(mHeaderAndFooterWrapper);
     }
 
     private void findView() {
@@ -210,75 +204,19 @@ public class MainActivity1 extends AppCompatActivity implements
         createAdapter();
         which_page = 1;
 
-//        which_page = 1;
-////        GAdaptor = new FoodManagerGridViewRightAdapter(mContext);
-////        linearLayoutManager=new GridLayoutManager(mContext,4);
-////        linearLayoutManager.setOrientation(OrientationHelper.VERTICAL);
-//        gridViewRight.setLayoutManager(new GridLayoutManager(mContext, 3));
-//        GAdaptor = new FoodManagerRecyclerViewRightAdapter(mContext);
-//        gridViewRight.setAdapter(GAdaptor);
     }
-
 
     private void addlisteners() {
         //按分类
-        mAdapter.setOnItemClickLitener(new RecycleAdapter1.OnItemClickLitener() {
+        mAdapter.setOnItemClickLitener(new RecycleAdapter3.OnItemClickLitener() {
             @Override
             public void onItemClick(View view, int position) {
                 PackageOneKeyBuyBeanNew listItem = (PackageOneKeyBuyBeanNew)
                         mAdapter.getItem(position);
                 //请求服务器部分
-                Toast.makeText(MainActivity1.this, listItem.getGoods_id(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity3.this, listItem.getGoods_id(), Toast.LENGTH_LONG).show();
             }
         });
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrollStateChanged(RecyclerView view, int scrollState) {
-                super.onScrollStateChanged(view, scrollState);
-                if (scrollState == RecyclerView.SCROLL_STATE_IDLE
-                        && mLastItemVisible + 1 == mAdapter.getItemCount()) {
-                    if (!allLoad) {
-//                        setListFooterLoading();
-                        which_page++;
-                        //请求数据
-                        doNetWork(which_page);
-                    } else {
-                        // ToastUtil.showToastShort(getResources().getString(R.string.last_item_show));
-                    }
-                }
-            }
-
-            @Override
-            public void onScrolled(RecyclerView view, int dx, int dy) {
-                super.onScrolled(view, dx, dy);
-                RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
-                mLastItemVisible = ((LinearLayoutManager) layoutManager).findLastVisibleItemPosition();
-
-            }
-        });
-        //listview+gridview写法
-//        gridViewRight.setOnScrollListener(new AbsListView.OnScrollListener() {
-//            @Override
-//            public void onScrollStateChanged(AbsListView view, int scrollState) {
-//                if (scrollState == AbsListView.OnScrollListener.SCROLL_STATE_IDLE
-//                        && mLastItemVisible) {
-//                    if (!allLoad) {
-////                        setListFooterLoading();
-//                        which_page++;
-//                        doNetWorkRight(which_page);
-//                    } else {
-//                        // ToastUtil.showToastShort(getResources().getString(R.string.last_item_show));
-//                    }
-//                }
-//            }
-//
-//            @Override
-//            public void onScroll(AbsListView view, int firstVisibleItem,
-//                                 int visibleItemCount, int totalItemCount) {
-//                mLastItemVisible = (totalItemCount > 0)
-//                        && (firstVisibleItem + visibleItemCount >= totalItemCount - 1);
-//            }
-//        });
     }
 
     //刷新bufen
@@ -313,10 +251,6 @@ public class MainActivity1 extends AppCompatActivity implements
         mSwipeLayout = (SwipeRefreshLayout) findViewById(R.id.refresh);
         mSwipeLayout.setOnRefreshListener(this);
         mSwipeLayout.setColorSchemeColors(getResources().getIntArray(R.array.swipeRefreshColors));
-//        mSwipeLayout.setColorScheme(getResources().getColor(android.R.color.holo_blue_bright),
-//                getResources().getColor(android.R.color.holo_green_light),
-//                getResources().getColor(android.R.color.holo_orange_light),
-//                getResources().getColor(android.R.color.holo_red_light));
         ViewTreeObserver vto = mSwipeLayout.getViewTreeObserver();
         vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @TargetApi(Build.VERSION_CODES.JELLY_BEAN)

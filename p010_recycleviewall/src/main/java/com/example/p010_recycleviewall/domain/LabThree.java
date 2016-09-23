@@ -33,10 +33,10 @@ public class LabThree {
         ListViewLabShouyeLeft12();
         ListViewLabShouyeLeft122();
         mParent_model.add(new PackageOneKeyBuyBeanNew("1", "1", "1", "1", "1", "1", 0.01, 1, 1, "1", "1", "1", 0.01, "1", 1, "1", null, Impressions, coupon_listBeanNew));
-        mParent_model.add(new PackageOneKeyBuyBeanNew("2", "2", "1", "2", "1", "1", 0.02, 1, 1, "1", "1", "1", 0.02, "1", 1, "1", null, Impressions, coupon_listBeanNew));
-        mParent_model.add(new PackageOneKeyBuyBeanNew("3", "3", "1", "3", "1", "1", 0.03, 1, 1, "1", "1", "1", 0.03, "1", 1, "1", null, Impressions, coupon_listBeanNew));
-        mParent_model.add(new PackageOneKeyBuyBeanNew("4", "4", "1", "4", "1", "1", 0.04, 1, 1, "1", "1", "1", 0.04, "1", 1, "1", null, Impressions, coupon_listBeanNew));
-        mParent_model.add(new PackageOneKeyBuyBeanNew("5", "5", "1", "5", "1", "1", 0.05, 1, 1, "1", "1", "1", 0.05, "1", 1, "1", null, Impressions, coupon_listBeanNew));
+        mParent_model.add(new PackageOneKeyBuyBeanNew("2", "2", "2", "2", "2", "2", 0.02, 2, 2, "2", "2", "2", 0.02, "2", 2, "2", null, Impressions, coupon_listBeanNew));
+        mParent_model.add(new PackageOneKeyBuyBeanNew("3", "3", "3", "3", "3", "3", 0.03, 3, 3, "3", "3", "3", 0.03, "3", 3, "3", null, Impressions, coupon_listBeanNew));
+        mParent_model.add(new PackageOneKeyBuyBeanNew("4", "4", "4", "4", "4", "4", 0.04, 4, 4, "4", "4", "4", 0.04, "4", 4, "4", null, Impressions, coupon_listBeanNew));
+        mParent_model.add(new PackageOneKeyBuyBeanNew("5", "5", "5", "5", "5", "5", 0.05, 5, 5, "5", "5", "5", 0.05, "5", 5, "5", null, Impressions, coupon_listBeanNew));
     }
 
 
