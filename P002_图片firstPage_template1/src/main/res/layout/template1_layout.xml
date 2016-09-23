@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:gravity="center"
+        android:layoutAnimation="@anim/layout_animation"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="有没有"
+            android:textColor="#222"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="那么一个永远"
+            android:textColor="#666"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="永远不改变"
+            android:textColor="#aaa"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.stone.firstpage.ImageSlidePanel
+            android:id="@+id/image_slide_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <com.stone.firstpage.AntiAliasTextView
+                android:layout_width="225dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/imgpanel_margin_bottom"
+                android:background="@drawable/image01"
+                android:gravity="center"
+                android:text="这个是Text1"
+                android:visibility="invisible" />
+
+            <com.stone.firstpage.AntiAliasTextView
+                android:layout_width="225dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/imgpanel_margin_bottom"
+                android:background="@drawable/image02"
+                android:gravity="center"
+                android:text="这个是Text2"
+                android:visibility="invisible" />
+
+            <com.stone.firstpage.AntiAliasTextView
+                android:layout_width="225dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/imgpanel_margin_bottom"
+                android:background="@drawable/image03"
+                android:gravity="center"
+                android:text="这个是Text3"
+                android:visibility="invisible" />
+
+            <com.stone.firstpage.AntiAliasTextView
+                android:layout_width="225dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/imgpanel_margin_bottom"
+                android:background="@drawable/image04"
+                android:gravity="center"
+                android:text="这个是Text4"
+                android:visibility="invisible" />
+        </com.stone.firstpage.ImageSlidePanel>
+
+        <View
+            android:id="@+id/left_shake"
+            android:layout_width="15dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/left"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/right_shake"
+            android:layout_width="15dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/right"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/bottom_shake"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/up"
+            android:visibility="invisible" />
+
+        <!-- 左边的点击区域 -->
+
+        <View
+            android:id="@+id/left_click_area"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+
+        <!-- 右边的点击区域 -->
+
+        <View
+            android:id="@+id/right_click_area"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</LinearLayout>

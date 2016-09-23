@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="login_line">#cdcdcd</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="ability_audio">语音</string>
+    <string name="ability_conference">视频会议</string>
+    <string name="ability_groupchat">群聊</string>
+    <string name="ability_im">IM</string>
+    <string name="ability_name">云之讯能力演示</string>
+    <string name="ability_verification">验证码</string>
+    <string name="ability_video">视频</string>
+    <string name="app_name">云之讯demo</string>
+    <string name="audio_test_mode">请选择一下语音测试方式</string>
+    <string name="back_call">回拨电话</string>
+    <string name="back_call_read">通话不依赖于网络.成功发起呼叫后，收到一个来电,接听后即可向对方发起呼叫.</string>
+    <string name="call_phone">手机号:请绑定测试手机号码</string>
+    <string name="conference_add">添加完成</string>
+    <string name="conference_addcustom">添加自定义成员</string>
+    <string name="conference_addperson">增加会议成员</string>
+    <string name="conference_et">请输入手机号码</string>
+    <string name="conference_modify">修改自定义成员</string>
+    <string name="conference_start">发起会议</string>
+    <string name="conference_start_again">邀请进入会议</string>
+    <string name="dial_hide">隐藏</string>
+    <string name="direct_call">直拨电话</string>
+    <string name="direct_call_read">主叫方需处于3G,4G或WIFI环境,被叫方无需求</string>
+    <string name="free_call">免费电话</string>
+    <string name="free_call_read">纯网络电话,不依赖传统电信网.通话双方需要处于3G、4G或WIFI环境</string>
+    <string name="im_file">附件</string>
+    <string name="im_image">图片</string>
+    <string name="im_photo">拍照</string>
+    <string name="im_position">位置</string>
+    <string name="im_send">发送</string>
+    <string name="intelligence_call">智能呼叫</string>
+    <string name="intelligence_call_read">优先发起免费的VOIP通话,若用户不在线，则发起直拨</string>
+    <string name="login_admin">手机号或邮箱</string>
+    <string name="login_client">OK,立即体验</string>
+    <string name="login_login">登录</string>
+    <string name="login_pwd">密码</string>
+    <string name="login_register">注册</string>
+    <string name="login_select">请选择体验账号</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_forwarding">开启呼转</string>
+    <string name="menu_replace">更换Client账号</string>
+    <string name="mycenter">个人中心</string>
+    <string name="mycenter_admin">账户名称</string>
+    <string name="mycenter_balance">账户余额</string>
+    <string name="mycenter_name">当前身份</string>
+    <string name="mycenter_out">退出当前账户</string>
+    <string name="verification_getaudio">获取语音验证码</string>
+    <string name="verification_getsms">获取短信验证码</string>
+    <string name="verification_name">验证码</string>
+    <string name="verification_num">验证码</string>
+    <string name="verification_phone">手机号</string>
+    <string name="verification_text1">或</string>
+    <string name="verification_text2">验证</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="menudialog" parent="">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">false</item> 
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowContentOverlay">@null</item> 
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@null</item><!--除去背景色-->
+    </style>
+</resources>

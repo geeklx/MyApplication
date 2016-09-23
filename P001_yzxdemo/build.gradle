@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        applicationId "com.yzxdemo"
+        minSdkVersion 8
+        targetSdkVersion 18
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:19.+'
+    compile files('libs/ForwardingDevelopmentTools_ver_1.0_release.jar')
+    compile files('libs/httpmime-4.1.1.jar')
+    compile files('libs/UcsReason.jar')
+    compile files('libs/yunzhixun_video_SDK_ver_1.2.6.1_release.jar')
+}

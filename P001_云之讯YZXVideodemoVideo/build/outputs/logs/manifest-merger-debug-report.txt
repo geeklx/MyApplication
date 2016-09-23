@@ -1,0 +1,251 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:2:1-140:12
+	package
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:3:5-26
+		INJECTED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml
+		INJECTED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:5:5-34
+		INJECTED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml
+		INJECTED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:4:5-31
+		INJECTED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml
+		INJECTED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml
+		INJECTED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:8:9-34
+		INJECTED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml
+		INJECTED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:13:22-77
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:14:5-71
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:14:22-68
+uses-permission#android.permission.VIBRATE
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:15:5-66
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:15:22-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:16:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:17:5-79
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:17:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:18:5-75
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:18:22-72
+uses-permission#android.permission.INTERNET
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:19:5-67
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:19:22-64
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:20:5-69
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:20:22-66
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:21:5-68
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:21:22-65
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:22:5-75
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:22:22-72
+uses-permission#android.permission.CAMERA
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:23:5-65
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:23:22-62
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:24:5-76
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:24:22-73
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:25:5-73
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:25:22-70
+application
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:27:5-138:19
+	android:label
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:31:9-41
+	android:allowBackup
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:29:9-35
+	android:icon
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:30:9-45
+	android:theme
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:32:9-44
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:28:9-51
+activity#com.yzxdemo.activity.WelcomeActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:33:9-41:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:35:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:34:13-64
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:36:13-40:29
+action#android.intent.action.MAIN
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:39:27-74
+activity#com.yzxdemo.activity.LoginActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:42:9-45:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:44:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:43:13-62
+activity#com.yzxdemo.activity.AbilityShowActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:46:9-49:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:48:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:47:13-68
+activity#com.yzxdemo.activity.MyCenterActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:50:9-53:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:52:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:51:13-65
+activity#com.yzxdemo.activity.AudioActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:54:9-57:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:56:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:55:13-62
+activity#com.yzxdemo.activity.ConferenceActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:58:9-61:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:60:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:59:13-67
+activity#com.yzxdemo.activity.IMActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:62:9-65:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:64:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:63:13-59
+activity#com.yzxdemo.activity.RegisterActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:66:9-69:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:68:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:67:13-65
+activity#com.yzxdemo.activity.VerificationActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:70:9-73:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:72:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:71:13-69
+activity#com.yzxdemo.activity.VideoActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:74:9-77:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:76:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:75:13-62
+activity#com.yzxdemo.activity.AudioCallActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:78:9-81:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:80:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:79:13-66
+activity#com.yzxdemo.activity.AudioConverseActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:82:9-86:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:85:13-49
+	android:launchMode
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:84:13-48
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:83:13-70
+activity#com.yzxdemo.activity.IMMessageActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:87:9-90:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:89:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:88:13-66
+activity#com.yzxdemo.activity.IMFileActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:91:9-94:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:93:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:92:13-63
+activity#com.yzxdemo.activity.IMImageActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:95:9-98:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:97:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:96:13-64
+activity#com.yzxdemo.activity.IMAudioActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:99:9-102:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:101:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:100:13-64
+activity#com.yzxdemo.activity.ConferenceConverseActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:103:9-106:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:105:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:104:13-75
+activity#com.yzxdemo.activity.VideoConverseActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:107:9-111:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:110:13-49
+	android:launchMode
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:109:13-48
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:108:13-70
+activity#com.yzxdemo.activity.FeedBackActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:112:9-115:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:114:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:113:13-65
+activity#com.yzxdemo.activity.AboutActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:116:9-119:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:118:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:117:13-62
+activity#com.yzxdemo.activity.TerminalLoginDialogActivity
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:120:9-123:20
+	android:screenOrientation
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:122:13-49
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:121:13-76
+service#com.yzxdemo.service.ConnectionService
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:125:9-128:19
+	android:launchMode
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:127:13-48
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:126:13-65
+service#com.yzx.service.ConnectionControllerService
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:129:9-132:19
+	android:launchMode
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:131:13-48
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:130:13-71
+receiver#com.yzx.service.AlarmReceiver
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:134:9-135:20
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:134:19-63
+receiver#com.yzx.service.MsgBackReceiver
+ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:136:9-137:20
+	android:name
+		ADDED from D:\Repositories\MyApplication\P001_云之讯YZXVideodemoVideo\src\main\AndroidManifest.xml:136:19-65

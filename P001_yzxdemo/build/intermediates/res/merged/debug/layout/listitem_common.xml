@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dip"
+    android:background="#ffffff">
+    
+    <ImageView
+        android:id="@+id/common_list_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/head1_small"/>
+
+    <RelativeLayout
+        android:id="@+id/common_list_rl"
+	    android:layout_width="80dip"
+	    android:layout_height="80dip"
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentRight="true">
+		<ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dip"
+	        android:layout_centerInParent="true"
+	        android:background="@drawable/common_in"/>
+	</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/common_list_iv"
+        android:layout_toLeftOf="@id/common_list_rl"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/common_list_tv_client"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="bottom"
+            android:textColor="#1f1f1f"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/common_list_tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:textColor="#999999"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="empty_nodata_notice" type="id" />
+    <item name="empty_errnet_notice" type="id" />
+    <item name="empty_errnet_btn" type="id" />
+</resources>

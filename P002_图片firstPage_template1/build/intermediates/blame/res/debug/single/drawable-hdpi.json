@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\left.png",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\drawable-hdpi\\left.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\up.png",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\drawable-hdpi\\up.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\right.png",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\drawable-hdpi\\right.png"
+    }
+]

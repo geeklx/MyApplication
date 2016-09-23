@@ -1,0 +1,602 @@
+[
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_uncheck.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_uncheck.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\head5_big.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\head5_big.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_head1.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_head1.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_more_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_more_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_photo_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_photo_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\audio_triangle.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\audio_triangle.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_mute.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_mute.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_greenbubble.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_greenbubble.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sel_yes_img.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\sel_yes_img.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ability_coming.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\ability_coming.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial4_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial4_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_list_back.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\common_list_back.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\head1_small.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\head1_small.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial1.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial1.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_admin.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_admin.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_hangup.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_hangup.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial2.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial2.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ability_advert.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\ability_advert.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_pwd.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_pwd.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_record3.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_record3.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\conference6.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\conference6.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_replace.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\menu_replace.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_answer_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_answer_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\verification_succes.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\verification_succes.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_cancel1.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_cancel1.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial3.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial3.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ability_audio.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\ability_audio.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_dial.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_dial.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\audio_in.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\audio_in.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_position_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_position_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ability_logo.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\ability_logo.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_head3.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_head3.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\audio_in_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\audio_in_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial5_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial5_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_key_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_key_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\conference5.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\conference5.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\phone_not.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\phone_not.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_record1.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_record1.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_sucess.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_sucess.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\head4_big.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\head4_big.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_resend.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_resend.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial0.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial0.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_bg.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_bg.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ability_verification.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\ability_verification.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_audio.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_audio.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_position.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_position.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_bt.9.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_bt.9.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ability_groupchat.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\ability_groupchat.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_cancel2.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_cancel2.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_bt_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_bt_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\register_content.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\register_content.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_speaker_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_speaker_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial2_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial2_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial5.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial5.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial7_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial7_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_close.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\common_close.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_speaker.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_speaker.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_switch.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_switch.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\conference_add_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\conference_add_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\verification_error.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\verification_error.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ability_video.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\ability_video.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_record2.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_record2.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_hangup_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_hangup_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\white_back.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\white_back.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_error.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_error.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial_star.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial_star.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_bg.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\menu_bg.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ability_conference.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\ability_conference.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_dial_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_dial_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\welcome.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\welcome.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\mycenter_balance.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\mycenter_balance.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\recommend.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\recommend.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial_husa_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial_husa_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_key.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_key.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_head5.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_head5.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\conference4.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\conference4.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_head2.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_head2.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\conference1.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\conference1.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial8_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial8_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_back.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\common_back.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\head2_big.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\head2_big.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial1_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial1_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_feedback.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\menu_feedback.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\verification_bg.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\verification_bg.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\phone.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\phone.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial7.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial7.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_audio_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_audio_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial_star_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial_star_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_photo.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_photo.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\conference_add.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\conference_add.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_file.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_file.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\mycenter_admin.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\mycenter_admin.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\select_img.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\select_img.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial_husa.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial_husa.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial8.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial8.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_whitebubble.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_whitebubble.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial9.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial9.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_endcall_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_endcall_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\conference2.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\conference2.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ability_im.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\ability_im.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\conference_add_custom.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\conference_add_custom.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\videomodeno.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\videomodeno.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\conference_custom.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\conference_custom.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial6.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial6.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\about_icon.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\about_icon.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_prompt.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_prompt.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_head6.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_head6.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_video.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_video.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_errorimage.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_errorimage.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\head6_small.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\head6_small.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_answer.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_answer.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_image.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_image.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_about.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\menu_about.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_switch_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_switch_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\videomode.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\videomode.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\conference_speak.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\conference_speak.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_mute_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_mute_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_head4.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_head4.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\menu_person.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\menu_person.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_logo.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_logo.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\head5_small.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\head5_small.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\line_vertical.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\line_vertical.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_image_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_image_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\mycenter_name.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\mycenter_name.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\head2_small.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\head2_small.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_input.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_input.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial4.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial4.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_reg_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_reg_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\verification_ok.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\verification_ok.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_reg.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_reg.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\conference3.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\conference3.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\head6_big.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\head6_big.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\head3_big.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\head3_big.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\login_check.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\login_check.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial0_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial0_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_endcall.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_endcall.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial9_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial9_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\head4_small.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\head4_small.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\head1_big.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\head1_big.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\audio_call_bg.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\audio_call_bg.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_file_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_file_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial3_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial3_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dial6_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\dial6_down.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_cancel3.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_cancel3.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\im_more.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\im_more.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\head3_small.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\head3_small.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ability_more.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\ability_more.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\line_horizonta.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\line_horizonta.png"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\converse_video_down.png",
+        "source": "D:\\Repositories\\MyApplication\\P001_yzxdemo\\src\\main\\res\\drawable-xhdpi\\converse_video_down.png"
+    }
+]

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:layout_weight="1" >
+
+    <TableRow android:layout_weight="1"
+        android:gravity="center_horizontal"  >
+
+        <ImageButton
+            android:id="@+id/digit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="20dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/digit1"/>
+        
+
+        <ImageButton
+            android:id="@+id/digit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/digit2"/>
+
+        <ImageButton
+            android:id="@+id/digit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="30dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/digit3"/>
+
+    </TableRow>
+
+    <TableRow android:layout_weight="1"
+        android:gravity="center_horizontal"  >
+
+        <ImageButton
+            android:id="@+id/digit4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="20dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/digit4"/>
+        
+
+        <ImageButton
+            android:id="@+id/digit5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/digit5"/>
+
+        <ImageButton
+            android:id="@+id/digit6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="30dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/digit6"/>
+
+    </TableRow>
+
+    <TableRow android:layout_weight="1"
+        android:gravity="center_horizontal" >
+
+        <ImageButton
+            android:id="@+id/digit7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="20dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/digit7"/>
+        
+
+        <ImageButton
+            android:id="@+id/digit8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/digit8"/>
+
+        <ImageButton
+            android:id="@+id/digit9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="30dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/digit9"/>
+    </TableRow>
+
+    <TableRow android:layout_weight="1"
+        android:gravity="center_horizontal"  >
+
+        <ImageButton
+            android:id="@+id/digit_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="20dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/digit_star"/>
+        
+
+        <ImageButton
+            android:id="@+id/digit0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/digit0"/>
+
+        <ImageButton
+            android:id="@+id/digit_husa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="30dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/digit_husa"/>
+
+    </TableRow>
+
+</TableLayout>

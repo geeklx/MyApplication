@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\layout\\template1_layout.xml",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\layout\\template1_layout.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main.xml",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\layout\\fragment_main.xml"
+    }
+]

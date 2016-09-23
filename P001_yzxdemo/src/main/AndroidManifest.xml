@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yzxdemo"
+    android:versionCode="1261"
+    android:versionName="1.2.6.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+        
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.yzxdemo.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <activity
+            android:name="com.yzxdemo.activity.WelcomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.AbilityShowActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.MyCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.AudioActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.ConferenceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.IMActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.VerificationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.VideoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.AudioCallActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.AudioConverseActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.IMMessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.IMFileActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.IMImageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.IMAudioActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.ConferenceConverseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.VideoConverseActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.FeedBackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.AboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.yzxdemo.activity.TerminalLoginDialogActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.yzxdemo.service.ConnectionService"
+            android:launchMode="singleInstance" >
+        </service>
+        <service
+            android:name="com.yzx.service.ConnectionControllerService"
+            android:launchMode="singleInstance" >
+        </service>
+
+        <receiver android:name="com.yzx.service.AlarmReceiver" >
+        </receiver>
+        <receiver android:name="com.yzx.service.MsgBackReceiver" >
+        </receiver>
+    </application>
+
+</manifest>

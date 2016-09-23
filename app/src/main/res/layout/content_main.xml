@@ -29,6 +29,14 @@
         android:layout_below="@+id/button1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
+    <com.example.lianglovelan.myapplication.HeartProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/button2"
 
+        android:id="@+id/progressBar"/>
 
 </RelativeLayout>

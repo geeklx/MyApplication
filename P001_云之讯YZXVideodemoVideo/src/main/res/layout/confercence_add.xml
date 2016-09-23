@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/confercnce_ll"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="vertical">
+	    <ImageView
+	        android:id="@+id/login_list_iv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:background="@drawable/conference_add_custom"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_toRightOf="@id/confercnce_ll"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/confercnce_custom_client"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:text="@string/conference_addcustom"
+            android:textColor="#1f1f1f"
+            android:textSize="22sp" />
+    </LinearLayout>
+</RelativeLayout>

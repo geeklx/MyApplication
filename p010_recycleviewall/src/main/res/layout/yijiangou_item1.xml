@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:simple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_ViewPager_Item_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <com.example.p010_recycleviewall.widget.SimpleTagImageView
+                    android:id="@+id/iv_ViewPager_Fourthly_Left"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zwsjbear"
+                    simple:simple_corner_distance="33dp"
+                    simple:simple_tag_background_color="#ff7900"
+                    simple:simple_tag_enable="true"
+                    simple:simple_tag_orientation="left_top"
+                    simple:simple_tag_text="一小时达"
+                    simple:simple_tag_textColor="#ffffff"
+                    simple:simple_tag_textSize="18sp"
+                    simple:simple_tag_width="23dip" />
+
+                <LinearLayout
+                    android:id="@+id/ll_pingjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/iv_ViewPager_Fourthly_Left"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <com.example.p010_recycleviewall.widget.FlowLayout
+                        android:id="@+id/layou23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop">
+
+
+            <LinearLayout
+                android:id="@+id/ll_one"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_content1"
+                    style="@style/font_key_text_style000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="蒙牛高钙牛奶" />
+
+                <TextView
+                    android:id="@+id/tv_content2"
+                    style="@style/font_key_text_style0000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="规格：500ml" />
+
+                <TextView
+                    android:id="@+id/tv_content3"
+                    style="@style/font_key_text_style0000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="多点" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/ll_pingjia1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:orientation="horizontal">
+
+                        <com.example.p010_recycleviewall.widget.FlowLayout
+                            android:id="@+id/layou231"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_content5"
+                    style="@style/font_key_text_style0000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="￥6.80"
+                    android:textColor="#FF8A00" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_content6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="提醒：给您的冰箱补充些新鲜XXX吧"
+        android:textColor="#FF8A00"
+        android:textSize="20sp" />
+</LinearLayout>

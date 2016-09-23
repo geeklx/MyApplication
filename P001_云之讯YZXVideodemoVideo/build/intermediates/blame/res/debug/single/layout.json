@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_conference.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\dialog_conference.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_conferenceadd.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\dialog_conferenceadd.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\listitem_message_left.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\listitem_message_left.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_imimage.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_imimage.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_audio_call.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_audio_call.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_imaudio.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_imaudio.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_audio_converse.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_audio_converse.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_feedback.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_feedback.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_login.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\dialog_login.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\listitem_message_right.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\listitem_message_right.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\top_ability.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\top_ability.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_video_converse.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_video_converse.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_video.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_video.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_menu.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\dialog_menu.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\numpad.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\numpad.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_imfile.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_imfile.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\listitem_common.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\listitem_common.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\listitem_login.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\listitem_login.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_immessage.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_immessage.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\confercence_add.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\confercence_add.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_audio.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_audio.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_abilityshow.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_abilityshow.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mycenter.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_mycenter.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_im.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_im.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_verification.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_verification.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_about.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcome.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\build\\intermediates\\res\\merged\\debug\\layout\\listitem_conference.xml",
+        "source": "D:\\Repositories\\MyApplication\\P001_云之讯YZXVideodemoVideo\\src\\main\\res\\layout\\listitem_conference.xml"
+    }
+]

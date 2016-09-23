@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+     <LinearLayout
+        android:id="@+id/login_list_ll_l"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:orientation="vertical">
+	    <ImageView
+	        android:id="@+id/login_list_iv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:background="@drawable/head1_small"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/login_list_ll_r"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="vertical">
+	    <CheckBox 
+	        android:id="@+id/login_list_cb"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:button="@drawable/login_dialog_listitem_selector"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_toRightOf="@id/login_list_ll_l"
+        android:layout_toLeftOf="@id/login_list_ll_r"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/login_list_tv_client"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="bottom"
+            android:textColor="#1f1f1f"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/login_list_tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>

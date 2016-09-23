@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="35dp"
+    android:paddingTop="35dp">
+
+    <include layout="@layout/include_index_top_layout" />
+
+    <com.example.p006_activity_fragment.widget.IndexViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.example.p006_activity_fragment.widget.IndexPagerIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        app:indicator_height="5dp"
+        app:indicator_interval="20dp"
+        app:indicator_item_color="#33FFFFFF"
+        app:indicator_select_color="@android:color/white"
+        app:indicator_width="40dp" />
+
+</LinearLayout>

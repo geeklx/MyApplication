@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\anim\\cycle_interpolator.xml",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\anim\\cycle_interpolator.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\anim\\bottom_shake.xml",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\anim\\bottom_shake.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\anim\\anim_item.xml",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\anim\\anim_item.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\anim\\image_in.xml",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\anim\\image_in.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\anim\\layout_animation.xml",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\anim\\layout_animation.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\anim\\right_shake.xml",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\anim\\right_shake.xml"
+    },
+    {
+        "merged": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\build\\intermediates\\res\\merged\\debug\\anim\\left_shake.xml",
+        "source": "D:\\Repositories\\MyApplication\\P002_图片firstPage_template1\\src\\main\\res\\anim\\left_shake.xml"
+    }
+]
