@@ -1,4 +1,4 @@
-include ':app',':glin', 'shapeloading'
+include ':app', ':glin', ':p011_swipebacklayout', 'shapeloading'
 //include ':P001_yzxdemo'
 //include ':P001_云之讯YZXVideodemoVideo'
 //include ':P002_图片firstPage_template1'
@@ -9,5 +9,5 @@ include ':app',':glin', 'shapeloading'
 //include ':P007_EmptyView'
 //include ':P008_QQColorprogressbar'
 //include ':P009_Glide图片缓存'
-include  ':p010_recycleviewall'
+include ':p010_recycleviewall'
 
