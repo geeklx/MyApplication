@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.example.p011_swipebacklayout.R;
 
 public class MainActivity1 extends AppCompatActivity {
-	private static final String TAG = "geek";
+	private static final String TAG = "shining";
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
