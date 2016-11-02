@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.mingle.shapeloading.R;
 
+
 /**
  * Created by zzz40500 on 15/6/15.
  */

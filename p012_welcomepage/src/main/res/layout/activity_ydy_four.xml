@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/guide_four"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/ll_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="140dp">
+
+        <ImageButton
+            android:id="@+id/start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>
