@@ -3,6 +3,7 @@ package com.example.p009_glide;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.ImageView;
 
 import com.example.p009_glide.glide.GlideOptions;
@@ -35,9 +36,12 @@ public class MainActivity extends AppCompatActivity {
         //3
         GlideUtil.display(MainActivity.this, iv3, "http://img0.bdstatic.com/img/image/touxiang01.jpg");
         //4
-//        bar4.setTextSize(18);//字体大小
+        bar4.setTextSize(120);//sudu字体大小 60dip  120
+        bar4.setHintSize(30);//单位字体大小   15dip  30
+        Log.e("###",dipToPx(60)+"");
+        Log.e("###",dipToPx(15)+"");
         bar4.setMaxValues(100);//最大百分比显示值
-//        bar4.setDiameter(200);//直径
+        bar4.setDiameter(200);//直径
 
         bar4.setTitleString("新鲜度");
         bar4.setCurrentValues(100);//最大显示值
@@ -56,5 +60,17 @@ public class MainActivity extends AppCompatActivity {
 
         GlideOptions glideOptions4 = new GlideOptions(R.drawable.pic_head, R.drawable.pic_head, 300);
         GlideUtil.display(MainActivity.this, iv4, "http://img0.bdstatic.com/img/image/touxiang01.jpg", glideOptions4);
+    }
+
+    /**
+     * dip 转换成px
+     *
+     * @param dip
+     * @return
+     */
+    private int dipToPx(float dip) {
+        float density = getResources().getDisplayMetrics().density;
+        return (int) (dip * density + 0.5f * (dip >= 0 ? 1 : -1));
+
     }
 }

@@ -12,6 +12,7 @@ import android.graphics.RectF;
 import android.graphics.SweepGradient;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 
@@ -23,7 +24,7 @@ public class ColorArcProgressBar extends View {
     private int mWidth;
     private int mHeight;
     //直径
-    private int diameter = 500;
+    private int diameter = 100;
 
     //圆心
     private float centerX;
@@ -58,8 +59,8 @@ public class ColorArcProgressBar extends View {
     private float curValues = 0;
     private float bgArcWidth = dipToPx(2);
     private float progressWidth = dipToPx(10);
-    private float textSize = dipToPx(60);
-    private float hintSize = dipToPx(15);
+    private float textSize = dipToPx(32);
+    private float hintSize = dipToPx(8);
     private float curSpeedSize = dipToPx(13);
     private int aniSpeed = 1000;
     private float longdegree = dipToPx(13);
@@ -365,6 +366,7 @@ public class ColorArcProgressBar extends View {
     private int dipToPx(float dip) {
         float density = getContext().getResources().getDisplayMetrics().density;
         return (int) (dip * density + 0.5f * (dip >= 0 ? 1 : -1));
+
     }
 
     /**

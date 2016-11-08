@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P008_QQColorprogressbar/P008_QQColorprogressbar.iml" filepath="$PROJECT_DIR$/P008_QQColorprogressbar/P008_QQColorprogressbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/P009_Glide图片缓存/P009_Glide图片缓存.iml" filepath="$PROJECT_DIR$/P009_Glide图片缓存/P009_Glide图片缓存.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/glin/glin.iml" filepath="$PROJECT_DIR$/glin/glin.iml" />
