@@ -41,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
         Log.e("###",dipToPx(60)+"");
         Log.e("###",dipToPx(15)+"");
         bar4.setMaxValues(100);//最大百分比显示值
-        bar4.setDiameter(200);//直径
+//        bar4.setDiameter_r(5);//圆形大小
 
         bar4.setTitleString("新鲜度");
-        bar4.setCurrentValues(100);//最大显示值
+        bar4.setCurrentValues(80);//最大显示值
         bar4.setUnit("%");
 
         bar4.setNeedTitle(true);//title
@@ -52,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
         bar4.setNeedUnit(true);//单位
 
         int[] colors = new int[]{Color.GREEN, Color.YELLOW, Color.RED, Color.RED};
-        int color1 = getResources().getColor(R.color.colorAccent);
-        int color2 = getResources().getColor(R.color.colorPrimary);
-        int color3 = getResources().getColor(R.color.colorPrimaryDark);
+        int color1 = getResources().getColor(R.color.front_color1);
+        int color2 = getResources().getColor(R.color.front_color2);
+        int color3 = getResources().getColor(R.color.front_color3);
         colors = new int[]{color1, color2, color3, color3};
         bar4.setColors(colors);
 

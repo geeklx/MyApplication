@@ -16,9 +16,8 @@
         android:orientation="vertical">
 
         <FrameLayout
-            android:layout_width="300dp"
-            android:background="@color/gray"
-            android:layout_height="300dp">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <!--app:is_need_content="true"
             app:is_need_title="true"
@@ -31,8 +30,8 @@
             app:string_unit="%"-->
             <com.example.p009_glide.util.ColorArcProgressBar
                 android:id="@+id/bar4"
-                android:layout_width="170dp"
-                android:layout_height="170dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 app:back_color="#00000000"
                 app:back_width="0dp"
@@ -43,9 +42,12 @@
                 android:id="@+id/iv4"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_gravity="center"
                 android:padding="10dp"
-                android:src="@drawable/pic_head" />
+                android:src="@drawable/pic_head"
+                android:visibility="visible" />
         </FrameLayout>
+
         <ImageView
             android:id="@+id/iv1"
             android:layout_width="100dp"
@@ -66,7 +68,6 @@
             android:layout_height="100dp"
             android:padding="10dp"
             android:src="@mipmap/ic_launcher" />
-
 
 
     </LinearLayout>

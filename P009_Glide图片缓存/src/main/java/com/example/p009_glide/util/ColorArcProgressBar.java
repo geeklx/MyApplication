@@ -12,7 +12,6 @@ import android.graphics.RectF;
 import android.graphics.SweepGradient;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 
@@ -24,7 +23,8 @@ public class ColorArcProgressBar extends View {
     private int mWidth;
     private int mHeight;
     //直径
-    private int diameter = 100;
+    private int diameter = 500;
+    private int diameter_r = 13;//设置圆形大小bufen
 
     //圆心
     private float centerX;
@@ -41,7 +41,8 @@ public class ColorArcProgressBar extends View {
 
     private ValueAnimator progressAnimator;
 
-    private float startAngle = 90;
+    private float startAngle = 90;//起始滚动点bufen
+    private float startAngle_dian = 89;//起始滚动点bufen
     private float sweepAngle = 270;
     private float currentAngle = 0;
     private float lastAngle;
@@ -69,7 +70,7 @@ public class ColorArcProgressBar extends View {
     private String hintColor = "#676767";
     private String longDegreeColor = "#111111";
     private String shortDegreeColor = "#111111";
-    private String bgArcColor = "#111111";
+    private String bgArcColor = "#10ffffff";//刻度线的颜色bufen
     private boolean isShowCurrentSpeed = true;
     private String hintString = "Km/h";
     private boolean isNeedTitle;//是否显示title
@@ -146,7 +147,7 @@ public class ColorArcProgressBar extends View {
 
     private void initView() {
 
-        diameter = 3 * getScreenWidth() / 5;
+        diameter = 3 * getScreenWidth() / diameter_r;
         //弧形的矩阵区域
         bgRect = new RectF();
         bgRect.top = longdegree + progressWidth / 2 + DEGREE_PROGRESS_DISTANCE;
@@ -232,7 +233,7 @@ public class ColorArcProgressBar extends View {
         //设置渐变色
         SweepGradient sweepGradient = new SweepGradient(centerX, centerY, colors, null);
         Matrix matrix = new Matrix();
-        matrix.setRotate(130, centerX, centerY);
+        matrix.setRotate(startAngle_dian, centerX, centerY);
         sweepGradient.setLocalMatrix(matrix);
         progressPaint.setShader(sweepGradient);
 
@@ -384,6 +385,7 @@ public class ColorArcProgressBar extends View {
     public void setIsShowCurrentSpeed(boolean isShowCurrentSpeed) {
         this.isShowCurrentSpeed = isShowCurrentSpeed;
     }
+
     public boolean isNeedTitle() {
         return isNeedTitle;
     }
@@ -417,6 +419,14 @@ public class ColorArcProgressBar extends View {
 
     public void setNeedContent(boolean needContent) {
         isNeedContent = needContent;
+    }
+
+    public int getDiameter_r() {
+        return diameter_r;
+    }
+
+    public void setDiameter_r(int diameter_r) {
+        this.diameter_r = diameter_r;
     }
 
 }
