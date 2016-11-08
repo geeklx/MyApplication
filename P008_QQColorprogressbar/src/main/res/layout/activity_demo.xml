@@ -19,20 +19,22 @@
             android:layout_height="wrap_content"
             android:text="start" />
 
+        <!--app:string_unit="百分比%"-->
         <com.example.p008_qqcolorarcprogressbar.ColorArcProgressBar
             android:id="@+id/bar1"
             android:layout_width="300dp"
             android:layout_height="300dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="150dp"
-            app:back_color="@android:color/darker_gray"
+            android:background="@mipmap/ic_launcher"
+            app:back_color="#00000000"
             app:back_width="10dp"
             app:front_color1="@color/colorAccent"
             app:front_width="10dp"
-            app:is_need_content="true"
-            app:is_need_unit="true"
+            app:is_need_content="false"
+            app:is_need_unit="false"
             app:max_value="100"
-            app:string_unit="百分比%"
+            app:string_unit="@null"
             app:total_engle="360" />
 
 
@@ -44,22 +46,22 @@
 
         <com.example.p008_qqcolorarcprogressbar.ColorArcProgressBar
             android:id="@+id/bar2"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="150dp"
-            app:back_color="@android:color/darker_gray"
-            app:back_width="2dp"
+            app:back_color="#00000000"
+            app:back_width="0dp"
             app:front_color1="#69cbd2"
             app:front_color2="#7eb6e2"
             app:front_color3="#989df7"
-            app:front_width="10dp"
+            app:front_width="5dp"
             app:is_need_content="true"
             app:is_need_title="true"
             app:is_need_unit="true"
             app:max_value="100"
-            app:string_title="截止当前已走"
-            app:string_unit="步"
+            app:string_title="新鲜度"
+            app:string_unit="%"
             app:total_engle="270" />
 
         <Button

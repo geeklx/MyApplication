@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,7 +15,36 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <FrameLayout
+            android:layout_width="310dp"
+            android:layout_height="310dp">
 
+            <!--app:is_need_content="true"
+            app:is_need_title="true"
+            app:is_need_unit="true"
+            app:string_title="新鲜度"
+            app:max_value="100"
+            app:front_color1="#69cbd2"
+            app:front_color2="#7eb6e2"
+            app:front_color3="#989df7"
+            app:string_unit="%"-->
+            <com.example.p009_glide.util.ColorArcProgressBar
+                android:id="@+id/bar4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:back_color="#00000000"
+                app:back_width="0dp"
+                app:front_width="5dp"
+                app:total_engle="360" />
+
+            <ImageView
+                android:id="@+id/iv4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:src="@drawable/pic_head" />
+        </FrameLayout>
         <ImageView
             android:id="@+id/iv1"
             android:layout_width="100dp"
@@ -36,5 +66,7 @@
             android:padding="10dp"
             android:src="@mipmap/ic_launcher" />
 
+
+
     </LinearLayout>
-</RelativeLayout>
+</ScrollView>

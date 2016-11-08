@@ -9,9 +9,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/P009_Glide图片缓存" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/glin" />
-            <option value="$PROJECT_DIR$/p012_welcomepage" />
+            <option value="$PROJECT_DIR$/gravitysnaphelper" />
+            <option value="$PROJECT_DIR$/p015_recycleview_gundong_vertical" />
             <option value="$PROJECT_DIR$/shapeloading" />
           </set>
         </option>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="IndexPagerIndicator">
+        <attr name="indicator_width" format="dimension|reference" />
+        <attr name="indicator_height" format="dimension|reference" />
+        <attr name="indicator_interval" format="dimension|reference" />
+        <attr name="indicator_item_color" format="color|reference" />
+        <attr name="indicator_select_color" format="color|reference" />
+    </declare-styleable>
+
+</resources>
