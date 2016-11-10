@@ -1,4 +1,4 @@
-package com.example.p010_recycleviewall.widget.loading;
+package com.widget;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -6,11 +6,11 @@ import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.example.p010_recycleviewall.R;
+import com.haiersmart.sfnation.R;
 
 
 /**
- * Created by zzz40500 on 15/6/15.
+ * Created by geek 2016年11月10日10:28:35.
  */
 public class ShapeLoadingDialog {
 

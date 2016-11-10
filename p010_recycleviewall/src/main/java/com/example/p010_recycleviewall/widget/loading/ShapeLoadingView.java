@@ -1,4 +1,4 @@
-package com.example.p010_recycleviewall.widget.loading;
+package com.widget;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -11,12 +11,12 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 
-import com.example.p010_recycleviewall.R;
+import com.haiersmart.sfnation.R;
 import com.nineoldandroids.animation.ArgbEvaluator;
 
 
 /**
- * Created by zzz40500 on 15/4/4.
+ * Created by geek 2016年11月10日10:28:35.
  */
 public class ShapeLoadingView extends View {
 
