@@ -8,7 +8,6 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.View;
@@ -16,7 +15,7 @@ import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
 import com.example.p010_recycleviewall.R;
-import com.example.p010_recycleviewall.domain.FoodManagerApi;
+import com.example.p010_recycleviewall.api.FoodManagerApi;
 import com.example.p010_recycleviewall.domain.FoodmanagerrightgetParams;
 import com.example.p010_recycleviewall.domain.LabOne;
 import com.example.p010_recycleviewall.domain.LabThree;

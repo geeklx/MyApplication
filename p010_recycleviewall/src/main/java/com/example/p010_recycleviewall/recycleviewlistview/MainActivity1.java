@@ -14,9 +14,8 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
-import com.example.p010_recycleviewall.MainActivity;
 import com.example.p010_recycleviewall.R;
-import com.example.p010_recycleviewall.domain.FoodManagerApi;
+import com.example.p010_recycleviewall.api.FoodManagerApi;
 import com.example.p010_recycleviewall.domain.FoodmanagerrightgetParams;
 import com.example.p010_recycleviewall.domain.LabOne;
 import com.example.p010_recycleviewall.domain.LabThree;

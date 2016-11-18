@@ -24,7 +24,7 @@ public class ColorArcProgressBar extends View {
     private int mHeight;
     //直径
     private int diameter = 500;
-    private int diameter_r = 13;//设置圆形大小bufen
+    private int diameter_r = 45;//设置圆形大小bufen 13
 
     //圆心
     private float centerX;

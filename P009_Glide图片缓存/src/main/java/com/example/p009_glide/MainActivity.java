@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         iv3 = (ImageView) findViewById(R.id.iv3);
         iv4 = (ImageView) findViewById(R.id.iv4);
         bar4 = (ColorArcProgressBar) findViewById(R.id.bar4);
-        ;       //1
+        //1
         GlideUtil.display(MainActivity.this, iv1, "http://img0.bdstatic.com/img/image/touxiang01.jpg", GlideOptionsFactory.get(GlideOptionsFactory.Type.RADIUS));
         //2
         GlideOptions glideOptions = new GlideOptions(R.drawable.pic_head, R.drawable.pic_head, 300);
