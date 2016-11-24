@@ -1,18 +1,31 @@
 package com.example.p009_glide;
 
+import android.app.Activity;
+import android.content.ComponentName;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.example.p009_glide.glide.GlideOptions;
 import com.example.p009_glide.glide.GlideOptionsFactory;
 import com.example.p009_glide.glide.GlideUtil;
+import com.example.p009_glide.thethree.MyWindowManager;
+import com.example.p009_glide.thethree.WindowService;
 import com.example.p009_glide.util.ColorArcProgressBar;
+
+import java.util.Collections;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String PACKGETNAME = "com.haiersmart.sfnation";//com.tencent.mobileqq   com.example.shining.makejaraar com.haiersmart.sfnation
+    public static final String MainActivity_PACKGETNAME = MainActivity.class.getName();
     private ImageView iv1;
     private ImageView iv2;
     private ImageView iv3;
@@ -24,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iv1 = (ImageView) findViewById(R.id.iv1);
+        iv1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openApp(PACKGETNAME);
+
+            }
+        });
         iv2 = (ImageView) findViewById(R.id.iv2);
         iv3 = (ImageView) findViewById(R.id.iv3);
         iv4 = (ImageView) findViewById(R.id.iv4);
@@ -38,18 +58,19 @@ public class MainActivity extends AppCompatActivity {
         //4
         bar4.setTextSize(120);//sudu字体大小 60dip  120
         bar4.setHintSize(30);//单位字体大小   15dip  30
-        Log.e("###",dipToPx(60)+"");
-        Log.e("###",dipToPx(15)+"");
+        Log.e("###", dipToPx(60) + "");
+        Log.e("###", dipToPx(15) + "");
         bar4.setMaxValues(100);//最大百分比显示值
 //        bar4.setDiameter_r(5);//圆形大小
 
         bar4.setTitleString("新鲜度");
-        bar4.setCurrentValues(80);//最大显示值
+        bar4.setCurrentValues(70);//最大显示值
         bar4.setUnit("%");
 
-        bar4.setNeedTitle(true);//title
+        bar4.setNeedTitle(false);//title
         bar4.setNeedContent(true);//content
-        bar4.setNeedUnit(true);//单位
+        bar4.setNeedUnit(false);//单位
+        bar4.setNeedDial(true);
 
         int[] colors = new int[]{Color.GREEN, Color.YELLOW, Color.RED, Color.RED};
         int color1 = getResources().getColor(R.color.front_color1);
@@ -60,7 +81,12 @@ public class MainActivity extends AppCompatActivity {
 
         GlideOptions glideOptions4 = new GlideOptions(R.drawable.pic_head, R.drawable.pic_head, 300);
         GlideUtil.display(MainActivity.this, iv4, "http://img0.bdstatic.com/img/image/touxiang01.jpg", glideOptions4);
+
+        String a = "02";
+        Log.e(TAG,  Integer.valueOf(a)+"",null);
     }
+
+    private static final String TAG = "MainActivity";
 
     /**
      * dip 转换成px
@@ -73,4 +99,45 @@ public class MainActivity extends AppCompatActivity {
         return (int) (dip * density + 0.5f * (dip >= 0 ? 1 : -1));
 
     }
+
+    private PackageManager mPackageManager;
+    private List<ResolveInfo> mAllApps;
+
+    /**
+     * 检查系统应用程序，并打开
+     */
+    private void openApp(String packagename) {
+        //应用过滤条件
+        Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
+        mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+        mPackageManager = getPackageManager();
+        mAllApps = mPackageManager.queryIntentActivities(mainIntent, 0);
+        //按报名排序
+        Collections.sort(mAllApps, new ResolveInfo.DisplayNameComparator(mPackageManager));
+
+        for (ResolveInfo res : mAllApps) {
+            //该应用的包名和主Activity
+            String pkg = res.activityInfo.packageName;
+            String cls = res.activityInfo.name;
+
+            // 打开QQ
+            if (pkg.contains(packagename)) {
+                ComponentName componet = new ComponentName(pkg, cls);
+                Intent intent = new Intent();
+                intent.setComponent(componet);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                Intent intent0 = new Intent(MainActivity.this,WindowService.class);
+                startService(intent0);
+            }
+        }
+    }
+
+    public static void ToBack(Activity activity) {
+        Intent intent = new Intent(activity, MainActivity.class);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        activity.startActivity(intent);
+    }
+
+
 }

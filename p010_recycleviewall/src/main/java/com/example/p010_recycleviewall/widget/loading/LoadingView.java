@@ -1,4 +1,4 @@
-package com.widget;
+package com.example.p010_recycleviewall.widget.loading;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -16,7 +16,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.haiersmart.sfnation.R;
+import com.example.p010_recycleviewall.R;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ObjectAnimator;

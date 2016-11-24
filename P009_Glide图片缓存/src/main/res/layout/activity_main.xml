@@ -7,6 +7,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/gray"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.p009_glide.MainActivity">
 
@@ -33,8 +34,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:back_color="#00000000"
-                app:back_width="0dp"
                 app:front_width="5dp"
                 app:total_engle="360" />
 
@@ -45,7 +44,7 @@
                 android:layout_gravity="center"
                 android:padding="10dp"
                 android:src="@drawable/pic_head"
-                android:visibility="visible" />
+                 />
         </FrameLayout>
 
         <ImageView

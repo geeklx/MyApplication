@@ -11,6 +11,6 @@
     <color name="holo_green_light">#ff99cc00</color>
     <color name="holo_orange_light">#ffffbb33</color>
     <color name="holo_red_light">#ffff4444</color>
-
-
+    <color name="tab_bg">#FFFFA524</color>
+    <color name="black_title">#222328</color>
 </resources>

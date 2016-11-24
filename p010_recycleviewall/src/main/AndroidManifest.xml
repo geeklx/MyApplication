@@ -3,7 +3,7 @@
     package="com.example.p010_recycleviewall">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -22,6 +22,7 @@
         <activity android:name=".recycleviewgridview.MainActivity2" />
         <activity android:name=".recycleviewlistviewaddheadandfooter.MainActivity3" />
         <activity android:name=".recycleviewgridviewaddheadandfooter.MainActivity4" />
+        <activity android:name=".tablayout.fragmentviewpager.MainActivityTabLayout" />
     </application>
 
 </manifest>

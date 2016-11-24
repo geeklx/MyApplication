@@ -1,4 +1,4 @@
-package com.widget;
+package com.example.p010_recycleviewall.widget.loading;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.haiersmart.sfnation.R;
+import com.example.p010_recycleviewall.R;
 
 
 /**

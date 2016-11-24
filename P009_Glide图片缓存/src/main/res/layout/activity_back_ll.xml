@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/big_window_layout"
+    android:layout_width="100dp"
+    android:layout_height="70dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/fanhui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="返回"
+        android:textColor="#000000"
+        android:textSize="35sp" />
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.widget;
+package com.example.p010_recycleviewall.widget.loading;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 
-import com.haiersmart.sfnation.R;
+import com.example.p010_recycleviewall.R;
 import com.nineoldandroids.animation.ArgbEvaluator;
 
 
