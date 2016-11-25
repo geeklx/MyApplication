@@ -9,6 +9,7 @@ import com.example.p010_recycleviewall.recycleviewgridview.MainActivity2;
 import com.example.p010_recycleviewall.recycleviewgridviewaddheadandfooter.MainActivity4;
 import com.example.p010_recycleviewall.recycleviewlistview.MainActivity1;
 import com.example.p010_recycleviewall.recycleviewlistviewaddheadandfooter.MainActivity3;
+import com.example.p010_recycleviewall.tablayout.fragmentframelayout.ShopIndexActivity;
 import com.example.p010_recycleviewall.tablayout.fragmentviewpager.MainActivityTabLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -49,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this, MainActivityTabLayout.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.tv6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(MainActivity.this, ShopIndexActivity.class);
                 startActivity(intent);
             }
         });

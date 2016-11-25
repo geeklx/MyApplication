@@ -32,7 +32,7 @@ public class MainActivityTabLayout extends FragmentActivity implements View.OnCl
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tablayout);
+        setContentView(R.layout.activity_tablayout_fragmentviewpager);
         findview();
         onclicklistener();
         doNetWork();

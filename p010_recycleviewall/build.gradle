@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
 
     defaultConfig {
         applicationId "com.example.p010_recycleviewall"
@@ -10,6 +11,8 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+
+        multiDexEnabled true
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -27,10 +30,13 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:recyclerview-v7:23.4.0'
-    compile 'com.android.support:design:23.4.0'
-    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.android.support:cardview-v7:25.0.0'
+
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
 
 //    compile 'com.android.support:design:25.0.0'
 //    compile 'com.android.support:appcompat-v7:25.0.0'

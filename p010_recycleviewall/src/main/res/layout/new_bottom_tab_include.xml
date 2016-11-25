@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/shape_orange_gradient_bg"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.example.p010_recycleviewall.widget.tablayout.UnAnimTabLayout
+                android:id="@+id/tab"
+                android:paddingLeft="5dp"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:tabIndicatorColor="@android:color/white"
+                app:tabIndicatorHeight="6dp"
+                app:tabMaxWidth="0dp"
+                app:tabMinWidth="0dp"
+                app:tabMode="scrollable"
+                app:tabSelectedTextColor="@android:color/white"
+                app:tabTextAppearance="@style/tab_text_size"
+                app:tabTextColor="@android:color/white" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_shop_gradient"/>
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/index_shop_bg" />
+
+    </LinearLayout>
+
+</RelativeLayout>
