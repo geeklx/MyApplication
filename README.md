@@ -43,8 +43,6 @@ Swipebacklayout 微信侧滑删除Fragment效果 支持Android4.0以上
 ###13.[p015_recycleview_gundong_vertical](http://liangxiao.blog.51cto.com/ "悬停显示")  
 滚动定位
 
-
-（未完待续....）
-
-
+[![梁肖51CTO]](http://liangxiao.blog.51cto.com/)  
+[梁肖51CTO]:https://raw.githubusercontent.com/geeklx/geeklx.github.com/master/images/shiningchen/shiningchen114.png "梁肖51CTO" 
 
