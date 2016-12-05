@@ -40,8 +40,11 @@
 ###12.[p014_SnapHelperDemo-master](http://liangxiao.blog.51cto.com/ "悬停显示")  
   滚动定位
 
-###13.[p015_recycleview_gundong_vertical](http://liangxiao.blog.51cto.com/ "悬停显示")  
+###13.[p015_recycleview_gundong_vertical](http://liangxiao.blog.51cto.com/ "悬停显示")
   滚动定位
+  
+###14.[p016_auto_textview](http://liangxiao.blog.51cto.com/3626612/1879501 "悬停显示")
+Android Studio第二十三期 - TextView自适应缩放大小 国外大神的library
 
 [![梁肖51CTO]](http://liangxiao.blog.51cto.com/)  
 [梁肖51CTO]:https://raw.githubusercontent.com/geeklx/geeklx.github.com/master/images/shiningchen/shiningchen114.png "梁肖51CTO" 
