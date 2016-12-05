@@ -1,4 +1,4 @@
-include ':app', ':glin', ':gravitysnaphelper', 'shapeloading'
+include ':app', ':glin', ':gravitysnaphelper', ':p016_auto_textview', 'shapeloading'
 //include ':P001_yzxdemo'
 //include ':P001_云之讯YZXVideodemoVideo'
 //include ':P002_图片firstPage_template1'
