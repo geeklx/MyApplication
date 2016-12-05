@@ -1,5 +1,6 @@
 package com.example.p009_glide;
 
+
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
@@ -10,32 +11,55 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.p009_glide.glide.GlideOptions;
 import com.example.p009_glide.glide.GlideOptionsFactory;
 import com.example.p009_glide.glide.GlideUtil;
-import com.example.p009_glide.thethree.MyWindowManager;
 import com.example.p009_glide.thethree.WindowService;
 import com.example.p009_glide.util.ColorArcProgressBar;
 
 import java.util.Collections;
 import java.util.List;
 
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String PACKGETNAME = "com.haiersmart.sfnation";//com.tencent.mobileqq   com.example.shining.makejaraar com.haiersmart.sfnation
     public static final String MainActivity_PACKGETNAME = MainActivity.class.getName();
+    private TextView tv1;
     private ImageView iv1;
     private ImageView iv2;
     private ImageView iv3;
     private ImageView iv4;
     private ColorArcProgressBar bar4;
 
+    private Button aaaBtn;
+    private Button bbbBtn;
+    private ImageView bbbImg;
+    private Button cccBtn;
+    private TextView aaaText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        tv1 = (TextView) findViewById(R.id.tv1);
+        tv1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MainActivityDemo1.class));
+//                Animation a = AnimationUtils.loadAnimation(MainActivity.this, R.anim.scalebig);
+//                a.setFillAfter(true);
+//                v.startAnimation(a);
+//                Animation a2 = AnimationUtils.loadAnimation(MainActivity.this, R.anim.scalesmall);
+//                a2.setFillAfter(true);
+//                v.startAnimation(a2);
+            }
+        });
+
         iv1 = (ImageView) findViewById(R.id.iv1);
         iv1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
         GlideUtil.display(MainActivity.this, iv4, "http://img0.bdstatic.com/img/image/touxiang01.jpg", glideOptions4);
 
         String a = "02";
-        Log.e(TAG,  Integer.valueOf(a)+"",null);
+        Log.e(TAG, Integer.valueOf(a) + "", null);
     }
 
     private static final String TAG = "MainActivity";
@@ -127,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.setComponent(componet);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
-                Intent intent0 = new Intent(MainActivity.this,WindowService.class);
+                Intent intent0 = new Intent(MainActivity.this, WindowService.class);
                 startService(intent0);
             }
         }
@@ -138,6 +162,5 @@ public class MainActivity extends AppCompatActivity {
 //        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent);
     }
-
 
 }
