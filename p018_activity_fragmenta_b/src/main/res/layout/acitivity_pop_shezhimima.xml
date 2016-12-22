@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_half_half_half"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x480"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/x180"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+            <!-- VIewPager 主要是加载内容的 -->
+            <com.example.p018_activity_fragmenta_b.mywalletchangemima.NoScrollViewPager
+                android:id="@+id/viewpager_my"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/x10"
+            android:src="@drawable/guanbixiao" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
