@@ -117,6 +117,10 @@
     </RelativeLayout>
 
 
+    <!--android:keyBackground代表按键的背景
+    android:keyPreviewHeight按下后预览字符的高度
+    android:keyPreviewLayout按下后预览字符的布局（有默认的）
+    android:keyPreviewOffset偏移量，调整预览时显示的位置-->
     <android.inputmethodservice.KeyboardView
         android:id="@+id/keyboard_view_my"
         android:layout_width="match_parent"
@@ -124,7 +128,9 @@
         android:layout_alignParentBottom="true"
         android:focusable="true"
         android:focusableInTouchMode="true"
+        android:keyPreviewHeight="@dimen/x280"
         android:keyPreviewLayout="@layout/key_preview_layout"
+        android:keyPreviewOffset="@dimen/x1"
         android:visibility="invisible"
         tools:visibility="visible" />
 

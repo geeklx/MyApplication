@@ -24,7 +24,7 @@ public class NumKeyboardUtil {
         k = new Keyboard(act.getApplication(), R.xml.number);
         keyboardView.setKeyboard(k);
         keyboardView.setEnabled(true);
-        keyboardView.setPreviewEnabled(true);
+        keyboardView.setPreviewEnabled(false);//是否显示隐藏点击pop布局bufen
         keyboardView.setOnKeyboardActionListener(listener);
     }
 
