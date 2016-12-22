@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
       <module fileurl="file://$PROJECT_DIR$/p015_recycleview_gundong_vertical/p015_recycleview_gundong_vertical.iml" filepath="$PROJECT_DIR$/p015_recycleview_gundong_vertical/p015_recycleview_gundong_vertical.iml" />
       <module fileurl="file://$PROJECT_DIR$/p016_auto_textview/p016_auto_textview.iml" filepath="$PROJECT_DIR$/p016_auto_textview/p016_auto_textview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p017_keyboard/p017_keyboard.iml" filepath="$PROJECT_DIR$/p017_keyboard/p017_keyboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>
   </component>
