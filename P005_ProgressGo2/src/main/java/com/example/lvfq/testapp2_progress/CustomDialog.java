@@ -1,9 +1,11 @@
 package com.example.lvfq.testapp2_progress;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
+import android.graphics.drawable.LayerDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -87,6 +89,11 @@ public class CustomDialog extends Dialog {
     };
 
     public void setProgress(int progress) {
+        int color = Integer.parseInt("709E2D", 16);//tag.getCoupon_color().substring(1)  FF5001  ratings.getTag_color().substring(1)
+        color = 0xFF000000 + color;
+//            viewHolder.pb.getProgressDrawable().setColorFilter(new PorterDuffColorFilter(color, PorterDuff.Mode.SRC_IN));
+        LayerDrawable drawable = (LayerDrawable) progressBar.getProgressDrawable();
+        drawable.getDrawable(1).setColorFilter(new PorterDuffColorFilter(color, PorterDuff.Mode.SRC_IN));
         progressBar.setProgress(progress);
         if (progress == 100) {
             this.dismiss();

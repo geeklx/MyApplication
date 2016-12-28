@@ -1,14 +1,10 @@
 package com.example.lvfq.testapp2_progress;
 
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MainActivity extends Activity {
 
@@ -36,31 +32,32 @@ public class MainActivity extends Activity {
 
     public void tvClick(View view) {
         customDialog.show();
-        final Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                count += 10;
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (customDialog != null && customDialog.isShowing()) {
-                            customDialog.setProgress(count);
-                        }
-                    }
-                });
-                if (count >= 100) {
-                    timer.cancel();
-                }
-            }
-        }, 0, 500);
-        customDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
-            @Override
-            public void onDismiss(DialogInterface dialog) {
-                if (timer != null) timer.cancel();
-                count = 0;
-            }
-        });
+        customDialog.setProgress(70);
+//        final Timer timer = new Timer();
+//        timer.schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                count += 10;
+//                runOnUiThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        if (customDialog != null && customDialog.isShowing()) {
+//                            customDialog.setProgress(count);
+//                        }
+//                    }
+//                });
+//                if (count >= 100) {
+//                    timer.cancel();
+//                }
+//            }
+//        }, 0, 500);
+//        customDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+//            @Override
+//            public void onDismiss(DialogInterface dialog) {
+//                if (timer != null) timer.cancel();
+//                count = 0;
+//            }
+//        });
 
     }
 

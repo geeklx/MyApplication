@@ -8,6 +8,12 @@ import android.view.View;
 
 import com.example.p017_keyboard.R;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+import static android.inputmethodservice.Keyboard.KEYCODE_CANCEL;
+
 
 /**
  * Created by shining on 2016/12/20 0020.
@@ -90,5 +96,35 @@ public class NumKeyboardUtil {
 
     public int getKeyboardVisible() {
         return keyboardView.getVisibility();
+    }
+
+    // 0-9 的数字
+    private final List<Character> keyCodes = Arrays.asList('0', '1', '2', '3', '4', '5', '6', '7', '8', '9');
+
+    /**
+     * 随机打乱数字键盘上显示的数字顺序。
+     */
+    public void shuffleKeyboard() {
+        Keyboard keyboard = keyboardView.getKeyboard();
+        if (keyboard != null && keyboard.getKeys() != null
+                && keyboard.getKeys().size() > 0) {
+            // 随机排序数字
+            Collections.shuffle(keyCodes);
+
+            // 遍历所有的按键
+            List<Keyboard.Key> keys = keyboardView.getKeyboard().getKeys();
+            int index = 0;
+            for (Keyboard.Key key : keys) {
+                // 如果按键是数字
+                if (key.codes[0] != KEYCODE_CANCEL
+                        && key.codes[0] != Keyboard.KEYCODE_DELETE) {
+                    char code = keyCodes.get(index++);
+                    key.codes[0] = code;
+                    key.label = Character.toString(code);
+                }
+            }
+            // 更新键盘
+            keyboardView.setKeyboard(keyboard);
+        }
     }
 }

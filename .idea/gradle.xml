@@ -9,6 +9,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/P004_ProgressGo" />
+            <option value="$PROJECT_DIR$/P005_ProgressGo2" />
             <option value="$PROJECT_DIR$/P008_QQColorprogressbar" />
             <option value="$PROJECT_DIR$/P009_Glide图片缓存" />
             <option value="$PROJECT_DIR$/app" />
