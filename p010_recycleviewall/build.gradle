@@ -5,6 +5,14 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
 
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
     defaultConfig {
         applicationId "com.example.p010_recycleviewall"
         minSdkVersion 15
@@ -23,6 +31,108 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    def int minSdk = 15;
+    def int targetSdk = 23;
+    def String appId = 'com.example.p010_recycleviewall';
+
+    def int vCode = 1;
+    def String vNameCode = vCode + "";
+
+
+
+    productFlavors {
+        //demo
+        DemoAPK {
+            minSdkVersion minSdk
+            applicationId appId
+            targetSdkVersion targetSdk
+            versionCode vCode
+            versionName "DemoAPK"
+            multiDexEnabled true
+
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+        //demo1
+        DemoAPK1 {
+            minSdkVersion minSdk
+            applicationId appId
+            targetSdkVersion targetSdk
+            versionCode vCode
+            versionName "DemoAPK1"
+            multiDexEnabled true
+
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+        //demo2
+        DemoAPK2 {
+            minSdkVersion minSdk
+            applicationId appId
+            targetSdkVersion targetSdk
+            versionCode vCode
+            versionName "DemoAPK2"
+            multiDexEnabled true
+
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+        //demo3
+        DemoAPK3 {
+            minSdkVersion minSdk
+            applicationId appId
+            targetSdkVersion targetSdk
+            versionCode vCode
+            versionName "DemoAPK3"
+            multiDexEnabled true
+
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+        //demo4
+        DemoAPK4 {
+            minSdkVersion minSdk
+            applicationId appId
+            targetSdkVersion targetSdk
+            versionCode vCode
+            versionName "DemoAPK4"
+            multiDexEnabled true
+
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+        //demo5
+        DemoAPK5 {
+            minSdkVersion minSdk
+            applicationId appId
+            targetSdkVersion targetSdk
+            versionCode vCode
+            versionName "DemoAPK5"
+            multiDexEnabled true
+
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+        //demo6
+        DemoAPK6 {
+            minSdkVersion minSdk
+            applicationId appId
+            targetSdkVersion targetSdk
+            versionCode vCode
+            versionName "DemoAPK6"
+            multiDexEnabled true
+
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+    }
+
+    // 自定义输出配置
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                def fileName = "UerbT_v${variant.versionName}_${releaseTime()}_${variant.flavorName}.apk"
+                def fileName = "${variant.versionName}.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
 }
 
 dependencies {
@@ -34,6 +144,11 @@ dependencies {
     compile 'com.android.support:recyclerview-v7:25.0.0'
     compile 'com.android.support:design:25.0.0'
     compile 'com.android.support:cardview-v7:25.0.0'
+    // local jar file
+    compile files('libs/alipay-sdk-java20161226110022.jar')
+    compile files('libs/alipay-sdk-java20161226110022-source.jar')
+    compile files('libs/commons-logging-1.1.1.jar')
+    compile files('libs/commons-logging-1.1.1-sources.jar')
 
     compile 'com.jakewharton:butterknife:8.2.1'
     apt 'com.jakewharton:butterknife-compiler:8.2.1'

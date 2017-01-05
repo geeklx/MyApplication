@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cmbkb_caption">CMB Safe Input</string>
+    <string name="cmbkb_finish">Finish</string>
+    <string name="cmbkb_more">More</string>
+    <string name="cmbkb_please_input">Please Input</string>
+    <string name="cmbkb_safe_input">Safe Input</string>
+    <string name="cmbkb_back">Back</string>
+    <!--线上-->
+    <string name="cmbkb_publickey">aP28KufJh9SXSNjAa/8uUmY0xWKImkTaQVcQACeXGK44QOLAbYo4F+2TQ2O010DHwMAPAq8OeELxHK6BTAaxVUao4jOiCFSqpnoZ0MH4U58kgq9RoAkcSskUAVEtJT16w8UoguX6VTYjJ/EWOwaRNcxb4taIPi6S8AnwTXfniIeuzo1LsMOLlACY3+PAQJDYO4/47Wf/cTDB9Fqu6J7ab9+EueLsBrWR0uQ/h+ANM+VE19s7UikisumSd06fIg8aOFORj/1zjmWMi8u+7FESFYywROQVcd+v8HCJoKnVdJQaAd3Nu4cVx+34PE3K46UqyTi36JkvGX6ZZDK/ImRukQ==</string>
+    <!--线下-->
+    <!--<string name="cmbkb_publickey">GOBtoTuY+jKU+v0swC7WHLG8bVzupJ4PbiyvQ3116JbiCRMi2xGwgxfEJeJ11uGUDByN0I96LGE2k7XP7sNqp8rThKUMnGo+eDP6neHrH+rufT+S0RfvXSkYTl9xCwPmmhd2wbbq1CDyuWgzEkSRCSPFWVyVS+Utj9v+W5aOWd78qkYjm5hrkSxYiutr2VJ7KmVbdSIcllDA9liQk2ZT0hv4vcvSx7MVIeNNc1xU1lYCyCA4zEb6GYg2K4YWTYshonUg6ptb2AqQtNfuG0UcyCixkhfY5EAeNJG0NOtY3n87z96BhwuZZ0uEHPIdF2C7pptj9ap2+F66MhLPjOTIdA==</string>-->
+
+</resources>

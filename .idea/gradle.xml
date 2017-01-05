@@ -3,24 +3,14 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/P004_ProgressGo" />
-            <option value="$PROJECT_DIR$/P005_ProgressGo2" />
-            <option value="$PROJECT_DIR$/P008_QQColorprogressbar" />
-            <option value="$PROJECT_DIR$/P009_Glide图片缓存" />
-            <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/glin" />
             <option value="$PROJECT_DIR$/gravitysnaphelper" />
             <option value="$PROJECT_DIR$/p010_recycleviewall" />
-            <option value="$PROJECT_DIR$/p015_recycleview_gundong_vertical" />
-            <option value="$PROJECT_DIR$/p016_auto_textview" />
-            <option value="$PROJECT_DIR$/p017_keyboard" />
-            <option value="$PROJECT_DIR$/p018_activity_fragmenta_b" />
             <option value="$PROJECT_DIR$/shapeloading" />
           </set>
         </option>

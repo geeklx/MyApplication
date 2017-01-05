@@ -3,18 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
-      <module fileurl="file://$PROJECT_DIR$/P004_ProgressGo/P004_ProgressGo.iml" filepath="$PROJECT_DIR$/P004_ProgressGo/P004_ProgressGo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/P005_ProgressGo2/P005_ProgressGo2.iml" filepath="$PROJECT_DIR$/P005_ProgressGo2/P005_ProgressGo2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/P008_QQColorprogressbar/P008_QQColorprogressbar.iml" filepath="$PROJECT_DIR$/P008_QQColorprogressbar/P008_QQColorprogressbar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/P009_Glide图片缓存/P009_Glide图片缓存.iml" filepath="$PROJECT_DIR$/P009_Glide图片缓存/P009_Glide图片缓存.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/glin/glin.iml" filepath="$PROJECT_DIR$/glin/glin.iml" />
       <module fileurl="file://$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" filepath="$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p015_recycleview_gundong_vertical/p015_recycleview_gundong_vertical.iml" filepath="$PROJECT_DIR$/p015_recycleview_gundong_vertical/p015_recycleview_gundong_vertical.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p016_auto_textview/p016_auto_textview.iml" filepath="$PROJECT_DIR$/p016_auto_textview/p016_auto_textview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p017_keyboard/p017_keyboard.iml" filepath="$PROJECT_DIR$/p017_keyboard/p017_keyboard.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p018_activity_fragmenta_b/p018_activity_fragmenta_b.iml" filepath="$PROJECT_DIR$/p018_activity_fragmenta_b/p018_activity_fragmenta_b.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>
   </component>
