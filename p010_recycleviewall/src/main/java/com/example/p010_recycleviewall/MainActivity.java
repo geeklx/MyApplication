@@ -12,6 +12,7 @@ import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.request.AlipayTradePrecreateRequest;
 import com.alipay.api.response.AlipayTradePrecreateResponse;
 import com.example.p010_recycleviewall.application.ConstantNetUtil;
+import com.example.p010_recycleviewall.recycleviewbiaoge.MainActivityBiaoge;
 import com.example.p010_recycleviewall.recycleviewgridview.MainActivity2;
 import com.example.p010_recycleviewall.recycleviewgridviewaddheadandfooter.MainActivity4;
 import com.example.p010_recycleviewall.recycleviewlistview.MainActivity1;
@@ -76,7 +77,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        findViewById(R.id.tv8).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivityBiaoge.class);
+                startActivity(intent);
+            }
+        });
         //支付宝扫码支付bufen
         alipayClient = new DefaultAlipayClient("https://openapi.alipay.com/gateway.do", APP_ID, APP_PRIVATE_KEY, "json", "GBK", APP_PUBLIC_KEY);
         findViewById(R.id.tv7).setOnClickListener(new View.OnClickListener() {

@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="landscape">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,6 +27,7 @@
         <activity android:name=".recycleviewgridviewaddheadandfooter.MainActivity4" />
         <activity android:name=".tablayout.fragmentviewpager.MainActivityTabLayout" />
         <activity android:name=".tablayout.fragmentframelayout.ShopIndexActivity" />
+        <activity android:name=".recycleviewbiaoge.MainActivityBiaoge" />
     </application>
 
 </manifest>
