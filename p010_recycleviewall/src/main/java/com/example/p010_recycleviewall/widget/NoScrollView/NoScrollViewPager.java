@@ -1,4 +1,4 @@
-package com.example.p010_recycleviewall.widget.NoScrollViewPager;
+package com.example.p010_recycleviewall.widget.NoScrollView;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;

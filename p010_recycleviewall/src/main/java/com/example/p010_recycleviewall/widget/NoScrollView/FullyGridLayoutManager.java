@@ -1,4 +1,4 @@
-package com.example.p010_recycleviewall.recycleviewbiaoge;
+package com.example.p010_recycleviewall.widget.NoScrollView;
 
 import android.content.Context;
 import android.support.v7.widget.GridLayoutManager;

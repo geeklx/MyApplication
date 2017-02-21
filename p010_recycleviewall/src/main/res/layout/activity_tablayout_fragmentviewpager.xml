@@ -25,7 +25,7 @@
             app:tabTextColor="@color/black_title" />
     </LinearLayout>
 
-    <com.example.p010_recycleviewall.widget.NoScrollViewPager.NoScrollViewPager
+    <com.example.p010_recycleviewall.widget.NoScrollView.NoScrollViewPager
         android:id="@+id/vp_fm"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

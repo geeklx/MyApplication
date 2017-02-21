@@ -12,7 +12,7 @@ import com.example.p010_recycleviewall.R;
 import com.example.p010_recycleviewall.domain.LabFour;
 import com.example.p010_recycleviewall.domain.TabLayoutcontentBean;
 import com.example.p010_recycleviewall.domain.TabLayouttitleBean;
-import com.example.p010_recycleviewall.widget.NoScrollViewPager.NoScrollViewPager;
+import com.example.p010_recycleviewall.widget.NoScrollView.NoScrollViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
