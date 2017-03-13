@@ -57,18 +57,27 @@
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:text="tablayout+fragmentframelayout+recycleview" />
+
         <TextView
             android:id="@+id/tv8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:text="recycleview_biaoge" />
+
         <TextView
             android:id="@+id/tv9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:text="recycleview_dff" />
+
+        <TextView
+            android:id="@+id/tv10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="recycleview_bluetooth" />
 
         <TextView
             android:id="@+id/tv7"

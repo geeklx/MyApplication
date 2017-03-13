@@ -3,9 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P006_Activity_Fragment/P006_Activity_Fragment.iml" filepath="$PROJECT_DIR$/P006_Activity_Fragment/P006_Activity_Fragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/glin/glin.iml" filepath="$PROJECT_DIR$/glin/glin.iml" />
       <module fileurl="file://$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" filepath="$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p018_activity_fragmenta_b/p018_activity_fragmenta_b.iml" filepath="$PROJECT_DIR$/p018_activity_fragmenta_b/p018_activity_fragmenta_b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p019_bluetooth_client/p019_bluetooth_client.iml" filepath="$PROJECT_DIR$/p019_bluetooth_client/p019_bluetooth_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p019_bluetooth_server/p019_bluetooth_server.iml" filepath="$PROJECT_DIR$/p019_bluetooth_server/p019_bluetooth_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p020_bluetooth_demo/p020_bluetooth_demo.iml" filepath="$PROJECT_DIR$/p020_bluetooth_demo/p020_bluetooth_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>
   </component>

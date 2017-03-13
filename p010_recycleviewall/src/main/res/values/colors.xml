@@ -15,4 +15,7 @@
     <color name="black_title">#222328</color>
     <color name="fffe">#FFFEFEFE</color>
     <color name="e04832">#FFE04832</color>
+    <color name="red2">#FF5001</color>
+    <color name="black_common">#000000</color>
+
 </resources>

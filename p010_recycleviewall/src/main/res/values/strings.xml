@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">P010_RecycleViewAll</string>
+    <string name="tips1">仅对配对设备可见。点击以使其对其他设备可见。</string>
+    <string name="tips2">对所有附近的蓝牙设备可见（</string>
+
+    <string name="bluetooth_tips3">搜索蓝牙设备</string>
+    <string name="bluetooth_tips4">已配对</string>
+    <string name="bluetooth_tips5">已连接到媒体设备</string>
 </resources>

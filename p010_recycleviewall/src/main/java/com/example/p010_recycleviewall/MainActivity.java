@@ -12,6 +12,7 @@ import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.request.AlipayTradePrecreateRequest;
 import com.alipay.api.response.AlipayTradePrecreateResponse;
 import com.example.p010_recycleviewall.application.ConstantNetUtil;
+import com.example.p010_recycleviewall.bluetoothold.MainActivity_BlueTooth;
 import com.example.p010_recycleviewall.recycleviewbiaoge.MainActivityBiaoge;
 import com.example.p010_recycleviewall.recycleviewdifferentitem.MainActivityDff;
 import com.example.p010_recycleviewall.recycleviewgridview.MainActivity2;
@@ -89,6 +90,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MainActivityDff.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.tv10).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity_BlueTooth.class);
                 startActivity(intent);
             }
         });

@@ -8,9 +8,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/P006_Activity_Fragment" />
             <option value="$PROJECT_DIR$/glin" />
             <option value="$PROJECT_DIR$/gravitysnaphelper" />
             <option value="$PROJECT_DIR$/p010_recycleviewall" />
+            <option value="$PROJECT_DIR$/p018_activity_fragmenta_b" />
+            <option value="$PROJECT_DIR$/p019_bluetooth_client" />
+            <option value="$PROJECT_DIR$/p019_bluetooth_server" />
+            <option value="$PROJECT_DIR$/p020_bluetooth_demo" />
             <option value="$PROJECT_DIR$/shapeloading" />
           </set>
         </option>
