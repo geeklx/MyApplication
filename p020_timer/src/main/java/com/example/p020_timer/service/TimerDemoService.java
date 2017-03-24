@@ -89,7 +89,7 @@ public class TimerDemoService extends Service {
 
 
     public void timerFinsh() {
-        setCount(0);
+        setCount(0);   
         setGoon(false);
         setPause(false);
         setStart(true);
