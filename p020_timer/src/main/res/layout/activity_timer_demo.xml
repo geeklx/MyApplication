@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_timer_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y102"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/timer_title" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x25"
+                android:text="定时器"
+                android:textColor="@color/timer_title"
+                android:textSize="@dimen/text_size_40"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ll_timer_title"
+            android:layout_marginLeft="@dimen/x32"
+            android:layout_marginRight="@dimen/x32"
+            android:background="@drawable/bg_timer"
+            android:orientation="vertical">
+            <!--android:background="@drawable/bg_timer_big"-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y454"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_timer_count_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/x13"
+                        android:paddingTop="@dimen/x17"
+                        android:visibility="visible">
+                        <!--android:background="@drawable/bg_timer_small"-->
+
+
+                        <com.example.p020_timer.widget.TimerPicker
+                            android:id="@+id/tp_hour"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <com.example.p020_timer.widget.TimerPicker
+                            android:id="@+id/tp_min"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <com.example.p020_timer.widget.TimerPicker
+                            android:id="@+id/tp_sec"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/x1132"
+                        android:layout_height="@dimen/y66"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:background="@drawable/timer_cover_top"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x1132"
+                        android:layout_height="@dimen/y66"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/y2"
+                        android:layout_marginLeft="@dimen/x50"
+                        android:background="@drawable/timer_cover_bottom" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_starttime"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y454"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <!--android:background="@drawable/bg_timer_small"-->
+
+
+                    <TextView
+                        android:id="@+id/tv_hour_decade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_240"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y136"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <include layout="@layout/include_timer_bottom_view" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vline1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x100"
+            android:layout_marginTop="@dimen/y250"
+            android:background="@color/gray13half" />
+
+        <View
+            android:id="@+id/vline2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginRight="@dimen/x100"
+            android:layout_marginTop="@dimen/y410"
+            android:background="@color/gray13half" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x32"
+            android:layout_marginRight="@dimen/x32"
+            android:layout_marginTop="@dimen/y558"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginTop="@dimen/y10"
+                android:drawableLeft="@drawable/ring_white"
+                android:drawablePadding="@dimen/x10"
+                android:drawableRight="@drawable/timer_right_arrow"
+                android:gravity="center"
+                android:text="铃声提醒"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:id="@+id/tv_voice_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="@dimen/y15"
+                android:layout_toEndOf="@+id/tv_select"
+                android:text="音效1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_32"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="@dimen/x220"
+                android:layout_height="@dimen/y72"
+                android:layout_marginLeft="@dimen/x380"
+                android:layout_marginTop="@dimen/y10"
+                android:layout_toRightOf="@id/tv_voice_select"
+                android:background="@drawable/btn_timer_cancel"
+                android:text="取消"
+                android:textColor="@drawable/btn_timer_cancel_enable"
+                android:textSize="@dimen/text_size_30" />
+
+            <Button
+                android:id="@+id/button_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x34"
+                android:layout_marginTop="@dimen/y10"
+                android:layout_toRightOf="@id/button_cancel"
+                android:background="@drawable/btn_green_timer"
+                android:paddingBottom="@dimen/y40"
+                android:text="开始计时"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_30"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

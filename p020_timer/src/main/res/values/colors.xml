@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="black">#000000</color>
+    <color name="my_sure">#e3e1dd</color>
+    <color name="orange_red">#FFA000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="timer_title">#403743</color>
+    <color name="timer_bg_big">#1F1F2B</color>
+    <color name="timer_bg_small">#e724659d</color>
+    <color name="gray13half">#309B9B9B</color>
+
+    <color name="gray1">#CECECE</color>
+    <color name="gray13">#9B9B9B</color>
+    <color name="fffe">#FFFEFEFE</color>
+
+    <color name="brand_evaluationtotal_des">#9c9c9c</color>
+
+    <color name="timer_select_bg">#ededed</color>
+    <color name="black_common">#000000</color>
+    <color name="font_4a">#4A4A4A</color>
+
+</resources>

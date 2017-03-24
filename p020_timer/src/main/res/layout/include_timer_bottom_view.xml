@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y136"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="@dimen/x24"
+    android:layout_marginRight="@dimen/x24"
+    android:orientation="horizontal">
+
+    <include
+        layout="@layout/new_bottom_back_include"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_timer_bootom_center">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y88"
+            android:layout_marginTop="@dimen/y16">
+
+
+            <com.example.p020_timer.widget.UnAnimTabLayout
+                android:id="@+id/tab"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/y3"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                app:tabIndicatorColor="@android:color/white"
+                app:tabIndicatorHeight="@dimen/y6"
+                app:tabMaxWidth="0dp"
+                app:tabMinWidth="0dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@android:color/white"
+                app:tabTextAppearance="@style/TextAppearance.AppCompat.ShopTabTextAppearance"
+                app:tabTextColor="#CCFFFFFF" />
+
+            <RelativeLayout
+                android:id="@+id/rl_onclick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

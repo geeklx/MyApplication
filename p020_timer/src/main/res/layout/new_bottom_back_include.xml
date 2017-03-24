@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_bottom_left"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/y24"
+    android:paddingLeft="@dimen/x8"
+    android:paddingRight="@dimen/x8"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/y48"
+            android:src="@drawable/home_new" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:textColor="@color/fffe"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/x48"
+            android:layout_height="@dimen/y48"
+            android:src="@drawable/back_new" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pre"
+            android:textColor="@color/fffe"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+</LinearLayout>

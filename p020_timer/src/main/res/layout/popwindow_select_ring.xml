@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="@dimen/x640"
+        android:layout_height="@dimen/y480"
+        android:background="@drawable/white_bg_corner_10"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y32"
+            android:gravity="center"
+            android:text="选择铃声"
+            android:textColor="@color/black_common"
+            android:textSize="@dimen/text_size_48"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="@dimen/x520"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y25"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_ring1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y64">
+
+                <TextView
+                    android:id="@+id/tv_ring1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x16"
+                    android:text="音效1"
+                    android:textColor="@color/font_4a"
+                    android:textSize="@dimen/text_size_24" />
+
+                <ImageView
+                    android:id="@+id/iv_ring1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x12"
+                    android:src="@drawable/ring_black"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_ring2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y64">
+
+                <TextView
+                    android:id="@+id/tv_ring2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x16"
+                    android:text="音效2"
+                    android:textColor="@color/font_4a"
+                    android:textSize="@dimen/text_size_24" />
+
+                <ImageView
+                    android:id="@+id/iv_ring2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x12"
+                    android:src="@drawable/ring_black"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray13" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_ring3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y64"
+                android:background="@color/timer_select_bg">
+
+                <TextView
+                    android:id="@+id/tv_ring3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x16"
+                    android:text="音效3"
+                    android:textColor="@color/font_4a"
+                    android:textSize="@dimen/text_size_24"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_ring3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x12"
+                    android:src="@drawable/ring_black" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray13" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y50"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x38"
+                android:background="@drawable/btn_timer_white"
+                android:paddingBottom="@dimen/y30"
+                android:text="@string/myfamily4444"
+                android:textColor="@color/font_4a"
+                android:textSize="@dimen/text_size_26" />
+
+            <Button
+                android:id="@+id/button_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_black_timer"
+                android:paddingBottom="@dimen/y30"
+                android:text="确认"
+                android:textColor="@drawable/btn_myfamily_font_pop_sure"
+                android:textSize="@dimen/text_size_26"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

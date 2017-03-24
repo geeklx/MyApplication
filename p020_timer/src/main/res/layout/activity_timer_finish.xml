@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_timer_finish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:background="@drawable/white_bg_corner_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="计时结束"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btn_myfamily_sure"
+            android:text="知道了"
+            android:textColor="@drawable/btn_myfamily_font_pop_sure"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
