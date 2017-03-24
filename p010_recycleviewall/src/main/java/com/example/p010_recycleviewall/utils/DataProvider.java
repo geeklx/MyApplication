@@ -38,7 +38,7 @@ public class DataProvider {
 
     public static String getAccess_token() {
         if (TextUtils.isEmpty(access_token)) {
-            access_token = "";
+            access_token = "TGT1O9BZACG36UEM2RN0DQFHONB690";
         }
         return access_token;
     }
@@ -48,13 +48,12 @@ public class DataProvider {
     }
 
     private DataProvider() {
-
         fridge_id = "";
         family_id = "";
     }
 
     public static String getFridge_mode() {
-        if(TextUtils.isEmpty(fridge_mode)){
+        if (TextUtils.isEmpty(fridge_mode)) {
             fridge_mode = "";
         }
         return fridge_mode;
@@ -65,7 +64,7 @@ public class DataProvider {
     }
 
     public static String getFridge_type() {
-        if(TextUtils.isEmpty(fridge_type)){
+        if (TextUtils.isEmpty(fridge_type)) {
             fridge_type = "";
         }
         return fridge_type;
@@ -130,6 +129,9 @@ public class DataProvider {
     }*/
 
     public static String getFamily_id() {
+        if (TextUtils.isEmpty(family_id)) {
+            family_id = "201607041002250671";
+        }
         return family_id;
     }
 
@@ -138,8 +140,8 @@ public class DataProvider {
     }
 
     public static String getFridge_id() {
-        if (TextUtils.isEmpty(fridge_id)){
-            fridge_id = "";
+        if (TextUtils.isEmpty(fridge_id)) {
+            fridge_id = "201607041002250672";
         }
 
         return fridge_id;
@@ -150,13 +152,17 @@ public class DataProvider {
     }
 
     public static String getUser_id() {
-        return app.getUser_id();
+        if (app != null) {
+            return app.getUser_id();
+        } else {
+            return "201605262127400016";
+        }
     }
 
     public static void setUser_id(String user_id) {
         if (app != null) {
             app.setUser_id(user_id);
-        }else{
+        } else {
             app = new AppBean(user_id);
         }
 //        updateVerifyInfo();
@@ -171,14 +177,14 @@ public class DataProvider {
     }
 
     public static String getjPushRegistId() {
-        if (TextUtils.isEmpty(jPushRegistId)){
+        if (TextUtils.isEmpty(jPushRegistId)) {
             jPushRegistId = "";
         }
         return jPushRegistId;
     }
 
     public static void setjPushRegistId(String jPushRegistId) {
-        if(!TextUtils.isEmpty(jPushRegistId)){
+        if (!TextUtils.isEmpty(jPushRegistId)) {
             DataProvider.jPushRegistId = jPushRegistId;
         }
 

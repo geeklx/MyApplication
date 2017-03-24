@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E9E9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_marginBottom="@dimen/x32"
+        android:layout_marginLeft="@dimen/x32"
+        android:layout_marginTop="@dimen/x32"
+        android:orientation="vertical">
+
+        <com.example.p010_recycleviewall.widget.emptyview.EmptyView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:errornet_layout="@layout/empty_item_errnet"
+            app:loading_layout="@layout/activity_network_loading"
+            app:nodata_layout="@layout/empty_item_nodata_shicai"
+            app:unreachable_layout="@layout/empty_item_nodata_shicai" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!--footer-->
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y136"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x26"
+        android:layout_marginRight="@dimen/x26"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/new_bottom_back_include2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/footer_bgs"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x10"
+                android:layout_marginLeft="@dimen/x50">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="我的收藏 - 食材"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x30"
+                    android:textStyle="bold" />
+
+                <!--ceng1-->
+                <RelativeLayout
+                    android:id="@+id/rl_ceng1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_bianji"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/x66"
+                        android:background="@drawable/bg_mywallet_khfw"
+                        android:drawableLeft="@drawable/khfw_icon"
+                        android:drawablePadding="@dimen/x10"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/x10"
+                        android:paddingLeft="@dimen/x20"
+                        android:paddingRight="@dimen/x20"
+                        android:paddingTop="@dimen/x10"
+                        android:text="编辑"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x24"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <!--ceng1-->
+                <!--ceng2-->
+                <LinearLayout
+                    android:id="@+id/ll_ceng2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_quanxuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x40"
+                        android:drawableLeft="@drawable/btn_lookall_quanxuan"
+                        android:drawablePadding="@dimen/x10"
+                        android:paddingBottom="@dimen/x10"
+                        android:paddingLeft="@dimen/x20"
+                        android:paddingRight="@dimen/x20"
+                        android:paddingTop="@dimen/x10"
+                        android:text="全选"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x24"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_quxiao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x20"
+                        android:background="@drawable/bg_mywallet_khfw"
+                        android:paddingBottom="@dimen/x10"
+                        android:paddingLeft="@dimen/x20"
+                        android:paddingRight="@dimen/x20"
+                        android:paddingTop="@dimen/x10"
+                        android:text="取消"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x24"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_shanchu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_mywallet_khfw"
+                        android:paddingBottom="@dimen/x10"
+                        android:paddingLeft="@dimen/x20"
+                        android:paddingRight="@dimen/x20"
+                        android:paddingTop="@dimen/x10"
+                        android:text="删除"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x24"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <!--ceng2-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

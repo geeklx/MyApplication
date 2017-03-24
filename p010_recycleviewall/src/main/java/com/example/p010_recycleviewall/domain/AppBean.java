@@ -1,6 +1,7 @@
 package com.example.p010_recycleviewall.domain;
 
 
+import com.example.p010_recycleviewall.application.ConstantUtil;
 
 import java.io.Serializable;
 
@@ -15,8 +16,8 @@ public class AppBean implements Serializable {
 
     public AppBean(String user_id) {
         //TODO 生成数据
-        setApp_id("");
-        setVersion("");
+        setApp_id(ConstantUtil.APP_ID);
+        setVersion("BXNT_256_0166_0002");//DeviceUtil.getVersionName(DemoApplication.get())
         if(user_id!=null){
             this.user_id=user_id;
         }else{

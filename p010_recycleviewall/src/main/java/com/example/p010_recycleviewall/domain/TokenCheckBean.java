@@ -82,9 +82,9 @@ public class TokenCheckBean {
 
         String  toSign = body+""+""+time;
         //TODO 生成sign
-        this.sign = "";
+        this.sign = "b65a4872816b3d01b90ff73567c75617";
         this.timestamp = time+"";
-        this.client_id = "";
+        this.client_id = "78:64:e6:17:76:fd";
         this.sequence_id = getSequence_id(time);
         this.language = "zh-cn";
         this.timezone = "8";

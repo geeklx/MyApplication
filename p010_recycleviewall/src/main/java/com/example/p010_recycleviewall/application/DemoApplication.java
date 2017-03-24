@@ -3,6 +3,12 @@ package com.example.p010_recycleviewall.application;
 import android.content.Context;
 import android.support.multidex.MultiDexApplication;
 
+import com.example.p010_recycleviewall.R;
+import com.example.p010_recycleviewall.domain.AppBean;
+import com.example.p010_recycleviewall.domain.DeviceBean;
+import com.example.p010_recycleviewall.net.glide.GlideOptionsFactory;
+import com.example.p010_recycleviewall.utils.DataProvider;
+
 
 /**
  * Created by shining on 2016/11/10 0010.
@@ -25,6 +31,25 @@ public class DemoApplication extends MultiDexApplication {
         super.onCreate();
         sInstance = this;
         mContext = getApplicationContext();
+
+        setAPPandDeviceInfo();
+
+        GlideOptionsFactory.init(this, R.drawable.ic_def_loading);
+
+
+    }
+
+
+
+    private void setAPPandDeviceInfo() {
+//        String userId = (String) SpUtils.getInstance(this).get(ConstantUtil.USER_ID, "");
+        String userId = "201605262127400016";
+        this.setAPPandDeviceInfo(mContext, userId);
+    }
+
+    public static void setAPPandDeviceInfo(Context mContext, String userId) {
+        DataProvider.app = new AppBean(userId);
+        DataProvider.device = new DeviceBean(mContext);
     }
 
 }

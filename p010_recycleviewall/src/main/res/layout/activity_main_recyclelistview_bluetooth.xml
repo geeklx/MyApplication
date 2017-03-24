@@ -4,24 +4,24 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray10">
+    >
 
     <RelativeLayout
         android:id="@+id/rl_ceng1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/x20"
-        android:background="@drawable/btn_bg_white">
+        android:layout_margin="20dp"
+     >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginLeft="20dp"
             android:text="蓝牙连接"
             android:textColor="@color/black_common"
-            android:textSize="@dimen/text_size_35" />
+            android:textSize="30sp" />
 
         <ToggleButton
             android:id="@+id/toggle_lanya"
@@ -53,10 +53,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/rl_ceng1"
-        android:layout_marginBottom="@dimen/y50"
-        android:layout_marginLeft="@dimen/x20"
-        android:layout_marginRight="@dimen/x20"
-        android:background="@drawable/btn_bg_white"
         android:orientation="vertical"
         android:visibility="gone"
         tools:visibility="visible">
@@ -73,10 +69,8 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/font_key_text_style002"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/x10"
                     android:text="我的设备" />
 
                 <LinearLayout
@@ -90,8 +84,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginRight="@dimen/x20"
-                        android:padding="@dimen/x20"
                         android:text="1 " />
 
                     <LinearLayout
@@ -103,7 +95,6 @@
 
                         <TextView
                             android:id="@+id/tv_de1"
-                            style="@style/font_key_text_style001"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="10dp"
@@ -115,14 +106,14 @@
                             android:layout_height="wrap_content"
                             android:padding="10dp"
                             android:text="@string/tips1"
-                            android:textSize="@dimen/text_size_20" />
+                            android:textSize="20sp" />
                     </LinearLayout>
 
                     <RelativeLayout
-                        android:layout_width="@dimen/x100"
+                        android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:padding="@dimen/x20">
+                     >
 
                         <ToggleButton
                             android:id="@+id/toggle_lany_shebei"
@@ -156,17 +147,15 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style="@style/font_key_text_style002"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/x10"
                     android:text="已配对的设备 (点击断开连接 长按取消配对)" />
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/recycler_view1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/x10" />
+      />
 
             </LinearLayout>
             <!--ceng2-->
@@ -174,8 +163,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/x10"
-                android:layout_marginTop="@dimen/x10"
                 android:orientation="vertical">
 
                 <RelativeLayout
@@ -183,32 +170,27 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        style="@style/font_key_text_style002"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:padding="@dimen/x10"
                         android:text="可用设备" />
 
                     <Button
                         android:id="@+id/button_id"
                         android:layout_width="wrap_content"
-                        android:layout_height="@dimen/y50"
+                        android:layout_height="50dp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginRight="@dimen/x20"
                         android:text="@string/bluetooth_tips3"
                         android:visibility="visible"
                         tools:visibility="visible" />
 
                     <TextView
                         android:id="@+id/tv_zzsm"
-                        style="@style/font_key_text_style001"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
-                        android:paddingRight="@dimen/x150"
                         android:text="正在扫描...."
                         android:visibility="gone"
                         tools:visibility="visible" />
@@ -218,7 +200,7 @@
                     android:id="@+id/recycler_view11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/x10" />
+                    />
 
             </LinearLayout>
             <!--ceng3-->
@@ -231,16 +213,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/rl_ceng1"
-        android:layout_marginBottom="@dimen/y20"
-        android:layout_marginLeft="@dimen/x20"
-        android:layout_marginRight="@dimen/x20"
-        android:background="@drawable/btn_bg_white"
         android:orientation="vertical"
         android:visibility="visible"
         tools:visibility="gone">
 
         <TextView
-            style="@style/font_key_text_style005"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"

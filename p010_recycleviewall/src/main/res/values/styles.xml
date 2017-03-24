@@ -27,6 +27,12 @@
         <item name="android:backgroundDimAmount">0.6</item>
     </style>
 
+    <style name="Theme.notitle" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+
     <style name="tab_text_size">
         <item name="android:textSize">28dp</item>
     </style>

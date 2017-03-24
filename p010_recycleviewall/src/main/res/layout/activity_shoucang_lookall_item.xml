@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/x264"
+    android:layout_height="@dimen/y274"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/x224"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/x224"
+            android:layout_height="@dimen/y224"
+            android:src="@drawable/no_fridge_food" />
+
+        <RelativeLayout
+            android:id="@+id/rl_unuser"
+            android:layout_width="@dimen/x224"
+            android:layout_height="@dimen/y224"
+            android:background="@color/transparent_half_half_half_half"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/y20_"
+                android:background="@drawable/fm_alldelete_bg" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="测试测试测试测试测试测试"
+            android:textColor="@color/black_common"
+            android:textSize="@dimen/text_size_25"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

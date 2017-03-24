@@ -17,5 +17,15 @@
     <color name="e04832">#FFE04832</color>
     <color name="red2">#FF5001</color>
     <color name="black_common">#000000</color>
+    <color name="black858585">#858585</color>
+
+
+    <color name="orange_red">#FFA000</color>
+    <color name="orange_red_press">#88FFA000</color>
+
+    <color name="color_42">#FF424242</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half_half_half_half">#80ffffff</color>
 
 </resources>

@@ -18,4 +18,11 @@
         <attr name="simple_tag_round_radius" format="dimension"/>
     </declare-styleable>
 
+    <declare-styleable name="EmptyView">
+        <attr name="loading_layout" format="reference" />
+        <attr name="nodata_layout" format="reference" />
+        <attr name="errornet_layout" format="reference" />
+        <attr name="unreachable_layout" format="reference" />
+    </declare-styleable>
+
 </resources>

@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="100dp"
     android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
     android:visibility="gone"
-    android:gravity="center_horizontal">
+    tools:visibility="visible">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="88dp"
-        android:gravity="center"
-        android:weightSum="2"
         android:background="@drawable/shape_gray_gradient_bg"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
         <LinearLayout
             android:id="@+id/home"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
@@ -36,9 +38,9 @@
 
         <LinearLayout
             android:id="@+id/back"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 

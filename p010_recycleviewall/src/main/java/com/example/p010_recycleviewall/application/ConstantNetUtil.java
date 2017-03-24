@@ -6,6 +6,8 @@ package com.example.p010_recycleviewall.application;
 
 public class ConstantNetUtil {
     //
+    public static final String URL_BUSINESS = "";
+
     public static final boolean SERVER_CHANGE_B = VersionConfig.SET_VIS_B;
     public static final boolean SERVER_CHANGE_B1 = VersionConfig.SET_VIS_B1;
     public static final boolean SERVER_CHANGE_B2 = VersionConfig.SET_VIS_B2;

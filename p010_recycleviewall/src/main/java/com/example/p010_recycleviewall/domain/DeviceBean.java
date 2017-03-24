@@ -22,16 +22,16 @@ public class DeviceBean implements Serializable {
     private double longitude;
 
     public DeviceBean(Context context) {
-        setPlatform("");
-        setModel("");
-        setFactory("");
-        setScreen_size("");
-        setDenstiy("");
+        setPlatform("Fridge");
+        setModel("251UG2");
+        setFactory("alps");
+        setScreen_size("0*0");
+        setDenstiy("1.0");
 //        setIMEI(DeviceUtil.getImei());
 //        setMac(DeviceUtil.getMac());
 
-        setImei("");
-        setMac("");
+        setImei("NONE: 353744057777779");
+        setMac("78:64:e6:17:76:fd");
         setGprs("4G");
         setLatitude(39.981077D);
         setLongitude(116.497064);

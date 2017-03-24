@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/x376"
+    android:layout_height="@dimen/y292"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="gone">
+        <!--loading_layout-->
+        <include layout="@layout/activity_network_loading3" />
+        <!--loading_layout-->
+        <!--errornet_layout-->
+        <include layout="@layout/empty_item_errnet3" />
+        <!--errornet_layout-->
+        <!--nodata_layout-->
+        <include layout="@layout/empty_item_nodata_diantai" />
+        <!--nodata_layout-->
+        <!--unreachable_layout-->
+        <include layout="@layout/empty_item_nodata_diantai" />
+        <!--unreachable_layout-->
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x16"
+            android:layout_marginTop="@dimen/x24"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y55"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shoucang_icon_transparents">
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:maxLength="6"
+                    android:text="0"
+                    android:textColor="@color/black_common"
+                    android:textSize="@dimen/text_size_56"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_toRightOf="@+id/tv_num"
+                    android:text="电台"
+                    android:textColor="@color/black_common"
+                    android:textSize="@dimen/text_size_20" />
+
+                <TextView
+                    android:id="@+id/tv_lookall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x24"
+                    android:text="查看全部 >"
+                    android:textColor="@drawable/btn_mywallet_textcolor_bg"
+                    android:textSize="@dimen/text_size_20" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

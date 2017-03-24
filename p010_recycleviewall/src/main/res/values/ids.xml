@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="list" type="id" />
+    <item name="refresh" type="id"/>
+    <item name="base_webview" type="id"/>
+    <item name="web_back" type="id"/>
+    <item name="loading_layout" type="id"/>
+    <item name="loading_progressbar" type="id"/>
+    <item name="fragment_container" type="id"/>
+    <item name="tv_nodata2" type="id" />
+
+    <item name="empty_nodata_notice" type="id" />
+    <item name="empty_errnet_notice" type="id" />
+    <item name="empty_errnet_btn" type="id" />
+    <item name="loading_notice" type="id" />
+    <item name="unreachable_notice" type="id" />
+
+    <item name="home" type="id" />
+    <item name="back" type="id" />
+
+    <item name="keyboard_view" type="id" />
+</resources>

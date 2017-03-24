@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_no_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/x376"
+        android:layout_height="@dimen/y292">
+
+        <TextView
+            android:id="@+id/tv_notice_caipu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/x23"
+            android:drawableTop="@drawable/ic_queue_diantai_black"
+            android:gravity="center"
+            android:text="发现更多电台 >"
+            android:textColor="@drawable/btn_mywallet_textcolor_bg"
+            android:textSize="@dimen/text_size_20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/x16"
+            android:layout_marginLeft="@dimen/x24"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/black_common"
+                android:textSize="@dimen/text_size_56"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:text="电台"
+                android:textColor="@color/black_common"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
