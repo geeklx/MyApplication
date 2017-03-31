@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" filepath="$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
       <module fileurl="file://$PROJECT_DIR$/p020_timer/p020_timer.iml" filepath="$PROJECT_DIR$/p020_timer/p020_timer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p021_webviewjs/p021_webviewjs.iml" filepath="$PROJECT_DIR$/p021_webviewjs/p021_webviewjs.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>
   </component>

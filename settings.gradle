@@ -1,4 +1,4 @@
-include ':glin', ':gravitysnaphelper', 'shapeloading'
+include ':glin', ':gravitysnaphelper', ':p021_webviewjs', 'shapeloading'
 //include ':app'
 //include ':P001_yzxdemo'
 //include ':P001_云之讯YZXVideodemoVideo'
