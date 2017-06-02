@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/ic_web_title_bg">
+
+    <ImageView
+        android:id="@+id/ic_back"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:paddingRight="8dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="33dp"
+        android:src="@drawable/ic_web_back" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ic_back"
+        android:text="返回"
+        android:textColor="#FFEFEFEF"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:layout_marginRight="33dp"
+        android:src="@drawable/ic_web_close" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/close"
+        android:layout_toRightOf="@id/back"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#FFEFEFEF"
+        android:textSize="30sp" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:maxHeight="5dp"
+        android:minHeight="5dp"
+        android:layout_alignParentBottom="true"
+        android:progressDrawable="@drawable/web_progress_style" />
+</RelativeLayout>
