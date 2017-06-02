@@ -23,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
                 AdListItem adListItem = new AdListItem();
                 adListItem.setAid("1");
                 adListItem.setBanner("imgUrl");
-                adListItem.setUrl("hios://jump.twomainactivity");
+//                adListItem.setUrl("hios://jump.twomainactivity");
+//                hios://com.haiersmart.sfnation.ui.ec.ShopIndexActivity?act={i}1&sku_id={s}341703311759500256
+                adListItem.setUrl("hios://jump.twomainactivity?sku_id={s}1000252");//带参数
                 HiosHelper.click(MainActivity.this, TwoMainActivity.class, adListItem);// 第一个是当前Activity 第二个是Fragment
             }
         });
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 adListItem.setBanner("imgUrl");
                 adListItem.setUrl("");
                 HiosHelper.configWebActivity(WebViewMainActivity.class);
-                HiosHelper.click(MainActivity.this, adListItem);// 第一个是当前Activity 第二个是Fragment
+                HiosHelper.click(MainActivity.this, adListItem);//
             }
         });
 
