@@ -22,7 +22,7 @@
         <include layout="@layout/empty_item_nodata_diantai" />
         <!--nodata_layout-->
         <!--unreachable_layout-->
-        <include layout="@layout/empty_item_nodata_diantai" />
+        <!--<include layout="@layout/empty_item_nodata_diantai" />-->
         <!--unreachable_layout-->
     </LinearLayout>
 

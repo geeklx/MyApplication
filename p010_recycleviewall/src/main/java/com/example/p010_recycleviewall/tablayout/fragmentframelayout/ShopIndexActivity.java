@@ -5,7 +5,6 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.text.TextUtils;
-import android.util.Log;
 
 import com.example.p010_recycleviewall.R;
 import com.example.p010_recycleviewall.domain.ShopCategoryItem;
@@ -13,12 +12,10 @@ import com.example.p010_recycleviewall.tablayout.fragmentframelayout.adapter.Tab
 import com.example.p010_recycleviewall.tablayout.fragmentframelayout.fragment.FragmentContent;
 import com.example.p010_recycleviewall.tablayout.fragmentframelayout.fragment.FragmentIndex;
 import com.example.p010_recycleviewall.tablayout.fragmentframelayout.presenter.ShopCategoryPresenter;
-import com.example.p010_recycleviewall.utils.ViewHelper;
+import com.example.p010_recycleviewall.utils.ToastUtil;
 
 import java.lang.reflect.Field;
 import java.util.List;
-
-import butterknife.ButterKnife;
 
 public class ShopIndexActivity extends BaseViewActivity implements IShopCategoryView {
 
@@ -34,10 +31,9 @@ public class ShopIndexActivity extends BaseViewActivity implements IShopCategory
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tablayout_fragmentframelayout);
-        ButterKnife.bind(this);
-        ViewHelper.click(this, mHomeView, mBackView, mCartView, mFavView, mOrderView);
+        super.onCreate(savedInstanceState);
+
         mFragmentManager = getSupportFragmentManager();
 
         mCateTabLayout.addOnTabSelectedListener(new TabSelectAdapter() {
@@ -58,6 +54,31 @@ public class ShopIndexActivity extends BaseViewActivity implements IShopCategory
         mPresenter.getCategories();
         //fragment切换bufen
         showFragment(ShopCategoryItem.DEF_TAG_ID);
+    }
+
+    @Override
+    protected void click_order() {
+        ToastUtil.showToastCenter("订单");
+    }
+
+    @Override
+    protected void click_fav() {
+        ToastUtil.showToastCenter("收藏夹");
+    }
+
+    @Override
+    protected void click_cart() {
+        ToastUtil.showToastCenter("购物车");
+    }
+
+    @Override
+    protected void click_back() {
+        onBackPressed();
+    }
+
+    @Override
+    protected void click_home() {
+        ToastUtil.showToastCenter("主页");
     }
 
     /**

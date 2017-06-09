@@ -22,7 +22,7 @@
         <include layout="@layout/empty_item_nodata_shipin" />
         <!--nodata_layout-->
         <!--unreachable_layout-->
-        <include layout="@layout/empty_item_nodata_shipin" />
+        <!--<include layout="@layout/empty_item_nodata_shipin" />-->
         <!--unreachable_layout-->
     </LinearLayout>
 

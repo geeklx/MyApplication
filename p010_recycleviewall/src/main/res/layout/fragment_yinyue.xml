@@ -22,7 +22,7 @@
         <include layout="@layout/empty_item_nodata_yinyue" />
         <!--nodata_layout-->
         <!--unreachable_layout-->
-        <include layout="@layout/empty_item_nodata_yinyue" />
+        <!--<include layout="@layout/empty_item_nodata_yinyue" />-->
         <!--unreachable_layout-->
     </LinearLayout>
 

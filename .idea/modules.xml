@@ -6,7 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/glin/glin.iml" filepath="$PROJECT_DIR$/glin/glin.iml" />
       <module fileurl="file://$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" filepath="$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p022_hois/p022_hois.iml" filepath="$PROJECT_DIR$/p022_hois/p022_hois.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p023_jcenter_hios/p023_jcenter_hios.iml" filepath="$PROJECT_DIR$/p023_jcenter_hios/p023_jcenter_hios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p024_demoactivity/p024_demoactivity.iml" filepath="$PROJECT_DIR$/p024_demoactivity/p024_demoactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p025_upload_img/p025_upload_img.iml" filepath="$PROJECT_DIR$/p025_upload_img/p025_upload_img.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>
   </component>

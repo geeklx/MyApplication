@@ -3,7 +3,7 @@
     android:layout_width="150dp"
     android:layout_height="wrap_content"
     android:gravity="center_horizontal"
-    android:visibility="gone">
+    android:visibility="visible">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:weightSum="3">
 
         <LinearLayout
-            android:id="@+id/cart"
+            android:id="@id/cart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -35,7 +35,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/fav"
+            android:id="@id/fav"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -56,7 +56,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/order"
+            android:id="@id/order"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

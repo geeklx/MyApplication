@@ -17,6 +17,10 @@
 
     <item name="home" type="id" />
     <item name="back" type="id" />
+    <item name="fav" type="id" />
+    <item name="order" type="id" />
+    <item name="cart" type="id" />
+    <item name="tab" type="id" />
 
     <item name="keyboard_view" type="id" />
 </resources>

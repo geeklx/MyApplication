@@ -11,6 +11,8 @@ import com.alipay.api.AlipayClient;
 import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.request.AlipayTradePrecreateRequest;
 import com.alipay.api.response.AlipayTradePrecreateResponse;
+import com.example.library_hios.hioscommon.AdListItem;
+import com.example.library_hios.hoisjump.HiosHelper;
 import com.example.p010_recycleviewall.application.ConstantNetUtil;
 import com.example.p010_recycleviewall.bluetoothold.MainActivity_BlueTooth;
 import com.example.p010_recycleviewall.recycleviewbiaoge.MainActivityBiaoge;
@@ -106,6 +108,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ShoucangIndexActivity.class);
                 startActivity(intent);
+
+//                //hios activity跳转
+                AdListItem adListItem = new AdListItem();
+                adListItem.setAid("1");
+                adListItem.setBanner("imgUrl");
+                adListItem.setUrl("hios://jump.secondmainactivity?sku_id={s}1000252");//带参数
+                HiosHelper.click(MainActivity.this, MainActivity.class, adListItem);// 第一个是当前Activity 第二个是Fragment
+
             }
         });
         //支付宝扫码支付bufen

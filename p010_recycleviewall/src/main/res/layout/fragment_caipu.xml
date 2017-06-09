@@ -22,7 +22,7 @@
         <include layout="@layout/empty_item_nodata_caipu" />
         <!--nodata_layout-->
         <!--unreachable_layout-->
-        <include layout="@layout/empty_item_nodata_caipu" />
+        <!--<include layout="@layout/empty_item_nodata_caipu" />-->
         <!--unreachable_layout-->
     </LinearLayout>
 

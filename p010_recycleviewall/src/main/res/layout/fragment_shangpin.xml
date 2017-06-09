@@ -22,7 +22,7 @@
         <include layout="@layout/empty_item_nodata_shangpin" />
         <!--nodata_layout-->
         <!--unreachable_layout-->
-        <include layout="@layout/empty_item_nodata_shangpin" />
+        <!--<include layout="@layout/empty_item_nodata_shangpin" />-->
         <!--unreachable_layout-->
     </LinearLayout>
 
