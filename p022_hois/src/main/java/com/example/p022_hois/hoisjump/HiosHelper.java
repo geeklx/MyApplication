@@ -19,10 +19,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * <p class="note">File Note</p>
- * created by qibin at 2017/4/10
- */
 public class HiosHelper {
 
     private static Class<? extends Activity> webViewActivity;

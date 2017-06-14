@@ -1,4 +1,4 @@
-include ':glin', ':gravitysnaphelper', ':p024_demoactivity', ':p025_upload_img', 'shapeloading'
+include ':glin', ':gravitysnaphelper', 'shapeloading'
 //include ':app'
 //include ':P001_yzxdemo'
 //include ':P001_云之讯YZXVideodemoVideo'
@@ -25,6 +25,8 @@ include ':p010_recycleviewall'
 //include ':p020_timer'
 //include ':p021_webviewjs'
 //include ':p022_hois'
-include ':p023_jcenter_hios'
+//include ':p023_jcenter_hios'
+//include ':p024_demoactivity'
+//include ':p025_upload_img'
 
 
