@@ -26,7 +26,7 @@ include ':p010_recycleviewall'
 //include ':p021_webviewjs'
 //include ':p022_hois'
 //include ':p023_jcenter_hios'
-//include ':p024_demoactivity'
+include ':p024_wifidemoactivity'
 //include ':p025_upload_img'
 
 

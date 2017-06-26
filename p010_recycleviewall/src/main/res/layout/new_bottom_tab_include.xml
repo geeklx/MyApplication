@@ -16,7 +16,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-            <com.example.p010_recycleviewall.widget.tablayout.UnAnimTabLayout
+            <com.shining.p010_recycleviewall.widget.tablayout.UnAnimTabLayout
                 android:id="@id/tab"
                 android:paddingLeft="5dp"
                 android:clipToPadding="false"

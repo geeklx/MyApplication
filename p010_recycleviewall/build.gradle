@@ -14,7 +14,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.p010_recycleviewall"
+        applicationId "com.shining.p010_recycleviewall"
         minSdkVersion 18
         targetSdkVersion 23
         versionCode 1
@@ -34,7 +34,7 @@ android {
 
     def int minSdk = 18;
     def int targetSdk = 23;
-    def String appId = 'com.example.p010_recycleviewall';
+    def String appId = 'com.shining.p010_recycleviewall';
 
     def int vCode = 1;
     def String vNameCode = vCode + "";

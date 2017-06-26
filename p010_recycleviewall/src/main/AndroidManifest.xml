@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.p010_recycleviewall">
+    package="com.shining.p010_recycleviewall">
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -9,14 +9,14 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
-        android:name=".application.DemoApplication"
+        android:name="com.shining.p010_recycleviewall.application.DemoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.shining.p010_recycleviewall.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,21 +24,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".recycleviewlistview.MainActivity1" />
-        <activity android:name=".recycleviewgridview.MainActivity2" />
-        <activity android:name=".recycleviewlistviewaddheadandfooter.MainActivity3" />
-        <activity android:name=".recycleviewgridviewaddheadandfooter.MainActivity4" />
-        <activity android:name=".tablayout.fragmentviewpager.MainActivityTabLayout" />
-        <activity android:name=".tablayout.fragmentframelayout.ShopIndexActivity" />
-        <activity android:name=".recycleviewbiaoge.MainActivityBiaoge" />
-        <activity android:name=".recycleviewdifferentitem.MainActivityDff" />
-        <activity android:name=".bluetoothold.MainActivity_BlueTooth" />
+        <activity android:name="com.shining.p010_recycleviewall.recycleviewlistview.MainActivity1" />
+        <activity android:name="com.shining.p010_recycleviewall.recycleviewgridview.MainActivity2" />
+        <activity android:name="com.shining.p010_recycleviewall.recycleviewlistviewaddheadandfooter.MainActivity3" />
+        <activity android:name="com.shining.p010_recycleviewall.recycleviewgridviewaddheadandfooter.MainActivity4" />
+        <activity android:name="com.shining.p010_recycleviewall.tablayout.fragmentviewpager.MainActivityTabLayout" />
+        <activity android:name="com.shining.p010_recycleviewall.tablayout.fragmentframelayout.ShopIndexActivity" />
+        <activity android:name="com.shining.p010_recycleviewall.recycleviewbiaoge.MainActivityBiaoge" />
+        <activity android:name="com.shining.p010_recycleviewall.recycleviewdifferentitem.MainActivityDff" />
+        <activity android:name="com.shining.p010_recycleviewall.bluetoothold.MainActivity_BlueTooth" />
         <activity
-            android:name=".shoucang.lookall.LookAllActivity"
+            android:name="com.shining.p010_recycleviewall.shoucang.lookall.LookAllActivity"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.notitle" />
         <activity
-            android:name=".shoucang.ShoucangIndexActivity"
+            android:name="com.shining.p010_recycleviewall.shoucang.ShoucangIndexActivity"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.notitle" />
 

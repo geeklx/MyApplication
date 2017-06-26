@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="692dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/mine_others_background"
+        android:paddingBottom="30dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout20"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="wifi_name"
+                android:textColor="@color/black_common"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout15"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout20"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/state_tv"
+                android:layout_alignBottom="@+id/state_tv"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="48dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="状态"
+                android:textColor="@color/black_common"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="75dp"
+                android:text="已连接"
+                android:textColor="@color/black_common"
+                android:textSize="28sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout16"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout15"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="48dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="安全性"
+                android:textColor="@color/black_common"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/safety_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="75dp"
+                android:text="已连接"
+                android:textColor="@color/black_common"
+                android:textSize="28sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout17"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout16"
+            android:layout_marginTop="26dp">
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="48dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="信号强度"
+                android:textColor="@color/black_common"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/level_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="75dp"
+                android:text="已连接"
+                android:textColor="@color/black_common"
+                android:textSize="28sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout18"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout17"
+            android:layout_marginTop="22dp">
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="48dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="连接速度"
+                android:textColor="@color/black_common"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/speed_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="75dp"
+                android:text="已连接"
+                android:textColor="@color/black_common"
+                android:textSize="28sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout19"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout18"
+            android:layout_marginTop="27dp">
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="48dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="IP地址"
+                android:textColor="@color/black_common"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/ip_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="75dp"
+                android:text="已连接"
+                android:textColor="@color/black_common"
+                android:textSize="28sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/relativeLayout19"
+            android:layout_marginTop="23dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="256dp"
+                android:layout_height="64dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/btn_common_blacken"
+                android:text="取消"
+                android:textColor="@drawable/btn_myfamily_font_pop_qx"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="256dp"
+                android:layout_height="64dp"
+                android:background="@drawable/btn_common_black"
+                android:text="忽略"
+                android:textColor="@drawable/btn_myfamily_font_pop_sure"
+                android:textSize="28sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

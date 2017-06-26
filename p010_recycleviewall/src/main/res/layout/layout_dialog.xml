@@ -10,7 +10,7 @@
     android:layout_height="match_parent">
 
 
-    <com.example.p010_recycleviewall.widget.loading.LoadingView
+    <com.shining.p010_recycleviewall.widget.loading.LoadingView
         android:id="@+id/loadView"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"

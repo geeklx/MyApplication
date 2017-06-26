@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<open-droid>
+    <name value="wifi_info" />
+    <version value="12" />
+    <mapping class="com.shining.p024_wifidemoactivity.domain.Wifi" />
+</open-droid>

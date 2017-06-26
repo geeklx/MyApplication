@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content">
 
 
-                <com.example.p010_recycleviewall.widget.SimpleTagImageView
+                <com.shining.p010_recycleviewall.widget.SimpleTagImageView
                     android:id="@+id/iv_ViewPager_Fourthly_Left"
                     android:layout_width="160dp"
                     android:layout_height="160dp"
@@ -48,7 +48,7 @@
                     android:layout_marginTop="15dp"
                     android:orientation="horizontal">
 
-                    <com.example.p010_recycleviewall.widget.FlowLayout
+                    <com.shining.p010_recycleviewall.widget.FlowLayout
                         android:id="@+id/layou23"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -110,7 +110,7 @@
                         android:layout_height="45dp"
                         android:orientation="horizontal">
 
-                        <com.example.p010_recycleviewall.widget.FlowLayout
+                        <com.shining.p010_recycleviewall.widget.FlowLayout
                             android:id="@+id/layou231"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

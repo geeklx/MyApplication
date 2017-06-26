@@ -32,7 +32,7 @@
             android:textSize="14sp"
             android:visibility="gone" />
 
-        <com.example.p010_recycleviewall.widget.loading.ShapeLoadingView
+        <com.shining.p010_recycleviewall.widget.loading.ShapeLoadingView
             android:id="@+id/shapeLoadingView"
             android:layout_width="24dp"
             android:layout_height="24dp"
