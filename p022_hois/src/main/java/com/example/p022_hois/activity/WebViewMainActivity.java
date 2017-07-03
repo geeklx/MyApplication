@@ -22,7 +22,9 @@ public class WebViewMainActivity extends WebViewActivity {
         } else {
             url = "https://www.baidu.com/";
         }
-//        setup();
+//        setup();//必须删除bufen
+//        mPresenter = PresenterHelper.create(AdPresenter.class, this);
+//        mPresenter.getAdUrlById(adId);
 
         loadUrl(url);
     }

@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/glin/glin.iml" filepath="$PROJECT_DIR$/glin/glin.iml" />
       <module fileurl="file://$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" filepath="$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p018_activity_fragmenta_b/p018_activity_fragmenta_b.iml" filepath="$PROJECT_DIR$/p018_activity_fragmenta_b/p018_activity_fragmenta_b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p022_hois/p022_hois.iml" filepath="$PROJECT_DIR$/p022_hois/p022_hois.iml" />
       <module fileurl="file://$PROJECT_DIR$/p024_wifidemoactivity/p024_wifidemoactivity.iml" filepath="$PROJECT_DIR$/p024_wifidemoactivity/p024_wifidemoactivity.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>

@@ -43,8 +43,9 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.web_webview_layout);
         findview();
+        onclickListener();
+        setupWebView();
         mUrl = getIntent().getStringExtra("url");
-        setup();
         loadUrl(mUrl);
     }
 
@@ -56,12 +57,10 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         mProgressBar = (ProgressBar) findViewById(R.id.progress);
     }
 
-
-    protected void setup() {
+    private void onclickListener(){
         mBackImageView.setOnClickListener(this);
         mBackView.setOnClickListener(this);
         mCloseView.setOnClickListener(this);
-        setupWebView();
     }
 
     protected void setupWebView() {
