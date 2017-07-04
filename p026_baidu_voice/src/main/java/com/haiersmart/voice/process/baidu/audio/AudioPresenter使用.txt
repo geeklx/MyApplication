@@ -1,0 +1,32 @@
+
+
+
+	AudioPresenter presenter = new AudioPresenter(this);
+
+	//弹出音乐播放
+	@Subscribe(threadMode = ThreadMode.MAIN)
+	public void showAudioWindow(AudioEvent e) {
+		PopupWindow popupWindow = presenter.getPopupWindow(e.mp3_audio_url, e.cover_url, e.title);
+		popupWindow.showAsDropDown(mIvMainVoiceRec, 280, 0);
+	}
+	//选择曲目
+	@Subscribe(threadMode = ThreadMode.MAIN)
+	public void ChooseCover(ChooseEvent event) {
+		int current = event.current;
+		String url = presenter.getCoverList().get(current);
+		String title = presenter.getMusicTitles().get(current);
+		presenter.getMpv().setCoverURL(url);
+		presenter.getTvTitle().setText(title);
+		if (presenter.getBinder() != null) {
+			presenter.getBinder().musicStart();
+		}
+	}
+	//开始播放
+	@Subscribe(threadMode = ThreadMode.MAIN)
+	public void EventBus(MessageEvent event) {
+		EmotionProcessUtil.getEmotionProcessUtil().processEmotion(VoiceEmotionContants.EMOTION_MUSIC);
+		boolean prepared = event.prepared;
+		if (prepared) {
+			presenter.getMpv().start();
+		}
+	}

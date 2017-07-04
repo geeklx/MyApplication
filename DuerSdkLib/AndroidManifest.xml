@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baidu.duersdk"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk android:targetSdkVersion="23" android:minSdkVersion="14"
+    tools:overrideLibrary="com.baidu.graph.sdk,com.baidu.searchbox.godeye" />
+
+</manifest>

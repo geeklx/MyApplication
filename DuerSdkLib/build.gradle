@@ -1,0 +1,82 @@
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25'
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['aidl']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    //签名使用的相关证书
+    signingConfigs {
+        release {
+            storeFile file("release_keystore")
+            storePassword "duer.baidu.com"
+            keyAlias "baidu"
+            keyPassword "duer.baidu.com"
+        }
+    }
+
+    buildTypes {
+        debug{
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            zipAlignEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles 'proguard-project.txt'
+        }
+
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+repositories{
+    flatDir {
+        dirs './libs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //compile(name:'plugin_translate-release',ext:'aar')
+    //compile(name:'graph_sdk-release-0',ext:'aar')
+    //compile(name:'roundedimageview-2.2.1',ext:'aar')
+    //compile(name:'common_library-release',ext:'aar')
+    //compile(name:'plugin_bdar_v2.5.0',ext:'aar')
+}

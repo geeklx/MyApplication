@@ -1,0 +1,4 @@
+DuerSdkLib导入  MyAppplcation->setting.gradle include ':DuerSdkLib'
+
+
+

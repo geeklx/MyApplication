@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haiersmart.sfnation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".application.FridgeApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="landscape"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--<receiver android:name=".receiver.BootReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+        <!--<action android:name="com.haier.boot" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!-- 百度语音识别部分 开始 -->
+        <!--<service-->
+        <!--android:name="com.haiersmart.voice.service.ShengyinService"-->
+        <!--android:enabled="true"-->
+        <!--android:exported="true"></service>-->
+        <!--<service-->
+        <!--android:name="com.haiersmart.voice.service.MusicPlayerService"-->
+        <!--android:enabled="true"-->
+        <!--android:exported="true"></service>-->
+        <!-- the receiver of speech operation -->
+        <!--<receiver android:name="com.haiersmart.voice.receiver.SpeechOperationReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.haiersmart.action.breakoff.current.voice" />-->
+        <!--<action android:name="com.haiersmart.action.restart.speech.recognition" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!-- lbs设置 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="XPk6G4rA34MS9ZLGa6fWWIly" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="BD_IM_API_KEY"
+            android:value="AGnZQAN7v0Gc9HPQipw7Smj5" />
+        <meta-data
+            android:name="BD_IM_APPID"
+            android:value="6696445" />
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="9208021" />
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="t9LunrMXTC1eXNcmZ6V5ebW7" />
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="0ca377f486a16fa50bb9dbe3a6776068" />
+
+
+        <!--网络状态改变接收者-->
+        <!--<receiver android:name="com.haiersmart.voice.receiver.NetWorkChangeStatusReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+        <!--<action android:name="android.net.wifi.WIFI_STATE_CHANGED" />-->
+        <!--<action android:name="android.net.wifi.STATE_CHANGE" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <service
+            android:name="com.baidu.duersdk.longconnect.aidl.WebSocketService"
+            android:exported="true" />
+        <service
+            android:name="com.baidu.speech.aidl.EventRecognitionService"
+            android:process=":cidu" />
+        <!--百度语音结束-->
+
+    </application>
+
+</manifest>

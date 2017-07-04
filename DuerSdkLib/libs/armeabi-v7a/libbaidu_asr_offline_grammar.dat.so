@@ -1,0 +1,1171 @@
+{
+    "version": "0.1",
+    "slots": {
+        "generalslot": [
+            "明天我想去打球"
+        ],
+        "contactname": [
+            "曹玉树",
+            "常良玉",
+            "杨锐"
+        ],
+        "phonenumber": [
+            "18813046295",
+            "110",
+            "120",
+            "1111",
+            "33333"
+        ],
+        "picknumber": [
+            "一",
+            "二",
+            "三",
+            "四",
+            "五",
+            "六",
+            "七",
+            "八",
+            "九",
+            "十",
+            "十一",
+            "十二",
+            "十三",
+            "十四",
+            "十五",
+            "十六",
+            "十七",
+            "十八",
+            "十九",
+            "二十"
+        ],
+        "locate": [
+            "北京",
+            "上海",
+            "杭州"
+        ],
+        "yunying": [
+            "中国移动",
+            "中国联通",
+            "中国电信",
+            "移动",
+            "联通",
+            "电信"
+        ],
+        "simnumber": [
+            "1",
+            "2"
+        ],
+        "singername": [
+            "周杰伦"
+        ],
+        "songname": [
+            "七里香"
+        ],
+        "albumname": [
+            "叶惠美"
+        ],
+        "musiclistname": [
+            "每周一歌"
+        ],
+        "appname": [
+            "微信",
+            "相机",
+            "wifi",
+            "振动模式",
+            "竖屏锁定",
+            "蓝牙",
+            "gps",
+            "相册",
+            "图库",
+            "闹钟",
+            "时钟",
+            "闹钟时钟",
+            "秒表",
+            "计时器",
+            "世界时钟",
+            "相机",
+            "照相机",
+            "电子邮件",
+            "邮箱",
+            "电子邮箱",
+            "email",
+            "电话",
+            "拨号",
+            "信息",
+            "短信",
+            "联系人",
+            "电话本",
+            "通讯录"
+        ],
+        "settingname": [
+            "wifi",
+            "振动模式",
+            "竖屏锁定",
+            "蓝牙",
+            "gps"
+        ],
+        "remindmonth": [
+            "一",
+            "二",
+            "三",
+            "四",
+            "五",
+            "六",
+            "七",
+            "八",
+            "九",
+            "十",
+            "十一",
+            "十二"
+        ],
+        "remindday": [
+            "一",
+            "二",
+            "三",
+            "四",
+            "五",
+            "六",
+            "七",
+            "八",
+            "九",
+            "十",
+            "十一",
+            "十二",
+            "十三",
+            "十四",
+            "十五",
+            "十六",
+            "十七",
+            "十八",
+            "十九",
+            "二十",
+            "二十一",
+            "二十二",
+            "二十三",
+            "二十四",
+            "二十五",
+            "二十六",
+            "二十七",
+            "二十八",
+            "二十九",
+            "三十",
+            "三十一"
+        ],
+        "remindhour": [
+            "一",
+            "二",
+            "三",
+            "四",
+            "五",
+            "六",
+            "七",
+            "八",
+            "九",
+            "十",
+            "十一",
+            "十二"
+        ],
+        "remindminute": [
+            "一",
+            "二",
+            "三",
+            "四",
+            "五",
+            "六",
+            "七",
+            "八",
+            "九",
+            "十",
+            "十一",
+            "十二",
+            "十三",
+            "十四",
+            "十五",
+            "十六",
+            "十七",
+            "十八",
+            "十九",
+            "二十",
+            "二十一",
+            "二十二",
+            "二十三",
+            "二十四",
+            "二十五",
+            "二十六",
+            "二十七",
+            "二十八",
+            "二十九",
+            "三十",
+            "三十一",
+            "三十二",
+            "三十三",
+            "三十四",
+            "三十五",
+            "三十六",
+            "三十七",
+            "三十八",
+            "三十九",
+            "四十",
+            "四十一",
+            "四十二",
+            "四十三",
+            "四十四",
+            "四十五",
+            "四十六",
+            "四十七",
+            "四十八",
+            "四十九",
+            "五十",
+            "五十一",
+            "五十二",
+            "五十三",
+            "五十四",
+            "五十五",
+            "五十六",
+            "五十七",
+            "五十八",
+            "五十九"
+        ],
+        "remindquarter": [
+            "一",
+            "二",
+            "三",
+            "四"
+        ],
+        "phonetype": [
+            "住宅"
+        ],
+        "slotactionconfirmcmd1": [
+            "嗯",
+            "好",
+            "弄吧",
+            "好吧",
+            "好的",
+            "对的",
+            "可以",
+            "准你",
+            "没问题",
+            "就这个",
+            "我准了",
+            "就这样",
+            "就这样吧",
+            "我确认",
+            "确定",
+            "确认",
+            "行",
+            "行吧",
+            "这样就行",
+            "go",
+            "OK",
+            "发",
+            "开始吧",
+            "好发吧"
+        ],
+        "slotactionconfirmcmd2": [
+            "快发",
+            "发吧",
+            "可以发了",
+            "可以发送了",
+            "发短信吧",
+            "发送",
+            "发送吧",
+            "就这么发吧",
+            "就这样发送吧",
+            "发送短信",
+            "我确认",
+            "嗯发吧",
+            "确认发送",
+            "确认发送短信",
+            "请发送",
+            "请发送短信",
+            "速度发送",
+            "赶紧发"
+        ],
+        "slotactioncancelcmd1": [
+            "取消",
+            "退出",
+            "不对",
+            "不是",
+            "别",
+            "忽略吧",
+            "你给我取消",
+            "快停",
+            "不好",
+            "快取消",
+            "取消",
+            "取消吧",
+            "取消不好",
+            "不用了",
+            "不用了谢谢",
+            "不要",
+            "不行",
+            "放弃",
+            "撤回",
+            "不要弄",
+            "我不要了",
+            "别要了",
+            "不要了",
+            "我要取消",
+            "不需要了",
+            "算了",
+            "用了",
+            "算了吧",
+            "错了",
+            "NO",
+            "别发了",
+            "不发了",
+            "别发短信",
+            "别发短信了"
+        ],
+        "slotactioncancelcmd2": [
+            "停止",
+            "取消吧",
+            "取消发送",
+            "取消短信",
+            "快撤销",
+            "不要发",
+            "我取消",
+            "我不想发了",
+            "我不想要发短信",
+            "不要发了",
+            "不要发短信",
+            "我不要发送短信了",
+            "我不要了",
+            "不要发送了",
+            "给我取消",
+            "赶紧取消",
+            "stop",
+            "no"
+        ],
+        "slotactiontelephonecall": [
+            "打个电话给",
+            "回个电话给",
+            "打电话给",
+            "打给",
+            "拨打",
+            "呼叫",
+            "回电话给",
+            "打给"
+        ],
+        "slotactiontelephonecall2": [
+            "回电话",
+            "回个电话",
+            "打电话",
+            "打个电话"
+        ],
+        "slotactionsmsname": [
+            "信息",
+            "短信",
+            "短消息",
+            "短信消息"
+        ],
+        "slotactionsmssend": [
+            "发",
+            "写",
+            "回",
+            "发个",
+            "回个",
+            "写个",
+            "发条",
+            "写条",
+            "回条",
+            "发一个",
+            "写一个",
+            "回一个",
+            "发一条",
+            "写一条",
+            "回一条"
+        ],
+        "slotactionappopen": [
+            "打开",
+            "运行",
+            "启动",
+            "开启",
+            "进入"
+        ],
+        "slotactioncaontactsearch": [
+            "电话是多少",
+            "电话号码",
+            "电话号码是多少",
+            "手机号码是多少",
+            "手机号",
+            "电话",
+            "电话号码"
+        ],
+        "slotactioncontactsend": [
+            "电话",
+            "号码",
+            "电话号码",
+            "手机号码",
+            "手机号"
+        ],
+        "slotactionplaysong": [
+            "打开音乐",
+            "播放音乐",
+            "播放歌曲",
+            "听歌",
+            "音乐",
+            "播放",
+            "放",
+            "来一首",
+            "听一首",
+            "放一首",
+            "放首"
+        ],
+        "slotactionnumberpick": [
+            "手机",
+            "手机号码",
+            "住宅",
+            "住宅号码"
+        ],
+        "slotactionclockset": [
+            "新建",
+            "设置"
+        ],
+        "slotactionclockday": [
+            "今天",
+            "明天"
+        ],
+        "slotactionclocknoon": [
+            "凌晨",
+            "上午",
+            "下午",
+            "中午",
+            "晚上"
+        ]
+    },
+    "rules": {
+        "telephone.open": [
+            {
+                "origin": "<slotactiontelephonecall2>",
+                "pattern": "^(回电话|回个电话|打电话|打个电话)$",
+                "groups": [
+                    "slotactiontelephonecall2"
+                ]
+            }
+        ],
+        "telephone.call1": [
+            {
+                "origin": "<slotactiontelephonecall><contactname>",
+                "pattern": "^(打个电话给|回个电话给|打电话给|打给|拨打|呼叫|回电话给|打给)(曹玉树|常良玉|杨锐)$",
+                "groups": [
+                    "slotactiontelephonecall",
+                    "contactname"
+                ]
+            },
+            {
+                "origin": "给<contactname><slotactiontelephonecall2>",
+                "pattern": "^给(曹玉树|常良玉|杨锐)(回电话|回个电话|打电话|打个电话)$",
+                "groups": [
+                    "contactname",
+                    "slotactiontelephonecall2"
+                ]
+            }
+        ],
+        "telephone.call2": [
+            {
+                "origin": "<slotactiontelephonecall><phonenumber>",
+                "pattern": "^(打个电话给|回个电话给|打电话给|打给|拨打|呼叫|回电话给|打给)(18813046295|110|120|1111|33333)$",
+                "groups": [
+                    "slotactiontelephonecall",
+                    "phonenumber"
+                ]
+            },
+            {
+                "origin": "给<phonenumber><slotactiontelephonecall2>",
+                "pattern": "^给(18813046295|110|120|1111|33333)(回电话|回个电话|打电话|打个电话)$",
+                "groups": [
+                    "phonenumber",
+                    "slotactiontelephonecall2"
+                ]
+            }
+        ],
+        "sms.opencmd": [
+            {
+                "origin": "<slotactionsmssend><slotactionsmsname>",
+                "pattern": "^(发|写|回|发个|回个|写个|发条|写条|回条|发一个|写一个|回一个|发一条|写一条|回一条)(信息|短信|短消息|短信消息)$",
+                "groups": [
+                    "slotactionsmssend",
+                    "slotactionsmsname"
+                ]
+            }
+        ],
+        "sms.send1": [
+            {
+                "origin": "<slotactionsmssend><slotactionsmsname>给<contactname>",
+                "pattern": "^(发|写|回|发个|回个|写个|发条|写条|回条|发一个|写一个|回一个|发一条|写一条|回一条)(信息|短信|短消息|短信消息)给(曹玉树|常良玉|杨锐)$",
+                "groups": [
+                    "slotactionsmssend",
+                    "slotactionsmsname",
+                    "contactname"
+                ]
+            },
+            {
+                "origin": "<slotactionsmssend><slotactionsmsname>给<contactname>",
+                "pattern": "^(发|写|回|发个|回个|写个|发条|写条|回条|发一个|写一个|回一个|发一条|写一条|回一条)(信息|短信|短消息|短信消息)给(曹玉树|常良玉|杨锐)$",
+                "groups": [
+                    "slotactionsmssend",
+                    "slotactionsmsname",
+                    "contactname"
+                ]
+            },
+            {
+                "origin": "<slotactionsmssend><slotactionsmsname>给<contactname>",
+                "pattern": "^(发|写|回|发个|回个|写个|发条|写条|回条|发一个|写一个|回一个|发一条|写一条|回一条)(信息|短信|短消息|短信消息)给(曹玉树|常良玉|杨锐)$",
+                "groups": [
+                    "slotactionsmssend",
+                    "slotactionsmsname",
+                    "contactname"
+                ]
+            },
+            {
+                "origin": "给<contactname><slotactionsmssend><slotactionsmsname>",
+                "pattern": "^给(曹玉树|常良玉|杨锐)(发|写|回|发个|回个|写个|发条|写条|回条|发一个|写一个|回一个|发一条|写一条|回一条)(信息|短信|短消息|短信消息)$",
+                "groups": [
+                    "contactname",
+                    "slotactionsmssend",
+                    "slotactionsmsname"
+                ]
+            }
+        ],
+        "sms.send2": [
+            {
+                "origin": "<slotactionsmssend><slotactionsmsname>给<phonenumber>",
+                "pattern": "^(发|写|回|发个|回个|写个|发条|写条|回条|发一个|写一个|回一个|发一条|写一条|回一条)(信息|短信|短消息|短信消息)给(18813046295|110|120|1111|33333)$",
+                "groups": [
+                    "slotactionsmssend",
+                    "slotactionsmsname",
+                    "phonenumber"
+                ]
+            },
+            {
+                "origin": "<slotactionsmssend><slotactionsmsname>给<phonenumber>",
+                "pattern": "^(发|写|回|发个|回个|写个|发条|写条|回条|发一个|写一个|回一个|发一条|写一条|回一条)(信息|短信|短消息|短信消息)给(18813046295|110|120|1111|33333)$",
+                "groups": [
+                    "slotactionsmssend",
+                    "slotactionsmsname",
+                    "phonenumber"
+                ]
+            },
+            {
+                "origin": "<slotactionsmssend><slotactionsmsname>给<phonenumber>",
+                "pattern": "^(发|写|回|发个|回个|写个|发条|写条|回条|发一个|写一个|回一个|发一条|写一条|回一条)(信息|短信|短消息|短信消息)给(18813046295|110|120|1111|33333)$",
+                "groups": [
+                    "slotactionsmssend",
+                    "slotactionsmsname",
+                    "phonenumber"
+                ]
+            },
+            {
+                "origin": "给<phonenumber><slotactionsmssend><slotactionsmsname>",
+                "pattern": "^给(18813046295|110|120|1111|33333)(发|写|回|发个|回个|写个|发条|写条|回条|发一个|写一个|回一个|发一条|写一条|回一条)(信息|短信|短消息|短信消息)$",
+                "groups": [
+                    "phonenumber",
+                    "slotactionsmssend",
+                    "slotactionsmsname"
+                ]
+            }
+        ],
+        "command.confirm": [
+            {
+                "origin": "<slotactionconfirmcmd1>",
+                "pattern": "^(嗯|好|弄吧|好吧|好的|对的|可以|准你|没问题|就这个|我准了|就这样|就这样吧|我确认|确定|确认|行|行吧|这样就行|go|OK|发|开始吧|好发吧)$",
+                "groups": [
+                    "slotactionconfirmcmd1"
+                ]
+            },
+            {
+                "origin": "<slotactionconfirmcmd2>",
+                "pattern": "^(快发|发吧|可以发了|可以发送了|发短信吧|发送|发送吧|就这么发吧|就这样发送吧|发送短信|我确认|嗯发吧|确认发送|确认发送短信|请发送|请发送短信|速度发送|赶紧发)$",
+                "groups": [
+                    "slotactionconfirmcmd2"
+                ]
+            }
+        ],
+        "command.cancel": [
+            {
+                "origin": "<slotactioncancelcmd1>",
+                "pattern": "^(取消|退出|不对|不是|别|忽略吧|你给我取消|快停|不好|快取消|取消|取消吧|取消不好|不用了|不用了谢谢|不要|不行|放弃|撤回|不要弄|我不要了|别要了|不要了|我要取消|不需要了|算了|用了|算了吧|错了|NO|别发了|不发了|别发短信|别发短信了)$",
+                "groups": [
+                    "slotactioncancelcmd1"
+                ]
+            },
+            {
+                "origin": "<slotactioncancelcmd2>",
+                "pattern": "^(停止|取消吧|取消发送|取消短信|快撤销|不要发|我取消|我不想发了|我不想要发短信|不要发了|不要发短信|我不要发送短信了|我不要了|不要发送了|给我取消|赶紧取消|stop|no)$",
+                "groups": [
+                    "slotactioncancelcmd2"
+                ]
+            }
+        ],
+        "command.select": [
+            {
+                "origin": "第<picknumber>个",
+                "pattern": "^第(一|二|三|四|五|六|七|八|九|十|十一|十二|十三|十四|十五|十六|十七|十八|十九|二十)个$",
+                "groups": [
+                    "picknumber"
+                ]
+            },
+            {
+                "origin": "最后一个",
+                "pattern": "^最后一个$",
+                "groups": []
+            },
+            {
+                "origin": "<photoname>",
+                "pattern": "^(未定义信息)$",
+                "groups": [
+                    "photoname"
+                ]
+            },
+            {
+                "origin": "<clockname>",
+                "pattern": "^(未定义信息)$",
+                "groups": [
+                    "clockname"
+                ]
+            },
+            {
+                "origin": "<cameraname>",
+                "pattern": "^(未定义信息)$",
+                "groups": [
+                    "cameraname"
+                ]
+            },
+            {
+                "origin": "<emailname>",
+                "pattern": "^(未定义信息)$",
+                "groups": [
+                    "emailname"
+                ]
+            },
+            {
+                "origin": "<phonename>",
+                "pattern": "^(未定义信息)$",
+                "groups": [
+                    "phonename"
+                ]
+            },
+            {
+                "origin": "<smsname>",
+                "pattern": "^(未定义信息)$",
+                "groups": [
+                    "smsname"
+                ]
+            },
+            {
+                "origin": "<contactapp>",
+                "pattern": "^(未定义信息)$",
+                "groups": [
+                    "contactapp"
+                ]
+            },
+            {
+                "origin": "<settingname>",
+                "pattern": "^(wifi|振动模式|竖屏锁定|蓝牙|gps)$",
+                "groups": [
+                    "settingname"
+                ]
+            }
+        ],
+        "number.direct": [
+            {
+                "origin": "<phonenumber>",
+                "pattern": "^(18813046295|110|120|1111|33333)$",
+                "groups": [
+                    "phonenumber"
+                ]
+            }
+        ],
+        "number.belong": [
+            {
+                "origin": "<locate>号",
+                "pattern": "^(北京|上海|杭州)号$",
+                "groups": [
+                    "locate"
+                ]
+            },
+            {
+                "origin": "<locate>号码",
+                "pattern": "^(北京|上海|杭州)号码$",
+                "groups": [
+                    "locate"
+                ]
+            },
+            {
+                "origin": "<locate>",
+                "pattern": "^(北京|上海|杭州)$",
+                "groups": [
+                    "locate"
+                ]
+            },
+            {
+                "origin": "<contactname>的<locate>号",
+                "pattern": "^(曹玉树|常良玉|杨锐)的(北京|上海|杭州)号$",
+                "groups": [
+                    "contactname",
+                    "locate"
+                ]
+            },
+            {
+                "origin": "<contactname>的<locate>号码",
+                "pattern": "^(曹玉树|常良玉|杨锐)的(北京|上海|杭州)号码$",
+                "groups": [
+                    "contactname",
+                    "locate"
+                ]
+            }
+        ],
+        "number.yunying": [
+            {
+                "origin": "<yunying>号",
+                "pattern": "^(中国移动|中国联通|中国电信|移动|联通|电信)号$",
+                "groups": [
+                    "yunying"
+                ]
+            },
+            {
+                "origin": "<yunying>号码",
+                "pattern": "^(中国移动|中国联通|中国电信|移动|联通|电信)号码$",
+                "groups": [
+                    "yunying"
+                ]
+            },
+            {
+                "origin": "<yunying>卡",
+                "pattern": "^(中国移动|中国联通|中国电信|移动|联通|电信)卡$",
+                "groups": [
+                    "yunying"
+                ]
+            },
+            {
+                "origin": "<contactname>的<yunying>号",
+                "pattern": "^(曹玉树|常良玉|杨锐)的(中国移动|中国联通|中国电信|移动|联通|电信)号$",
+                "groups": [
+                    "contactname",
+                    "yunying"
+                ]
+            },
+            {
+                "origin": "<contactname>的<yunying>号码",
+                "pattern": "^(曹玉树|常良玉|杨锐)的(中国移动|中国联通|中国电信|移动|联通|电信)号码$",
+                "groups": [
+                    "contactname",
+                    "yunying"
+                ]
+            }
+        ],
+        "number.advanced": [
+            {
+                "origin": "<contactname>的<locate>号",
+                "pattern": "^(曹玉树|常良玉|杨锐)的(北京|上海|杭州)号$",
+                "groups": [
+                    "contactname",
+                    "locate"
+                ]
+            },
+            {
+                "origin": "<contactname>的<locate>号码",
+                "pattern": "^(曹玉树|常良玉|杨锐)的(北京|上海|杭州)号码$",
+                "groups": [
+                    "contactname",
+                    "locate"
+                ]
+            },
+            {
+                "origin": "<contactname>的<yunying>号码",
+                "pattern": "^(曹玉树|常良玉|杨锐)的(中国移动|中国联通|中国电信|移动|联通|电信)号码$",
+                "groups": [
+                    "contactname",
+                    "yunying"
+                ]
+            },
+            {
+                "origin": "<contactname>的<yunying>号",
+                "pattern": "^(曹玉树|常良玉|杨锐)的(中国移动|中国联通|中国电信|移动|联通|电信)号$",
+                "groups": [
+                    "contactname",
+                    "yunying"
+                ]
+            }
+        ],
+        "number.typepick": [
+            {
+                "origin": "<phonetype>",
+                "pattern": "^(住宅)$",
+                "groups": [
+                    "phonetype"
+                ]
+            },
+            {
+                "origin": "<phonetype>号",
+                "pattern": "^(住宅)号$",
+                "groups": [
+                    "phonetype"
+                ]
+            },
+            {
+                "origin": "<phonetype>号码",
+                "pattern": "^(住宅)号码$",
+                "groups": [
+                    "phonetype"
+                ]
+            },
+            {
+                "origin": "<contactname><phonetype>号",
+                "pattern": "^(曹玉树|常良玉|杨锐)(住宅)号$",
+                "groups": [
+                    "contactname",
+                    "phonetype"
+                ]
+            },
+            {
+                "origin": "<contactname>的<phonetype>号",
+                "pattern": "^(曹玉树|常良玉|杨锐)的(住宅)号$",
+                "groups": [
+                    "contactname",
+                    "phonetype"
+                ]
+            },
+            {
+                "origin": "<contactname><phonetype>号码",
+                "pattern": "^(曹玉树|常良玉|杨锐)(住宅)号码$",
+                "groups": [
+                    "contactname",
+                    "phonetype"
+                ]
+            },
+            {
+                "origin": "<contactname>的<phonetype>号码",
+                "pattern": "^(曹玉树|常良玉|杨锐)的(住宅)号码$",
+                "groups": [
+                    "contactname",
+                    "phonetype"
+                ]
+            }
+        ],
+        "simcard.pick": [
+            {
+                "origin": "卡<simnumber>",
+                "pattern": "^卡(1|2)$",
+                "groups": [
+                    "simnumber"
+                ]
+            },
+            {
+                "origin": "sim卡<simnumber>",
+                "pattern": "^sim卡(1|2)$",
+                "groups": [
+                    "simnumber"
+                ]
+            }
+        ],
+        "music.cmd": [
+            {
+                "origin": "打开音乐",
+                "pattern": "^打开音乐$",
+                "groups": []
+            },
+            {
+                "origin": "播放音乐",
+                "pattern": "^播放音乐$",
+                "groups": []
+            },
+            {
+                "origin": "播放歌曲",
+                "pattern": "^播放歌曲$",
+                "groups": []
+            },
+            {
+                "origin": "听歌",
+                "pattern": "^听歌$",
+                "groups": []
+            },
+            {
+                "origin": "音乐",
+                "pattern": "^音乐$",
+                "groups": []
+            },
+            {
+                "origin": "开始播放",
+                "pattern": "^开始播放$",
+                "groups": []
+            },
+            {
+                "origin": "放首歌",
+                "pattern": "^放首歌$",
+                "groups": []
+            },
+            {
+                "origin": "播放",
+                "pattern": "^播放$",
+                "groups": []
+            },
+            {
+                "origin": "继续播放",
+                "pattern": "^继续播放$",
+                "groups": []
+            },
+            {
+                "origin": "暂停",
+                "pattern": "^暂停$",
+                "groups": []
+            },
+            {
+                "origin": "停止",
+                "pattern": "^停止$",
+                "groups": []
+            },
+            {
+                "origin": "暂停音乐",
+                "pattern": "^暂停音乐$",
+                "groups": []
+            },
+            {
+                "origin": "关闭音乐",
+                "pattern": "^关闭音乐$",
+                "groups": []
+            },
+            {
+                "origin": "上一首",
+                "pattern": "^上一首$",
+                "groups": []
+            },
+            {
+                "origin": "下一首",
+                "pattern": "^下一首$",
+                "groups": []
+            },
+            {
+                "origin": "换一首",
+                "pattern": "^换一首$",
+                "groups": []
+            },
+            {
+                "origin": "重播",
+                "pattern": "^重播$",
+                "groups": []
+            },
+            {
+                "origin": "随机播放",
+                "pattern": "^随机播放$",
+                "groups": []
+            },
+            {
+                "origin": "顺序播放",
+                "pattern": "^顺序播放$",
+                "groups": []
+            },
+            {
+                "origin": "列表播放",
+                "pattern": "^列表播放$",
+                "groups": []
+            },
+            {
+                "origin": "单曲播放",
+                "pattern": "^单曲播放$",
+                "groups": []
+            },
+            {
+                "origin": "单曲循环",
+                "pattern": "^单曲循环$",
+                "groups": []
+            },
+            {
+                "origin": "列表循环",
+                "pattern": "^列表循环$",
+                "groups": []
+            },
+            {
+                "origin": "循环播放",
+                "pattern": "^循环播放$",
+                "groups": []
+            }
+        ],
+        "music.playsong": [
+            {
+                "origin": "<slotactionplaysong><songname>",
+                "pattern": "^(打开音乐|播放音乐|播放歌曲|听歌|音乐|播放|放|来一首|听一首|放一首|放首)(七里香)$",
+                "groups": [
+                    "slotactionplaysong",
+                    "songname"
+                ]
+            }
+        ],
+        "music.playsinger": [
+            {
+                "origin": "<slotactionplaysong><singername>的歌",
+                "pattern": "^(打开音乐|播放音乐|播放歌曲|听歌|音乐|播放|放|来一首|听一首|放一首|放首)(周杰伦)的歌$",
+                "groups": [
+                    "slotactionplaysong",
+                    "singername"
+                ]
+            }
+        ],
+        "music.playalbum": [
+            {
+                "origin": "播放专辑<albumname>",
+                "pattern": "^播放专辑(叶惠美)$",
+                "groups": [
+                    "albumname"
+                ]
+            }
+        ],
+        "music.playlist": [
+            {
+                "origin": "播放列表<musiclistname>",
+                "pattern": "^播放列表(每周一歌)$",
+                "groups": [
+                    "musiclistname"
+                ]
+            }
+        ],
+        "app.open": [
+            {
+                "origin": "<appname>",
+                "pattern": "^(微信|相机|wifi|振动模式|竖屏锁定|蓝牙|gps|相册|图库|闹钟|时钟|闹钟时钟|秒表|计时器|世界时钟|相机|照相机|电子邮件|邮箱|电子邮箱|email|电话|拨号|信息|短信|联系人|电话本|通讯录)$",
+                "groups": [
+                    "appname"
+                ]
+            },
+            {
+                "origin": "<slotactionappopen><appname>",
+                "pattern": "^(打开|运行|启动|开启|进入)(微信|相机|wifi|振动模式|竖屏锁定|蓝牙|gps|相册|图库|闹钟|时钟|闹钟时钟|秒表|计时器|世界时钟|相机|照相机|电子邮件|邮箱|电子邮箱|email|电话|拨号|信息|短信|联系人|电话本|通讯录)$",
+                "groups": [
+                    "slotactionappopen",
+                    "appname"
+                ]
+            }
+        ],
+        "app.settingopen": [
+            {
+                "origin": "打开<settingname>",
+                "pattern": "^打开(wifi|振动模式|竖屏锁定|蓝牙|gps)$",
+                "groups": [
+                    "settingname"
+                ]
+            }
+        ],
+        "app.settingclose": [
+            {
+                "origin": "关闭<settingname>",
+                "pattern": "^关闭(wifi|振动模式|竖屏锁定|蓝牙|gps)$",
+                "groups": [
+                    "settingname"
+                ]
+            }
+        ],
+        "contact.search": [
+            {
+                "origin": "查看<contactname>",
+                "pattern": "^查看(曹玉树|常良玉|杨锐)$",
+                "groups": [
+                    "contactname"
+                ]
+            },
+            {
+                "origin": "查找<contactname>",
+                "pattern": "^查找(曹玉树|常良玉|杨锐)$",
+                "groups": [
+                    "contactname"
+                ]
+            },
+            {
+                "origin": "查看<contactname>的<slotactioncaontactsearch>",
+                "pattern": "^查看(曹玉树|常良玉|杨锐)的(电话是多少|电话号码|电话号码是多少|手机号码是多少|手机号|电话|电话号码)$",
+                "groups": [
+                    "contactname",
+                    "slotactioncaontactsearch"
+                ]
+            },
+            {
+                "origin": "查找<contactname>的<slotactioncaontactsearch>",
+                "pattern": "^查找(曹玉树|常良玉|杨锐)的(电话是多少|电话号码|电话号码是多少|手机号码是多少|手机号|电话|电话号码)$",
+                "groups": [
+                    "contactname",
+                    "slotactioncaontactsearch"
+                ]
+            },
+            {
+                "origin": "<contactname><slotactioncaontactsearch>",
+                "pattern": "^(曹玉树|常良玉|杨锐)(电话是多少|电话号码|电话号码是多少|手机号码是多少|手机号|电话|电话号码)$",
+                "groups": [
+                    "contactname",
+                    "slotactioncaontactsearch"
+                ]
+            },
+            {
+                "origin": "<contactname>",
+                "pattern": "^(曹玉树|常良玉|杨锐)$",
+                "groups": [
+                    "contactname"
+                ]
+            }
+        ],
+        "general.action": [
+            {
+                "origin": "<generalslot>",
+                "pattern": "^(明天我想去打球)$",
+                "groups": [
+                    "generalslot"
+                ]
+            }
+        ],
+        "contact.send": [
+            {
+                "origin": "把<contactname>的<slotactioncontactsend>发送给<contactname>",
+                "pattern": "^把(曹玉树|常良玉|杨锐)的(电话|号码|电话号码|手机号码|手机号)发送给(曹玉树|常良玉|杨锐)$",
+                "groups": [
+                    "contactname",
+                    "slotactioncontactsend",
+                    "contactname"
+                ]
+            }
+        ],
+        "clock.new": [
+            {
+                "origin": "<slotactionclockset><slotactionclockday><slotactionclocknoon><remindhour>点的闹钟",
+                "pattern": "^(新建|设置)(今天|明天)(凌晨|上午|下午|中午|晚上)(一|二|三|四|五|六|七|八|九|十|十一|十二)点的闹钟$",
+                "groups": [
+                    "slotactionclockset",
+                    "slotactionclockday",
+                    "slotactionclocknoon",
+                    "remindhour"
+                ]
+            },
+            {
+                "origin": "<slotactionclockset><slotactionclocknoon><remindhour>点的闹钟",
+                "pattern": "^(新建|设置)(凌晨|上午|下午|中午|晚上)(一|二|三|四|五|六|七|八|九|十|十一|十二)点的闹钟$",
+                "groups": [
+                    "slotactionclockset",
+                    "slotactionclocknoon",
+                    "remindhour"
+                ]
+            }
+        ],
+        "remind.new": [
+            {
+                "origin": "<slotactionclockset><slotactionclockday><slotactionclocknoon><remindhour>点的日程",
+                "pattern": "^(新建|设置)(今天|明天)(凌晨|上午|下午|中午|晚上)(一|二|三|四|五|六|七|八|九|十|十一|十二)点的日程$",
+                "groups": [
+                    "slotactionclockset",
+                    "slotactionclockday",
+                    "slotactionclocknoon",
+                    "remindhour"
+                ]
+            },
+            {
+                "origin": "<slotactionclockset><slotactionclocknoon><remindhour>点的日程",
+                "pattern": "^(新建|设置)(凌晨|上午|下午|中午|晚上)(一|二|三|四|五|六|七|八|九|十|十一|十二)点的日程$",
+                "groups": [
+                    "slotactionclockset",
+                    "slotactionclocknoon",
+                    "remindhour"
+                ]
+            }
+        ]
+    },
+    "grammar": "<generalslot> = 明天我想去打球;\n<contactname> = 曹玉树| \n常良玉| \n杨锐;\n<phonenumber> = 18813046295| \n110| \n120| \n1111| \n33333;\n<picknumber> = 一| \n二| \n三| \n四| \n五| \n六| \n七| \n八| \n九| \n十| \n十一| \n十二| \n十三| \n十四| \n十五| \n十六| \n十七| \n十八| \n十九| \n二十;\n<locate> = 北京| \n上海| \n杭州;\n<yunying> = 中国移动| \n中国联通| \n中国电信| \n移动| \n联通| \n电信;\n<simnumber> = 1| \n2;\n<singername> = 周杰伦;\n<songname> = 七里香;\n<albumname> = 叶惠美;\n<musiclistname> = 每周一歌;\n<appname> = 微信| \n相机| \nwifi| \n振动模式| \n竖屏锁定| \n蓝牙| \ngps| \n相册| \n图库| \n闹钟| \n时钟| \n闹钟时钟| \n秒表| \n计时器| \n世界时钟| \n相机| \n照相机| \n电子邮件| \n邮箱| \n电子邮箱| \nemail| \n电话| \n拨号| \n信息| \n短信| \n联系人| \n电话本| \n通讯录;\n<settingname> = wifi| \n振动模式| \n竖屏锁定| \n蓝牙| \ngps;\n<remindmonth> = 一| \n二| \n三| \n四| \n五| \n六| \n七| \n八| \n九| \n十| \n十一| \n十二;\n<remindday> = 一| \n二| \n三| \n四| \n五| \n六| \n七| \n八| \n九| \n十| \n十一| \n十二| \n十三| \n十四| \n十五| \n十六| \n十七| \n十八| \n十九| \n二十| \n二十一| \n二十二| \n二十三| \n二十四| \n二十五| \n二十六| \n二十七| \n二十八| \n二十九| \n三十| \n三十一;\n<remindhour> = 一| \n二| \n三| \n四| \n五| \n六| \n七| \n八| \n九| \n十| \n十一| \n十二;\n<remindminute> = 一| \n二| \n三| \n四| \n五| \n六| \n七| \n八| \n九| \n十| \n十一| \n十二| \n十三| \n十四| \n十五| \n十六| \n十七| \n十八| \n十九| \n二十| \n二十一| \n二十二| \n二十三| \n二十四| \n二十五| \n二十六| \n二十七| \n二十八| \n二十九| \n三十| \n三十一| \n三十二| \n三十三| \n三十四| \n三十五| \n三十六| \n三十七| \n三十八| \n三十九| \n四十| \n四十一| \n四十二| \n四十三| \n四十四| \n四十五| \n四十六| \n四十七| \n四十八| \n四十九| \n五十| \n五十一| \n五十二| \n五十三| \n五十四| \n五十五| \n五十六| \n五十七| \n五十八| \n五十九;\n<remindquarter> = 一| \n二| \n三| \n四;\n<phonetype> = 住宅;\n<slotactionconfirmcmd1> = 嗯| \n好| \n弄吧| \n好吧| \n好的| \n对的| \n可以| \n准你| \n没问题| \n就这个| \n我准了| \n就这样| \n就这样吧| \n我确认| \n确定| \n确认| \n行| \n行吧| \n这样就行| \ngo| \nOK| \n发| \n开始吧| \n好发吧;\n<slotactionconfirmcmd2> = 快发| \n发吧| \n可以发了| \n可以发送了| \n发短信吧| \n发送| \n发送吧| \n就这么发吧| \n就这样发送吧| \n发送短信| \n我确认| \n嗯发吧| \n确认发送| \n确认发送短信| \n请发送| \n请发送短信| \n速度发送| \n赶紧发;\n<slotactioncancelcmd1> = 取消| \n退出| \n不对| \n不是| \n别| \n忽略吧| \n你给我取消| \n快停| \n不好| \n快取消| \n取消| \n取消吧| \n取消不好| \n不用了| \n不用了谢谢| \n不要| \n不行| \n放弃| \n撤回| \n不要弄| \n我不要了| \n别要了| \n不要了| \n我要取消| \n不需要了| \n算了| \n用了| \n算了吧| \n错了| \nNO| \n别发了| \n不发了| \n别发短信| \n别发短信了;\n<slotactioncancelcmd2> = 停止| \n取消吧| \n取消发送| \n取消短信| \n快撤销| \n不要发| \n我取消| \n我不想发了| \n我不想要发短信| \n不要发了| \n不要发短信| \n我不要发送短信了| \n我不要了| \n不要发送了| \n给我取消| \n赶紧取消| \nstop| \nno;\n<slotactiontelephonecall> = 打个电话给| \n回个电话给| \n打电话给| \n打给| \n拨打| \n呼叫| \n回电话给| \n打给;\n<slotactiontelephonecall2> = 回电话| \n回个电话| \n打电话| \n打个电话;\n<slotactionsmsname> = 信息| \n短信| \n短消息| \n短信消息;\n<slotactionsmssend> = 发| \n写| \n回| \n发个| \n回个| \n写个| \n发条| \n写条| \n回条| \n发一个| \n写一个| \n回一个| \n发一条| \n写一条| \n回一条;\n<slotactionappopen> = 打开| \n运行| \n启动| \n开启| \n进入;\n<slotactioncaontactsearch> = 电话是多少| \n电话号码| \n电话号码是多少| \n手机号码是多少| \n手机号| \n电话| \n电话号码;\n<slotactioncontactsend> = 电话| \n号码| \n电话号码| \n手机号码| \n手机号;\n<slotactionplaysong> = 打开音乐| \n播放音乐| \n播放歌曲| \n听歌| \n音乐| \n播放| \n放| \n来一首| \n听一首| \n放一首| \n放首;\n<slotactionnumberpick> = 手机| \n手机号码| \n住宅| \n住宅号码;\n<slotactionclockset> = 新建| \n设置;\n<slotactionclockday> = 今天| \n明天;\n<slotactionclocknoon> = 凌晨| \n上午| \n下午| \n中午| \n晚上;\n<auto_create_node> = 最后一个 | \n打开音乐 | \n播放音乐 | \n播放歌曲 | \n听歌 | \n音乐 | \n开始播放 | \n放首歌 | \n播放 | \n继续播放 | \n暂停 | \n停止 | \n暂停音乐 | \n关闭音乐 | \n上一首 | \n下一首 | \n换一首 | \n重播 | \n随机播放 | \n顺序播放 | \n列表播放 | \n单曲播放 | \n单曲循环 | \n列表循环 | \n循环播放;\n<_wakeup> = 唤醒词占位符;\n\n\n_SCENE_ID_ 0\n\n( <auto_create_node> )\n\n( <_wakeup><auto_create_node> )\n\n( <slotactiontelephonecall2> )\n( <_wakeup><slotactiontelephonecall2> )\n( <slotactiontelephonecall><contactname> )\n( <_wakeup><slotactiontelephonecall><contactname> )\n( 给<contactname><slotactiontelephonecall2> )\n( <_wakeup>给<contactname><slotactiontelephonecall2> )\n( <slotactiontelephonecall><phonenumber> )\n( <_wakeup><slotactiontelephonecall><phonenumber> )\n( 给<phonenumber><slotactiontelephonecall2> )\n( <_wakeup>给<phonenumber><slotactiontelephonecall2> )\n( <slotactionsmssend><slotactionsmsname> )\n( <_wakeup><slotactionsmssend><slotactionsmsname> )\n( <slotactionsmssend><slotactionsmsname>给<contactname> )\n( <_wakeup><slotactionsmssend><slotactionsmsname>给<contactname> )\n( <slotactionsmssend><slotactionsmsname>给<contactname> )\n( <_wakeup><slotactionsmssend><slotactionsmsname>给<contactname> )\n( <slotactionsmssend><slotactionsmsname>给<contactname> )\n( <_wakeup><slotactionsmssend><slotactionsmsname>给<contactname> )\n( 给<contactname><slotactionsmssend><slotactionsmsname> )\n( <_wakeup>给<contactname><slotactionsmssend><slotactionsmsname> )\n( <slotactionsmssend><slotactionsmsname>给<phonenumber> )\n( <_wakeup><slotactionsmssend><slotactionsmsname>给<phonenumber> )\n( <slotactionsmssend><slotactionsmsname>给<phonenumber> )\n( <_wakeup><slotactionsmssend><slotactionsmsname>给<phonenumber> )\n( <slotactionsmssend><slotactionsmsname>给<phonenumber> )\n( <_wakeup><slotactionsmssend><slotactionsmsname>给<phonenumber> )\n( 给<phonenumber><slotactionsmssend><slotactionsmsname> )\n( <_wakeup>给<phonenumber><slotactionsmssend><slotactionsmsname> )\n( <slotactionconfirmcmd1> )\n( <_wakeup><slotactionconfirmcmd1> )\n( <slotactionconfirmcmd2> )\n( <_wakeup><slotactionconfirmcmd2> )\n( <slotactioncancelcmd1> )\n( <_wakeup><slotactioncancelcmd1> )\n( <slotactioncancelcmd2> )\n( <_wakeup><slotactioncancelcmd2> )\n( 第<picknumber>个 )\n( <_wakeup>第<picknumber>个 )\n( <photoname> )\n( <_wakeup><photoname> )\n( <clockname> )\n( <_wakeup><clockname> )\n( <cameraname> )\n( <_wakeup><cameraname> )\n( <emailname> )\n( <_wakeup><emailname> )\n( <phonename> )\n( <_wakeup><phonename> )\n( <smsname> )\n( <_wakeup><smsname> )\n( <contactapp> )\n( <_wakeup><contactapp> )\n( <settingname> )\n( <_wakeup><settingname> )\n( <phonenumber> )\n( <_wakeup><phonenumber> )\n( <locate>号 )\n( <_wakeup><locate>号 )\n( <locate>号码 )\n( <_wakeup><locate>号码 )\n( <locate> )\n( <_wakeup><locate> )\n( <contactname>的<locate>号 )\n( <_wakeup><contactname>的<locate>号 )\n( <contactname>的<locate>号码 )\n( <_wakeup><contactname>的<locate>号码 )\n( <yunying>号 )\n( <_wakeup><yunying>号 )\n( <yunying>号码 )\n( <_wakeup><yunying>号码 )\n( <yunying>卡 )\n( <_wakeup><yunying>卡 )\n( <contactname>的<yunying>号 )\n( <_wakeup><contactname>的<yunying>号 )\n( <contactname>的<yunying>号码 )\n( <_wakeup><contactname>的<yunying>号码 )\n( <contactname>的<locate>号 )\n( <_wakeup><contactname>的<locate>号 )\n( <contactname>的<locate>号码 )\n( <_wakeup><contactname>的<locate>号码 )\n( <contactname>的<yunying>号码 )\n( <_wakeup><contactname>的<yunying>号码 )\n( <contactname>的<yunying>号 )\n( <_wakeup><contactname>的<yunying>号 )\n( <phonetype> )\n( <_wakeup><phonetype> )\n( <phonetype>号 )\n( <_wakeup><phonetype>号 )\n( <phonetype>号码 )\n( <_wakeup><phonetype>号码 )\n( <contactname><phonetype>号 )\n( <_wakeup><contactname><phonetype>号 )\n( <contactname>的<phonetype>号 )\n( <_wakeup><contactname>的<phonetype>号 )\n( <contactname><phonetype>号码 )\n( <_wakeup><contactname><phonetype>号码 )\n( <contactname>的<phonetype>号码 )\n( <_wakeup><contactname>的<phonetype>号码 )\n( 卡<simnumber> )\n( <_wakeup>卡<simnumber> )\n( sim卡<simnumber> )\n( <_wakeup>sim卡<simnumber> )\n( <slotactionplaysong><songname> )\n( <_wakeup><slotactionplaysong><songname> )\n( <slotactionplaysong><singername>的歌 )\n( <_wakeup><slotactionplaysong><singername>的歌 )\n( 播放专辑<albumname> )\n( <_wakeup>播放专辑<albumname> )\n( 播放列表<musiclistname> )\n( <_wakeup>播放列表<musiclistname> )\n( <appname> )\n( <_wakeup><appname> )\n( <slotactionappopen><appname> )\n( <_wakeup><slotactionappopen><appname> )\n( 打开<settingname> )\n( <_wakeup>打开<settingname> )\n( 关闭<settingname> )\n( <_wakeup>关闭<settingname> )\n( 查看<contactname> )\n( <_wakeup>查看<contactname> )\n( 查找<contactname> )\n( <_wakeup>查找<contactname> )\n( 查看<contactname>的<slotactioncaontactsearch> )\n( <_wakeup>查看<contactname>的<slotactioncaontactsearch> )\n( 查找<contactname>的<slotactioncaontactsearch> )\n( <_wakeup>查找<contactname>的<slotactioncaontactsearch> )\n( <contactname><slotactioncaontactsearch> )\n( <_wakeup><contactname><slotactioncaontactsearch> )\n( <contactname> )\n( <_wakeup><contactname> )\n( <generalslot> )\n( <_wakeup><generalslot> )\n( 把<contactname>的<slotactioncontactsend>发送给<contactname> )\n( <_wakeup>把<contactname>的<slotactioncontactsend>发送给<contactname> )\n( <slotactionclockset><slotactionclockday><slotactionclocknoon><remindhour>点的闹钟 )\n( <_wakeup><slotactionclockset><slotactionclockday><slotactionclocknoon><remindhour>点的闹钟 )\n( <slotactionclockset><slotactionclocknoon><remindhour>点的闹钟 )\n( <_wakeup><slotactionclockset><slotactionclocknoon><remindhour>点的闹钟 )\n( <slotactionclockset><slotactionclockday><slotactionclocknoon><remindhour>点的日程 )\n( <_wakeup><slotactionclockset><slotactionclockday><slotactionclocknoon><remindhour>点的日程 )\n( <slotactionclockset><slotactionclocknoon><remindhour>点的日程 )\n( <_wakeup><slotactionclockset><slotactionclocknoon><remindhour>点的日程 )\n",
+    "origin_slots": "generalslot = 明天我想去打球    \ncontactname = 曹玉树,常良玉,杨锐\nphonenumber = 18813046295,110,120,1111,33333\npicknumber  = 一,二,三,四,五,六,七,八,九,十,十一,十二,十三,十四,十五,十六,十七,十八,十九,二十\nlocate      = 北京,上海,杭州\nyunying     = 中国移动,中国联通,中国电信,移动,联通,电信\nsimnumber   = 1,2 \nsingername  = 周杰伦\nsongname    = 七里香\nalbumname   = 叶惠美\nmusiclistname    = 每周一歌\nappname     = 微信,相机,wifi,振动模式,竖屏锁定,蓝牙,gps,相册,图库,闹钟,时钟,闹钟时钟,秒表,计时器,世界时钟,相机,照相机,电子邮件,邮箱,电子邮箱,email,电话,拨号,信息,短信,联系人,电话本,通讯录\nsettingname = wifi,振动模式,竖屏锁定,蓝牙,gps\nremindmonth = 一,二,三,四,五,六,七,八,九,十,十一,十二\nremindday   = 一,二,三,四,五,六,七,八,九,十,十一,十二,十三,十四,十五,十六,十七,十八,十九,二十,二十一,二十二,二十三,二十四,二十五,二十六,二十七,二十八,二十九,三十,三十一\nremindhour  = 一,二,三,四,五,六,七,八,九,十,十一,十二\nremindminute      = 一,二,三,四,五,六,七,八,九,十,十一,十二,十三,十四,十五,十六,十七,十八,十九,二十,二十一,二十二,二十三,二十四,二十五,二十六,二十七,二十八,二十九,三十,三十一,三十二,三十三,三十四,三十五,三十六,三十七,三十八,三十九,四十,四十一,四十二,四十三,四十四,四十五,四十六,四十七,四十八,四十九,五十,五十一,五十二,五十三,五十四,五十五,五十六,五十七,五十八,五十九\nremindquarter     = 一,二,三,四\nphonetype = 住宅\nslotactionconfirmcmd1 = 嗯,好,弄吧,好吧,好的,对的,可以,准你,没问题,就这个,我准了,就这样,就这样吧,我确认,确定,确认,行,行吧,这样就行,go,OK,发,开始吧,好发吧\nslotactionconfirmcmd2=快发,发吧,可以发了,可以发送了,发短信吧,发送,发送吧,就这么发吧,就这样发送吧,发送短信,我确认,嗯发吧,确认发送,确认发送短信,请发送,请发送短信,速度发送,赶紧发\nslotactioncancelcmd1 = 取消,退出,不对,不是,别,忽略吧,你给我取消,快停,不好,快取消,取消,取消吧,取消不好,不用了,不用了谢谢,不要,不行,放弃,撤回,不要弄,我不要了,别要了,不要了,我要取消,不需要了,算了,用了,算了吧,错了,NO,别发了,不发了,别发短信,别发短信了\nslotactioncancelcmd2=停止,取消吧,取消发送,取消短信,快撤销,不要发,我取消,我不想发了,我不想要发短信,不要发了,不要发短信,我不要发送短信了,我不要了,不要发送了,给我取消,赶紧取消,stop,no\nslotactiontelephonecall = 打个电话给,回个电话给,打电话给,打给,拨打,呼叫,回电话给,打给\nslotactiontelephonecall2 = 回电话,回个电话,打电话,打个电话\nslotactionsmsname = 信息,短信,短消息,短信消息\nslotactionsmssend = 发,写,回,发个,回个,写个,发条,写条,回条,发一个,写一个,回一个,发一条,写一条,回一条\nslotactionappopen = 打开,运行,启动,开启,进入\nslotactioncaontactsearch = 电话是多少,电话号码,电话号码是多少,手机号码是多少,手机号,电话,电话号码,\nslotactioncontactsend = 电话,号码,电话号码,手机号码,手机号\nslotactionplaysong = 打开音乐,播放音乐,播放歌曲,听歌,音乐,播放,放,来一首,听一首,放一首,放首\nslotactionnumberpick = 手机,手机号码,住宅,住宅号码\nslotactionclockset = 新建,设置\nslotactionclockday = 今天,明天\nslotactionclocknoon = 凌晨,上午,下午,中午,晚上",
+    "origin_rules": "\ntelephone.open = <slotactiontelephonecall2>\n\ntelephone.call1 =  <slotactiontelephonecall><contactname>,给<contactname><slotactiontelephonecall2>\n             \n\ntelephone.call2 =  <slotactiontelephonecall><phonenumber>,给<phonenumber><slotactiontelephonecall2>\n\nsms.opencmd = <slotactionsmssend><slotactionsmsname>\nsms.send1 = <slotactionsmssend><slotactionsmsname>给<contactname>,<slotactionsmssend><slotactionsmsname>给<contactname>,<slotactionsmssend><slotactionsmsname>给<contactname>,给<contactname><slotactionsmssend><slotactionsmsname>\nsms.send2 = <slotactionsmssend><slotactionsmsname>给<phonenumber>,<slotactionsmssend><slotactionsmsname>给<phonenumber>,<slotactionsmssend><slotactionsmsname>给<phonenumber>,给<phonenumber><slotactionsmssend><slotactionsmsname>\n\n\ncommand.confirm = <slotactionconfirmcmd1>,<slotactionconfirmcmd2>\ncommand.cancel  = <slotactioncancelcmd1>,<slotactioncancelcmd2>\ncommand.select  = 第<picknumber>个,最后一个,<photoname>,<clockname>,<cameraname>,<emailname>,<phonename>,<smsname>,<contactapp>,<settingname>\n\n\nnumber.direct   = <phonenumber>\nnumber.belong   = <locate>号,<locate>号码,<locate>,<contactname>的<locate>号,<contactname>的<locate>号码\nnumber.yunying  = <yunying>号,<yunying>号码,<yunying>卡,<contactname>的<yunying>号,<contactname>的<yunying>号码\nnumber.advanced = <contactname>的<locate>号,<contactname>的<locate>号码,<contactname>的<yunying>号码,<contactname>的<yunying>号\nnumber.typepick = <phonetype>,<phonetype>号,<phonetype>号码,<contactname><phonetype>号,<contactname>的<phonetype>号,<contactname><phonetype>号码,<contactname>的<phonetype>号码\n\nsimcard.pick    = 卡<simnumber>,sim卡<simnumber>\n\nmusic.cmd = 打开音乐,播放音乐,播放歌曲,听歌,音乐,开始播放,放首歌,播放,继续播放,暂停,停止,暂停音乐,关闭音乐,上一首,下一首,换一首,重播,随机播放,顺序播放,列表播放,单曲播放,单曲循环,列表循环,循环播放\n\nmusic.playsong    = <slotactionplaysong><songname>\nmusic.playsinger  = <slotactionplaysong><singername>的歌\nmusic.playalbum   = 播放专辑<albumname>\nmusic.playlist    = 播放列表<musiclistname>\napp.open   = <appname>,<slotactionappopen><appname>\napp.settingopen  = 打开<settingname>\napp.settingclose = 关闭<settingname>\ncontact.search = 查看<contactname>,查找<contactname>,查看<contactname>的<slotactioncaontactsearch>,查找<contactname>的<slotactioncaontactsearch>,<contactname><slotactioncaontactsearch>,<contactname>\ngeneral.action = <generalslot>\ncontact.send   = 把<contactname>的<slotactioncontactsend>发送给<contactname>\nclock.new = <slotactionclockset><slotactionclockday><slotactionclocknoon><remindhour>点的闹钟,<slotactionclockset><slotactionclocknoon><remindhour>点的闹钟\nremind.new = <slotactionclockset><slotactionclockday><slotactionclocknoon><remindhour>点的日程,<slotactionclockset><slotactionclocknoon><remindhour>点的日程"
+}

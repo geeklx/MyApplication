@@ -1,0 +1,275 @@
+{
+  "model": 658,
+  "apps": {
+    "app": [
+      {
+        "target": "cook_book",
+        "class": "com.haiersmart.sfnation.ui.cookbooknew.CookBookActivityNew",
+        "operation-list": {
+          "operation": [
+            {
+              "attr": "open",
+              "query-list": {
+                "query": [
+                  "打开菜谱",
+                  "菜谱",
+                  "进入菜谱",
+                  "进入菜谱界面",
+                  "我要打开菜谱",
+                  "我想看看菜谱",
+                  "帮我打开菜谱"
+                ]
+              }
+            },
+            {
+              "attr": "close",
+              "query-list": {
+                "query": [
+                  "关闭菜谱",
+                  "关闭菜谱界面",
+                  "我要关闭菜谱",
+                  "不想看菜谱了",
+                  "把菜谱关掉"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "target": "food_management",
+        "class": "com.haiersmart.sfnation.ui.cookbook.FoodManagerNewBanActivity",
+        "operation-list": {
+          "operation": [
+            {
+              "attr": "open",
+              "query-list": {
+                "query": [
+                  "打开食材管理",
+                  "食材管理",
+                  "打开石材管理",
+                  "我要打开食材管理",
+                  "我要打开石材管理",
+                  "我想看看食材管理",
+                  "看看冰箱食材",
+                  "冰箱里面有什么吃的",
+                  "进入食材管理"
+                ]
+              }
+            },
+            {
+              "attr": "close",
+              "query-list": {
+                "query": [
+                  "关闭食材管理",
+                  "帮我关闭食材管理",
+                  "不想看食材管理了",
+                  "关闭石材管理",
+                  "帮我关闭石材管理",
+                  "不想看石材管理了"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "target": "fm",
+        "class": "com.haiersmart.sfnation.ui.fm.FMMainActivity",
+        "operation-list": {
+          "operation": [
+            {
+              "attr": "open",
+              "query-list": {
+                "query": [
+                  "打开电台",
+                  "听电台",
+                  "我要打开电台",
+                  "我想听电台",
+                  "我要听电台",
+                  "帮我打开电台",
+                  "进入电台"
+                ]
+              }
+            },
+            {
+              "attr": "close",
+              "query-list": {
+                "query": [
+                  "关闭电台",
+                  "帮我关闭电台",
+                  "我不想听电台了",
+                  "不想听电台了"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "target": "video",
+        "class": "com.haiersmart.sfnation.ui.youku.YouKuMainActivityNew",
+        "operation-list": {
+          "operation": [
+            {
+              "attr": "open",
+              "query-list": {
+                "query": [
+                  "打开视频",
+                  "看视频",
+                  "打开视频界面",
+                  "打开优酷",
+                  "打开优酷视频",
+                  "我要打开视频",
+                  "我想看视频",
+                  "帮我打开视频",
+                  "进入视频"
+                ]
+              }
+            },
+            {
+              "attr": "close",
+              "query-list": {
+                "query": [
+                  "关闭视频",
+                  "关闭优酷",
+                  "关闭优酷视频",
+                  "帮我关闭视频",
+                  "不想看视频了"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "target": "shop",
+        "class": "com.haiersmart.sfnation.ui.ec.ShopIndexActivity",
+        "operation-list": {
+          "operation": [
+            {
+              "attr": "open",
+              "query-list": {
+                "query": [
+                  "打开商城",
+                  "商城",
+                  "我要打开商城",
+                  "我想买水果",
+                  "帮我打开商城",
+                  "看看最近有什么好吃的",
+                  "我想购物",
+                  "我要购物"
+                ]
+              }
+            },
+            {
+              "attr": "close",
+              "query-list": {
+                "query": [
+                  "关闭商城",
+                  "帮我关闭商城",
+                  "不想买水果了",
+                  "我不想购物了",
+                  "我不要购物了"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "target": "settings",
+        "class": "com.haiersmart.sfnation.fragment.systemsetting.systemtwo.SystemIndexActivity",
+        "operation-list": {
+          "operation": [
+            {
+              "attr": "open",
+              "query-list": {
+                "query": [
+                  "设置",
+                  "打开设置",
+                  "我要打开设置",
+                  "进入设置界面",
+                  "帮我打开设置",
+                  "设置功能都有什么"
+                ]
+              }
+            },
+            {
+              "attr": "close",
+              "query-list": {
+                "query": [
+                  "关闭设置",
+                  "关闭设置界面",
+                  "退出设置"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "target": "web",
+        "class": "hois.web",
+        "operation-list": {
+          "operation": [
+            {
+              "attr": "open",
+              "query-list": {
+                "query": [
+                  "浏览器",
+                  "打开浏览器",
+                  "我要打开浏览器",
+                  "进入浏览器界面",
+                  "帮我打开浏览器",
+                  "浏览器功能都有什么"
+                ]
+              }
+            },
+            {
+              "attr": "close",
+              "query-list": {
+                "query": [
+                  "返回",
+                  "返回上一页",
+                  "关闭浏览器",
+                  "关闭浏览器界面",
+                  "退出浏览器"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "target": "home",
+        "class": "com.haiersmart.sfnation.ui.MainActivity",
+        "operation-list": {
+          "operation": [
+            {
+              "attr": "open",
+              "query-list": {
+                "query": [
+                  "返回首页",
+                  "回到首页",
+                  "回首页",
+                  "打开首页",
+                  "去首页",
+                  "去首页吧"
+                ]
+              }
+            },
+            {
+              "attr": "close",
+              "query-list": {
+                "query": [
+                  "返回首页"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
