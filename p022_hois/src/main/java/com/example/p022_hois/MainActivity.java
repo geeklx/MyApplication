@@ -1,15 +1,18 @@
 package com.example.p022_hois;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.p022_hois.activity.TwoMainActivity;
-import com.example.p022_hois.activity.WebViewMainActivity;
 import com.example.p022_hois.hioscommon.AdListItem;
 import com.example.p022_hois.hoisjump.HiosHelper;
 
 public class MainActivity extends AppCompatActivity {
+
+    private TextView tv3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,16 +33,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        tv3 = (TextView) findViewById(R.id.tv3);
+
         findViewById(R.id.tv2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //hios webview跳转
-                AdListItem adListItem = new AdListItem();
-                adListItem.setAid("1");
-                adListItem.setBanner("imgUrl");
-                adListItem.setUrl("");
-                HiosHelper.configWebActivity(WebViewMainActivity.class);
-                HiosHelper.click(MainActivity.this, adListItem);//
+//                AdListItem adListItem = new AdListItem();
+//                adListItem.setAid("1");
+//                adListItem.setBanner("imgUrl");
+//                adListItem.setUrl("");
+//                HiosHelper.configWebActivity(WebViewMainActivity.class);
+//                HiosHelper.click(MainActivity.this, adListItem);//
+                //actionbufen
+                Intent intent = new Intent();
+                intent.putExtra("youhuiquanId", "80796278");
+                intent.setAction("hs.act.shop.main");
+                startActivity(intent);
+                //测试
+//                double aa = 100.0000;
+//                final BigDecimal bg = new BigDecimal(aa).setScale(2,
+//                        RoundingMode.HALF_UP);
+//                if (bg.doubleValue() <= 0.0) {
+//                    tv3.setText("0.00");
+//                } else {
+//                    tv3.setText(bg + "");
+//                }
+
             }
         });
 

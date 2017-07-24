@@ -1,6 +1,507 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="mainPagerBackgroud">#f0f0f0</color>
+    <color name="mainPagerTextOneOrder">#333333</color>
+    <color name="mainPagerTextTwoOrder">#666666</color>
+    <color name="mainPagerTextThreeOrder">#999999</color>
+    <color name="mainPagerPriceOrder">#FF8A00</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--Lxd-->
+    <color name="text_333">#333333</color>
+    <color name="gray_line">#d2d2d2</color>
+    <color name="orange_red">#FFA000</color>
+    <color name="orange_red_press">#88FFA000</color>
+    <color name="order_state_check_color">#FFA000</color>
+    <color name="order_goods_shape_color">#EFEEEC</color>
+    <color name="order_detail_money">#F80000</color>
+    <color name="order_detail_bottom_tra">#eeeeee</color>
+    <color name="my_order_new_top_background">#ebebeb</color>
+    <color name="order_new_number_color">#f43932</color>
+    <color name="order_new_all_color">#3a3a3a</color>
+    <color name="transGreen">#8E009900</color>
+    <color name="priceColor">#e35238</color>
+    <color name="cookbookSearch">#f5841c</color>
+    <color name="cookbookSecondClassItem">#993300</color>
+    <color name="cookbookDetailNewBg">#D8D8D8</color>
+    <color name="cookbookDetailNewBgBottom">#f1e6e0</color>
+    <color name="halfBlackTra">#a2000000</color>
+    <color name="halfBlackTra_new">#cc000000</color>
+    <color name="halfBlackTra_new_temp">#22000000</color>
+    <color name="yk_detail_new_item_text">#15A2FF</color>
+    <color name="address_manager_nomal">#979797</color>
+    <color name="half_gray">#33222328</color>
+    <!--End-->
+
+    <color name="topbar">#8BC33D</color>
+    <color name="blue">#62abf2</color>
+    <color name="back">#333</color>
+    <color name="white">#ffffff</color>
+    <color name="half_white">#ccffffff</color>
+    <color name="oneKeyRepair">#dddddd</color>
+    <color name="oneKeyRepair_half">#99ffffff</color>
+    <color name="oneKeyRepair_three">#80ffffff</color>
+    <color name="colorClickBackgroud">#50dddddd</color>
+    <color name="colorFont">#00ff00</color>
+    <color name="colorNotClickBackgroud">#ffffff</color>
+    <color name="goodsAddress">#8BC638</color>
+
+    <!--main new-->
+    <color name="main1">#dcdcdc</color>
+    <color name="main2">#999999</color>
+    <color name="main3">#333333</color>
+    <color name="main4">#eeeeee</color>
+    <color name="bcbc">#bcbcbc</color>
+    <!--main new-->
+    <!--mine-->
+    <color name="bg_gray">#F0F0F0</color>
+    <color name="border_activate">#707176</color>
+
+    <!--end-->
+    <!-- add by gyy -->
+    <color name="bg_white">#ffffff</color>
+    <color name="bg">#eeeeee</color>
+    <color name="video_bar_bg">#4d000000</color>
+    <color name="video_bar_bg_big">#CC000000</color>
+    <color name="my_sure">#e3e1dd</color>
+    <color name="line_color_base">#DCDCDC</color>
+    <color name="line_color_base_press">#88DCDCDC</color>
+    <color name="simple_image_color">#ff7200</color>
+    <color name="simple_image_color_nation">#6c4c42</color>
+    <color name="simple_image_color_nation_hide">#00ffffff</color>
+    <color name="order_detail_bg_color">#C5E39C</color>
+
+    <color name="music_search_bg">#c8252525</color>
+    <color name="music_main_progress">#e66669</color>
+    <color name="music_main_progress_background_color">#b6a0a6</color>
+    <color name="music_search_hint">#C7C5C5</color>
+    <color name="music_search_yellow">#FFA000</color>
+
+    <color name="music_album_detail_bg">#B4000000</color>
+
+    <color name="font_fff">#ffffff</color>
+    <color name="font_333">#333333</color>
+    <color name="font_999">#999999</color>
+    <color name="font_selected">#8BC638</color>
+    <color name="font_normal">#666666</color>
+    <color name="bg_selected">#F9F9F9</color>
+    <color name="line">#F8F8F8</color>
+    <color name="text_bg">#A2D160</color>
+    <color name="text_bgen">#a2e08d</color>
+
+    <color name="video_bg">#B2FFFFFF</color>
+    <!-- end gyy-->
+
+    <!--
+        food weight color
+    -->
+    <color name="custom_progress_green_progress">#ff669900</color>
+    <color name="custom_progress_orange_progress">#ffff8800</color>
+    <color name="grey_food_weight">#cccccc</color>
+    <!--
+       color for mine
+    -->
+    <color name="mine_background">#f0f0f0</color>
+    <color name="mine_others_background">#ffffff</color>
+    <color name="mine_textcolor">#333333</color>
+    <color name="mine_textcolor_half_alpha">#50000000</color>
+    <color name="mine_textcolor_radiobutton">#90000000</color>
+    <color name="mine_textcolor_green">#8cc838</color>
+
+    <!--gyy start-->
+    <color name="green_bg">#8bc638</color>
+    <color name="search_green_down">#77A13B</color>
+    <color name="red_bg">#ff5000</color>
+    <color name="red_up">#7FFF5000</color>
+    <color name="bg_normal">#f8f8f8</color>
+    <color name="bg_super">#eeeeee</color>
+    <color name="line_round">#dcdcdc</color>
+    <color name="font_1">#333333</color>
+    <color name="font_2">#666666</color>
+    <color name="font_3">#999999</color>
+    <color name="font_4">#cccccc</color>
+    <color name="font_5">#c7c7c7</color>
+    <color name="icon_gray">#999999</color>
+    <color name="ticket_buy">#fa9f28</color>
+    <!--gyy end-->
+    <!--hx add-->
+    <color name="cookbook_bg">#f0f0f0</color>
+    <color name="timepicker">#f0f0f1</color>
+    <color name="fridgefood">#ffa000</color>
+    <color name="fridgefoodE8AB48">#E8AB48</color>
+    <color name="cookbook">#333333</color>
+    <color name="font_666">#666666</color>
+    <color name="fuliao">#47D592</color>
+    <color name="fridge_food_bg_color">#e6efefef</color>
+    <color name="fridge_food_bg_color1">#efefef</color>
+    <!--hx end-->
+    <!--mine-->
+    <color name="mine1">#9F9FFF</color>
+    <color name="mine2">#F5B418</color>
+    <color name="mine3">#00BB9C</color>
+    <color name="mine4">#49C0DD</color>
+    <color name="mine5">#FF8100</color>
+    <color name="mine6">#F4C600</color>
+    <color name="mine7">#EB4F38</color>
+    <color name="mine8">#A8B6B7</color>
+
+    <!-- 扫描二维码 -->
+    <color name="bg_color">#ededed</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <!-- 扫描二维码 -->
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="saffron">#F4B63E</color>
+    <color name="eggplant">#663D4E</color>
+    <color name="sienna">#EB6460</color>
+    <color name="qing">#00A595</color>
+    <color name="home_common_color">#d1d1d1</color>
+    <color name="popupwindow_switch_channel_normal">#f9f9f8</color>
+    <color name="popupwindow_switch_channel_press">#22000000</color>
+    <color name="popupwindow_switch_channel_bg">#d6dde4</color>
+    <color name="popupwindow_switch_dim">#77000000</color>
+    <color name="popupwindow_dropmenu_press">#4a5155</color>
+    <color name="popupwindow_dropmenu_normal">#353d42</color>
+    <color name="bg_search_bar">#303537</color>
+    <color name="yellow">#FF8A00</color>
+    <color name="qing1">#1FB5AC</color>
+    <color name="qingen">#1ca59e</color>
+    <color name="hui1">#B7B7B7</color>
+    <color name="huien">#929191</color>
+    <color name="yellow_deep">#fcb519</color>
+    <color name="yellow_deep1">#ff7e00</color>
+    <color name="black_press">#1e1e1e</color>
+    <color name="black_divider">#23292c</color>
+    <color name="gray_normal_line">#d2d2d2</color>
+    <color name="gray_normal_line1">#dcdcdc</color>
+    <color name="gray">#8E8A98</color>
+    <color name="gray0">#6C4C42</color>
+    <color name="gray1">#CECECE</color>
+    <color name="gray2">#ededed</color>
+    <color name="gray3">#8E8A98</color>
+    <color name="gray4">#C3C3C3</color>
+    <color name="gray10">#F5F6F6</color>
+    <color name="gray11">#F0F0F0</color>
+    <color name="gray12">#10000000</color>
+    <color name="gray13">#9B9B9B</color>
+    <color name="gray13half">#309B9B9B</color>
+    <color name="gray4A4A4A">#4A4A4A</color>
+    <color name="gray222328">#222328</color>
+    <color name="grayE9E9E9">#E9E9E9</color>
+
+    <color name="gray_stroke">#DCDCDC</color>
+    <color name="gray_yuyueguahao_text">#6f6f6f</color>
+    <color name="grayfw">#EAEAEA</color>
+    <color name="grayfwen">#F0F0F0</color>
+    <color name="gray_list_head_text">#a9a9a9</color>
+    <color name="gray_list_item_text_deep">#848f9a</color>
+    <color name="gray_list_item_text_light">#9da9b7</color>
+    <color name="gray_deep">#dfdfdd</color>
+    <color name="gray_light">#eff0f2</color>
+    <color name="gray_fast_position_bar_press">#cceeeeee</color>
+    <color name="gray_toolbox">#f2f2f2</color>
+    <color name="gray5">#55555D</color>
+    <color name="gray6">#EEEEEE</color>
+    <color name="gray7">#E0E0E0</color>
+    <color name="gray8">#DCDCDC</color>
+    <color name="gray9">#FF5C382D</color>
+    <color name="gray21">#99000000</color>
+    <color name="bg_common">#f3f6f6</color>
+    <color name="common_title_bar_press">#db3c3a</color>
+    <color name="text_black">#2c2c2c</color>
+    <color name="black333333">#333333</color>
+    <color name="text_gray">#626262</color>
+    <color name="text_gray_light">#c6d1db</color>
+    <color name="text_green">#59b631</color>
+    <color name="text_orange">#ffb300</color>
+    <color name="qingse">#1FB4AE</color>
+    <color name="blue2">#43C2B6</color>
+    <color name="blue3">#5696E2</color>
+    <color name="green2">#8BC638</color>
+    <color name="green21">#e1ece2</color>
+    <color name="green22">#d2ecd6</color>
+    <color name="green23">#709E2D</color>
+    <color name="green47D478">#47D478</color>
+    <color name="pink2">#FFD1D6</color>
+    <color name="pink3">#FF899E</color>
+    <color name="green3">#709E2D</color>
+    <color name="white2">#01ffffff</color>
+    <color name="white_alpha30">#40ffffff</color>
+    <color name="white_alpha31">#50eaeaea</color>
+    <color name="white3">#E8F4FF</color>
+    <color name="red">#cd2826</color>
+    <color name="red2">#FF5001</color>
+    <color name="red3">#ff9c61</color>
+    <color name="red4">#fa8945</color>
+    <color name="red5">#FF5000</color>
+    <color name="red6">#FF7E96</color>
+    <color name="red7">#D62727</color>
+    <color name="yellow1">#E9F39B</color>
+    <color name="half_color">#30000000</color>
+    <color name="red_brand_fast">#d74f37</color>
+    <color name="black">#656f79</color>
+    <color name="black2">#333333</color>
+    <color name="black3">#666666</color>
+    <color name="longin_gray_color">#2f678a</color>
+    <color name="blueLineColor">#79807f</color>
+    <color name="redLineColor">#a12d2e</color>
+    <color name="black_common">#000000</color>
+    <color name="titlbar_textview_shadow">#d39f22</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent1">#22000000</color>
+    <color name="transparent_half">#aa000000</color>
+    <color name="transparent_half_half">#66000000</color>
+    <color name="transparent_half_half_half">#80000000</color>
+    <color name="transparent_half_half_half_half">#80ffffff</color>
+    <color name="transparent_half_half_half_half_half">#CCFFFFFF</color>
+    <color name="transparent_half_half_half_half_half_half">#CCCECECE</color>
+    <color name="spalsh_bg">#f5f5f5</color>
+    <color name="black_b7">#b7000000</color>
+    <color name="black_80">#b4000000</color>
+    <!-- news list -->
+    <color name="news_list_item_text_color_gray">#818181</color>
+    <color name="news_list_item_title_text_color">#000000</color>
+    <color name="net_exception__text_color">#fff6f7f9</color>
+    <color name="list_item_selectet_color">#ffe0413e</color>
+    <color name="primary">#009688</color>
+    <color name="primaryDark">#00796b</color>
+    <color name="accent">#eeff41</color>
+    <color name="accentLight">#F4FF81</color>
+    <!-- brand -->
+    <color name="brand_circle_finish">#67ccfd</color>
+    <color name="brand_evaluationtotal_des">#9c9c9c</color>
+    <color name="brand_list_item_gray">#7c7c7c</color>
+    <color name="brand_progress_wypf">#67cbff</color>
+    <color name="brand_progress_circle_text">#434343</color>
+    <color name="brand_progress_zjpf">#47b63e</color>
+    <color name="brand_progress_bg">#e5e5e5</color>
+    <color name="brand_tab_text_bg">#636772</color>
+    <color name="brand_list_item_red">#f25949</color>
+    <color name="brand_fast_car_greed">#46b63e</color>
+    <color name="brand_yuyue_title">#fffee8</color>
+    <color name="brand_search_bg">#E3E3E3</color>
+    <color name="brand_search_text">#c2c2c2</color>
+    <color name="brand_search_text_color">#b0b0b0</color>
+    <color name="brand_list_item_bg_color">#FFFFFF</color>
+    <color name="brand_list_fastposition_text_color">#f3f6f6</color>
+    <color name="brand_list_head_bg_color">#F5F8F8</color>
+    <color name="brand_list_divider_color">#CCCCCC</color>
+    <color name="web_view_buttom_color">#fff6f6f6</color>
+    <color name="chanle_item_pressed_bg">#33000000</color>
+    <color name="hospital_title_text">#333333</color>
+    <color name="tabbar_yellow_text">#ff7800</color>
+    <color name="tabbar_yellow_bottom_text">#ff6000</color>
+    <color name="tabbar_title_text">#444444</color>
+    <color name="tabbar_bottom_text">#505050</color>
+    <color name="tabbar_gray_text">#a8a8a8</color>
+    <color name="search_text_hint">#999999</color>
+    <color name="search_gray_text">#7c7c7c</color>
+    <color name="search_text">#000000</color>
+    <color name="search_pop_black">#444444</color>
+    <color name="search_pop_laybg">#eeeeee</color>
+    <color name="search_page_bg">#f4f5f7</color>
+    <color name="search_clear_bg">#ff8b6a</color>
+    <color name="search_item_text">#989898</color>
+    <color name="toast_bg">#cc000000</color>
+    <color name="line_color">#d7d7d7</color>
+    <color name="image_text">#fefefe</color>
+    <color name="relative_text">#5e5e5e</color>
+    <color name="list_line">#dbdcde</color>
+    <color name="cursor_color_input">#fe7a00</color>
+    <color name="search_color">#b4b4b4</color>
+    <color name="orange_color">#ff7900</color>
+    <color name="orange_color2">#5C382D</color>
+    <color name="mingyi_text_color">#6c6c6c</color>
+    <color name="calendar_green">#1fb5ad</color>
+    <color name="red_time_text">#e25632</color>
+    <color name="black_time_text">#666666</color>
+    <color name="black_location_text">#353535</color>
+    <color name="parting_line">#DCDCDC</color>
+    <color name="fill_title">#F8F8F8</color>
+    <color name="now_buy">#FF5000</color>
+    <color name="goods_detail_shopping_car_bg">#E4E4E4</color>
+    <color name="login_bottom_bg">#79B820</color>
+    <color name="family1">#E9BEE4</color>
+    <color name="family2">#FEDFA8</color>
+    <color name="family3">#F8C4C8</color>
+    <color name="family4">#ABD8E2</color>
+    <color name="family5">#FFED5C</color>
+    <color name="family6">#E9F39B</color>
+
+    <color name="font_4a">#4A4A4A</color>
+
+    <!-- start LRXx-->
+    <color name="disable">#CECAC5</color>
+    <color name="orange_color_half">#77ff7900</color>
+    <color name="line898989">#898989</color>
+    <color name="orange_FFA438">#FFA438</color>
+    <color name="invalid_tag">#cacaca</color>
+    <color name="green_8BC738">#8BC738</color>
+    <color name="green_888BC738">#888BC738</color>
+    <color name="green_8AC637">#8AC637</color>
+    <color name="white_fffff">#ffffff</color>
+    <color name="white_88fff">#88ffffff</color>
+    <color name="white_ff00ff">#ff00ff</color>
+    <color name="white_ddd">#DDDDDD</color>
+    <color name="black_000">#000000</color>
+    <color name="black_88000">#88000000</color>
+    <color name="black_333">#333333</color>
+    <color name="black_666">#666666</color>
+    <color name="black_666_half">#77666666</color>
+    <color name="black_999">#999999</color>
+    <color name="red_FF5000">#FF5000</color>
+    <color name="red_DE0F0F">#DE0F0F</color>
+    <color name="red_E04832">#E04832</color>
+    <color name="line_EEEEEE">#EEEEEE</color>
+    <color name="background">#F0F0F0</color>
+    <color name="pink_FF6F88">#FF6F88</color>
+    <color name="white_dcdcdc">#DCDCDC</color>
+    <color name="white_919499">#919499</color>
+    <color name="black_1E212A">#1E212A</color>
+    <color name="gray_51545c">#51545c</color>
+    <color name="nets_my_song_item_bg">#0AFD0000</color>
+    <!-- ec -->
+    <color name="direct_buy_item_back">#8EE04832</color>
+
+
+    <color name="easy_fruit_item_background">#8E018841</color>
+    <color name="ec_title_background">#E04832</color>
+    <color name="ec_title_txt">#222328</color>
+    <color name="ec_price">#E04832</color>
+    <color name="ec_old_price">#9B9B9B</color>
+
+    <!-- nets -->
+    <color name="nets_ting_bg">#BDBDBD</color>
+    <color name="nets_bottom_line">#A8071A</color>
+    <color name="nets_bottom_progress_bg">#58121D</color>
+
+    <!-- end LRXx-->
+
+    <!--shoppingcart-->
+    <color name="red_text">#FF8000</color>
+    <color name="grey_blank">#f0f0f0</color>
+    <color name="xiaoji_red">#ff3e00</color>
+
+    <color name="timeline">#f3f3f3</color>
+
+    <color name="warn_green_text">#8bc638</color>
+    <color name="jihuo_money_red">#FF696F</color>
+
+    <color name="mine_bx">#9F9FFF</color>
+    <color name="mine_cp">#F4C600</color>
+    <color name="mine_gw">#F5B418</color>
+    <color name="mine_jt">#FF8100</color>
+    <color name="mine_qb">#49C0DD</color>
+    <color name="mine_xx">#00BB9C</color>
+
+    <!--add by geek-->
+    <color name="foodmanager_qb">#FFAE00</color>
+    <color name="foodmanager_xx">#85C855</color>
+    <color name="foodmanager_zx">#F38836</color>
+    <color name="foodmanager_kgq">#E5232C</color>
+    <color name="foodmanager_ygq">#707070</color>
+    <color name="foodmanager_yuan">#4D4D4D</color>
+
+    <color name="foodmanager_tjsc1">#FFAE25</color>
+    <color name="foodmanager_tjsc2">#E8C47F</color>
+    <color name="foodmanager_qx">#909090</color>
+    <color name="index_food_tv_bg29D860">#29D860</color>
+
+    <!--add by geek-->
+
+    <color name="color_42">#FF424242</color>
+    <color name="dot_color">#FFE60012</color>
+    <color name="cf">#FFCFCFCF</color>
+    <color name="ca">#FFCACACA</color>
+
+    <color name="front_color1">#69cbd2</color>
+    <color name="front_color2">#7eb6e2</color>
+    <color name="front_color3">#989df7</color>
+
+    <color name="main_phone">#DBDBC9</color>
+    <color name="main_setting">#9FB9C7</color>
+    <color name="black9">#20374F</color>
+
+    <color name="black_11000">#11000000</color>
+    <color name="black_22000">#22000000</color>
+    <color name="eb">#FFebebeb</color>
+    <color name="ff784b">#FFFF784B</color>
+    <color name="f9b">#FF9B9B9B</color>
+
+    <color name="black858585">#858585</color>
+    <color name="black_title">#222328</color>
+    <color name="tab_bg">#FFFFA524</color>
+    <color name="seek_bar_bg">#FF894918</color>
+    <color name="index_mode_ctrl_text">#08366b</color>
+
+    <color name="da3c2c">#FFDA3C2C</color>
+    <color name="ff6c">#FF6C6C6C</color>
+    <color name="ff3b">#FF3B3B3B</color>
+    <color name="fffe">#FFFEFEFE</color>
+    <color name="sku_cover">#aa222328</color>
+    <color name="ffe04832">#FFE04832</color>
+    <color name="e04832">#FFE04832</color>
+    <color name="green_8f">#8F018841</color>
+    <color name="ff101100">#FF101100</color>
+
+    <color name="gray_E8">#E8E8E8</color>
+    <color name="ff222382">#FF222328</color>
+    <color name="aae04832">#AAE04832</color>
+    <color name="f59214">#FFFf821d</color>
+    <color name="d71a14">#FFD71A14</color>
+    <color name="fd0000">#FFFD0000</color>
+    <color name="dddddd">#FFDDDDDD</color>
+
+    <color name="timer_title">#403743</color>
+    <color name="timer_bg_big">#1F1F2B</color>
+    <color name="timer_bg_small">#e724659d</color>
+    <color name="btn_start">#00DF7F</color>
+
+    <color name="timer_select_bg">#ededed</color>
+
+    <color name="tm_bg">#CC000000</color>
+
+    <color name="wallet_00DF7F">#00DF7F</color>
+    <color name="wallet_E04832">#E04832</color>
+    <color name="black_tm">#A2222328</color>
+
+    <color name="shape_6F85CC">#6F85CC</color>
+    <color name="bg_403E72">#403E72</color>
+
+    <color name="index_music_bg">#EE583E</color>
+    <color name="index_music_line">#A5372F</color>
+    <color name="index_music_bottom_bg">#6D1E23</color>
+
+    <color name="update_bg">#7F000000</color>
+    <color name="youku_tab">#17A4FF</color>
+
+    <color name="search_orange">#FFDD84 </color>
+
+    <color name="ef">#efefef</color>
+
 </resources>

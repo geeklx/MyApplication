@@ -1,4 +1,4 @@
-include ':glin', ':gravitysnaphelper', ':p026_baidu_voice', 'shapeloading'
+include ':glin', ':gravitysnaphelper', ':p026_baidu_voice', ':p027_daojishi', 'shapeloading'
 
 
 include ':DuerSdkLib'
@@ -14,7 +14,7 @@ include ':DuerSdkLib'
 //include ':P007_EmptyView'
 //include ':P008_QQColorprogressbar'
 //include ':P009_Glide图片缓存'
-//include ':p010_recycleviewall'
+include ':p010_recycleviewall'
 //include ':p011_swipebacklayout'
 //include ':p012_welcomepage'
 //include ':p014_SnapHelperDemo-master'

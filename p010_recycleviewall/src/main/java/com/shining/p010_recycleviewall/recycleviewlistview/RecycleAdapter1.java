@@ -13,6 +13,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.shining.p010_recycleviewall.domain.Coupon_listBeanNew;
 import com.shining.p010_recycleviewall.domain.PackageOneKeyBuyBeanNew;
 import com.shining.p010_recycleviewall.domain.TagBeanNew;
@@ -95,6 +97,7 @@ public class RecycleAdapter1 extends RecyclerView.Adapter<RecycleAdapter1.ViewHo
         final PackageOneKeyBuyBeanNew ratings = mratings.get(position);
         //设置图片bufen
 //        GlideUtil.display(context, viewHolder.iv_imgurl, ratings.getSku_image(), GlideOptionsFactory.get(GlideOptionsFactory.Type.RADIUS));
+//        Glide.with(context).load(ratings.getSku_image()).skipMemoryCache(true).diskCacheStrategy(DiskCacheStrategy.NONE).into(viewHolder.iv_imgurl);
         viewHolder.iv_imgurl.setTagText(ratings.getSpeed());
         viewHolder.tv_content1.setText(ratings.getSku_title());
         viewHolder.tv_content2.setText(ratings.getSku_notice());
