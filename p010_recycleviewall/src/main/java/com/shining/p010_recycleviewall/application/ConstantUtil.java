@@ -9,4 +9,5 @@ public class ConstantUtil {
     public static final String USER_ID = "user_id";
     public static final String APP_ID = "MB-HEZNBXQGB-0000";
 
+
 }

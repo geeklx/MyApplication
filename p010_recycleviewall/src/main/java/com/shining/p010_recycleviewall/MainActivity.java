@@ -11,9 +11,6 @@ import com.alipay.api.AlipayClient;
 import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.request.AlipayTradePrecreateRequest;
 import com.alipay.api.response.AlipayTradePrecreateResponse;
-import com.example.library_hios.hioscommon.AdListItem;
-import com.example.library_hios.hoisjump.HiosHelper;
-import com.shining.p010_recycleviewall.application.ConstantNetUtil;
 import com.shining.p010_recycleviewall.bluetoothold.MainActivity_BlueTooth;
 import com.shining.p010_recycleviewall.recycleviewbiaoge.MainActivityBiaoge;
 import com.shining.p010_recycleviewall.recycleviewdifferentitem.MainActivityDff;
@@ -37,9 +34,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        set_vis(ConstantNetUtil.SERVER_CHANGE_B, ConstantNetUtil.SERVER_CHANGE_B1, ConstantNetUtil.SERVER_CHANGE_B2,
-                ConstantNetUtil.SERVER_CHANGE_B3, ConstantNetUtil.SERVER_CHANGE_B4, ConstantNetUtil.SERVER_CHANGE_B5,
-                ConstantNetUtil.SERVER_CHANGE_B6);
         findViewById(R.id.tv1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -110,11 +104,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
 
 //                //hios activity跳转
-                AdListItem adListItem = new AdListItem();
-                adListItem.setAid("1");
-                adListItem.setBanner("imgUrl");
-                adListItem.setUrl("hios://jump.secondmainactivity?sku_id={s}1000252");//带参数
-                HiosHelper.click(MainActivity.this, MainActivity.class, adListItem);// 第一个是当前Activity 第二个是Fragment
+//                AdListItem adListItem = new AdListItem();
+//                adListItem.setAid("1");
+//                adListItem.setBanner("imgUrl");
+//                adListItem.setUrl("hios://jump.secondmainactivity?sku_id={s}1000252");//带参数
+//                HiosHelper.click(MainActivity.this, MainActivity.class, adListItem);// 第一个是当前Activity 第二个是Fragment
 
             }
         });
@@ -147,54 +141,6 @@ public class MainActivity extends AppCompatActivity {
                 }).start();
             }
         });
-    }
-
-
-    /**
-     * @param b
-     * @param b1
-     * @param b2
-     * @param b3
-     * @param b4
-     * @param b5
-     * @param b6
-     */
-    private void set_vis(boolean b, boolean b1, boolean b2, boolean b3, boolean b4, boolean b5, boolean b6) {
-        if (b) {
-            findViewById(R.id.tv1).setVisibility(View.VISIBLE);
-        } else {
-            findViewById(R.id.tv1).setVisibility(View.GONE);
-        }
-        if (b1) {
-            findViewById(R.id.tv2).setVisibility(View.VISIBLE);
-        } else {
-            findViewById(R.id.tv2).setVisibility(View.GONE);
-        }
-        if (b2) {
-            findViewById(R.id.tv3).setVisibility(View.VISIBLE);
-        } else {
-            findViewById(R.id.tv3).setVisibility(View.GONE);
-        }
-        if (b3) {
-            findViewById(R.id.tv4).setVisibility(View.VISIBLE);
-        } else {
-            findViewById(R.id.tv4).setVisibility(View.GONE);
-        }
-        if (b4) {
-            findViewById(R.id.tv5).setVisibility(View.VISIBLE);
-        } else {
-            findViewById(R.id.tv5).setVisibility(View.GONE);
-        }
-        if (b5) {
-            findViewById(R.id.tv6).setVisibility(View.VISIBLE);
-        } else {
-            findViewById(R.id.tv6).setVisibility(View.GONE);
-        }
-        if (b6) {
-            findViewById(R.id.tv7).setVisibility(View.VISIBLE);
-        } else {
-            findViewById(R.id.tv7).setVisibility(View.GONE);
-        }
     }
 
 }

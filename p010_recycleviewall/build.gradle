@@ -1,9 +1,40 @@
 apply plugin: 'com.android.application'
 apply plugin: 'android-apt'
 
+
+def demo = '0000';//DemoAPK
+def demo1 = '0001';//DemoAPK1
+def demo2 = '0002';//DemoAPK2
+def demo3 = '0003';//DemoAPK3
+def demo4 = '0004';//DemoAPK4
+def demo5 = '0005';//DemoAPK5
+def demo6 = '0006';//DemoAPK6
+
+
 android {
+
+    signingConfigs {
+        debug {
+            keyAlias '****'
+            keyPassword '****'
+            storeFile file('签名文件.jks路径')
+            storePassword '****'
+        }
+        release {
+            keyAlias '****'
+            keyPassword '****'
+            storeFile file('签名文件.jks路径')
+            storePassword '****'
+        }
+    }
+
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
@@ -21,14 +52,35 @@ android {
         versionName "1.0"
 
         multiDexEnabled true
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+        ndk {
+            moduleName "native-modbus-jni,libxmediaplayer"
+            ldLibs "log", "z", "m", "android", "c"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+        sourceSets.main {
+            jni.srcDirs = []
+            //LOCAL_LDFLAGS += -fuse-ld=bfd
+            //jni.srcDirs 'src/main/jni'
+            jniLibs.srcDir 'src/main/libs'
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+        signingConfig signingConfigs.debug
+
+        manifestPlaceholders = [
+                SHOUCANG_CONFIG_VALUE0: ".shoucang.factorys.ShoucangFactory0"
+        ]
 
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+
         }
     }
 
@@ -46,10 +98,20 @@ android {
             applicationId appId
             targetSdkVersion targetSdk
             versionCode vCode
-            versionName "DemoAPK"
+            versionName "DemoAPK_" + "T_" + demo
             multiDexEnabled true
-
-            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            renderscriptTargetApi 19
+            renderscriptSupportModeEnabled true
+            ndk {
+                moduleName "native-modbus-jni,libxmediaplayer"
+                ldLibs "log", "z", "m", "android", "c"
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+            sourceSets.main {
+                jni.srcDirs = []
+                jniLibs.srcDir 'src/main/libs'
+            }
+            signingConfig signingConfigs.debug
         }
         //demo1
         DemoAPK1 {
@@ -57,10 +119,20 @@ android {
             applicationId appId
             targetSdkVersion targetSdk
             versionCode vCode
-            versionName "DemoAPK1"
+            versionName "DemoAPK1_" + "T_" + demo1
             multiDexEnabled true
-
-            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            renderscriptTargetApi 19
+            renderscriptSupportModeEnabled true
+            ndk {
+                moduleName "native-modbus-jni,libxmediaplayer"
+                ldLibs "log", "z", "m", "android", "c"
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+            sourceSets.main {
+                jni.srcDirs = []
+                jniLibs.srcDir 'src/main/libs'
+            }
+            signingConfig signingConfigs.debug
         }
         //demo2
         DemoAPK2 {
@@ -68,10 +140,20 @@ android {
             applicationId appId
             targetSdkVersion targetSdk
             versionCode vCode
-            versionName "DemoAPK2"
+            versionName "DemoAPK2_" + "T_" + demo2
             multiDexEnabled true
-
-            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            renderscriptTargetApi 19
+            renderscriptSupportModeEnabled true
+            ndk {
+                moduleName "native-modbus-jni,libxmediaplayer"
+                ldLibs "log", "z", "m", "android", "c"
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+            sourceSets.main {
+                jni.srcDirs = []
+                jniLibs.srcDir 'src/main/libs'
+            }
+            signingConfig signingConfigs.debug
         }
         //demo3
         DemoAPK3 {
@@ -79,10 +161,20 @@ android {
             applicationId appId
             targetSdkVersion targetSdk
             versionCode vCode
-            versionName "DemoAPK3"
+            versionName "DemoAPK3_" + "T_" + demo3
             multiDexEnabled true
-
-            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            renderscriptTargetApi 19
+            renderscriptSupportModeEnabled true
+            ndk {
+                moduleName "native-modbus-jni,libxmediaplayer"
+                ldLibs "log", "z", "m", "android", "c"
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+            sourceSets.main {
+                jni.srcDirs = []
+                jniLibs.srcDir 'src/main/libs'
+            }
+            signingConfig signingConfigs.debug
         }
         //demo4
         DemoAPK4 {
@@ -90,10 +182,20 @@ android {
             applicationId appId
             targetSdkVersion targetSdk
             versionCode vCode
-            versionName "DemoAPK4"
+            versionName "DemoAPK4_" + "T_" + demo4
             multiDexEnabled true
-
-            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            renderscriptTargetApi 19
+            renderscriptSupportModeEnabled true
+            ndk {
+                moduleName "native-modbus-jni,libxmediaplayer"
+                ldLibs "log", "z", "m", "android", "c"
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+            sourceSets.main {
+                jni.srcDirs = []
+                jniLibs.srcDir 'src/main/libs'
+            }
+            signingConfig signingConfigs.debug
         }
         //demo5
         DemoAPK5 {
@@ -101,10 +203,20 @@ android {
             applicationId appId
             targetSdkVersion targetSdk
             versionCode vCode
-            versionName "DemoAPK5"
+            versionName "DemoAPK5_" + "T_" + demo5
             multiDexEnabled true
-
-            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            renderscriptTargetApi 19
+            renderscriptSupportModeEnabled true
+            ndk {
+                moduleName "native-modbus-jni,libxmediaplayer"
+                ldLibs "log", "z", "m", "android", "c"
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+            sourceSets.main {
+                jni.srcDirs = []
+                jniLibs.srcDir 'src/main/libs'
+            }
+            signingConfig signingConfigs.debug
         }
         //demo6
         DemoAPK6 {
@@ -112,10 +224,20 @@ android {
             applicationId appId
             targetSdkVersion targetSdk
             versionCode vCode
-            versionName "DemoAPK6"
+            versionName "DemoAPK6_" + "D_" + demo6
             multiDexEnabled true
-
-            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+            renderscriptTargetApi 19
+            renderscriptSupportModeEnabled true
+            ndk {
+                moduleName "native-modbus-jni,libxmediaplayer"
+                ldLibs "log", "z", "m", "android", "c"
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+            sourceSets.main {
+                jni.srcDirs = []
+                jniLibs.srcDir 'src/main/libs'
+            }
+            signingConfig signingConfigs.debug
         }
     }
 
@@ -130,6 +252,35 @@ android {
             }
         }
     }
+
+    productFlavors.all { flavor ->
+        def currentMode = flavor.versionName.split("_")[2]
+        def currentEnvironment = flavor.versionName.split("_")[1]
+        def stValue = true
+        // t == currentEnvironment 以前的判断条件
+        if (currentEnvironment.endsWith("T")) {//判断是否为测试版 是否以T结尾
+            stValue = false
+        } else {
+            stValue = true
+        }
+        if (currentMode == demo) {
+            flavor.manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory", STATISTICS_VALUE: stValue]
+        } else if (currentMode == demo1) {
+            flavor.manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory1", STATISTICS_VALUE: stValue]
+        } else if (currentMode == demo2) {
+            flavor.manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory2", STATISTICS_VALUE: stValue]
+        } else if (currentMode == demo3) {
+            flavor.manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory3", STATISTICS_VALUE: stValue]
+        } else if (currentMode == demo4) {
+            flavor.manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory4", STATISTICS_VALUE: stValue]
+        } else if (currentMode == demo5) {
+            flavor.manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory5", STATISTICS_VALUE: stValue]
+        } else if (currentMode == demo6) {
+            flavor.manifestPlaceholders = [SHOUCANG_CONFIG_VALUE: ".shoucang.factorys.ShoucangFactory6", STATISTICS_VALUE: stValue]
+        }
+
+    }
+
 
 }
 

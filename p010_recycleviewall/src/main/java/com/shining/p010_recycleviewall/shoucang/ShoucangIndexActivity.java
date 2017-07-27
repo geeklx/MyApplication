@@ -10,11 +10,19 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.shining.p010_recycleviewall.application.ConstantNetUtil;
+import com.shining.p010_recycleviewall.application.NetConfig;
 import com.shining.p010_recycleviewall.shoucang.basefragment.BaseActivity;
 import com.shining.p010_recycleviewall.shoucang.basefragment.BaseFragment;
 import com.shining.p010_recycleviewall.shoucang.basefragment.BaseIndexFragment;
+import com.shining.p010_recycleviewall.shoucang.configs.ShoucangConfig;
+import com.shining.p010_recycleviewall.shoucang.configs.ShoucangConfig1;
+import com.shining.p010_recycleviewall.shoucang.configs.ShoucangConfig2;
+import com.shining.p010_recycleviewall.shoucang.configs.ShoucangConfig3;
+import com.shining.p010_recycleviewall.shoucang.configs.ShoucangConfig4;
+import com.shining.p010_recycleviewall.shoucang.configs.ShoucangConfig5;
+import com.shining.p010_recycleviewall.shoucang.configs.ShoucangConfig6;
 import com.shining.p010_recycleviewall.shoucang.fragment.ScFragmentHelper;
-import com.shining.p010_recycleviewall.shoucang.fragment.ScIndexFragmentFactory;
 
 import butterknife.BindView;
 
@@ -35,10 +43,36 @@ public class ShoucangIndexActivity extends BaseActivity implements View.OnClickL
     }
 
     @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        //TODO 多版本切换 写此方法bufen
+        which_version();
+//        ShoucangConfig0.config();//manifestPlaceholders的妙用
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
     protected void setup(@Nullable Bundle savedInstanceState) {
         super.setup(savedInstanceState);
         onclickListener();
         setupFragments();
+    }
+
+    private void which_version() {
+        if (ConstantNetUtil.VERSION_APK == NetConfig.version_name0) {
+            ShoucangConfig.config();
+        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name1) {
+            ShoucangConfig1.config();
+        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name2) {
+            ShoucangConfig2.config();
+        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name3) {
+            ShoucangConfig3.config();
+        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name4) {
+            ShoucangConfig4.config();
+        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name5) {
+            ShoucangConfig5.config();
+        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name6) {
+            ShoucangConfig6.config();
+        }
     }
 
     private void onclickListener() {
@@ -51,7 +85,10 @@ public class ShoucangIndexActivity extends BaseActivity implements View.OnClickL
      */
     private void setupFragments() {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        SparseArrayCompat<Class<? extends BaseFragment>> array = ScIndexFragmentFactory.get();
+//        SparseArrayCompat<Class<? extends BaseFragment>> array = ScIndexFragmentFactory.get();//一个版本模式bufen
+        //TODO 多版本模式bufen
+        SparseArrayCompat<Class<? extends BaseFragment>> array = which_version_fragment_config();//demo
+//        SparseArrayCompat<Class<? extends BaseFragment>> array = ShoucangConfig0.getFragments();//manifestPlaceholders的妙用
         int size = array.size();
         BaseFragment item;
         for (int i = 0; i < size; i++) {
@@ -59,6 +96,25 @@ public class ShoucangIndexActivity extends BaseActivity implements View.OnClickL
             ft.replace(array.keyAt(i), item, item.getClass().getName());
         }
         ft.commitAllowingStateLoss();
+    }
+
+    private SparseArrayCompat<Class<? extends BaseFragment>> which_version_fragment_config() {
+        if (ConstantNetUtil.VERSION_APK == NetConfig.version_name0) {
+            return ShoucangConfig.getFragments();
+        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name1) {
+            return ShoucangConfig1.getFragments();
+        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name2) {
+            return ShoucangConfig2.getFragments();
+        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name3) {
+            return ShoucangConfig3.getFragments();
+        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name4) {
+            return ShoucangConfig4.getFragments();
+        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name5) {
+            return ShoucangConfig5.getFragments();
+        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name6) {
+            return ShoucangConfig6.getFragments();
+        }
+        return ShoucangConfig.getFragments();
     }
 
     @Override

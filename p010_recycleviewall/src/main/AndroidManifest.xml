@@ -43,6 +43,21 @@
             android:theme="@style/Theme.notitle" />
 
 
+        <!--shoucang config start-->
+        <meta-data
+            android:name="SHOUCANG_CONFIG"
+            android:value="${SHOUCANG_CONFIG_VALUE}" />
+
+        <meta-data
+            android:name="SHOUCANG_CONFIG0"
+            android:value="${SHOUCANG_CONFIG_VALUE0}" />
+
+        <meta-data
+            android:name="ST"
+            android:value="${STATISTICS_VALUE}" />
+
+        <!--shoucang config end-->
+
     </application>
 
 </manifest>
