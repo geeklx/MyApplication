@@ -13,20 +13,20 @@ def demo6 = '0006';//DemoAPK6
 
 android {
 
-    signingConfigs {
-        debug {
-            keyAlias '****'
-            keyPassword '****'
-            storeFile file('签名文件.jks路径')
-            storePassword '****'
-        }
-        release {
-            keyAlias '****'
-            keyPassword '****'
-            storeFile file('签名文件.jks路径')
-            storePassword '****'
-        }
-    }
+//    signingConfigs {
+//        debug {
+//            keyAlias '****'
+//            keyPassword '****'
+//            storeFile file('签名文件.jks路径')
+//            storePassword '****'
+//        }
+//        release {
+//            keyAlias '****'
+//            keyPassword '****'
+//            storeFile file('签名文件.jks路径')
+//            storePassword '****'
+//        }
+//    }
 
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -304,6 +304,8 @@ dependencies {
     apt 'com.jakewharton:butterknife-compiler:8.2.1'
     testCompile 'junit:junit:4.12'
     compile 'com.geeklx:library_hios:1.0.4'
+    compile 'com.android.support:multidex:1.0.1'
+
 
     compile project(':glin')
     compile 'com.github.bumptech.glide:glide:3.7.0'

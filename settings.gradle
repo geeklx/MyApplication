@@ -1,4 +1,4 @@
-include ':glin', ':gravitysnaphelper', ':p026_baidu_voice', ':p027_daojishi_manifestPlaceholders', 'shapeloading'
+include ':glin', ':gravitysnaphelper', 'shapeloading'
 
 
 include ':DuerSdkLib'
@@ -28,9 +28,10 @@ include ':p010_recycleviewall'
 //include ':p019_bluetooth_server'
 //include ':p020_timer'
 //include ':p021_webviewjs'
-include ':p022_hois'
+//include ':p022_hois'
 //include ':p023_jcenter_hios'
 //include ':p024_wifidemoactivity'
 //include ':p025_upload_img'
-
-
+//include ':p026_baidu_voice'
+//include ':p027_daojishi_manifestPlaceholders'
+include ':p028_cardswipelayout'

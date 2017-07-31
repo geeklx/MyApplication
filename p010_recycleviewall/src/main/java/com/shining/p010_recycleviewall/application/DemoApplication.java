@@ -1,6 +1,7 @@
 package com.shining.p010_recycleviewall.application;
 
 import android.content.Context;
+import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 
 import com.shining.p010_recycleviewall.domain.AppBean;
@@ -33,11 +34,12 @@ public class DemoApplication extends MultiDexApplication {
 
         setAPPandDeviceInfo();
 
+        MultiDex.install(mContext);
+
         GlideOptionsFactory.init(this, com.shining.p010_recycleviewall.R.drawable.ic_def_loading);
 
 
     }
-
 
 
     private void setAPPandDeviceInfo() {

@@ -98,14 +98,14 @@ public class MainActivity extends AppCompatActivity {
                     startTimer2(60000);
                 }
 
-//                timer.start();
+//                countDownTimer.start();
             }
         });
 
 
     }
 
-    private CountDownTimer timer = new CountDownTimer(10000, 1000) {
+    private CountDownTimer countDownTimer = new CountDownTimer(10000, 1000) {
 
         @Override
         public void onTick(long millisUntilFinished) {
