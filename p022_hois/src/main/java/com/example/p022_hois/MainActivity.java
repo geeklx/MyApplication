@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.example.p022_hois.activity.TwoMainActivity;
 import com.example.p022_hois.hioscommon.AdListItem;
-import com.example.p022_hois.hoisjump.HiosHelper;
+import com.example.p022_hois.hois1.HiosHelper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
 //                hios://com.haiersmart.sfnation.ui.ec.ShopIndexActivity?act={i}1&sku_id={s}341703311759500256
                 adListItem.setUrl("hios://jump.twomainactivity?sku_id={s}1000252");//带参数
                 HiosHelper.click(MainActivity.this, TwoMainActivity.class, adListItem);// 第一个是当前Activity 第二个是Fragment
+
+                //hios activity跳转  2.0
+//                HiosHelper2.resolveAd(MainActivity.this, MainActivity.this, "hios://jump.twomainactivity?sku_id={s}1000252");
             }
         });
 
@@ -45,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
 //                adListItem.setUrl("");
 //                HiosHelper.configWebActivity(WebViewMainActivity.class);
 //                HiosHelper.click(MainActivity.this, adListItem);//
+
+                //hios webview跳转 2.0
+//                HiosHelper2.resolveAd(MainActivity.this, MainActivity.this, "http://liangxiao.blog.51cto.com/");
+
                 //actionbufen
                 Intent intent = new Intent();
                 intent.putExtra("youhuiquanId", "80796278");

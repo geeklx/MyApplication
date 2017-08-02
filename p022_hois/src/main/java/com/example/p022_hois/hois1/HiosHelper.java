@@ -1,7 +1,7 @@
 /**
  * Copyright 2016,Smart Haier.All rights reserved
  */
-package com.example.p022_hois.hoisjump;
+package com.example.p022_hois.hois1;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -13,6 +13,7 @@ import android.util.Pair;
 
 import com.example.p022_hois.application.DemoApplication;
 import com.example.p022_hois.hioscommon.AdListItem;
+import com.example.p022_hois.hoisjump.HiosAlias;
 
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -26,6 +27,8 @@ public class HiosHelper {
     public static void configWebActivity(Class<? extends Activity> activity) {
         webViewActivity = activity;
     }
+
+
 
     /**
      * banner点击， 可能跳转网页，可能跳转activity，可能执行activity上的一个方法， 但这个方法的参数必须是一个Map

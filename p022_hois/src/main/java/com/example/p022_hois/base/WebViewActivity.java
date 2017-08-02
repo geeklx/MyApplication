@@ -19,7 +19,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.p022_hois.R;
-import com.example.p022_hois.hoisjump.HiosHelper;
+import com.example.p022_hois.hois1.HiosHelper;
 
 
 /**

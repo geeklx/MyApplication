@@ -1,7 +1,10 @@
-package com.example.p022_hois.hoisjump;
+package com.example.p022_hois.hois1;
 
 import android.content.Intent;
 import android.net.Uri;
+
+import com.example.p022_hois.hoisjump.IntentFiller;
+import com.example.p022_hois.hoisjump.MapFiller;
 
 import java.util.ArrayList;
 import java.util.List;
