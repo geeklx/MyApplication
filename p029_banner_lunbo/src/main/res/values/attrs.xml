@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EmptyView">
+        <attr name="loading_layout" format="reference" />
+        <attr name="nodata_layout" format="reference" />
+        <attr name="errornet_layout" format="reference" />
+        <attr name="unreachable_layout" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="BannerView">
+        <attr name="indicator_position" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="indicator_visible" format="boolean" />
+        <attr name="scroll_time" format="integer|reference" />
+        <attr name="auto_start" format="boolean|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SmartBar">
+        <attr name="home_icon" format="reference" />
+        <attr name="back_icon" format="reference" />
+        <attr name="icon_padding" format="dimension|reference" />
+    </declare-styleable>
+</resources>

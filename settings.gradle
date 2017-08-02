@@ -1,4 +1,4 @@
-include ':glin', ':gravitysnaphelper', 'shapeloading'
+include ':glin', ':gravitysnaphelper', ':p029_banner_lunbo', 'shapeloading'
 
 
 include ':DuerSdkLib'
