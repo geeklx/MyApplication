@@ -20,10 +20,6 @@ import com.example.p029_banner_lunbo.R;
 import java.lang.ref.WeakReference;
 
 
-/**
- * banner view
- * Created by qibin on 2016/8/13.
- */
 public class BannerView extends FrameLayout {
     private static final int MSG_RUN = 1;
 
@@ -230,7 +226,7 @@ public class BannerView extends FrameLayout {
     }
 
     public int getCurrent() {
-        return mViewPager.getCurrentItem() + 1;
+        return mViewPager.getCurrentItem();
     }
 
     public void setCurrent(int current) {

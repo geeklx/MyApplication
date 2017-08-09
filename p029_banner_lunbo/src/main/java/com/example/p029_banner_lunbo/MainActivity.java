@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 //左←
                 ToastUtil.showToastShort(MainActivity.this, "左");
 
-                mBannerView.setCurrent(mBannerView.getCurrent() - 2);
+                mBannerView.setCurrent(mBannerView.getCurrent() - 1);
             }
         });
         tv_right = (TextView) findViewById(R.id.tv_right);
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 //右→
                 ToastUtil.showToastShort(MainActivity.this, "右");
 
-                mBannerView.setCurrent(mBannerView.getCurrent());
+                mBannerView.setCurrent(mBannerView.getCurrent()+1);
             }
         });
         mBannerView = (BannerView) findViewById(R.id.banner);

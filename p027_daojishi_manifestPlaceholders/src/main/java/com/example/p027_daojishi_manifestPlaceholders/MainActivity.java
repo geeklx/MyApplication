@@ -105,11 +105,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private CountDownTimer countDownTimer = new CountDownTimer(10000, 1000) {
+    private CountDownTimer countDownTimer = new CountDownTimer(60000, 1000) {
 
         @Override
         public void onTick(long millisUntilFinished) {
-            tv_hour_decade.setText((millisUntilFinished / 1000) + "秒后可重发");
+//            tv_hour_decade.setText((millisUntilFinished / 1000) + "秒后可重发");
+            tv_hour_decade.setEnabled(false);
+            long[] times = TimeUtil.compute(millisUntilFinished);
+            tv_hour_decade.setText(time_change_one(times[1]) + " : " + time_change_one(times[2]) + " : " + time_change_one(times[3]));
         }
 
         @Override

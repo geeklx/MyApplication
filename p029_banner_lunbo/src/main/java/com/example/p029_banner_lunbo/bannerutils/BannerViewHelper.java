@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 /**
  * 用于解决BannerView和SwipeRefreshLayout的冲突
- * @author loader
+ * @author geek
  *
  */
 public class BannerViewHelper {

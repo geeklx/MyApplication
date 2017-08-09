@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="400dp"
             app:indicator_position="center"
-            app:indicator_visible="true"
+            app:indicator_visible="false"
             app:scroll_time="8000" />
 
     </LinearLayout>

@@ -2,20 +2,20 @@ apply plugin: 'com.android.application'
 
 android {
 
-    signingConfigs {
-        debug {
-            keyAlias '****'
-            keyPassword '****'
-            storeFile file('签名文件.jks路径')
-            storePassword '****'
-        }
-        release {
-            keyAlias '****'
-            keyPassword '****'
-            storeFile file('签名文件.jks路径')
-            storePassword '****'
-        }
-    }
+//    signingConfigs {
+//        debug {
+//            keyAlias '****'
+//            keyPassword '****'
+//            storeFile file('签名文件.jks路径')
+//            storePassword '****'
+//        }
+//        release {
+//            keyAlias '****'
+//            keyPassword '****'
+//            storeFile file('签名文件.jks路径')
+//            storePassword '****'
+//        }
+//    }
 
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -42,7 +42,7 @@ android {
             jniLibs.srcDir 'src/main/libs'
 
         }
-        signingConfig signingConfigs.debug
+//        signingConfig signingConfigs.debug
 
         manifestPlaceholders = [
                 SHOUCANG_CONFIG_VALUE0: ".shoucang.factorys.ShoucangFactory0"
@@ -54,7 +54,7 @@ android {
             //自定义buildconfig字段
             buildConfigField("boolean", "APP_ENV", "true")
             //指定签名为release
-            signingConfig signingConfigs.release
+//            signingConfig signingConfigs.release
             //是否开启混淆
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -72,7 +72,7 @@ android {
             //自定义buildconfig字段
             buildConfigField("boolean", "APP_ENV", "true")
             //指定签名为release
-            signingConfig signingConfigs.debug
+//            signingConfig signingConfigs.debug
             //是否开启混淆
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
