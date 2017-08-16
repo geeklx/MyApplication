@@ -1,0 +1,176 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+def demo1 = '0001';//DemoAPK1
+def demo2 = '0002';//DemoAPK2
+
+android {
+
+//    signingConfigs {
+//        debug {
+//            keyAlias '****'
+//            keyPassword '****'
+//            storeFile file('签名文件.jks路径')
+//            storePassword '****'
+//        }
+//        release {
+//            keyAlias '****'
+//            keyPassword '****'
+//            storeFile file('签名文件.jks路径')
+//            storePassword '****'
+//        }
+//    }
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    defaultConfig {
+        applicationId "com.example.p031_mokuaihua_viewpager_fragment"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
+        ndk {
+            moduleName "native-modbus-jni,libxmediaplayer"
+            ldLibs "log", "z", "m", "android", "c"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+        sourceSets.main {
+            jni.srcDirs = []
+            //LOCAL_LDFLAGS += -fuse-ld=bfd
+            //jni.srcDirs 'src/main/jni'
+            jniLibs.srcDir 'src/main/libs'
+
+        }
+        signingConfig signingConfigs.debug
+
+        manifestPlaceholders = [
+                DEMO3_CONFIG_VALUE: ".demo3.factorys.Demo3Factory"
+        ]
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    def int minSdk = 21;
+    def int targetSdk = 25;
+    def String appId = 'com.example.p031_mokuaihua_viewpager_fragment';
+
+    def int vCode = 1;
+    def String vNameCode = vCode + "";
+    productFlavors {
+        //demo1 DemoAPK1_T_1_0001 线上
+        DemoAPK1 {
+            minSdkVersion minSdk
+            applicationId appId
+            targetSdkVersion targetSdk
+            versionCode vCode
+            versionName "DemoAPK1_" + "T_" + vNameCode + "_" + demo1
+            multiDexEnabled true
+            renderscriptTargetApi 21
+            renderscriptSupportModeEnabled true
+            ndk {
+                moduleName "native-modbus-jni,libxmediaplayer"
+                ldLibs "log", "z", "m", "android", "c"
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+            sourceSets.main {
+                jni.srcDirs = []
+                jniLibs.srcDir 'src/main/libs'
+            }
+            signingConfig signingConfigs.debug
+        }
+        //demo2   DemoAPK2_D_1_0002 线上
+        DemoAPK2 {
+            minSdkVersion minSdk
+            applicationId appId
+            targetSdkVersion targetSdk
+            versionCode vCode
+            versionName "DemoAPK2_" + "D_" + vNameCode + "_" + demo2
+            multiDexEnabled true
+            renderscriptTargetApi 21
+            renderscriptSupportModeEnabled true
+            ndk {
+                moduleName "native-modbus-jni,libxmediaplayer"
+                ldLibs "log", "z", "m", "android", "c"
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+            sourceSets.main {
+                jni.srcDirs = []
+                jniLibs.srcDir 'src/main/libs'
+            }
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    // 自定义输出配置
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                def fileName = "UerbT_v${variant.versionName}_${releaseTime()}_${variant.flavorName}.apk"
+                def fileName = "${variant.versionName}.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+    productFlavors.all { flavor ->
+        def currentMode = flavor.versionName.split("_")[3]
+        def currentEnvironment = flavor.versionName.split("_")[1]
+        def stValue = true
+        // t == currentEnvironment 以前的判断条件
+        if (currentEnvironment.endsWith("T")) {//判断是否为测试版 是否以T结尾
+            stValue = false
+        } else {
+            stValue = true
+        }
+        if (currentMode == demo1) {
+            flavor.manifestPlaceholders = [DEMO2_CONFIG_VALUE: ".demo2.factorys.Demo2Factory1", STATISTICS_VALUE: stValue]
+        } else if (currentMode == demo2) {
+            flavor.manifestPlaceholders = [DEMO2_CONFIG_VALUE: ".demo2.factorys.Demo2Factory2", STATISTICS_VALUE: stValue]
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+
+    //the third file
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    compile 'com.android.support:multidex:1.0.1'
+
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_demo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="单Activity页面多模块单版本" />
+
+    <TextView
+        android:id="@+id/tv_demo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="单Activity页面多模块多版本" />
+
+    <TextView
+        android:id="@+id/tv_demo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="单Activity页面多模块单版本两个Viewpager" />
+
+    <TextView
+        android:id="@+id/tv_demo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="单Activity页面多模块多版本三个Viewpager" />
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black858585">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+
+            <!--<com.example.p031_mokuaihua_viewpager_fragment.demo3.utils.NoScrollViewPager
+                android:id="@+id/viewpager_my"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_my"
+                android:layout_width="match_parent"
+                android:layout_height="350dp" />
+
+            <com.example.p031_mokuaihua_viewpager_fragment.demo3.utils.IndexPagerIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                app:indicator_height="5dp"
+                app:indicator_interval="30dp"
+                app:indicator_item_color="#33FFFFFF"
+                app:indicator_select_color="@android:color/white"
+                app:indicator_width="40dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

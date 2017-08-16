@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#8E8A98</color>
+    <color name="orange_color">#ff7900</color>
+
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+    <color name="tab_bg">#FFFFA524</color>
+    <color name="black_title">#222328</color>
+    <color name="fffe">#FFFEFEFE</color>
+    <color name="e04832">#FFE04832</color>
+    <color name="red2">#FF5001</color>
+    <color name="black_common">#000000</color>
+    <color name="black858585">#858585</color>
+
+
+    <color name="orange_red">#FFA000</color>
+    <color name="orange_red_press">#88FFA000</color>
+
+    <color name="color_42">#FF424242</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half_half_half_half">#80ffffff</color>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SimpleTagImageView">
+        <attr name="simple_corner_distance" format="dimension" />
+        <attr name="simple_tag_width" format="dimension"/>
+        <attr name="simple_tag_background_color" format="color"/>
+        <attr name="simple_tag_text" format="string"/>
+        <attr name="simple_tag_textSize" format="dimension" />
+        <attr name="simple_tag_textColor" format="color"/>
+        <attr name="simple_tag_orientation" format="enum">
+            <enum name="left_top" value="0"/>
+            <enum name="right_top" value="1"/>
+            <enum name="left_bottom" value="2"/>
+            <enum name="right_bottom" value="3"/>
+        </attr>
+        <attr name="simple_tag_enable" format="boolean"/>
+        <attr name="simple_tag_round_radius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="IndexPagerIndicator">
+        <attr name="indicator_width" format="dimension|reference" />
+        <attr name="indicator_height" format="dimension|reference" />
+        <attr name="indicator_interval" format="dimension|reference" />
+        <attr name="indicator_item_color" format="color|reference" />
+        <attr name="indicator_select_color" format="color|reference" />
+        <attr name="indicator_select_height" format="dimension|reference" />
+        <attr name="indicator_style_drawer" format="string|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="loading_layout" format="reference" />
+        <attr name="nodata_layout" format="reference" />
+        <attr name="errornet_layout" format="reference" />
+        <attr name="unreachable_layout" format="reference" />
+    </declare-styleable>
+
+
+
+</resources>
