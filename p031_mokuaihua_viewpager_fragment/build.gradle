@@ -62,7 +62,8 @@ android {
         signingConfig signingConfigs.debug
 
         manifestPlaceholders = [
-                DEMO3_CONFIG_VALUE: ".demo3.factorys.Demo3Factory"
+                DEMO3_CONFIG_VALUE: ".demo3.factorys.Demo3Factory",
+                DEMO4_CONFIG_VALUE: ".demo4.factorys.Demo4Factory"
         ]
 
     }

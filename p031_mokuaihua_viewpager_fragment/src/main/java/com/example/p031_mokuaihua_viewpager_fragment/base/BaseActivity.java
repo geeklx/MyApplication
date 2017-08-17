@@ -80,7 +80,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         if (ev.getAction() == MotionEvent.ACTION_UP) {
-            MyLogUtil.d("qibin", "mobClickEvent");
+            MyLogUtil.d("geek", "mobClickEvent");
 //            MobEventHelper.onEvent(this, "effective_click");
         }
 

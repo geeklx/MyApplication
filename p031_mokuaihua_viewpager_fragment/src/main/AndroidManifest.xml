@@ -41,6 +41,12 @@
         <!--demo3 config end-->
 
         <activity android:name=".demo4.Demo4Activity" />
+        <!--demo3 config start-->
+        <meta-data
+            android:name="DEMO4_CONFIG"
+            android:value="${DEMO4_CONFIG_VALUE}" />
+        <!--demo3 config end-->
+
     </application>
 
 </manifest>

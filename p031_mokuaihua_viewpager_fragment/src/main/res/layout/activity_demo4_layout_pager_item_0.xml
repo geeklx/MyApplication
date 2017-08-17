@@ -5,13 +5,13 @@
     android:orientation="horizontal">
 
     <FrameLayout
-        android:id="@+id/fragment_demo3_pager_index_0_0"
+        android:id="@+id/fragment_demo4_pager_index_0_0"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:background="@color/holo_blue_bright" />
 
     <FrameLayout
-        android:id="@+id/fragment_demo3_pager_index_0_1"
+        android:id="@+id/fragment_demo4_pager_index_0_1"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginLeft="10dp"

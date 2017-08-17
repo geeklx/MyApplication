@@ -1,4 +1,4 @@
-package com.example.p031_mokuaihua_viewpager_fragment.demo2.configs;
+package com.example.p031_mokuaihua_viewpager_fragment.demo4.configs;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -10,19 +10,21 @@ import com.example.p031_mokuaihua_viewpager_fragment.applications.DemoApplicatio
 import com.example.p031_mokuaihua_viewpager_fragment.base.BaseFragment;
 import com.example.p031_mokuaihua_viewpager_fragment.utils.MyLogUtil;
 
-public class Demo2Config2 {
+public class Demo4Config {
 
-    private static final String INDEX_META_DATA = "DEMO2_CONFIG";
+    private static final String INDEX_META_DATA = "DEMO4_CONFIG";
 
     /** viewpager页大小*/
-//    public static int PAGE_COUNT;
+    public static int PAGE_COUNT;
     /** viewpager每页的itemview id*/
-//    public static String PAGE_ID;
+    public static String PAGE_LAYOUT_ID;
 
     /** 默认显示第几页*/
-//    public static int DEFAULT_PAGE_INDEX;
+    public static int DEFAULT_PAGE_INDEX;
 
-    /** fragment配置*/
+    /**
+     * fragment配置
+     */
     private static SparseArrayCompat<Class<? extends BaseFragment>> sIndexFragments = new SparseArrayCompat<>();
 
     public static void config() {

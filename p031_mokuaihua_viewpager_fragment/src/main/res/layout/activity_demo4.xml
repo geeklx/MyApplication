@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black858585">
@@ -34,17 +35,21 @@
                 android:layout_height="350dp" />
 
             <!--app:indicator_interval="30dp"-->
-            <com.example.p031_mokuaihua_viewpager_fragment.demo3.utils.IndexPagerIndicator
+            <com.example.p031_mokuaihua_viewpager_fragment.demo4.widgets.DotIndicatorView
                 android:id="@+id/indicator"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                app:indicator_height="5dp"
-                app:indicator_interval="0dp"
-                app:indicator_item_color="#33FFFFFF"
-                app:indicator_select_color="@android:color/white"
-                app:indicator_width="40dp" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                app:indicator_circle_radius="4dp"
+                app:indicator_current_color="#FF01022C"
+                app:indicator_current_size="30dp"
+                app:indicator_current_style="large"
+                app:indicator_normal_color="#FF9297BC"
+                app:indicator_padding="8dp"
+                app:indicator_position="center"
+                tools:visibility="visible" />
 
         </LinearLayout>
 

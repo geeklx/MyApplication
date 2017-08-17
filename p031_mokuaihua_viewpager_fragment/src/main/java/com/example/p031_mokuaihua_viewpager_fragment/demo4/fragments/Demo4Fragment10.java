@@ -1,4 +1,4 @@
-package com.example.p031_mokuaihua_viewpager_fragment.demo3.fragments;
+package com.example.p031_mokuaihua_viewpager_fragment.demo4.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -7,13 +7,13 @@ import android.view.View;
 
 import com.example.p031_mokuaihua_viewpager_fragment.R;
 import com.example.p031_mokuaihua_viewpager_fragment.base.BaseIndexNetFragment;
-import com.example.p031_mokuaihua_viewpager_fragment.demo3.Demo3Activity;
+import com.example.p031_mokuaihua_viewpager_fragment.demo4.Demo4Activity;
 
 /**
  * Created by shining on 2017/8/14.
  */
 
-public class Demo3Fragment11 extends BaseIndexNetFragment {
+public class Demo4Fragment10 extends BaseIndexNetFragment {
 
 
     private Context mContext;
@@ -31,7 +31,7 @@ public class Demo3Fragment11 extends BaseIndexNetFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_demo3_fragment11;
+        return R.layout.activity_demo4_fragment10;
     }
 
     @Override
@@ -40,8 +40,8 @@ public class Demo3Fragment11 extends BaseIndexNetFragment {
         rootView.findViewById(R.id.tv1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SendToFragment("demo3的fragment11页面");
-                ((Demo3Activity) mContext).changeView(1);
+                SendToFragment("demo4的fragment1页面");
+                ((Demo4Activity) mContext).changeView(1);
             }
         });
     }
@@ -56,8 +56,8 @@ public class Demo3Fragment11 extends BaseIndexNetFragment {
 //        IndexFoodFragmentUpdateIds iff = new IndexFoodFragmentUpdateIds();
 //        iff.setFood_definition_id(id1);
 //        iff.setFood_name(id2);
-        if (getActivity() != null && getActivity() instanceof Demo3Activity) {
-            ((Demo3Activity) getActivity()).callFragment(id1, Demo3Fragment20.class.getName());
+        if (getActivity() != null && getActivity() instanceof Demo4Activity) {
+            ((Demo4Activity) getActivity()).callFragment(id1, Demo4Fragment20.class.getName());
         }
     }
 }

@@ -10,14 +10,6 @@ import com.example.p031_mokuaihua_viewpager_fragment.applications.DemoApplicatio
 import com.example.p031_mokuaihua_viewpager_fragment.base.BaseFragment;
 import com.example.p031_mokuaihua_viewpager_fragment.utils.MyLogUtil;
 
-
-/**
- * <p>function: </p>
- * <p>description:  </p>
- * <p>history:  1. 2017/3/23</p>
- * <p>Author: qibin</p>
- * <p>modification:</p>
- */
 public class Demo2Config1 {
 
     private static final String INDEX_META_DATA = "DEMO2_CONFIG";

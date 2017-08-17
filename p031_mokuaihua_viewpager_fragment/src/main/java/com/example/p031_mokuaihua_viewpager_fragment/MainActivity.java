@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.example.p031_mokuaihua_viewpager_fragment.demo1.Demo1Activity;
 import com.example.p031_mokuaihua_viewpager_fragment.demo2.Demo2Activity;
 import com.example.p031_mokuaihua_viewpager_fragment.demo3.Demo3Activity;
+import com.example.p031_mokuaihua_viewpager_fragment.demo4.Demo4Activity;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
@@ -66,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 break;
             case R.id.tv_demo4:
                 //TODO 单Activity页面多模块多版本三个Viewpager
-                startActivity(new Intent(this, Demo1Activity.class));
+                startActivity(new Intent(this, Demo4Activity.class));
                 break;
             default:
                 break;
