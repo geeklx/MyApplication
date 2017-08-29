@@ -24,24 +24,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.shining.p010_recycleviewall.recycleviewlistview.MainActivity1" />
-        <activity android:name="com.shining.p010_recycleviewall.recycleviewgridview.MainActivity2" />
-        <activity android:name="com.shining.p010_recycleviewall.recycleviewlistviewaddheadandfooter.MainActivity3" />
-        <activity android:name="com.shining.p010_recycleviewall.recycleviewgridviewaddheadandfooter.MainActivity4" />
-        <activity android:name="com.shining.p010_recycleviewall.tablayout.fragmentviewpager.MainActivityTabLayout" />
-        <activity android:name="com.shining.p010_recycleviewall.tablayout.fragmentframelayout.ShopIndexActivity" />
-        <activity android:name="com.shining.p010_recycleviewall.recycleviewbiaoge.MainActivityBiaoge" />
-        <activity android:name="com.shining.p010_recycleviewall.recycleviewdifferentitem.MainActivityDff" />
-        <activity android:name="com.shining.p010_recycleviewall.bluetoothold.MainActivity_BlueTooth" />
-        <activity
-            android:name="com.shining.p010_recycleviewall.shoucang.lookall.LookAllActivity"
-            android:screenOrientation="landscape"
-            android:theme="@style/Theme.notitle" />
-        <activity
-            android:name="com.shining.p010_recycleviewall.shoucang.ShoucangIndexActivity"
-            android:screenOrientation="landscape"
-            android:theme="@style/Theme.notitle" />
-
+        <activity android:name=".recycleviewlistview.MainActivity1" />
+        <activity android:name=".recycleviewgridview.MainActivity2" />
+        <activity android:name=".recycleviewlistviewaddheadandfooter.MainActivity3" />
+        <activity android:name=".recycleviewgridviewaddheadandfooter.MainActivity4" />
+        <activity android:name=".tablayout.fragmentviewpager.MainActivityTabLayout" />
+        <activity android:name=".tablayout.fragmentframelayout.ShopIndexActivity" />
+        <activity android:name=".recycleviewbiaoge.MainActivityBiaoge" />
+        <activity android:name=".recycleviewdifferentitem.MainActivityDff" />
+        <activity android:name=".bluetoothold.MainActivity_BlueTooth_Old" />
+        <activity android:name=".bluetooth.MainActivity_BlueTooth" />
+        <activity android:name=".recycleviewlistviewaddheadandfooterhorizontal.MainActivityHorizontal" />
+        <activity android:name=".recycleviewlistviewaddheadandfootervertical.MainActivityVertical" />
 
         <!--shoucang config start-->
         <meta-data

@@ -34,6 +34,7 @@ public class DemoApplication extends MultiDexApplication {
 
         setAPPandDeviceInfo();
 
+
         MultiDex.install(mContext);
 
         GlideOptionsFactory.init(this, com.shining.p010_recycleviewall.R.drawable.ic_def_loading);

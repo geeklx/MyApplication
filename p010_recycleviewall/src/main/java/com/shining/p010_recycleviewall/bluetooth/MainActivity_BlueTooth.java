@@ -32,6 +32,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import com.shining.p010_recycleviewall.R;
 import com.shining.p010_recycleviewall.bluetooth.bluecommon.bean.BlueDevice;
 import com.shining.p010_recycleviewall.bluetooth.bluecommon.utils.SettingblueUtils;
 import com.shining.p010_recycleviewall.utils.ShowLoadingUtil;
@@ -44,6 +45,7 @@ import java.util.Set;
 import java.util.UUID;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 
 /**
@@ -61,31 +63,31 @@ public class MainActivity_BlueTooth extends AppCompatActivity implements View.On
     private static final int BLUE_TIME = 120;
     private static final int BLUE_yipeidui = -1;
     private static final int BLUE_yilianjie = 2;
-    @BindView(com.shining.p010_recycleviewall.R.id.toggle_lanya)
+    @BindView(R.id.toggle_lanya)
     ToggleButton toggle_lanya;
-    @BindView(com.shining.p010_recycleviewall.R.id.toggle_lany_shebei)
+    @BindView(R.id.toggle_lany_shebei)
     ToggleButton toggle_lany_shebei;
-    @BindView(com.shining.p010_recycleviewall.R.id.tv_o_c)
+    @BindView(R.id.tv_o_c)
     TextView tv_o_c;
-    @BindView(com.shining.p010_recycleviewall.R.id.tv_de1)
+    @BindView(R.id.tv_de1)
     TextView tv_de1;
-    @BindView(com.shining.p010_recycleviewall.R.id.tv_de2)
+    @BindView(R.id.tv_de2)
     TextView tv_de2;
-    @BindView(com.shining.p010_recycleviewall.R.id.tv_de3)
+    @BindView(R.id.tv_de3)
     TextView tv_de3;
-    @BindView(com.shining.p010_recycleviewall.R.id.ll_ceng1)
+    @BindView(R.id.ll_ceng1)
     LinearLayout ll_ceng1;
-    @BindView(com.shining.p010_recycleviewall.R.id.tv_zzsm)
+    @BindView(R.id.tv_zzsm)
     TextView tv_zzsm;
-    @BindView(com.shining.p010_recycleviewall.R.id.button_id)
+    @BindView(R.id.button_id)
     Button button_id;
-    @BindView(com.shining.p010_recycleviewall.R.id.sll)
+    @BindView(R.id.sll)
     ScrollView sll;
-    @BindView(com.shining.p010_recycleviewall.R.id.rl_ceng2)
+    @BindView(R.id.rl_ceng2)
     RelativeLayout rl_ceng2;
-    @BindView(com.shining.p010_recycleviewall.R.id.recycler_view1)
+    @BindView(R.id.recycler_view1)
     RecyclerView recyclerView1;
-    @BindView(com.shining.p010_recycleviewall.R.id.recycler_view11)
+    @BindView(R.id.recycler_view11)
     RecyclerView recyclerView2;
     //这条是蓝牙串口通用的UUID，不要更改
     private static final UUID MY_UUID =
@@ -145,7 +147,9 @@ public class MainActivity_BlueTooth extends AppCompatActivity implements View.On
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.shining.p010_recycleviewall.R.layout.activity_main_recyclelistview_bluetooth);
+        setContentView(R.layout.activity_main_recyclelistview_bluetooth);
+
+        ButterKnife.bind(this);
         /**判断手机系统的版本*/
         Log.d("MainActivity", Build.VERSION.SDK_INT + "");
         if (Build.VERSION.SDK_INT >= 6.0) {//Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
@@ -261,7 +265,7 @@ public class MainActivity_BlueTooth extends AppCompatActivity implements View.On
                     return;
                 }
                 SettingblueUtils.discontectBuleDevices(listItem, mBluetoothAdapter, a2dp);
-//                SpUtils.getInstance(MainActivity_BlueTooth.this).put("a2dp_state", "");
+//                SpUtils.getInstance(MainActivity_BlueTooth_Old.this).put("a2dp_state", "");
 //                Data1();
             }
         });
@@ -293,7 +297,7 @@ public class MainActivity_BlueTooth extends AppCompatActivity implements View.On
                 } else {
                     /**完成配对的,直接连接*/
                     /**使用A2DP协议连接设备*/
-//                    SpUtils.getInstance(MainActivity_BlueTooth.this).put("a2dp_state", currentBluetoothDevice_address);
+//                    SpUtils.getInstance(MainActivity_BlueTooth_Old.this).put("a2dp_state", currentBluetoothDevice_address);
                     mBluetoothAdapter.getProfileProxy(MainActivity_BlueTooth.this, mProfileServiceListener, BluetoothProfile.A2DP);
                 }
             }
@@ -359,7 +363,7 @@ public class MainActivity_BlueTooth extends AppCompatActivity implements View.On
                         //old
                         shezhi_connect_peidui(listItem_bind);
                         //new
-//                        showDailogs(MainActivity_BlueTooth.this, "是否与设备" + listItem_bind.getName() + "连接？", new DialogInterface.OnClickListener() {
+//                        showDailogs(MainActivity_BlueTooth_Old.this, "是否与设备" + listItem_bind.getName() + "连接？", new DialogInterface.OnClickListener() {
 //                            @Override
 //                            public void onClick(DialogInterface dialogInterface, int i) {
 //                                //扫描周围设备是否开启 如果开启就连接 不开启就提示未找到bufen
@@ -439,10 +443,10 @@ public class MainActivity_BlueTooth extends AppCompatActivity implements View.On
             currentBluetoothDevice_address = (String) SpUtils.getInstance(MainActivity_BlueTooth.this).get("a2dp_state", "");
             Log.d("atodp_status", currentBluetoothDevice_address + "地址00");
             if (mList1.get(i).getAddress().equals(currentBluetoothDevice_address)) {
-                bd.setStatus(getResources().getString(com.shining.p010_recycleviewall.R.string.bluetooth_tips5));
+                bd.setStatus(getResources().getString(R.string.bluetooth_tips5));
                 bd.setType(BLUE_yilianjie);// 2
             } else {
-                bd.setStatus(getResources().getString(com.shining.p010_recycleviewall.R.string.bluetooth_tips4));
+                bd.setStatus(getResources().getString(R.string.bluetooth_tips4));
                 bd.setType(BLUE_yipeidui);
             }
             if (mList1.get(i).getName() == null || mList1.get(i).getName().equals("")) {
@@ -472,7 +476,7 @@ public class MainActivity_BlueTooth extends AppCompatActivity implements View.On
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case com.shining.p010_recycleviewall.R.id.button_id:
+            case R.id.button_id:
                 //开始
                 tv_zzsm.setVisibility(View.VISIBLE);
                 button_id.setVisibility(View.VISIBLE);
@@ -498,7 +502,7 @@ public class MainActivity_BlueTooth extends AppCompatActivity implements View.On
         public void onTick(long millisUntilFinished) {
 //            tv_de3.setBackgroundResource(R.drawable.address_manager_defult);
             toggle_lany_shebei.setChecked(true);
-            tv_de2.setText(getResources().getString(com.shining.p010_recycleviewall.R.string.tips2) + (millisUntilFinished / 1000) + "）");
+            tv_de2.setText(getResources().getString(R.string.tips2) + (millisUntilFinished / 1000) + "）");
         }
 
         @Override
@@ -545,7 +549,7 @@ public class MainActivity_BlueTooth extends AppCompatActivity implements View.On
                 timer.start();
             }
         } else {
-            tv_de2.setText(getResources().getString(com.shining.p010_recycleviewall.R.string.tips1));
+            tv_de2.setText(getResources().getString(R.string.tips1));
             toggle_lany_shebei.setChecked(false);
 //            tv_de3.setBackgroundResource(R.drawable.address_manager_normal);
             if (timer != null) {

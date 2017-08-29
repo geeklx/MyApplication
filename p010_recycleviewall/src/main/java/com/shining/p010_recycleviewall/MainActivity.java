@@ -11,14 +11,16 @@ import com.alipay.api.AlipayClient;
 import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.request.AlipayTradePrecreateRequest;
 import com.alipay.api.response.AlipayTradePrecreateResponse;
-import com.shining.p010_recycleviewall.bluetoothold.MainActivity_BlueTooth;
+import com.shining.p010_recycleviewall.bluetooth.MainActivity_BlueTooth;
+import com.shining.p010_recycleviewall.bluetoothold.MainActivity_BlueTooth_Old;
 import com.shining.p010_recycleviewall.recycleviewbiaoge.MainActivityBiaoge;
 import com.shining.p010_recycleviewall.recycleviewdifferentitem.MainActivityDff;
 import com.shining.p010_recycleviewall.recycleviewgridview.MainActivity2;
 import com.shining.p010_recycleviewall.recycleviewgridviewaddheadandfooter.MainActivity4;
 import com.shining.p010_recycleviewall.recycleviewlistview.MainActivity1;
 import com.shining.p010_recycleviewall.recycleviewlistviewaddheadandfooter.MainActivity3;
-import com.shining.p010_recycleviewall.shoucang.ShoucangIndexActivity;
+import com.shining.p010_recycleviewall.recycleviewlistviewaddheadandfooterhorizontal.MainActivityHorizontal;
+import com.shining.p010_recycleviewall.recycleviewlistviewaddheadandfootervertical.MainActivityVertical;
 import com.shining.p010_recycleviewall.tablayout.fragmentframelayout.ShopIndexActivity;
 import com.shining.p010_recycleviewall.tablayout.fragmentviewpager.MainActivityTabLayout;
 
@@ -93,6 +95,13 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.tv10).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity_BlueTooth_Old.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.tv101).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MainActivity_BlueTooth.class);
                 startActivity(intent);
             }
@@ -100,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.tv11).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ShoucangIndexActivity.class);
+                Intent intent = new Intent(MainActivity.this, MainActivityVertical.class);
                 startActivity(intent);
 
 //                //hios activity跳转
@@ -109,6 +118,14 @@ public class MainActivity extends AppCompatActivity {
 //                adListItem.setBanner("imgUrl");
 //                adListItem.setUrl("hios://jump.secondmainactivity?sku_id={s}1000252");//带参数
 //                HiosHelper.click(MainActivity.this, MainActivity.class, adListItem);// 第一个是当前Activity 第二个是Fragment
+
+            }
+        });
+        findViewById(R.id.tv12).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivityHorizontal.class);
+                startActivity(intent);
 
             }
         });

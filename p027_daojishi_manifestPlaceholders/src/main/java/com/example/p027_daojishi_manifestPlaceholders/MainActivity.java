@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.example.p027_daojishi_manifestPlaceholders.util.TimeUtil;
 
 import java.lang.ref.WeakReference;
+import java.lang.reflect.Field;
 
 import static com.example.p027_daojishi_manifestPlaceholders.util.TimeUtil.time_change_one;
 
@@ -93,19 +94,24 @@ public class MainActivity extends AppCompatActivity {
                 int min = Integer.parseInt(tp_min.getText().toString());
                 int sec = Integer.parseInt(tp_sec.getText().toString());
                 if (hour > 0 || min > 0 || sec > 0) {
-                    //计时bufen
+                    //计时bufen 1
 //                    startTimer(hour, min, sec);
-                    startTimer2(60000);
                 }
-
+                //2
+                startTimer2(6000);
+                //3
+//                changeCountdownInterval(1000);
+//                changeMillisInFuture(6000);
+//                if (countDownTimer != null) {
+//                    countDownTimer.cancel();
+//                }
 //                countDownTimer.start();
+
             }
         });
-
-
     }
 
-    private CountDownTimer countDownTimer = new CountDownTimer(60000, 1000) {
+    private CountDownTimer countDownTimer = new CountDownTimer(365 * 24 * 3600 * 1000, 1000) {
 
         @Override
         public void onTick(long millisUntilFinished) {
@@ -117,10 +123,38 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onFinish() {
+
             tv_hour_decade.setEnabled(true);
             tv_hour_decade.setText("获取验证码");
         }
     };
+
+    //利用反射动态地改变CountDownTimer类的私有字段mCountdownInterval
+    private void changeCountdownInterval(long time) {
+        try {
+            // 反射父类CountDownTimer的mCountdownInterval字段，动态改变回调频率
+            Class clazz = Class.forName("android.os.CountDownTimer");
+            Field field = clazz.getDeclaredField("mCountdownInterval");
+            //从Toast对象中获得mTN变量
+            field.setAccessible(true);
+            field.set(countDownTimer, time);
+        } catch (Exception e) {
+            Log.e("Ye", "反射类android.os.CountDownTimer.mCountdownInterval失败：" + e);
+        }
+    }
+
+    //利用反射动态地改变CountDownTimer类的私有字段mMillisInFuture
+    private void changeMillisInFuture(long time) {
+        try {
+            // 反射父类CountDownTimer的mMillisInFuture字段，动态改变定时总时间
+            Class clazz = Class.forName("android.os.CountDownTimer");
+            Field field = clazz.getDeclaredField("mMillisInFuture");
+            field.setAccessible(true);
+            field.set(countDownTimer, time);
+        } catch (Exception e) {
+            Log.e("Ye", "反射类android.os.CountDownTimer.mMillisInFuture失败： " + e);
+        }
+    }
 
 
     private void startTimer(int hour, int min, int sec) {

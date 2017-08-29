@@ -26,8 +26,8 @@ public class BluetoothReceiver extends BroadcastReceiver {
 //            if (device1.getBondState() != BluetoothDevice.BOND_BONDED) {
 //                Stack<Activity> as = AppManager.getInstance().getAll();
 //                for (Activity a : as) {
-//                    if (a instanceof MainActivity_BlueTooth) {
-//                        ((MainActivity_BlueTooth) a).receiver1(device1);
+//                    if (a instanceof MainActivity_BlueTooth_Old) {
+//                        ((MainActivity_BlueTooth_Old) a).receiver1(device1);
 //                        break;
 //                    }
 //                }
@@ -37,16 +37,16 @@ public class BluetoothReceiver extends BroadcastReceiver {
             BluetoothDevice device2 = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
 //            Stack<Activity> as = AppManager.getInstance().getAll();
 //            for (Activity a : as) {
-//                if (a instanceof MainActivity_BlueTooth) {
-//                    ((MainActivity_BlueTooth) a).receiver2(device2, context);
+//                if (a instanceof MainActivity_BlueTooth_Old) {
+//                    ((MainActivity_BlueTooth_Old) a).receiver2(device2, context);
 //                    break;
 //                }
 //            }
         } else if (action.equals(BluetoothAdapter.ACTION_DISCOVERY_FINISHED)) {
 //            Stack<Activity> as = AppManager.getInstance().getAll();
 //            for (Activity a : as) {
-//                if (a instanceof MainActivity_BlueTooth) {
-//                    ((MainActivity_BlueTooth) a).receiver3();
+//                if (a instanceof MainActivity_BlueTooth_Old) {
+//                    ((MainActivity_BlueTooth_Old) a).receiver3();
 //                    break;
 //                }
 //            }
@@ -54,22 +54,22 @@ public class BluetoothReceiver extends BroadcastReceiver {
             int state = intent.getIntExtra(BluetoothA2dp.EXTRA_STATE, BluetoothA2dp.STATE_DISCONNECTED);
 //            Stack<Activity> as = AppManager.getInstance().getAll();
 //            for (Activity a : as) {
-//                if (a instanceof MainActivity_BlueTooth) {
-//                    ((MainActivity_BlueTooth) a).receiver4(state);
+//                if (a instanceof MainActivity_BlueTooth_Old) {
+//                    ((MainActivity_BlueTooth_Old) a).receiver4(state);
 //                    break;
 //                }
 //            }
 //            if (state == BluetoothA2dp.STATE_DISCONNECTED) {
-//                if (MainActivity_BlueTooth.a2dp != null) {
-//                    MainActivity_BlueTooth.a2dp = null;
+//                if (MainActivity_BlueTooth_Old.a2dp != null) {
+//                    MainActivity_BlueTooth_Old.a2dp = null;
 //                }
 //            }
         } else if (action.equals(BluetoothA2dp.ACTION_PLAYING_STATE_CHANGED)) {
             int state = intent.getIntExtra(BluetoothA2dp.EXTRA_STATE, BluetoothA2dp.STATE_NOT_PLAYING);
 //            Stack<Activity> as = AppManager.getInstance().getAll();
 //            for (Activity a : as) {
-//                if (a instanceof MainActivity_BlueTooth) {
-//                    ((MainActivity_BlueTooth) a).receiver5(state);
+//                if (a instanceof MainActivity_BlueTooth_Old) {
+//                    ((MainActivity_BlueTooth_Old) a).receiver5(state);
 //                    break;
 //                }
 //            }

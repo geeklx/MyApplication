@@ -11,8 +11,12 @@
             <option value="$PROJECT_DIR$/DuerSdkLib" />
             <option value="$PROJECT_DIR$/glin" />
             <option value="$PROJECT_DIR$/gravitysnaphelper" />
+            <option value="$PROJECT_DIR$/opendroidlibrary" />
+            <option value="$PROJECT_DIR$/opendroidyuanlibrary" />
             <option value="$PROJECT_DIR$/p010_recycleviewall" />
-            <option value="$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment" />
+            <option value="$PROJECT_DIR$/p033_sqlite" />
+            <option value="$PROJECT_DIR$/p034_greendao_sqlite" />
+            <option value="$PROJECT_DIR$/p035_sugar_sqlite" />
             <option value="$PROJECT_DIR$/shapeloading" />
           </set>
         </option>
