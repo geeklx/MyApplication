@@ -46,9 +46,6 @@ public class MainActivity extends AppCompatActivity {
 //                TabUtils.tabBoldCurrent(tabLayout, tab);
 //                int tag = (int) tab.getTag();
 //                LvToastUtil.showToast(TabActivity1.this, tag + "");
-                Intent intent = new Intent();
-                intent.setAction("from_other_to_MyWallletActivity");
-                startActivity(intent);
 
             }
         });
