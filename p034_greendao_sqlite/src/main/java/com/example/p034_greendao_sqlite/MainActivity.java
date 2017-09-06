@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.p034_greendao_sqlite.application.DemoApplication;
 import com.example.p034_greendao_sqlite.domain.User;
@@ -96,20 +97,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //增
     private void insertData(int i) {
-        User insertData = new User((long)i, "geek", "100", "男", "100");
+        User insertData = new User(null, i + "", "geek", "100", "男", "100");
         mUserDao.insert(insertData);
     }
 
     //改
     private void updateData(int i) {
-        User updateData = new User((long) i, "geek1", "101", "女", "101");
-        mUserDao.update(updateData);
+//        User updateData = new User(null, i + "", "geek1", "101", "女", "101");
+//        User updateData = new User((long) i, "geek1", "101", "女", "101");
+//        mUserDao.update(updateData);
+
+        User user = mUserDao.queryBuilder()
+                .where(UserDao.Properties.Userid.eq(i + "")/*, UserDao.Properties.Name.like("%90%")*/).build().unique();
+        if (user == null) {
+            Toast.makeText(MainActivity.this, "用户不存在!", Toast.LENGTH_SHORT).show();
+        } else {
+            user.setUserid(i + "");
+            user.setName("geek1");
+            user.setAge("101");
+            user.setSex("女");
+            user.setSalary("101");
+            mUserDao.update(user);
+        }
     }
 
     //删
 
     private void deleteData(int id) {
-        mUserDao.deleteByKey((long) id);
+        User user = mUserDao.queryBuilder().where(UserDao.Properties.Userid.eq(id + "")).build().unique();
+        if (user == null) {
+            Toast.makeText(MainActivity.this, "用户不存在", Toast.LENGTH_SHORT).show();
+        } else {
+            mUserDao.deleteByKey(user.getId());
+        }
+//        User updateData = new User((long) i, "geek1", "101", "女", "101");
+//        mUserDao.deleteByKey((long) id);
     }
 
     //删全部

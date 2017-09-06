@@ -5,13 +5,12 @@
       <module fileurl="file://$PROJECT_DIR$/DuerSdkLib/DuerSdkLib.iml" filepath="$PROJECT_DIR$/DuerSdkLib/DuerSdkLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/glin/glin.iml" filepath="$PROJECT_DIR$/glin/glin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glinlibrary/glinlibrary.iml" filepath="$PROJECT_DIR$/glinlibrary/glinlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" filepath="$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/opendroidlibrary/opendroidlibrary.iml" filepath="$PROJECT_DIR$/opendroidlibrary/opendroidlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" filepath="$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p033_sqlite/p033_sqlite.iml" filepath="$PROJECT_DIR$/p033_sqlite/p033_sqlite.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p034_greendao_sqlite/p034_greendao_sqlite.iml" filepath="$PROJECT_DIR$/p034_greendao_sqlite/p034_greendao_sqlite.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p035_sugar_sqlite/p035_sugar_sqlite.iml" filepath="$PROJECT_DIR$/p035_sugar_sqlite/p035_sugar_sqlite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p036_tablayoutdemo/p036_tablayoutdemo.iml" filepath="$PROJECT_DIR$/p036_tablayoutdemo/p036_tablayoutdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>
   </component>

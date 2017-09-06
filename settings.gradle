@@ -1,4 +1,4 @@
-include ':glin', ':gravitysnaphelper', ':opendroidlibrary', ':opendroidyuanlibrary', 'shapeloading'
+include ':glin', ':gravitysnaphelper', ':opendroidlibrary', ':opendroidyuanlibrary', ':glinlibrary', 'shapeloading'
 
 include ':DuerSdkLib'
 
@@ -37,7 +37,8 @@ include ':p010_recycleviewall'
 //include ':p029_banner_lunbo'
 //include ':p030_popbgqcode'
 //include ':p031_mokuaihua_viewpager_fragment'
-//include':p032_handleralluse'
-include ':p033_sqlite'
-include ':p034_greendao_sqlite'
-include ':p035_sugar_sqlite'
+//include ':p032_handleralluse'
+//include ':p033_sqlite'
+//include ':p034_greendao_sqlite'
+//include ':p035_sugar_sqlite'
+include ':p036_tablayoutdemo'

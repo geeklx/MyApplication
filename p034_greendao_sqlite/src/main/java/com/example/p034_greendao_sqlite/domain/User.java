@@ -12,6 +12,7 @@ import org.greenrobot.greendao.annotation.Generated;
 public class User {
     @Id
     private Long id;
+    private String userid;
     private String name;
     private String age;
     private String sex;
@@ -46,9 +47,17 @@ public class User {
     public void setId(Long id) {
         this.id = id;
     }
-    @Generated(hash = 1281958717)
-    public User(Long id, String name, String age, String sex, String salary) {
+    public String getUserid() {
+        return this.userid;
+    }
+    public void setUserid(String userid) {
+        this.userid = userid;
+    }
+    @Generated(hash = 364037205)
+    public User(Long id, String userid, String name, String age, String sex,
+            String salary) {
         this.id = id;
+        this.userid = userid;
         this.name = name;
         this.age = age;
         this.sex = sex;
