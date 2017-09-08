@@ -36,6 +36,7 @@
         <activity android:name=".bluetooth.MainActivity_BlueTooth" />
         <activity android:name=".recycleviewlistviewaddheadandfooterhorizontal.MainActivityHorizontal" />
         <activity android:name=".recycleviewlistviewaddheadandfootervertical.MainActivityVertical" />
+        <activity android:name=".recycleviewgalleryhorizontal.MainActivityGallery" />
 
         <!--shoucang config start-->
         <meta-data

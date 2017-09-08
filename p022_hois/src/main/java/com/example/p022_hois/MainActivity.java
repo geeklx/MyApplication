@@ -18,7 +18,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //TODO test
+//        HiosHelper2.resolveAd(MainActivity.this, MainActivity.this, "https://www.wenjuan.net/s/ZJj6R3/");
 
+        init();
+    }
+
+    private void init() {
         findViewById(R.id.tv1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,7 +75,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
     }
 }

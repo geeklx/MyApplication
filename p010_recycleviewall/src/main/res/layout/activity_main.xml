@@ -76,12 +76,14 @@
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:text="recycleview_bluetooth_old" />
+
         <TextView
             android:id="@+id/tv101"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:text="recycleview_bluetooth" />
+
         <TextView
             android:id="@+id/tv7"
             android:layout_width="wrap_content"
@@ -102,5 +104,12 @@
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:text="竖向滚动RecycleView" />
+
+        <TextView
+            android:id="@+id/tv13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Gallery横向滚动RecycleView" />
     </LinearLayout>
 </ScrollView>

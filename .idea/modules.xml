@@ -10,7 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/opendroidlibrary/opendroidlibrary.iml" filepath="$PROJECT_DIR$/opendroidlibrary/opendroidlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" filepath="$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p036_tablayoutdemo/p036_tablayoutdemo.iml" filepath="$PROJECT_DIR$/p036_tablayoutdemo/p036_tablayoutdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p022_hois/p022_hois.iml" filepath="$PROJECT_DIR$/p022_hois/p022_hois.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>
   </component>

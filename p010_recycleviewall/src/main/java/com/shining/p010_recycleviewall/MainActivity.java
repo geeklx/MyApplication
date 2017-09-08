@@ -15,6 +15,7 @@ import com.shining.p010_recycleviewall.bluetooth.MainActivity_BlueTooth;
 import com.shining.p010_recycleviewall.bluetoothold.MainActivity_BlueTooth_Old;
 import com.shining.p010_recycleviewall.recycleviewbiaoge.MainActivityBiaoge;
 import com.shining.p010_recycleviewall.recycleviewdifferentitem.MainActivityDff;
+import com.shining.p010_recycleviewall.recycleviewgalleryhorizontal.MainActivityGallery;
 import com.shining.p010_recycleviewall.recycleviewgridview.MainActivity2;
 import com.shining.p010_recycleviewall.recycleviewgridviewaddheadandfooter.MainActivity4;
 import com.shining.p010_recycleviewall.recycleviewlistview.MainActivity1;
@@ -127,6 +128,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, MainActivityHorizontal.class);
                 startActivity(intent);
 
+            }
+        });
+
+        findViewById(R.id.tv13).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivityGallery.class);
+                startActivity(intent);
             }
         });
         //支付宝扫码支付bufen

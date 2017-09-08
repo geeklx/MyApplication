@@ -6,7 +6,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import com.shining.p010_recycleviewall.application.DemoApplication;
 
 import java.lang.reflect.Field;
@@ -25,7 +24,7 @@ public class ToastUtil {
             toast = Toast.makeText(DemoApplication.get(), "", Toast.LENGTH_SHORT);
             updToastTextSize(toast);
         }
-        toast.setGravity(Gravity.CENTER, 0, 0);
+        toast.setGravity(Gravity.BOTTOM, 0, 20);
         toast.setText(toastText + "");
         toast.show();
     }
@@ -63,10 +62,14 @@ public class ToastUtil {
             Field f = toast.getClass().getDeclaredField("mNextView");
             f.setAccessible(true);
             ViewGroup view = (ViewGroup) f.get(toast);
-            if (view == null) { return;}
+            if (view == null) {
+                return;
+            }
             TextView tv = (TextView) view.getChildAt(0);
-            if (tv == null) { return;}
-            tv.setTextSize(50);
+            if (tv == null) {
+                return;
+            }
+            tv.setTextSize(10);
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (NoSuchFieldException e) {
