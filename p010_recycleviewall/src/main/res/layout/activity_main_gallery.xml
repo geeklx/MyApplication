@@ -13,12 +13,20 @@
         android:background="@color/gray"
         android:orientation="vertical">
 
+        <!--Vertical-->
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recycler_view1"-->
+            <!--android:layout_width="140dp"-->
+            <!--android:layout_height="600dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginTop="-200dp"-->
+            <!--android:overScrollMode="never" />-->
+        <!--Horizontal-->
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler_view1"
-            android:layout_width="140dp"
-            android:layout_height="600dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginTop="-200dp"
             android:overScrollMode="never" />
 
         <RelativeLayout

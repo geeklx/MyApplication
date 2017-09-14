@@ -46,7 +46,7 @@ public class MainActivityGallery extends AppCompatActivity {
         recyclerView1 = (RecyclerView) findViewById(R.id.recycler_view1);
 
         mAdapter1 = new RecycleAdapterGalleryHorizontal(this);
-        galleryLayoutManager = new GalleryLayoutManager(GalleryLayoutManager.VERTICAL);
+        galleryLayoutManager = new GalleryLayoutManager(GalleryLayoutManager.HORIZONTAL);
         galleryLayoutManager.attach(recyclerView1, 3);
         galleryLayoutManager.setItemTransformer(new ScaleTransformer());//这个参数控制图片显示大小
         galleryLayoutManager.setOnItemSelectedListener(new GalleryLayoutManager.OnItemSelectedListener() {
