@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/DuerSdkLib" />
+            <option value="$PROJECT_DIR$/glide411library" />
             <option value="$PROJECT_DIR$/glin" />
             <option value="$PROJECT_DIR$/glinlibrary" />
             <option value="$PROJECT_DIR$/gravitysnaphelper" />
@@ -16,7 +17,7 @@
             <option value="$PROJECT_DIR$/opendroidyuanlibrary" />
             <option value="$PROJECT_DIR$/p010_recycleviewall" />
             <option value="$PROJECT_DIR$/p022_hois" />
-            <option value="$PROJECT_DIR$/p040_glide4.0" />
+            <option value="$PROJECT_DIR$/p041_glide411" />
             <option value="$PROJECT_DIR$/shapeloading" />
           </set>
         </option>

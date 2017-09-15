@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">P041_glide411</string>
+    <string name="transitional_image">the image of transition</string>
+    <string name="image_index">%1$d/%2$d</string>
+</resources>

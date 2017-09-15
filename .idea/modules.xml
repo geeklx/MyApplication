@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DuerSdkLib/DuerSdkLib.iml" filepath="$PROJECT_DIR$/DuerSdkLib/DuerSdkLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glide411library/glide411library.iml" filepath="$PROJECT_DIR$/glide411library/glide411library.iml" />
       <module fileurl="file://$PROJECT_DIR$/glin/glin.iml" filepath="$PROJECT_DIR$/glin/glin.iml" />
       <module fileurl="file://$PROJECT_DIR$/glinlibrary/glinlibrary.iml" filepath="$PROJECT_DIR$/glinlibrary/glinlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" filepath="$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" />
@@ -11,7 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" filepath="$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
       <module fileurl="file://$PROJECT_DIR$/p022_hois/p022_hois.iml" filepath="$PROJECT_DIR$/p022_hois/p022_hois.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p040_glide4.0/p040_glide4.0.iml" filepath="$PROJECT_DIR$/p040_glide4.0/p040_glide4.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p041_glide411/p041_glide411.iml" filepath="$PROJECT_DIR$/p041_glide411/p041_glide411.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>
   </component>
