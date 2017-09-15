@@ -11,7 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" filepath="$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
       <module fileurl="file://$PROJECT_DIR$/p022_hois/p022_hois.iml" filepath="$PROJECT_DIR$/p022_hois/p022_hois.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p039_edittextpwd/p039_edittextpwd.iml" filepath="$PROJECT_DIR$/p039_edittextpwd/p039_edittextpwd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p040_glide4.0/p040_glide4.0.iml" filepath="$PROJECT_DIR$/p040_glide4.0/p040_glide4.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>
   </component>
