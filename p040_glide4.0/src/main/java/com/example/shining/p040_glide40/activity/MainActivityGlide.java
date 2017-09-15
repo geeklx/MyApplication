@@ -49,14 +49,14 @@ public class MainActivityGlide extends AppCompatActivity {
 
     private GlideImageView image41;
     private CircleProgressView progressView1;
-    private String image41BigUrl = "";
-    private String image41SmallUrl = "";
+    private String image41BigUrl = "https://raw.githubusercontent.com/geeklx/MyApplication/master/p040_glide4.0/screenshot/1232.png";
+    private String image41SmallUrl = "https://raw.githubusercontent.com/geeklx/MyApplication/master/p040_glide4.0/screenshot/1231.png";
 
 
     private GlideImageView image42;
     private CircleProgressView progressView2;
-    private String image42BigUrl = "";
-    private String image42SmallUrl = "";
+    private String image42BigUrl = "https://raw.githubusercontent.com/geeklx/MyApplication/master/p040_glide4.0/screenshot/1234.png";
+    private String image42SmallUrl = "https://raw.githubusercontent.com/geeklx/MyApplication/master/p040_glide4.0/screenshot/1233.png";
 
     private static boolean isLoadAgain = false; // Just for fun when loading images!
 
