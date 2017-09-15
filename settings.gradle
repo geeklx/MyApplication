@@ -1,6 +1,7 @@
 include ':glin', ':gravitysnaphelper',
         ':opendroidlibrary', ':opendroidyuanlibrary',
-        ':glinlibrary',  ':glide411library', 'shapeloading'
+        ':glinlibrary', ':glide411library',
+        ':shapeloading'
 
 include ':DuerSdkLib'
 
