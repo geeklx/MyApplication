@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingBottom="20dp">
+
+        <com.shizhefei.view.largeimage.LargeImageView
+            android:id="@+id/networkDemo_photoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.example.shining.glide411library.progress.CircleProgressView
+            android:id="@+id/progressView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:progress="0"
+            app:cpv_progressNormalColor="@color/transparent10"
+            app:cpv_progressReachColor="@color/transparent90_white"
+            app:cpv_progressStyle="FillInner"
+            app:cpv_progressTextColor="@color/red"
+            app:cpv_progressTextSize="13sp"
+            app:cpv_progressTextVisible="false" />
+    </RelativeLayout>
+</LinearLayout>

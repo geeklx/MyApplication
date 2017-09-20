@@ -2,30 +2,43 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shining.p041_glide411">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    <!-- Glide与OkHttp3集成 -->
+    <meta-data
+        android:name="com.example.lagerimage_test.glide.OkHttpProgressGlideModule"
+        android:value="GlideModule" />
 
     <application
+        android:name=".application.DemoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppCompatTheme">
-        <activity android:name=".MainActivityGlide">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".image.SingleImageActivity"
-            android:theme="@style/AppCompatFullscreenStyle"/>
+            android:name=".glidedemo411.image.SingleImageActivity"
+            android:theme="@style/AppCompatFullscreenStyle" />
+        <activity android:name=".glidedemo411.MainActivityGlide" />
+
+        <activity android:name=".largeimage.MainActivityLargeImageNet" />
+        <activity android:name=".largeimage.MainActivityLargeImageLocal1" />
+        <activity android:name=".largeimage.MainActivityLargeImageLocal2" />
     </application>
 
 </manifest>

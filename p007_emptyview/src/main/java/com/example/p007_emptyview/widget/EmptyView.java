@@ -10,11 +10,6 @@ import android.widget.TextView;
 
 import com.example.p007_emptyview.R;
 
-/**
- * 数据加载中/失败默认布局
- * Created by qibin on 2016/8/5.
- */
-
 public class EmptyView extends FrameLayout implements View.OnClickListener {
 
     private View mLoadingView;
