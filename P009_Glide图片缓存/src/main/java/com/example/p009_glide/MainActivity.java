@@ -15,9 +15,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.p009_glide.glide.GlideOptions;
-import com.example.p009_glide.glide.GlideOptionsFactory;
-import com.example.p009_glide.glide.GlideUtil;
+import com.example.p009_glide.glide.options.GlideOptions;
+import com.example.p009_glide.glide.options.GlideOptionsFactory;
+import com.example.p009_glide.glide.options.GlideUtil;
 import com.example.p009_glide.thethree.WindowService;
 import com.example.p009_glide.util.ColorArcProgressBar;
 
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         //1
         GlideUtil.display(MainActivity.this, iv1, "http://img0.bdstatic.com/img/image/touxiang01.jpg", GlideOptionsFactory.get(GlideOptionsFactory.Type.RADIUS));
         //2
-        GlideOptions glideOptions = new GlideOptions(R.drawable.pic_head, R.drawable.pic_head, 300);
+        GlideOptions glideOptions = new GlideOptions(R.drawable.pic_head, R.drawable.pic_head, 500);
         GlideUtil.display(MainActivity.this, iv2, "http://img0.bdstatic.com/img/image/touxiang01.jpg", glideOptions);
 //        Glide.with(context).load(ratings.getSku_image()).skipMemoryCache(true).diskCacheStrategy(DiskCacheStrategy.NONE).into(viewHolder.iv_imgurl);
         //3
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 //        bar4.setDiameter_r(5);//圆形大小
 
         bar4.setTitleString("新鲜度");
-        bar4.setCurrentValues(70);//最大显示值
+        bar4.setCurrentValues(70);//最大显示值当你遇到
         bar4.setUnit("%");
 
         bar4.setNeedTitle(false);//title

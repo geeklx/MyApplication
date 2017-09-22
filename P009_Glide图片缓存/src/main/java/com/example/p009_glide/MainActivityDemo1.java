@@ -1,34 +1,17 @@
 package com.example.p009_glide;
 
 
-import android.app.Activity;
-import android.content.ComponentName;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.p009_glide.glide.GlideOptions;
-import com.example.p009_glide.glide.GlideOptionsFactory;
-import com.example.p009_glide.glide.GlideUtil;
-import com.example.p009_glide.thethree.WindowService;
-import com.example.p009_glide.util.ColorArcProgressBar;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.AnimatorListenerAdapter;
 import com.nineoldandroids.view.ViewHelper;
-
-import java.util.Collections;
-import java.util.List;
 
 import static com.nineoldandroids.view.ViewPropertyAnimator.animate;
 

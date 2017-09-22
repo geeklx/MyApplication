@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.p009_glide.MainActivity">
+    android:background="@color/gray">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,26 +48,33 @@
                 android:src="@drawable/pic_head" />
         </FrameLayout>
 
-        <ImageView
-            android:id="@+id/iv1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:padding="10dp"
-            android:src="@mipmap/ic_launcher" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
-        <ImageView
-            android:id="@+id/iv2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:padding="10dp"
-            android:src="@mipmap/ic_launcher" />
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1" />
 
-        <ImageView
-            android:id="@+id/iv3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:padding="10dp"
-            android:src="@mipmap/ic_launcher" />
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1" />
+        </LinearLayout>
 
 
     </LinearLayout>

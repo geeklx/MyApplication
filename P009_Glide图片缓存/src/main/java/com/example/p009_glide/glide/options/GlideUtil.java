@@ -1,4 +1,4 @@
-package com.example.p009_glide.glide;
+package com.example.p009_glide.glide.options;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,6 +14,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.example.p009_glide.Application;
+import com.example.p009_glide.glide.transformer.RoundedCornersTransformation;
 import com.example.p009_glide.util.MyLogUtil;
 
 
@@ -70,7 +71,7 @@ public class GlideUtil {
         builder.placeholder(op.getReplaceImage()).error(op.getReplaceImage());
         builder.dontAnimate();//.crossFade();
         builder.diskCacheStrategy(DiskCacheStrategy.RESULT);
-        BitmapTransformation bt = new CenterCrop(imageView.getContext());//new TransformerFactory(imageView.getContext());
+        BitmapTransformation bt = new CenterCrop(imageView.getContext());
         if (op.getRadius() == 0) {
             builder.bitmapTransform(bt);
         } else {

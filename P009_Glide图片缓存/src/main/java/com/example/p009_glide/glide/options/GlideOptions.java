@@ -1,4 +1,4 @@
-package com.example.p009_glide.glide;
+package com.example.p009_glide.glide.options;
 
 /**
  * Created by geek on 2016/7/28.
