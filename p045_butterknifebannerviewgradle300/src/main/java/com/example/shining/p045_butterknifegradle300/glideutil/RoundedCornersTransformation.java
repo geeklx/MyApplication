@@ -1,4 +1,4 @@
-package com.example.shining.p045_butterknifegradle300.glideutil.options;
+package com.example.shining.p045_butterknifegradle300.glideutil;
 
 import android.content.Context;
 import android.graphics.Bitmap;

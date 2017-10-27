@@ -1,4 +1,4 @@
-package com.example.shining.p045_butterknifegradle300.glideutil.options;
+package com.example.shining.p045_butterknifegradle300.glideutil;
 
 public class GlideOptions {
     private int radius;

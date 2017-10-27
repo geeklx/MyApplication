@@ -1,5 +1,6 @@
 package com.example.shining.p045_butterknifegradle300.bannerviews;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,9 +12,10 @@ import android.widget.ImageView;
 
 import com.example.shining.p045_butterknifegradle300.BaseActivity;
 import com.example.shining.p045_butterknifegradle300.R;
+import com.example.shining.p045_butterknifegradle300.applications.ToastUtil;
 import com.example.shining.p045_butterknifegradle300.domains.Biaoge_listBean;
-import com.example.shining.p045_butterknifegradle300.glideutil.options.GlideOptionsFactory;
-import com.example.shining.p045_butterknifegradle300.glideutil.options.GlideUtil;
+import com.example.shining.p045_butterknifegradle300.glideutil.GlideOptionsFactory;
+import com.example.shining.p045_butterknifegradle300.glideutil.GlideUtil;
 import com.zhouwei.mzbanner.MZBannerView;
 import com.zhouwei.mzbanner.holder.MZHolderCreator;
 import com.zhouwei.mzbanner.holder.MZViewHolder;
@@ -106,9 +108,15 @@ public class Banner1Activity extends BaseActivity {
         }
 
         @Override
-        public void onBind(Context context, int i, Biaoge_listBean mBean) {
+        public void onBind(final Context context, int i, final Biaoge_listBean mBean) {
             Log.e("geek", "current position:" + i);
             GlideUtil.display(context, mImageView, mBean.getImg_url(), GlideOptionsFactory.get(GlideOptionsFactory.Type.DEFAULT));
+            mImageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    ToastUtil.showToastShort((Activity) context, mBean.getText_content());
+                }
+            });
         }
     }
 
