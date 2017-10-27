@@ -4,7 +4,22 @@ def demo1 = '0001';//DemoAPK1
 def demo2 = '0002';//DemoAPK2
 
 android {
-
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    dexOptions {
+//        incremental true
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 //    signingConfigs {
 //        debug {
 //            keyAlias '****'
@@ -148,7 +163,7 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
 
     //the third file
-    annotationProcessor  'com.jakewharton:butterknife-compiler:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
     compile 'com.jakewharton:butterknife:8.6.0'
 
     compile 'com.android.support:multidex:1.0.1'

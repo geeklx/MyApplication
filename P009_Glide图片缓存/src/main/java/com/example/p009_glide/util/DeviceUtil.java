@@ -169,7 +169,7 @@ public class DeviceUtil {
 
     public static String getDeviceID(TelephonyManager phonyManager) {
 
-        String id = phonyManager.getDeviceId();
+        @SuppressLint("MissingPermission") String id = phonyManager.getDeviceId();
         if (id == null) {
             id = "not available";
         }
@@ -197,8 +197,9 @@ public class DeviceUtil {
 
     }
 
+    @SuppressLint("HardwareIds")
     public static String getLocalMacAddress(Context context) {
-        WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
+        WifiManager wifiManager = (WifiManager) Application.get().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         WifiInfo info = wifiManager.getConnectionInfo();
         return info.getMacAddress();
     }
@@ -208,7 +209,7 @@ public class DeviceUtil {
      */
     @SuppressLint("DefaultLocale")
     public static String getMac() {
-        WifiManager wifi = (WifiManager) Application.get().getSystemService(Context.WIFI_SERVICE);
+        WifiManager wifi = (WifiManager) Application.get().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         WifiInfo info = wifi.getConnectionInfo();
         String mac = info.getMacAddress();
         if (mac == null) {

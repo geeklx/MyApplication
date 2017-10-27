@@ -1,7 +1,5 @@
 package com.shining.p010_recycleviewall.application;
 
-import com.example.p010_recycleviewall.application.VersionConfig;
-
 /**
  * Created by shining on 2017/1/4 0004.
  */
