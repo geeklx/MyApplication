@@ -100,7 +100,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
             @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
                 // 如果接受到ssl错误， 接受证书， 继续执行
-                Log.d("qibin", error.toString());
+                Log.d("geek", error.toString());
                 handler.proceed();
             }
 

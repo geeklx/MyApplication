@@ -5,15 +5,22 @@
       <module fileurl="file://$PROJECT_DIR$/DuerSdkLib/DuerSdkLib.iml" filepath="$PROJECT_DIR$/DuerSdkLib/DuerSdkLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/P009_Glide图片缓存/P009_Glide图片缓存.iml" filepath="$PROJECT_DIR$/P009_Glide图片缓存/P009_Glide图片缓存.iml" />
+      <module fileurl="file://$PROJECT_DIR$/butterknifelibrary/butterknifelibrary.iml" filepath="$PROJECT_DIR$/butterknifelibrary/butterknifelibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/glide411library/glide411library.iml" filepath="$PROJECT_DIR$/glide411library/glide411library.iml" />
       <module fileurl="file://$PROJECT_DIR$/glin/glin.iml" filepath="$PROJECT_DIR$/glin/glin.iml" />
       <module fileurl="file://$PROJECT_DIR$/glinlibrary/glinlibrary.iml" filepath="$PROJECT_DIR$/glinlibrary/glinlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" filepath="$PROJECT_DIR$/gravitysnaphelper/gravitysnaphelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mzbanner/mzbanner.iml" filepath="$PROJECT_DIR$/mzbanner/mzbanner.iml" />
       <module fileurl="file://$PROJECT_DIR$/opendroidlibrary/opendroidlibrary.iml" filepath="$PROJECT_DIR$/opendroidlibrary/opendroidlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" filepath="$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/p009_glide图片缓存411/p009_glide图片缓存411.iml" filepath="$PROJECT_DIR$/p009_glide图片缓存411/p009_glide图片缓存411.iml" />
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p022_hois/p022_hois.iml" filepath="$PROJECT_DIR$/p022_hois/p022_hois.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p027_daojishi_manifestPlaceholders/p027_daojishi_manifestPlaceholders.iml" filepath="$PROJECT_DIR$/p027_daojishi_manifestPlaceholders/p027_daojishi_manifestPlaceholders.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p029_banner_lunbo/p029_banner_lunbo.iml" filepath="$PROJECT_DIR$/p029_banner_lunbo/p029_banner_lunbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment/p031_mokuaihua_viewpager_fragment.iml" filepath="$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment/p031_mokuaihua_viewpager_fragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p041_glide411largeimg/p041_glide411.iml" filepath="$PROJECT_DIR$/p041_glide411largeimg/p041_glide411.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p042_glide377largeimg/p042_largeimage.iml" filepath="$PROJECT_DIR$/p042_glide377largeimg/p042_largeimage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p045_butterknifebannerviewgradle300/p045_butterknifegradle300.iml" filepath="$PROJECT_DIR$/p045_butterknifebannerviewgradle300/p045_butterknifegradle300.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>
   </component>

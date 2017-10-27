@@ -5,16 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.p029_banner_lunbo.adapter.BannerAdapter;
-import com.example.p029_banner_lunbo.bannerutils.BannerView;
+import com.example.p029_banner_lunbo.bannerutils.fangyuan.BannerAdapter;
+import com.example.p029_banner_lunbo.bannerutils.fangyuan.BannerView;
 import com.example.p029_banner_lunbo.domain.Biaoge_listBean;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements BannerView.OnBannerChangeListener {
 
     private BannerView mBannerView;
+    private BannerAdapter mBannerAdapter;
     private List<Biaoge_listBean> mList1;
 
     private TextView tv_left;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //左←
-                ToastUtil.showToastShort(MainActivity.this, "左");
+//                ToastUtil.showToastShort(MainActivity.this, "左");
 
                 mBannerView.setCurrent(mBannerView.getCurrent() - 1);
             }
@@ -39,18 +40,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //右→
-                ToastUtil.showToastShort(MainActivity.this, "右");
+//                ToastUtil.showToastShort(MainActivity.this, "右");
 
-                mBannerView.setCurrent(mBannerView.getCurrent()+1);
+                mBannerView.setCurrent(mBannerView.getCurrent() + 1);
             }
         });
         mBannerView = (BannerView) findViewById(R.id.banner);
 
         Data1();
-        mBannerView.setAdapter(new BannerAdapter(this, mList1));
+        mBannerAdapter = new BannerAdapter(this, mList1);
+        mBannerView.setAdapter(mBannerAdapter);
 
         mBannerView.stopScroll();
         mBannerView.startScroll();
+        mBannerView.setmOnBannerChangeListener(this);
 
     }
 
@@ -65,4 +68,37 @@ public class MainActivity extends AppCompatActivity {
         mList1.add(new Biaoge_listBean(R.drawable.img_avatar_07, "小姐姐7"));
     }
 
+    @Override
+    public void onPageSelected(int pos) {
+
+    }
+
+    @Override
+    public void onPageScrolled(int pos) {
+
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int pos) {
+        Biaoge_listBean item = (Biaoge_listBean) mBannerAdapter.getBannerAdapterItem(pos);
+        ToastUtil.showToastShort(MainActivity.this, pos + ","+item.getText_content());
+    }
+
+    @Override
+    protected void onPause() {
+        if (mBannerView != null) {
+            mBannerView.stopScroll();
+        }
+        super.onPause();
+
+    }
+
+    @Override
+    protected void onResume() {
+        if (mBannerView != null) {
+            mBannerView.startScroll();
+        }
+        super.onResume();
+
+    }
 }

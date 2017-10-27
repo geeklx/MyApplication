@@ -7,10 +7,6 @@ import android.util.Pair;
 
 import java.util.HashMap;
 
-/**
- * <p class="note">File Note</p>
- * created by qibin at 2017/5/8 
- */
 public class HiosAlias {
     // Map<alias, Pair<packageName, className>>
     private static HashMap<String, Pair<String, String>> sAlias = new HashMap<>();

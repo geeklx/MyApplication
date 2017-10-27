@@ -16,6 +16,18 @@
         <attr name="indicator_visible" format="boolean" />
         <attr name="scroll_time" format="integer|reference" />
         <attr name="auto_start" format="boolean|reference" />
+
+        <attr name="indicator_normal_color" format="color|reference" />
+        <attr name="indicator_current_color" format="color|reference" />
+
+        <attr name="indicator_current_style" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="large" value="1" />
+        </attr>
+
+        <attr name="indicator_current_size" format="dimension|reference" />
+        <attr name="indicator_circle_radius" format="dimension|reference" />
+        <attr name="indicator_padding" format="dimension|reference" />
     </declare-styleable>
 
     <declare-styleable name="SmartBar">

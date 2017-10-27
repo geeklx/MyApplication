@@ -12,9 +12,14 @@ import com.example.p031_mokuaihua_viewpager_fragment.demo2.Demo2Activity;
 import com.example.p031_mokuaihua_viewpager_fragment.demo3.Demo3Activity;
 import com.example.p031_mokuaihua_viewpager_fragment.demo4.Demo4Activity;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
-    private TextView tv_demo1;
+    @BindView(R.id.tv_demo1)
+    TextView tv_demo1;
+    //    private TextView tv_demo1;
     private TextView tv_demo2;
     private TextView tv_demo3;
     private TextView tv_demo4;
@@ -23,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
         findview();
         onclickListener();
         doNetWork();
@@ -40,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     }
 
     private void findview() {
-        tv_demo1 = (TextView) findViewById(R.id.tv_demo1);
+//        tv_demo1 = (TextView) findViewById(R.id.tv_demo1);
         tv_demo2 = (TextView) findViewById(R.id.tv_demo2);
         tv_demo3 = (TextView) findViewById(R.id.tv_demo3);
         tv_demo4 = (TextView) findViewById(R.id.tv_demo4);

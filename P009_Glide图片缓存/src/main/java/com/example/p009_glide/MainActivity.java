@@ -46,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        DisplayMetrics dm = new DisplayMetrics();
+//        getWindowManager().getDefaultDisplay().getMetrics(dm);
+//        Log.e("--geekwidthPixels---",dm.widthPixels+"");
+//        Log.e("--geekheightPixels---",dm.heightPixels+"");
+//        Log.e("--geekdensity---",dm.density+"");
+
+
         tv1 = (TextView) findViewById(R.id.tv1);
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override

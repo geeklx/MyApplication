@@ -18,7 +18,7 @@ android {
 //    }
 
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "com.example.p027_daojishi_manifestPlaceholders"

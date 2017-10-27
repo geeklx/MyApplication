@@ -5,9 +5,12 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.0.0'
         //p010
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        // classpath 'com.android.tools.build:gradle:2.3.3'
+//        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        //butterknifelibrary
+//        classpath 'com.jakewharton:butterknife-gradle-plugin:8.6.0'
         //p015
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
         //p028
@@ -29,6 +32,7 @@ allprojects {
         maven {
             url "https://maven.google.com"
         }
+
     }
 }
 

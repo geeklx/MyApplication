@@ -11,13 +11,31 @@
         android:background="#ccc"
         android:orientation="vertical">
 
-        <com.example.p029_banner_lunbo.bannerutils.BannerView
+        <com.example.p029_banner_lunbo.bannerutils.fangyuan.BannerView
             android:id="@+id/banner"
             android:layout_width="match_parent"
             android:layout_height="400dp"
+            app:indicator_circle_radius="4dp"
+            app:indicator_current_color="#ffffff"
+            app:indicator_current_size="30dp"
+            app:indicator_current_style="large"
+            app:indicator_normal_color="#FF9297BC"
+            app:indicator_padding="8dp"
             app:indicator_position="center"
-            app:indicator_visible="false"
-            app:scroll_time="8000" />
+            app:indicator_visible="true"
+            app:scroll_time="3000" />
+
+        <!--<com.example.p029_banner_lunbo.bannerutils.fangyuan.BannerViewFang-->
+            <!--android:id="@+id/banner"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="400dp"-->
+            <!--app:indicator_circle_radius="4dp"-->
+            <!--app:indicator_current_color="#ffffff"-->
+            <!--app:indicator_normal_color="#FF9297BC"-->
+            <!--app:indicator_padding="8dp"-->
+            <!--app:indicator_position="center"-->
+            <!--app:indicator_visible="true"-->
+            <!--app:scroll_time="3000" />-->
 
     </LinearLayout>
 

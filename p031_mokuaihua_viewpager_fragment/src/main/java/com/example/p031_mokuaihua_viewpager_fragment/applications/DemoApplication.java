@@ -32,7 +32,6 @@ public class DemoApplication extends MultiDexApplication {
         super.onCreate();
         sInstance = this;
         mContext = getApplicationContext();
-
     }
 
 }

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="40dp"
     android:background="@drawable/ic_web_title_bg">
 
     <ImageView
         android:id="@+id/ic_back"
-        android:layout_width="40dp"
-        android:layout_height="32dp"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
         android:layout_alignParentLeft="true"
         android:layout_centerInParent="true"
-        android:paddingRight="8dp"
+        android:paddingRight="1dp"
         android:scaleType="fitXY"
-        android:layout_marginLeft="33dp"
+        android:layout_marginLeft="13dp"
         android:src="@drawable/ic_web_back" />
 
     <TextView
@@ -23,16 +23,16 @@
         android:layout_toRightOf="@id/ic_back"
         android:text="返回"
         android:textColor="#FFEFEFEF"
-        android:textSize="24sp" />
+        android:textSize="14sp" />
 
     <ImageView
         android:id="@+id/close"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
         android:scaleType="fitXY"
-        android:layout_marginRight="33dp"
+        android:layout_marginRight="13dp"
         android:src="@drawable/ic_web_close" />
 
     <TextView
@@ -46,7 +46,7 @@
         android:gravity="center"
         android:singleLine="true"
         android:textColor="#FFEFEFEF"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
     <ProgressBar
         android:id="@+id/progress"
