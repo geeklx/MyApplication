@@ -320,6 +320,8 @@ public class MZBannerView<T> extends RelativeLayout {
      */
     public void setIndicatorVisible(boolean visible){
         if(visible){
+//            mIndicatorContainer.setBackgroundResource(R.drawable.indicator_bg_trans);
+//            mIndicatorContainer.setPadding(40,10,40,10);
             mIndicatorContainer.setVisibility(VISIBLE);
         }else{
             mIndicatorContainer.setVisibility(GONE);
@@ -476,8 +478,12 @@ public class MZBannerView<T> extends RelativeLayout {
         return mViewPagerScroller.getScrollDuration();
     }
 
-
-
+    /**
+     * 获取mIndicatorContainer的背景
+     */
+    public LinearLayout getmIndicatorContainer(){
+        return mIndicatorContainer;
+    }
 
 
     public static class  MZPagerAdapter<T> extends PagerAdapter{

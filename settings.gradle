@@ -1,4 +1,4 @@
-include ':glin', ':gravitysnaphelper', ':butterknifelibrary',':mzbanner',
+include ':glin', ':gravitysnaphelper', ':mzbanner', ':p046_progressbar',
         ':opendroidlibrary', ':opendroidyuanlibrary',
         ':glinlibrary', ':glide411library',
         ':shapeloading'

@@ -10,7 +10,11 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
     }
 
     lintOptions {

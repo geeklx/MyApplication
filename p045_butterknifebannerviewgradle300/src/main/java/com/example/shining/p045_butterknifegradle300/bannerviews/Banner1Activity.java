@@ -52,10 +52,13 @@ public class Banner1Activity extends BaseActivity {
         Data1();
 
         //
-        mMZBannerView.setIndicatorRes(R.drawable.indicator_normal_blue, R.drawable.indicator_selected_black);
         mMZBannerView.setDelayedTime(6000);
+        mMZBannerView.setIndicatorRes(R.drawable.indicator_normal_blue, R.drawable.indicator_selected_black);
         mMZBannerView.setIndicatorVisible(true);
         mMZBannerView.setIndicatorAlign(MZBannerView.IndicatorAlign.CENTER);
+        mMZBannerView.getmIndicatorContainer().setPadding(40,10,40,10);
+        mMZBannerView.getmIndicatorContainer().setBackgroundResource(R.drawable.indicator_bg_trans10);
+
         mMZBannerView.addPageChangeLisnter(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -73,7 +76,7 @@ public class Banner1Activity extends BaseActivity {
             }
         });
         setBanner(mList1);
-        mMZBannerView.start();
+//        mMZBannerView.start();
     }
 
     private void Data1() {
@@ -131,5 +134,11 @@ public class Banner1Activity extends BaseActivity {
         super.onPause();
         mMZBannerView.pause();
 //        GlideUtil.clearMemoryCache();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mMZBannerView.start();
     }
 }

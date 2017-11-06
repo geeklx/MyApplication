@@ -13,6 +13,6 @@
         app:indicatorAlign="center"
         app:indicatorPaddingLeft="10dp"
         app:middle_page_cover="true"
-        app:open_mz_mode="true" />
+        app:open_mz_mode="false" />
 
 </RelativeLayout>

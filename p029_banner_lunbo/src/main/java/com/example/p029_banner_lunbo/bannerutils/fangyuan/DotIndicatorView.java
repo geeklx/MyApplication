@@ -78,6 +78,7 @@ public class DotIndicatorView extends View {
 		}
 
 		mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
 	}
 
 	@Override
