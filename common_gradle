@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-//apply plugin: 'butterknife-gradle-plugin'
 
 android {
     aaptOptions.cruncherEnabled = false
@@ -111,7 +110,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-//    compile project(':butterknifelibrary')
+
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
     compile 'com.jakewharton:butterknife:8.6.0'
     compile 'com.github.bumptech.glide:glide:4.1.1'
@@ -119,8 +118,8 @@ dependencies {
     compile "com.github.bumptech.glide:okhttp3-integration:4.1.1"
 
 //    compile 'com.github.pinguo-zhouwei:MZBannerView:v2.0.0'
-//    compile project(':lxbanner')
-    compile(name: 'lxbanner', ext: 'aar')
+//    compile project(':mzbanner')
+    compile(name: 'mzbanner', ext: 'aar')
 
 
 }

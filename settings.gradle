@@ -1,6 +1,6 @@
-include ':glin', ':gravitysnaphelper', ':mzbanner', ':p046_progressbar',
+include ':glin', ':gravitysnaphelper', ':lxbanner', ':p046_progressbar',
         ':opendroidlibrary', ':opendroidyuanlibrary',
-        ':glinlibrary', ':glide411library',
+        ':demojavalibrary', ':glide411library',
         ':shapeloading'
 
 include ':DuerSdkLib'

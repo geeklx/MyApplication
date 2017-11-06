@@ -16,9 +16,9 @@ import com.example.shining.p045_butterknifegradle300.applications.ToastUtil;
 import com.example.shining.p045_butterknifegradle300.domains.Biaoge_listBean;
 import com.example.shining.p045_butterknifegradle300.glideutil.GlideOptionsFactory;
 import com.example.shining.p045_butterknifegradle300.glideutil.GlideUtil;
-import com.zhouwei.mzbanner.MZBannerView;
-import com.zhouwei.mzbanner.holder.MZHolderCreator;
-import com.zhouwei.mzbanner.holder.MZViewHolder;
+import com.github.geeklxbanner.LXBannerView;
+import com.github.geeklxbanner.holder.LXHolderCreator;
+import com.github.geeklxbanner.holder.LXViewHolder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,7 @@ public class Banner1Activity extends BaseActivity {
 
 
     @BindView(R.id.banner)
-    MZBannerView mMZBannerView;
+    LXBannerView mMZBannerView;
 
     private List<Biaoge_listBean> mList1 = new ArrayList<>();
     private String url1 = "http://imgq.duitang.com/uploads/item/201411/28/20141128160848_PwTxC.jpeg";
@@ -55,7 +55,7 @@ public class Banner1Activity extends BaseActivity {
         mMZBannerView.setDelayedTime(6000);
         mMZBannerView.setIndicatorRes(R.drawable.indicator_normal_blue, R.drawable.indicator_selected_black);
         mMZBannerView.setIndicatorVisible(true);
-        mMZBannerView.setIndicatorAlign(MZBannerView.IndicatorAlign.CENTER);
+        mMZBannerView.setIndicatorAlign(LXBannerView.IndicatorAlign.CENTER);
         mMZBannerView.getmIndicatorContainer().setPadding(40,10,40,10);
         mMZBannerView.getmIndicatorContainer().setBackgroundResource(R.drawable.indicator_bg_trans10);
 
@@ -91,7 +91,7 @@ public class Banner1Activity extends BaseActivity {
     }
 
     private void setBanner(List<Biaoge_listBean> mList1) {
-        mMZBannerView.setPages(mList1, new MZHolderCreator<BannerViewHolder>() {
+        mMZBannerView.setPages(mList1, new LXHolderCreator<BannerViewHolder>() {
             @Override
             public BannerViewHolder createViewHolder() {
                 return new BannerViewHolder();
@@ -100,7 +100,7 @@ public class Banner1Activity extends BaseActivity {
 
     }
 
-    public static class BannerViewHolder implements MZViewHolder<Biaoge_listBean> {
+    public static class BannerViewHolder implements LXViewHolder<Biaoge_listBean> {
         private ImageView mImageView;
 
         @Override
