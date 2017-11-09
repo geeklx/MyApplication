@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_half_half_half"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_dialog"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_yuan_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:text="登录"
+                android:textColor="@color/gray"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是否登录？"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_popwin_qx"
+                        android:text="取消"
+                        android:textColor="@drawable/btn_pop_font_qx"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/btn_ok"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginRight="32dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_popwin_sure"
+                        android:text="确定"
+                        android:textColor="@drawable/btn_pop_font_sure"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -11,6 +11,7 @@ import com.example.p031_mokuaihua_viewpager_fragment.demo1.Demo1Activity;
 import com.example.p031_mokuaihua_viewpager_fragment.demo2.Demo2Activity;
 import com.example.p031_mokuaihua_viewpager_fragment.demo3.Demo3Activity;
 import com.example.p031_mokuaihua_viewpager_fragment.demo4.Demo4Activity;
+import com.example.p031_mokuaihua_viewpager_fragment.demo5.Demo5Activity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     private TextView tv_demo2;
     private TextView tv_demo3;
     private TextView tv_demo4;
+    private TextView tv_demo5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         tv_demo2.setOnClickListener(this);
         tv_demo3.setOnClickListener(this);
         tv_demo4.setOnClickListener(this);
+        tv_demo5.setOnClickListener(this);
     }
 
     private void findview() {
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         tv_demo2 = (TextView) findViewById(R.id.tv_demo2);
         tv_demo3 = (TextView) findViewById(R.id.tv_demo3);
         tv_demo4 = (TextView) findViewById(R.id.tv_demo4);
+        tv_demo5 = (TextView) findViewById(R.id.tv_demo5);
     }
 
     @Override
@@ -74,6 +78,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
             case R.id.tv_demo4:
                 //TODO 单Activity页面多模块多版本三个Viewpager
                 startActivity(new Intent(this, Demo4Activity.class));
+                break;
+            case R.id.tv_demo5:
+                //TODO 单Activity页面多模块单版本Fragment+TabLayout
+                startActivity(new Intent(this, Demo5Activity.class));
                 break;
             default:
                 break;

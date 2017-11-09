@@ -1,4 +1,4 @@
-include ':glin', ':gravitysnaphelper', ':lxbanner', ':p046_progressbar',
+include ':glin', ':gravitysnaphelper', ':lxbanner', ':imagepicker',
         ':opendroidlibrary', ':opendroidyuanlibrary',
         ':demojavalibrary', ':glide411library',
         ':shapeloading'
@@ -48,9 +48,11 @@ include ':p031_mokuaihua_viewpager_fragment'
 //include ':p037_androidutilcode'
 //include ':p038_wheelpicker'
 //include ':p039_edittextpwd'
-include ':p041_glide411largeimg'
+//include ':p041_glide411largeimg'
 //include ':p041_uppicture'
-include ':p042_glide377largeimg'
-//include ':p043_CalendarviewAndPaintProgressBarView'
+//include ':p042_glide377largeimg'
+include ':p043_uppictureandpaintprogbar'
 //include ':p044_wechat_record'
 include ':p045_butterknifebannerviewgradle300'
+//include ':p046_progressbar'
+include ':p047_userlogin'

@@ -32,4 +32,10 @@
         android:padding="30dp"
         android:text="单Activity页面多模块多版本三个Viewpager" />
 
+    <TextView
+        android:id="@+id/tv_demo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="单Activity页面多模块单版本Fragment+TabLayout" />
 </LinearLayout>
