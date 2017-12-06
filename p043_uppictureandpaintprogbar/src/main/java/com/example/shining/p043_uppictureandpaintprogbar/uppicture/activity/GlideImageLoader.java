@@ -8,7 +8,6 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.Priority;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
-import com.example.shining.p043_uppictureandpaintprogbar.R;
 import com.example.shining.p043_uppictureandpaintprogbar.application.DemoUppictureApplication;
 import com.example.shining.p043_uppictureandpaintprogbar.uppicture.glidesetting.RoundedCornersTransformation;
 import com.lzy.imagepicker.loader.ImageLoader;
@@ -32,10 +31,10 @@ public class GlideImageLoader implements ImageLoader {
         //glide4.1.1
         final RequestOptions options = new RequestOptions()
                 .centerCrop()
-                .placeholder(R.drawable.ic_default_image)
-                .error(R.drawable.ic_default_image)
+//                .placeholder(R.drawable.ic_default_image)
+//                .error(R.drawable.ic_default_image)
                 .dontAnimate()
-                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .priority(Priority.HIGH)
                 .transform(new RoundedCornersTransformation(imageView.getContext(), 0, 0));
         Glide.with(activity)

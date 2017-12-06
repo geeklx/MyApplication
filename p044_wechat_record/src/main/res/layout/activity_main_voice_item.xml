@@ -1,0 +1,13 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.example.shining.p044_wechat_record.audiomanagerset.view.VoiceWiget
+        android:id="@+id/fl1"
+        android:layout_width="200dp"
+        android:layout_height="50dp" />
+
+
+</FrameLayout>

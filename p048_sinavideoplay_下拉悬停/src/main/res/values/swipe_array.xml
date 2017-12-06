@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="swipeRefreshColors">
+        <item>@color/holo_blue_bright</item>
+        <item>@color/holo_green_light</item>
+        <item>@color/holo_orange_light</item>
+        <item>@color/holo_red_light</item>
+    </array>
+</resources>

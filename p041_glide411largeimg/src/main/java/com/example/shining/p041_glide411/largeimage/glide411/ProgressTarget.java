@@ -1,7 +1,5 @@
 package com.example.shining.p041_glide411.largeimage.glide411;
 
-import android.graphics.drawable.Drawable;
-
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.Target;
 import com.bumptech.glide.request.transition.Transition;
@@ -57,7 +55,7 @@ public abstract class ProgressTarget<T, Z> extends WrappingTarget<Z> implements 
     }
 
     @Override
-    public void onLoadStarted(Drawable placeholder) {
+    public void onLoadStarted(android.graphics.drawable.Drawable placeholder) {
         super.onLoadStarted(placeholder);
         start();
     }
@@ -69,13 +67,13 @@ public abstract class ProgressTarget<T, Z> extends WrappingTarget<Z> implements 
     }
 
     @Override
-    public void onLoadFailed(Drawable errorDrawable) {
+    public void onLoadFailed(android.graphics.drawable.Drawable errorDrawable) {
         cleanup();
         super.onLoadFailed(errorDrawable);
     }
 
     @Override
-    public void onLoadCleared(Drawable placeholder) {
+    public void onLoadCleared(android.graphics.drawable.Drawable placeholder) {
         cleanup();
         super.onLoadCleared(placeholder);
     }

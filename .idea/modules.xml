@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/DuerSdkLib/DuerSdkLib.iml" filepath="$PROJECT_DIR$/DuerSdkLib/DuerSdkLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/P009_Glide图片缓存/P009_Glide图片缓存.iml" filepath="$PROJECT_DIR$/P009_Glide图片缓存/P009_Glide图片缓存.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WheelPicker/WheelPicker.iml" filepath="$PROJECT_DIR$/WheelPicker/WheelPicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/demojavalibrary/demojavalibrary.iml" filepath="$PROJECT_DIR$/demojavalibrary/demojavalibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/glide411library/glide411library.iml" filepath="$PROJECT_DIR$/glide411library/glide411library.iml" />
       <module fileurl="file://$PROJECT_DIR$/glin/glin.iml" filepath="$PROJECT_DIR$/glin/glin.iml" />
@@ -15,12 +16,15 @@
       <module fileurl="file://$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" filepath="$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/p009_glide图片缓存411/p009_glide图片缓存411.iml" filepath="$PROJECT_DIR$/p009_glide图片缓存411/p009_glide图片缓存411.iml" />
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p027_daojishi_manifestPlaceholders/p027_daojishi_manifestPlaceholders.iml" filepath="$PROJECT_DIR$/p027_daojishi_manifestPlaceholders/p027_daojishi_manifestPlaceholders.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p029_banner_lunbo/p029_banner_lunbo.iml" filepath="$PROJECT_DIR$/p029_banner_lunbo/p029_banner_lunbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment/p031_mokuaihua_viewpager_fragment.iml" filepath="$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment/p031_mokuaihua_viewpager_fragment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p041_glide411largeimg/p041_glide411largeimg.iml" filepath="$PROJECT_DIR$/p041_glide411largeimg/p041_glide411largeimg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p042_glide377largeimg/p042_glide377largeimg.iml" filepath="$PROJECT_DIR$/p042_glide377largeimg/p042_glide377largeimg.iml" />
       <module fileurl="file://$PROJECT_DIR$/p043_uppictureandpaintprogbar/p043_uppictureandpaintprogbar.iml" filepath="$PROJECT_DIR$/p043_uppictureandpaintprogbar/p043_uppictureandpaintprogbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p044_wechat_record/p044_wechat_record.iml" filepath="$PROJECT_DIR$/p044_wechat_record/p044_wechat_record.iml" />
       <module fileurl="file://$PROJECT_DIR$/p045_butterknifebannerviewgradle300/p045_butterknifebannerviewgradle300.iml" filepath="$PROJECT_DIR$/p045_butterknifebannerviewgradle300/p045_butterknifebannerviewgradle300.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p047_userlogin/p047_userlogin.iml" filepath="$PROJECT_DIR$/p047_userlogin/p047_userlogin.iml" />
+      <module fileurl="file://D:\githubproject\github_myapplicationlibrary\MyApplication\p048_sinavideoplay_下拉悬停\p048_sinavideoplay.iml" filepath="D:\githubproject\github_myapplicationlibrary\MyApplication\p048_sinavideoplay_下拉悬停\p048_sinavideoplay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p048_sinavideoplay_下拉悬停/p048_sinavideoplay_下拉悬停.iml" filepath="$PROJECT_DIR$/p048_sinavideoplay_下拉悬停/p048_sinavideoplay_下拉悬停.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p049_activity_animation/p049_activity_animation.iml" filepath="$PROJECT_DIR$/p049_activity_animation/p049_activity_animation.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>
   </component>

@@ -50,14 +50,14 @@ public class RecorderAdapter extends ArrayAdapter<Recorder> {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
         if (convertView == null) {
             convertView = mInflater.inflate(R.layout.item_recorder, parent,
                     false);
             holder = new ViewHolder();
-            holder.seconds = (TextView) convertView
-                    .findViewById(R.id.id_recorder_time);
+            holder.seconds = (TextView) convertView.findViewById(R.id.id_recorder_time);
+            holder.id_recorder_anim = (TextView) convertView.findViewById(R.id.id_recorder_anim);
             holder.length = convertView.findViewById(R.id.id_recorder_length);
 
             convertView.setTag(holder);
@@ -66,24 +66,18 @@ public class RecorderAdapter extends ArrayAdapter<Recorder> {
         }
 
         if (position != mCurPos) {
-            convertView.findViewById(R.id.id_recorder_anim)
-                    .setBackgroundResource(R.drawable.adj);
+            set_anim_voice_bg(holder.id_recorder_anim);
         }
 
         if (position == mCurPos) {
-            convertView.findViewById(R.id.id_recorder_anim)
-                    .setBackgroundResource(R.drawable.play_anim);
-            AnimationDrawable anim = (AnimationDrawable)
-                    convertView.findViewById(R.id.id_recorder_anim).getBackground();
-            anim.start();
+            set_anim_voice(holder.id_recorder_anim);
         }
-
 
         holder.seconds.setText(Math.round(getItem(position).time) + "\"");
         if ((getItem(position).time) <= MAX_SECOND) {
             ViewGroup.LayoutParams lp = holder.length.getLayoutParams();
             lp.width = (int) (mMinItemWidth + (mMaxItemWidth / 120f * getItem(position).time));
-        }else {
+        } else {
             ViewGroup.LayoutParams lp = holder.length.getLayoutParams();
             lp.width = (int) (mMinItemWidth + (mMaxItemWidth / 120f * MAX_SECOND));
         }
@@ -92,11 +86,42 @@ public class RecorderAdapter extends ArrayAdapter<Recorder> {
 //		_item.msgVoice.setWidth(((int) mContext.getResources()
 //				.getDisplayMetrics().widthPixels / 120) * w);
 
+        if (listener!=null){
+            final ViewHolder finalHolder = holder;
+            holder.length.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    listener.onItemVoice(finalHolder.id_recorder_anim,position);
+                }
+            });
+        }
+
         return convertView;
     }
 
     private class ViewHolder {
         TextView seconds;
+        TextView id_recorder_anim;
         View length;
+    }
+
+    public OnVoiceClickListener listener;
+
+    public interface OnVoiceClickListener {
+        void onItemVoice(TextView id_recorder_anim, int position);
+    }
+
+    public void setOnVoiceClickListener(OnVoiceClickListener listener) {
+        this.listener = listener;
+    }
+
+    public void set_anim_voice(View view){
+        view.setBackgroundResource(R.drawable.play_anim);
+        AnimationDrawable anim = (AnimationDrawable)view.getBackground();
+        anim.start();
+    }
+
+    public void set_anim_voice_bg(View view){
+        view.setBackgroundResource(R.drawable.adj);
     }
 }

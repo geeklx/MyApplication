@@ -27,15 +27,28 @@ public class MainActivity extends BaseActivity {
                 });
             }
         });
+        findViewById(R.id.tv2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LoginUtil.get().loginOutTowhere(MainActivity.this, new Runnable() {
+                    @Override
+                    public void run() {
+                        //退出登录to
+                        //登录to
+                        ToastUtil.showToastCenter("可以跳转了~");
+                        startActivity(new Intent(MainActivity.this, MainActivity3.class));
+                    }
+                });
+            }
+        });
 
 
-//        LoginUtil.get().loginOutTowhere(MainActivity.this, new Runnable() {
-//            @Override
-//            public void run() {
-//               //退出登录to
-//
-//            }
-//        });
+
+    }
+
+    @Override
+    protected void onActivityResult2(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult2(requestCode, resultCode, data);
 
     }
 }

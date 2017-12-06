@@ -2,6 +2,7 @@
 <resources>
     <declare-styleable name="LXBannerView">
         <attr name="open_mz_mode" format="boolean"/>
+        <attr name="outside_bottom" format="boolean"/>
         <attr name="canLoop" format="boolean"/>
         <attr name="indicatorPaddingLeft" format="dimension"/>
         <attr name="indicatorPaddingRight" format="dimension"/>

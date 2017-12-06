@@ -45,6 +45,10 @@ public class MainActivityData extends AppCompatActivity implements WheelDatePick
         wheelData.getTextViewDay().setText("日");
         wheelData.getTextViewDay().setTextSize(20);
 
+//        wheelData.getWheelYearPicker().setData(Arrays.asList(getResources().getStringArray(R.array.WheelArrayYear)));
+//        wheelData.getWheelMonthPicker().setData(Arrays.asList(getResources().getStringArray(R.array.WheelArrayMonth)));
+//        wheelData.getWheelDayPicker().setData(Arrays.asList(getResources().getStringArray(R.array.WheelArrayDay)));
+
     }
 
     @Override

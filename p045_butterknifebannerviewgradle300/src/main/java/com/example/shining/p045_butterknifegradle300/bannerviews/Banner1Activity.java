@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.shining.p045_butterknifegradle300.BaseActivity;
 import com.example.shining.p045_butterknifegradle300.R;
@@ -31,6 +32,9 @@ public class Banner1Activity extends BaseActivity {
     @BindView(R.id.banner)
     LXBannerView mMZBannerView;
 
+    private TextView tv_left;
+    private TextView tv_right;
+
     private List<Biaoge_listBean> mList1 = new ArrayList<>();
     private String url1 = "http://imgq.duitang.com/uploads/item/201411/28/20141128160848_PwTxC.jpeg";
     private String url2 = "http://f6.topitme.com/6/bd/ce/11307948457e8cebd6o.jpg";
@@ -52,11 +56,11 @@ public class Banner1Activity extends BaseActivity {
         Data1();
 
         //
-        mMZBannerView.setDelayedTime(6000);
+        mMZBannerView.setDelayedTime(10000);
         mMZBannerView.setIndicatorRes(R.drawable.indicator_normal_blue, R.drawable.indicator_selected_black);
         mMZBannerView.setIndicatorVisible(true);
         mMZBannerView.setIndicatorAlign(LXBannerView.IndicatorAlign.CENTER);
-        mMZBannerView.getmIndicatorContainer().setPadding(40,10,40,10);
+        mMZBannerView.getmIndicatorContainer().setPadding(40, 10, 40, 10);
         mMZBannerView.getmIndicatorContainer().setBackgroundResource(R.drawable.indicator_bg_trans10);
 
         mMZBannerView.addPageChangeLisnter(new ViewPager.OnPageChangeListener() {
@@ -77,6 +81,26 @@ public class Banner1Activity extends BaseActivity {
         });
         setBanner(mList1);
 //        mMZBannerView.start();
+
+        tv_left = (TextView) findViewById(R.id.tv_left);
+        tv_left.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //左←
+                ToastUtil.showToastShort(Banner1Activity.this, "左" + mMZBannerView.getCurrent());
+                mMZBannerView.setCurrent(mMZBannerView.getCurrent() - 1);
+            }
+        });
+        tv_right = (TextView) findViewById(R.id.tv_right);
+        tv_right.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //右→
+                ToastUtil.showToastShort(Banner1Activity.this, "右" + mMZBannerView.getCurrent());
+
+                mMZBannerView.setCurrent(mMZBannerView.getCurrent() + 1);
+            }
+        });
     }
 
     private void Data1() {

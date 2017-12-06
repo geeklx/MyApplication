@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, WechatActivity.class));
+//                Intent intent = new Intent("from_other_to_MyWallletActivityTianMiMi");
+//                startActivity(intent);
             }
         });
     }

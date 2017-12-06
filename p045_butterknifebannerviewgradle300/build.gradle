@@ -119,8 +119,8 @@ dependencies {
     compile "com.github.bumptech.glide:okhttp3-integration:4.1.1"
 
 //    compile 'com.github.pinguo-zhouwei:MZBannerView:v2.0.0'
-//    compile project(':lxbanner')
-    compile(name: 'lxbanner', ext: 'aar')
+    compile project(':lxbanner')
+//    compile(name: 'lxbanner', ext: 'aar')
 
 
 }

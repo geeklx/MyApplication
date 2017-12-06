@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/DuerSdkLib" />
             <option value="$PROJECT_DIR$/P009_Glide图片缓存" />
+            <option value="$PROJECT_DIR$/WheelPicker" />
             <option value="$PROJECT_DIR$/demojavalibrary" />
             <option value="$PROJECT_DIR$/glide411library" />
             <option value="$PROJECT_DIR$/glin" />
@@ -20,12 +21,14 @@
             <option value="$PROJECT_DIR$/opendroidyuanlibrary" />
             <option value="$PROJECT_DIR$/p009_glide图片缓存411" />
             <option value="$PROJECT_DIR$/p010_recycleviewall" />
-            <option value="$PROJECT_DIR$/p027_daojishi_manifestPlaceholders" />
-            <option value="$PROJECT_DIR$/p029_banner_lunbo" />
             <option value="$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment" />
+            <option value="$PROJECT_DIR$/p041_glide411largeimg" />
+            <option value="$PROJECT_DIR$/p042_glide377largeimg" />
             <option value="$PROJECT_DIR$/p043_uppictureandpaintprogbar" />
+            <option value="$PROJECT_DIR$/p044_wechat_record" />
             <option value="$PROJECT_DIR$/p045_butterknifebannerviewgradle300" />
-            <option value="$PROJECT_DIR$/p047_userlogin" />
+            <option value="$PROJECT_DIR$/p048_sinavideoplay_下拉悬停" />
+            <option value="$PROJECT_DIR$/p049_activity_animation" />
             <option value="$PROJECT_DIR$/shapeloading" />
           </set>
         </option>

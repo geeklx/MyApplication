@@ -74,7 +74,7 @@ public class LoginOutActivity extends AppCompatActivity {
     @Override
     public void finish() {
         super.finish();
-        overridePendingTransition(R.anim.push_bottom_in, R.anim.push_bottom_out);
+//        overridePendingTransition(R.anim.push_bottom_in, R.anim.push_bottom_out);
     }
 
     @Override

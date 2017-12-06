@@ -1,6 +1,5 @@
 package com.example.shining.p041_glide411.largeimage.glide411;
 
-import android.graphics.drawable.Drawable;
 import android.support.annotation.Nullable;
 
 import com.bumptech.glide.request.Request;
@@ -27,13 +26,14 @@ public class WrappingTarget<Z> implements Target<Z> {
     }
 
     @Override
-    public void onLoadStarted(Drawable placeholder) {
+    public void onLoadStarted(@Nullable android.graphics.drawable.Drawable placeholder) {
         if (target != null)
             target.onLoadStarted(placeholder);
     }
 
+
     @Override
-    public void onLoadFailed(@Nullable Drawable errorDrawable) {
+    public void onLoadFailed(@Nullable android.graphics.drawable.Drawable errorDrawable) {
         if (target != null)
             target.onLoadFailed(errorDrawable);
     }
@@ -45,7 +45,7 @@ public class WrappingTarget<Z> implements Target<Z> {
     }
 
     @Override
-    public void onLoadCleared(Drawable placeholder) {
+    public void onLoadCleared(android.graphics.drawable.Drawable placeholder) {
         if (target != null) target.onLoadCleared(placeholder);
     }
 

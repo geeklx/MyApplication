@@ -7,12 +7,25 @@
     <com.github.geeklxbanner.LXBannerView
         android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="400dp"
         android:layout_marginTop="10dp"
         app:canLoop="true"
         app:indicatorAlign="center"
         app:indicatorPaddingLeft="10dp"
         app:middle_page_cover="true"
-        app:open_mz_mode="false" />
+        app:open_mz_mode="true"
+        app:outside_bottom="false" />
 
+    <TextView
+        android:id="@+id/tv_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/icon_left" />
+
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_right" />
 </RelativeLayout>

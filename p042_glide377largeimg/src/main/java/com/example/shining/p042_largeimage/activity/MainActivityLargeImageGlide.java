@@ -53,7 +53,7 @@ public class MainActivityLargeImageGlide extends AppCompatActivity {
 
 //        String url = "https://s2.51cto.com/wyfs02/M02/06/F4/wKiom1nA9iSRwF1BADe7ZVL2w4Q127.jpg";
 //        String url = "https://s2.51cto.com/wyfs02/M00/06/F4/wKiom1nA-Aiy9qMkAAR3_qzZ1is031.jpg";
-        String url = "https://s3.51cto.com/wyfs02/M00/A5/A5/wKioL1nA-WrQ8NSkAADpAlDnsrM054.jpg";
+        String url = "https://s3.51cto.com/wyfs02/M02/06/ED/wKiom1nAst7gJXLWAApAOtlw0r4105.jpg";
         final Glide glide = Glide.get(this);
         OkHttpProgressGlideModule a = new OkHttpProgressGlideModule();
         a.registerComponents(this, glide);

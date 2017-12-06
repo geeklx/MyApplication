@@ -30,7 +30,17 @@ public class ImagePickerAdapter extends RecyclerView.Adapter<ImagePickerAdapter.
     private List<ImageItem> mData;
     private LayoutInflater mInflater;
     private OnRecyclerViewItemClickListener listener;
+    private OnRecyclerViewItemClickListenerX listener_x;
     private boolean isAdded;   //是否额外添加了最后一个图片
+    private boolean isAllchoose;//全选的状态值bufen
+
+    public boolean isAllchoose() {
+        return isAllchoose;
+    }
+
+    public void setAllchoose(boolean allchoose) {
+        isAllchoose = allchoose;
+    }
 
     public interface OnRecyclerViewItemClickListener {
         void onItemClick(View view, int position);
@@ -38,6 +48,15 @@ public class ImagePickerAdapter extends RecyclerView.Adapter<ImagePickerAdapter.
 
     public void setOnItemClickListener(OnRecyclerViewItemClickListener listener) {
         this.listener = listener;
+    }
+
+
+    public interface OnRecyclerViewItemClickListenerX {
+        void onItemClickX(View view, int position);
+    }
+
+    public void setOnItemClickListenerX(OnRecyclerViewItemClickListenerX listener_x) {
+        this.listener_x = listener_x;
     }
 
     public void setImages(List<ImageItem> data) {
@@ -79,19 +98,19 @@ public class ImagePickerAdapter extends RecyclerView.Adapter<ImagePickerAdapter.
         return mData.size();
     }
 
-    public class SelectedPicViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class SelectedPicViewHolder extends RecyclerView.ViewHolder {
 
+        private ImageView iv_x;
         private ImageView iv_img;
         private int clickPosition;
 
         public SelectedPicViewHolder(View itemView) {
             super(itemView);
+            iv_x = (ImageView) itemView.findViewById(R.id.iv_x);
             iv_img = (ImageView) itemView.findViewById(R.id.iv_img);
         }
 
         public void bind(int position) {
-            //设置条目的点击事件
-            itemView.setOnClickListener(this);
             //根据条目位置设置图片
             ImageItem item = mData.get(position);
             if (isAdded && position == getItemCount() - 1) {
@@ -101,11 +120,55 @@ public class ImagePickerAdapter extends RecyclerView.Adapter<ImagePickerAdapter.
                 ImagePicker.getInstance().getImageLoader().displayImage((Activity) mContext, item.path, iv_img, 0, 0);
                 clickPosition = position;
             }
-        }
+            //设置全选
+            if (isAllchoose) {
+                if (isAdded && position == getItemCount() - 1) {
+                    //隐藏
+                    iv_x.setVisibility(View.INVISIBLE);
+                } else {
+                    //显示
+                    iv_x.setVisibility(View.VISIBLE);
+                }
+            } else {
+                //隐藏
+                iv_x.setVisibility(View.INVISIBLE);
+            }
 
-        @Override
-        public void onClick(View v) {
-            if (listener != null) listener.onItemClick(v, clickPosition);
+            //设置条目的点击事件
+            if (listener_x != null) {
+                iv_x.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        listener_x.onItemClickX(iv_x, clickPosition);
+                    }
+                });
+            }
+            if (listener != null) {
+                iv_img.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        listener.onItemClick(iv_img, clickPosition);
+                    }
+                });
+            }
+            iv_img.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View view) {
+                    if (clickPosition == WechatActivity.IMAGE_ITEM_ADD) {
+
+                    } else {
+                        if (isAllchoose) {
+                            //隐藏
+                            setAllchoose(false);
+                        } else {
+                            //显示
+                            setAllchoose(true);
+                        }
+                        notifyDataSetChanged();
+                    }
+                    return false;
+                }
+            });
         }
     }
 }

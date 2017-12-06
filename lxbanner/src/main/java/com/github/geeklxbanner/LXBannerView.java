@@ -46,6 +46,7 @@ public class LXBannerView<T> extends RelativeLayout {
     private int mDelayedTime = 3000;// Banner 切换时间间隔
     private ViewPagerScroller mViewPagerScroller;//控制ViewPager滑动速度的Scroller
     private boolean mIsOpenMZEffect = true;// 开启魅族Banner效果
+    private boolean mIsOutSideBottom = true;// 圆点是否超出底边距
     private boolean mIsCanLoop = true;// 是否轮播图片
     private LinearLayout mIndicatorContainer;//indicator容器
     private ArrayList<ImageView> mIndicators = new ArrayList<>();
@@ -98,6 +99,7 @@ public class LXBannerView<T> extends RelativeLayout {
     private void readAttrs(Context context, AttributeSet attrs) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.LXBannerView);
         mIsOpenMZEffect = typedArray.getBoolean(R.styleable.LXBannerView_open_mz_mode, true);
+        mIsOutSideBottom = typedArray.getBoolean(R.styleable.LXBannerView_outside_bottom, false);
         mIsMiddlePageCover = typedArray.getBoolean(R.styleable.LXBannerView_middle_page_cover, true);
         mIsCanLoop = typedArray.getBoolean(R.styleable.LXBannerView_canLoop, true);
         mIndicatorAlign = typedArray.getInt(R.styleable.LXBannerView_indicatorAlign, 1);
@@ -111,7 +113,11 @@ public class LXBannerView<T> extends RelativeLayout {
     private void init() {
         View view = null;
         if (mIsOpenMZEffect) {
-            view = LayoutInflater.from(getContext()).inflate(R.layout.mz_banner_effect_layout, this, true);
+            if (!mIsOutSideBottom) {
+                view = LayoutInflater.from(getContext()).inflate(R.layout.mz_banner_effect_layout, this, true);
+            } else {
+                view = LayoutInflater.from(getContext()).inflate(R.layout.mz_banner_effect_layout2, this, true);
+            }
         } else {
             view = LayoutInflater.from(getContext()).inflate(R.layout.mz_banner_normal_layout, this, true);
         }
@@ -432,6 +438,14 @@ public class LXBannerView<T> extends RelativeLayout {
         });
 
 
+    }
+
+    public int getCurrent() {
+        return mViewPager.getCurrentItem();
+    }
+
+    public void setCurrent(int current) {
+        mViewPager.setCurrentItem(current);
     }
 
     /**

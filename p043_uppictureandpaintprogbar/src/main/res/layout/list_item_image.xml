@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl1"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
     android:orientation="vertical"
     android:padding="5dp">
-
 
     <ImageView
         android:id="@+id/iv_img"
         android:layout_width="70dp"
         android:layout_height="70dp"
+        android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
         android:src="@drawable/selector_image_add" />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/iv_x"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/icon_select_x"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+</RelativeLayout>

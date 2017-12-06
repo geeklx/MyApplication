@@ -1,5 +1,6 @@
 package com.example.shining.p044_wechat_record.audiomanagerset.view;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Environment;
@@ -96,8 +97,10 @@ public class AudioRecorderButton extends Button implements AudioManager.AudioSta
                 try {
                     Thread.sleep(100);
                     mTime += 0.1f;
-                    if (mTime >= RecorderAdapter.MAX_SECOND) {
+                    if (mTime > RecorderAdapter.MAX_SECOND) {
+                        isRecording = false;
                         mHandler.sendEmptyMessage(MSG_VOICE_CHANGED_MAX);
+                        Log.e("--MSG_MAX--", mTime + "");
                     } else {
                         mHandler.sendEmptyMessage(MSG_VOICE_CHANGED);
                     }
@@ -114,6 +117,7 @@ public class AudioRecorderButton extends Button implements AudioManager.AudioSta
     private static final int MSG_VOICE_CHANGED_MAX = 0X113;
     private static final int MSG_DIALOG_DIMISS = 0X112;
 
+    @SuppressLint("HandlerLeak")
     private Handler mHandler = new Handler() {
         public void handleMessage(android.os.Message msg) {
             switch (msg.what) {
@@ -131,6 +135,7 @@ public class AudioRecorderButton extends Button implements AudioManager.AudioSta
                     mHandler.sendEmptyMessageDelayed(MSG_DIALOG_DIMISS, 1300);
                     mAudioManager.release();
                     if (mListener != null) {
+//                        Log.e("--MSG_MAX--", mTime + "");
                         mListener.onFinish(mTime, mAudioManager.getCurrentFilePath());
                     }
                     reset();
