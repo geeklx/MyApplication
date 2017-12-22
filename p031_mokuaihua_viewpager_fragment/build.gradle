@@ -139,13 +139,13 @@ android {
         apk1 {
             dimension "change1"
             versionName "DemoAPK1_" + "T_" + vNameCode + "_" + demo1
-            def stValue = false
+            def stValue = "ceshi"
             manifestPlaceholders = [DEMO2_CONFIG_VALUE: ".demo2.factorys.Demo2Factory1", STATISTICS_VALUE: stValue]
         }
         apk2 {
             dimension "change1"
             versionName "DemoAPK2_" + "D_" + vNameCode + "_" + demo2
-            def stValue = true
+            def stValue = "xianshang"
             manifestPlaceholders = [DEMO2_CONFIG_VALUE: ".demo2.factorys.Demo2Factory2", STATISTICS_VALUE: stValue]
         }
     }

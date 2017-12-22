@@ -1,4 +1,4 @@
-package com.example.p022_hois.base;
+package com.example.shining.p022_hios20.base;
 
 import android.net.http.SslError;
 import android.os.Build;
@@ -18,8 +18,8 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.p022_hois.R;
-import com.example.p022_hois.hois2.HiosHelper2;
+import com.example.shining.p022_hios20.R;
+import com.example.shining.p022_hios20.hois2.HiosHelper;
 
 
 /**
@@ -27,6 +27,8 @@ import com.example.p022_hois.hois2.HiosHelper2;
  */
 
 public class WebViewActivity extends AppCompatActivity implements View.OnClickListener {
+
+    public static final String UA = "Mozilla/5.0 (Linux; Android 5.1; sudy6580_we_l Build/C320) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/39.0.0.0 Safari/537.36";
 
     private View mBackImageView;
     private View mBackView;
@@ -78,7 +80,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         if (Build.VERSION.SDK_INT >= 21) {
             settings.setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
         }
-
+        settings.setUserAgentString(UA);
         //使WebView支持js
         settings.setJavaScriptEnabled(true);
         settings.setJavaScriptCanOpenWindowsAutomatically(false);
@@ -94,7 +96,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                return HiosHelper2.shouldOverrideUrl(WebViewActivity.this, url);
+                return HiosHelper.shouldOverrideUrl(WebViewActivity.this, url);
             }
 
             @Override
@@ -139,6 +141,30 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        mWebView.loadUrl("javascript:onStart()");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mWebView.loadUrl("javascript:onResume()");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mWebView.loadUrl("javascript:onPause()");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mWebView.loadUrl("javascript:onStop()");
+    }
+
+    @Override
     public void onBackPressed() {
         if (mWebView.canGoBack()) {
             mWebView.goBack();
@@ -164,6 +190,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onDestroy() {
 //        FixInputMethodBug.fixFocusedViewLeak(getApplication());
+        mWebView.loadUrl("javascript:onDestroy()");
 
         if (mWebView != null) {
             ViewParent parent = mWebView.getParent();
@@ -195,6 +222,19 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
     /**
      * 通知获取userId,通过调用js函数onGetUserId来回调user_id
      */
+    /**
+     * type 0: 关闭硬件加速， 1 开启
+     */
+    @JavascriptInterface
+    public void layerType(int type) {
+        if (type == 0) {
+            mWebView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+            return;
+        }
+
+        mWebView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+    }
+
     @JavascriptInterface
     public void userId() {
         mWebView.post(new Runnable() {

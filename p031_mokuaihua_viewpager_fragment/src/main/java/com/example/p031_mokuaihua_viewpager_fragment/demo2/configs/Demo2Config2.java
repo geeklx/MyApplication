@@ -22,7 +22,9 @@ public class Demo2Config2 {
     /** 默认显示第几页*/
 //    public static int DEFAULT_PAGE_INDEX;
 
-    /** fragment配置*/
+    /**
+     * fragment配置
+     */
     private static SparseArrayCompat<Class<? extends BaseFragment>> sIndexFragments = new SparseArrayCompat<>();
 
     public static void config() {

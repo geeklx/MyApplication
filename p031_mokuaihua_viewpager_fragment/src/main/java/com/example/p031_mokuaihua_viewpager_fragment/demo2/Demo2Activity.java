@@ -1,5 +1,7 @@
 package com.example.p031_mokuaihua_viewpager_fragment.demo2;
 
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -19,9 +21,46 @@ import com.example.p031_mokuaihua_viewpager_fragment.base.BaseIndexFragment;
 import com.example.p031_mokuaihua_viewpager_fragment.demo2.configs.Demo2Config1;
 import com.example.p031_mokuaihua_viewpager_fragment.demo2.configs.Demo2Config2;
 import com.example.p031_mokuaihua_viewpager_fragment.utils.ComFragmentHelper;
+import com.example.p031_mokuaihua_viewpager_fragment.utils.MyLogUtil;
 
-public class Demo2Activity extends BaseActivity implements OnClickListener{
+public class Demo2Activity extends BaseActivity implements OnClickListener {
 
+    public final String ST = "STATISTICS";
+
+    public void config() {
+//        Context ctx = getApplicationContext();
+//        ApplicationInfo info = null;
+//        try {
+//            info = ctx.getPackageManager().getApplicationInfo(ctx.getPackageName(), PackageManager.GET_META_DATA);
+//        } catch (PackageManager.NameNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//        if (info == null) {
+//            throw new UnsupportedOperationException();
+//        }
+//        String klassName = info.metaData.getString(ST);
+//        MyLogUtil.d("ST_DATA_klassName", klassName);
+        try {
+            ApplicationInfo appInfo = getApplicationContext().getPackageManager()
+                    .getApplicationInfo(getApplicationContext().getPackageName(),
+                            PackageManager.GET_META_DATA);
+            String klassName = appInfo.metaData.getString(ST);
+            MyLogUtil.d("ST_DATA_activity", "ST=" + klassName);
+            if (klassName.equals(".ceshi")) {
+//                ServiceAddr.setIsDebugServer(true);
+            } else if (klassName.equals(".yushengchan")) {
+//                ServiceAddr.setIsDebugServer(true);
+            } else if (klassName.equals(".xianshang")) {
+//                ServiceAddr.setIsDebugServer(false);
+            }
+            MyLogUtil.d("ST_DATA_activity", "ST_DATA=" /*+ ServiceAddr.isIsDebugServer()*/);
+//            String aaa = "JCT_310_1157_0000";
+//            MyLogUtil.d("ST_DATA", aaa.split("_")[0]);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +69,7 @@ public class Demo2Activity extends BaseActivity implements OnClickListener{
         } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name2) {
             Demo2Config2.config();
         }
+        config();
         super.onCreate(savedInstanceState);
         setupFragments();
         findview();
@@ -68,7 +108,7 @@ public class Demo2Activity extends BaseActivity implements OnClickListener{
     }
 
     private SparseArrayCompat<Class<? extends BaseFragment>> which_version_fragment_config() {
-       if (ConstantNetUtil.VERSION_APK == NetConfig.version_name1) {
+        if (ConstantNetUtil.VERSION_APK == NetConfig.version_name1) {
             return Demo2Config1.getFragments();
         } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name2) {
             return Demo2Config2.getFragments();

@@ -29,7 +29,7 @@
             android:name="DEMO2_CONFIG"
             android:value="${DEMO2_CONFIG_VALUE}" />
         <meta-data
-            android:name="ST"
+            android:name="STATISTICS"
             android:value="${STATISTICS_VALUE}" />
         <!--demo2 config end-->
 
