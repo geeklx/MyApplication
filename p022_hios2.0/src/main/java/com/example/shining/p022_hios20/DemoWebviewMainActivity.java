@@ -106,6 +106,14 @@ public class DemoWebviewMainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.tv5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO 继承webviewactivity调用JS按钮
+                HiosHelper.resolveAd(DemoWebviewMainActivity.this, DemoWebviewMainActivity.this, "file:///android_asset/demo/web.html");
+            }
+        });
+
         //测试
 //                double aa = 100.0000;
 //                final BigDecimal bg = new BigDecimal(aa).setScale(2,

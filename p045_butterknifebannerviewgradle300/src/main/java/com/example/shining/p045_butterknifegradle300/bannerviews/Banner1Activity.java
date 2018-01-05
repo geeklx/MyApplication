@@ -56,7 +56,7 @@ public class Banner1Activity extends BaseActivity {
         Data1();
 
         //
-        mMZBannerView.setDelayedTime(10000);
+        mMZBannerView.setDelayedTime(3000);
         mMZBannerView.setIndicatorRes(R.drawable.indicator_normal_blue, R.drawable.indicator_selected_black);
         mMZBannerView.setIndicatorVisible(true);
         mMZBannerView.setIndicatorAlign(LXBannerView.IndicatorAlign.CENTER);
@@ -106,12 +106,12 @@ public class Banner1Activity extends BaseActivity {
     private void Data1() {
         mList1 = new ArrayList<Biaoge_listBean>();
         mList1.add(new Biaoge_listBean(url1, "小姐姐1"));
-//        mList1.add(new Biaoge_listBean(url2, "小姐姐2"));
-//        mList1.add(new Biaoge_listBean(url3, "小姐姐3"));
-//        mList1.add(new Biaoge_listBean(url4, "小姐姐4"));
-//        mList1.add(new Biaoge_listBean(url5, "小姐姐5"));
-//        mList1.add(new Biaoge_listBean(url6, "小姐姐6"));
-//        mList1.add(new Biaoge_listBean(url7, "小姐姐7"));
+        mList1.add(new Biaoge_listBean(url2, "小姐姐2"));
+        mList1.add(new Biaoge_listBean(url3, "小姐姐3"));
+        mList1.add(new Biaoge_listBean(url4, "小姐姐4"));
+        mList1.add(new Biaoge_listBean(url5, "小姐姐5"));
+        mList1.add(new Biaoge_listBean(url6, "小姐姐6"));
+        mList1.add(new Biaoge_listBean(url7, "小姐姐7"));
     }
 
     private void setBanner(List<Biaoge_listBean> mList1) {

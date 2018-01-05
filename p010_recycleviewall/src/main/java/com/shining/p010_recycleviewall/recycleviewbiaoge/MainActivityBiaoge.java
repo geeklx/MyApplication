@@ -5,8 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.shining.p010_recycleviewall.api.FoodManagerApi;
 import com.shining.p010_recycleviewall.domain.Biaoge_listBean;
+import com.shining.p010_recycleviewall.domain.DemoGLin;
+import com.shining.p010_recycleviewall.net.Net;
 import com.shining.p010_recycleviewall.widget.NoScrollView.FullyGridLayoutManager;
+
+import org.loader.glin.Callback;
+import org.loader.glin.Result;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +40,21 @@ public class MainActivityBiaoge extends AppCompatActivity implements View.OnClic
         addlisteners();
         Data1();
         Data2();
+        donetwork("wine_order", "online_order_list", "1", "0", "ac83f34467c2");
+    }
+
+    private void donetwork(String act, String op, String curpage, String state, String alias) {
+        // act=wine_order&op=online_order_list&curpage=1&state=0&alias=ac83f34467c2
+        Net.build(FoodManagerApi.class, "").getdemo(act, op, curpage, state, alias)
+                .enqueue(new Callback<DemoGLin>() {
+                    @Override
+                    public void onResponse(Result<DemoGLin> result) {
+                        if (!result.isOK()) {
+                            return;
+                        }
+                        DemoGLin mc = result.getResult();
+                    }
+                });
     }
 
     private void findView() {
@@ -63,12 +84,12 @@ public class MainActivityBiaoge extends AppCompatActivity implements View.OnClic
         mList1.add(new Biaoge_listBean("食材4食材4食材4食材4食材4"));
 
         //判断条件如果
-        if ((mList1.size()-1)%3==0){
+        if ((mList1.size() - 1) % 3 == 0) {
             //1 4 7 add 2
             mList1.add(new Biaoge_listBean(""));
             mList1.add(new Biaoge_listBean(""));
         }
-        if ((mList1.size()-1)%3==1){
+        if ((mList1.size() - 1) % 3 == 1) {
             //2 5 8 add 1
             mList1.add(new Biaoge_listBean(""));
         }
@@ -88,12 +109,12 @@ public class MainActivityBiaoge extends AppCompatActivity implements View.OnClic
         mList2.add(new Biaoge_listBean("食材14食材14食材14食材14"));
 
         //判断条件如果
-        if ((mList2.size()-1)%3==0){
+        if ((mList2.size() - 1) % 3 == 0) {
             //1 4 7 add 2
             mList2.add(new Biaoge_listBean(""));
             mList2.add(new Biaoge_listBean(""));
         }
-        if ((mList2.size()-1)%3==1){
+        if ((mList2.size() - 1) % 3 == 1) {
             //2 5 8 add 1
             mList2.add(new Biaoge_listBean(""));
         }

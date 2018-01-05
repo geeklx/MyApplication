@@ -59,7 +59,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         mProgressBar = (ProgressBar) findViewById(R.id.progress);
     }
 
-    private void onclickListener(){
+    private void onclickListener() {
         mBackImageView.setOnClickListener(this);
         mBackView.setOnClickListener(this);
         mCloseView.setOnClickListener(this);
@@ -251,6 +251,20 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         });
     }
 
+    @JavascriptInterface
+    public void requestLogin() {
+        mWebView.post(new Runnable() {
+            @Override
+            public void run() {
+//                UserUtils.get().login(WebViewActivity.this);
+            }
+        });
+    }
+
+//    private void loginToDo(Runnable r) {
+//        UserUtils.loginToDo(this, r);
+//    }
+
     private String mode = "";
 
     /**
@@ -269,9 +283,16 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         finish();
     }
 
-//    private void loginToDo(Runnable r) {
-//        UserUtils.loginToDo(this, r);
-//    }
+    /**
+     * hios://com.example.shining.p022_hios20.activity.NoHiosMainActivity?act={i}1&sku_id={s}2a&category_id={s}3a
+     *
+     * @param hios_url
+     */
+    @JavascriptInterface
+    public void JumpToShop(String hios_url) {
+        HiosHelper.resolveAd(WebViewActivity.this, WebViewActivity.this, hios_url);
+    }
+
 
     // *****end****
 }
