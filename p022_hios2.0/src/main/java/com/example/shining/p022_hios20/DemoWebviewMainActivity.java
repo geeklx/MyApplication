@@ -102,7 +102,7 @@ public class DemoWebviewMainActivity extends AppCompatActivity {
                 // Activity act = (Activity) container.getContext();
                 // HiosHelper.resolveAd(act, mReceiver, "");
                 // 如果是activity中的fragment 那么 HiosHelper.resolveAd(activity, fragment, "");
-                HiosHelper.resolveAd(DemoWebviewMainActivity.this, DemoWebviewMainActivity.this, "http://liangxiao.blog.51cto.com/");
+                HiosHelper.resolveAd(DemoWebviewMainActivity.this, DemoWebviewMainActivity.this, "https://mp.weixin.qq.com/s/7OxodwHvO2doDrz6i6AAlg");
             }
         });
 
@@ -111,6 +111,13 @@ public class DemoWebviewMainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO 继承webviewactivity调用JS按钮
                 HiosHelper.resolveAd(DemoWebviewMainActivity.this, DemoWebviewMainActivity.this, "file:///android_asset/demo/web.html");
+            }
+        });
+        findViewById(R.id.tv6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO 嵌套webview布局
+                HiosHelper.resolveAd(DemoWebviewMainActivity.this, DemoWebviewMainActivity.this, "hios://ad.web.page.part{act}");
             }
         });
 

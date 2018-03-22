@@ -31,6 +31,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".base.WebViewPartActivity">
+
+            <intent-filter>
+                <action android:name="ad.web.page.part" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <!--2.0-->
         <activity android:name=".base.WebViewActivity">
 

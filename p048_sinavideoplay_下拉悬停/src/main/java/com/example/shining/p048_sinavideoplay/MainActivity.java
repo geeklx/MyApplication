@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     private RecycleAdapter2 mAdapter;
     private List<Biaoge_listBean> mratings;
 
+    private String url = "http://jiuzhidao.com/data/upload/shop/store/goods/1/2018/02/07/1_05713237038355736.mp4";
     private JZVideoPlayerStandard jzVideoPlayerStandard;
 
     @Override
@@ -40,11 +41,13 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         refresh();
         donetwork();
         jzVideoPlayerStandard = (JZVideoPlayerStandard) findViewById(R.id.player_list_video);
-        jzVideoPlayerStandard.setUp("http://jzvd.nathen.cn/c6e3dc12a1154626b3476d9bf3bd7266/6b56c5f0dc31428083757a45764763b0-5287d2089db37e62345123a1be272f8b.mp4"
-                , JZVideoPlayerStandard.SCREEN_WINDOW_NORMAL, "饺子闭眼睛");
+        jzVideoPlayerStandard.setUp(url, JZVideoPlayerStandard.SCREEN_WINDOW_NORMAL, "饺子闭眼睛");
         Glide.with(this).load("http://p.qpic.cn/videoyun/0/2449_43b6f696980311e59ed467f22794e792_1/640").into(jzVideoPlayerStandard.thumbImageView);
 
         JZVideoPlayer.setJzUserAction(new MyUserActionStandard());
+        jzVideoPlayerStandard.startVideo();
+//        jzVideoPlayerStandard.setSystemTimeAndBattery();
+
     }
 
     private void donetwork() {

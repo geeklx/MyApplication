@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.shining.p010_recycleviewall.R;
-import com.shining.p010_recycleviewall.domain.Biaoge_listBean;
+import com.shining.p010_recycleviewall.domain.Biaoge_listBean2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,24 +24,24 @@ public class RecycleAdapterdff extends RecyclerView.Adapter<RecycleAdapterdff.Co
     private static final int TAG_TWO = 2;
     private LayoutInflater inflater;
     private Context context;
-    private List<Biaoge_listBean> mratings;
+    private List<Biaoge_listBean2> mratings;
 
 
     public RecycleAdapterdff(Context context) {
         this.context = context;
         inflater = LayoutInflater.from(context);
-        mratings = new ArrayList<Biaoge_listBean>();
+        mratings = new ArrayList<Biaoge_listBean2>();
     }
 
-    public void setContacts(List<Biaoge_listBean> ratings) {
+    public void setContacts(List<Biaoge_listBean2> ratings) {
         this.mratings = ratings;
     }
 
-    public void addConstacts(List<Biaoge_listBean> ratings) {
+    public void addConstacts(List<Biaoge_listBean2> ratings) {
         this.mratings.addAll(ratings);
     }
 
-    public List<Biaoge_listBean> getMratings() {
+    public List<Biaoge_listBean2> getMratings() {
         return mratings;
     }
 
@@ -66,13 +66,21 @@ public class RecycleAdapterdff extends RecyclerView.Adapter<RecycleAdapterdff.Co
         return getItemType(position, mratings);
     }
 
-    public int getItemType(int position, List<Biaoge_listBean> mratingss) {
-        if (mratingss.size() == 1) {
+    public int getItemType(int position, List<Biaoge_listBean2> mratingss) {
+//        if (mratingss.size() == 1) {
+//            return TAG_ONE;
+//        } else if (mratingss.size() >= 1) {
+//            return TAG_TWO;
+//        }
+
+        if (mratingss.get(position).getId() == 1) {
             return TAG_ONE;
-        } else {
+        } else if (mratingss.get(position).getId() == 2) {
             return TAG_TWO;
         }
+        return TAG_ONE;
     }
+
 
     @Override
     public CommHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -81,16 +89,16 @@ public class RecycleAdapterdff extends RecyclerView.Adapter<RecycleAdapterdff.Co
 
     @Override
     public void onBindViewHolder(final CommHolder viewHolder, final int position) {
-        final Biaoge_listBean item = mratings.get(position);
+        final Biaoge_listBean2 item = mratings.get(position);
         int viewType = getItemType(position, mratings);
         onBind(viewHolder, position, viewType, item);
     }
 
-    private void onBind(CommHolder viewHolder, int position, int viewType, Biaoge_listBean item) {
+    private void onBind(CommHolder viewHolder, int position, int viewType, Biaoge_listBean2 item) {
         set_itemview_findviewbyid(viewHolder, viewType, item);
     }
 
-    private void set_itemview_findviewbyid(CommHolder viewHolder, int viewType, Biaoge_listBean item) {
+    private void set_itemview_findviewbyid(CommHolder viewHolder, int viewType, Biaoge_listBean2 item) {
         switch (viewType) {
             case TAG_ONE:
                 TextView tv_content_tag10 = viewHolder.getView(R.id.tv_content_tag10);

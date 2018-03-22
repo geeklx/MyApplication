@@ -172,7 +172,8 @@ public class MainActivity extends AppCompatActivity {
     private void startTime() {
         handler_chushihua();
         //启动handlerbufen
-        mHandler2.sendEmptyMessageDelayed(MSG_RUN, DELAY_MILLIS);
+//        mHandler2.sendEmptyMessageDelayed(MSG_RUN, DELAY_MILLIS);
+        mHandler2.sendEmptyMessageDelayed(MSG_RUN);
     }
 
     private void handler_chushihua() {

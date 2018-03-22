@@ -34,7 +34,7 @@ public class GlideImageLoader implements ImageLoader {
 //                .placeholder(R.drawable.ic_default_image)
 //                .error(R.drawable.ic_default_image)
                 .dontAnimate()
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
                 .priority(Priority.HIGH)
                 .transform(new RoundedCornersTransformation(imageView.getContext(), 0, 0));
         Glide.with(activity)
@@ -54,7 +54,7 @@ public class GlideImageLoader implements ImageLoader {
         final RequestOptions options = new RequestOptions()
                 .centerCrop()
                 .dontAnimate()
-                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
+                .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
                 .transform(new RoundedCornersTransformation(imageView.getContext(), 0, 0));
         Glide.with(activity)
                 .load(Uri.fromFile(new File(path)))

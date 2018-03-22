@@ -68,7 +68,7 @@ public class MainActivityKeyboard extends AppCompatActivity {
                     toastUtil.showToastCenter("请输入有效密码！");
                     return;
                 }
-                if (!(edtPwd.getText().toString().length() == 6)) {
+                if (!(edtPwd.getText().toString().length() == edtPwd.getPasswordLength())) {
                     ToastUtil toastUtil = new ToastUtil(MainActivityKeyboard.this);
                     ToastUtil.showToastCenter("请输入有效密码！");
                     return;

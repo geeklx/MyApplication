@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DuerSdkLib/DuerSdkLib.iml" filepath="$PROJECT_DIR$/DuerSdkLib/DuerSdkLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P007_EmptyView/P007_EmptyView.iml" filepath="$PROJECT_DIR$/P007_EmptyView/P007_EmptyView.iml" />
       <module fileurl="file://$PROJECT_DIR$/P009_Glide图片缓存/P009_Glide图片缓存.iml" filepath="$PROJECT_DIR$/P009_Glide图片缓存/P009_Glide图片缓存.iml" />
       <module fileurl="file://$PROJECT_DIR$/WheelPicker/WheelPicker.iml" filepath="$PROJECT_DIR$/WheelPicker/WheelPicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/demojavalibrary/demojavalibrary.iml" filepath="$PROJECT_DIR$/demojavalibrary/demojavalibrary.iml" />
@@ -16,15 +17,18 @@
       <module fileurl="file://$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" filepath="$PROJECT_DIR$/opendroidyuanlibrary/opendroidyuanlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/p009_glide图片缓存411/p009_glide图片缓存411.iml" filepath="$PROJECT_DIR$/p009_glide图片缓存411/p009_glide图片缓存411.iml" />
       <module fileurl="file://$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" filepath="$PROJECT_DIR$/p010_recycleviewall/p010_recycleviewall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p017_keyboard/p017_keyboard.iml" filepath="$PROJECT_DIR$/p017_keyboard/p017_keyboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/p021_webviewjs/p021_webviewjs.iml" filepath="$PROJECT_DIR$/p021_webviewjs/p021_webviewjs.iml" />
       <module fileurl="file://$PROJECT_DIR$/p022_hios2.0/p022_hios2.0.iml" filepath="$PROJECT_DIR$/p022_hios2.0/p022_hios2.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/p022_hois/p022_hois.iml" filepath="$PROJECT_DIR$/p022_hois/p022_hois.iml" />
       <module fileurl="file://$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment/p031_mokuaihua_viewpager_fragment.iml" filepath="$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment/p031_mokuaihua_viewpager_fragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/p041_glide411largeimg/p041_glide411largeimg.iml" filepath="$PROJECT_DIR$/p041_glide411largeimg/p041_glide411largeimg.iml" />
       <module fileurl="file://$PROJECT_DIR$/p042_glide377largeimg/p042_glide377largeimg.iml" filepath="$PROJECT_DIR$/p042_glide377largeimg/p042_glide377largeimg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p043_uppictureandpaintprogbar/p043_uppictureandpaintprogbar.iml" filepath="$PROJECT_DIR$/p043_uppictureandpaintprogbar/p043_uppictureandpaintprogbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/p045_butterknifebannerviewgradle300/p045_butterknifebannerviewgradle300.iml" filepath="$PROJECT_DIR$/p045_butterknifebannerviewgradle300/p045_butterknifebannerviewgradle300.iml" />
       <module fileurl="file://$PROJECT_DIR$/p048_sinavideoplay_下拉悬停/p048_sinavideoplay_下拉悬停.iml" filepath="$PROJECT_DIR$/p048_sinavideoplay_下拉悬停/p048_sinavideoplay_下拉悬停.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p050_smartrefreshlayout/p050_smartrefreshlayout.iml" filepath="$PROJECT_DIR$/p050_smartrefreshlayout/p050_smartrefreshlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p050_smartrefreshlayout_intentFileURI/p050_smartrefreshlayout_intentFileURI.iml" filepath="$PROJECT_DIR$/p050_smartrefreshlayout_intentFileURI/p050_smartrefreshlayout_intentFileURI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p051_smartrefreshayut_intentfileuri/p051_smartrefreshayut_intentfileuri.iml" filepath="$PROJECT_DIR$/p051_smartrefreshayut_intentfileuri/p051_smartrefreshayut_intentfileuri.iml" />
       <module fileurl="file://$PROJECT_DIR$/shapeloading/shapeloading.iml" filepath="$PROJECT_DIR$/shapeloading/shapeloading.iml" />
     </modules>
   </component>

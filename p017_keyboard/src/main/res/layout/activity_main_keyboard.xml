@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -84,7 +85,9 @@
                     android:layout_height="@dimen/y100"
                     android:layout_weight="1"
                     android:background="@android:color/white"
-                    android:maxLength="6" />
+                    android:maxLength="4"
+                    app:passwordLength="4"
+                    app:passwordWidth="6dp" />
 
                 <View
                     android:layout_width="1dp"

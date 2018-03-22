@@ -24,7 +24,7 @@
     </Row>
 
     <Row>
-        <Key android:codes="-5"  android:keyIcon="@drawable/icon_quxiao_unfocused" /> <!--android:keyLabel="删除"-->
+        <Key android:codes="-5"  android:keyIcon="@drawable/del" /> <!--android:keyLabel="删除"-->
         <Key android:codes="48" android:keyLabel="0" />
         <Key android:codes="-3" android:keyLabel="完成" />
     </Row>

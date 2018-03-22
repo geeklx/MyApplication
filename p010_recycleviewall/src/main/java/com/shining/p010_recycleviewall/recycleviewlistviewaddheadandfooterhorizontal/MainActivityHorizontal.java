@@ -56,6 +56,7 @@ public class MainActivityHorizontal extends AppCompatActivity implements View.On
         ll_footer1 = (LinearLayout) View.inflate(this, R.layout.activity_addfooter_horizontal, null);
         mAdapter1 = new RecycleAdapterHorizontal(this);
         LinearLayoutManager mLinearLayoutManager1 = new LinearLayoutManager(this);
+
         mLinearLayoutManager1.setOrientation(OrientationHelper.HORIZONTAL);
         recyclerView1.setItemAnimator(new DefaultItemAnimator());
         recyclerView1.setLayoutManager(mLinearLayoutManager1);

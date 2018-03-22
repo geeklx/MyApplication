@@ -2,9 +2,11 @@
 <resources>
 
     <declare-styleable name="EmptyView">
+        <attr name="loading_layout_img_an" format="integer|reference" />
         <attr name="loading_layout" format="reference" />
         <attr name="nodata_layout" format="reference" />
         <attr name="errornet_layout" format="reference" />
+        <attr name="unreachable_layout" format="reference" />
     </declare-styleable>
 
 </resources>

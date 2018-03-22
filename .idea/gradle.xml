@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/DuerSdkLib" />
+            <option value="$PROJECT_DIR$/P007_EmptyView" />
             <option value="$PROJECT_DIR$/P009_Glide图片缓存" />
             <option value="$PROJECT_DIR$/WheelPicker" />
             <option value="$PROJECT_DIR$/demojavalibrary" />
@@ -21,15 +22,18 @@
             <option value="$PROJECT_DIR$/opendroidyuanlibrary" />
             <option value="$PROJECT_DIR$/p009_glide图片缓存411" />
             <option value="$PROJECT_DIR$/p010_recycleviewall" />
+            <option value="$PROJECT_DIR$/p017_keyboard" />
             <option value="$PROJECT_DIR$/p021_webviewjs" />
             <option value="$PROJECT_DIR$/p022_hios2.0" />
             <option value="$PROJECT_DIR$/p022_hois" />
             <option value="$PROJECT_DIR$/p031_mokuaihua_viewpager_fragment" />
             <option value="$PROJECT_DIR$/p041_glide411largeimg" />
             <option value="$PROJECT_DIR$/p042_glide377largeimg" />
+            <option value="$PROJECT_DIR$/p043_uppictureandpaintprogbar" />
             <option value="$PROJECT_DIR$/p045_butterknifebannerviewgradle300" />
             <option value="$PROJECT_DIR$/p048_sinavideoplay_下拉悬停" />
-            <option value="$PROJECT_DIR$/p050_smartrefreshlayout" />
+            <option value="$PROJECT_DIR$/p050_smartrefreshlayout_intentFileURI" />
+            <option value="$PROJECT_DIR$/p051_smartrefreshayut_intentfileuri" />
             <option value="$PROJECT_DIR$/shapeloading" />
           </set>
         </option>

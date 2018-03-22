@@ -2,4 +2,107 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fragment_quickrepair_font">18sp</dimen>
+
+    <!--add by lxd-->
+    <dimen name="thumnail_default_width">200dip</dimen>
+    <dimen name="thumnail_default_height">200dip</dimen>
+
+
+    <!--end-->
+
+    <!--add by tuzhao-->
+    <dimen name="text_size_120">116sp</dimen>
+    <dimen name="text_size_119">115sp</dimen>
+    <dimen name="text_size_118">114sp</dimen>
+    <dimen name="text_size_117">113sp</dimen>
+    <dimen name="text_size_116">112sp</dimen>
+    <dimen name="text_size_115">111sp</dimen>
+    <dimen name="text_size_114">110sp</dimen>
+    <dimen name="text_size_113">109sp</dimen>
+    <dimen name="text_size_112">108sp</dimen>
+    <dimen name="text_size_111">107sp</dimen>
+    <dimen name="text_size_110">106sp</dimen>
+    <dimen name="text_size_109">105sp</dimen>
+    <dimen name="text_size_108">104sp</dimen>
+    <dimen name="text_size_107">103sp</dimen>
+    <dimen name="text_size_106">102sp</dimen>
+    <dimen name="text_size_105">101sp</dimen>
+    <dimen name="text_size_104">100sp</dimen>
+    <dimen name="text_size_103">99sp</dimen>
+    <dimen name="text_size_102">98sp</dimen>
+    <dimen name="text_size_101">97sp</dimen>
+    <dimen name="text_size_100">96sp</dimen>
+    <dimen name="text_size_99">95sp</dimen>
+    <dimen name="text_size_98">94sp</dimen>
+    <dimen name="text_size_97">93sp</dimen>
+    <dimen name="text_size_96">92sp</dimen>
+    <dimen name="text_size_95">91sp</dimen>
+    <dimen name="text_size_94">90sp</dimen>
+    <dimen name="text_size_93">89sp</dimen>
+    <dimen name="text_size_92">88sp</dimen>
+    <dimen name="text_size_91">87sp</dimen>
+    <dimen name="text_size_90">86sp</dimen>
+    <dimen name="text_size_68">64sp</dimen>
+    <dimen name="text_size_60">56sp</dimen>
+    <dimen name="text_size_59">55sp</dimen>
+    <dimen name="text_size_58">54sp</dimen>
+    <dimen name="text_size_57">53sp</dimen>
+    <dimen name="text_size_56">52sp</dimen>
+    <dimen name="text_size_55">51sp</dimen>
+    <dimen name="text_size_54">50sp</dimen>
+    <dimen name="text_size_53">49sp</dimen>
+    <dimen name="text_size_52">48sp</dimen>
+    <dimen name="text_size_51">47sp</dimen>
+    <dimen name="text_size_50">46sp</dimen>
+    <dimen name="text_size_49">45sp</dimen>
+    <dimen name="text_size_48">44sp</dimen>
+    <dimen name="text_size_47">43sp</dimen>
+    <dimen name="text_size_46">42sp</dimen>
+    <dimen name="text_size_45">41sp</dimen>
+    <dimen name="text_size_44">40sp</dimen>
+    <dimen name="text_size_43">39sp</dimen>
+    <dimen name="text_size_42">38sp</dimen>
+    <dimen name="text_size_41">37sp</dimen>
+    <dimen name="text_size_40">36sp</dimen>
+    <dimen name="text_size_39">35sp</dimen>
+    <dimen name="text_size_38">34sp</dimen>
+    <dimen name="text_size_37">33sp</dimen>
+    <dimen name="text_size_36">32sp</dimen>
+    <dimen name="text_size_35">31sp</dimen>
+    <dimen name="text_size_34">30sp</dimen>
+    <dimen name="text_size_33">29sp</dimen>
+    <dimen name="text_size_32">28sp</dimen>
+    <dimen name="text_size_31">27sp</dimen>
+    <!--30 ok-->
+    <dimen name="text_size_30">26sp</dimen>
+    <dimen name="text_size_29">25sp</dimen>
+    <!--28-->
+    <dimen name="text_size_28">24sp</dimen>
+    <dimen name="text_size_27">23sp</dimen>
+    <!--26-->
+    <dimen name="text_size_26">22sp</dimen>
+    <dimen name="text_size_25">21sp</dimen>
+    <!--24 0k-->
+    <dimen name="text_size_24">20sp</dimen>
+    <dimen name="text_size_23">19sp</dimen>
+    <dimen name="text_size_22">18sp</dimen>
+    <dimen name="text_size_21">17sp</dimen>
+    <dimen name="text_size_20">16sp</dimen>
+    <dimen name="text_size_19">15sp</dimen>
+    <!-- 18 ok-->
+    <dimen name="text_size_18">14sp</dimen>
+    <dimen name="text_size_17">13sp</dimen>
+    <dimen name="text_size_16">12sp</dimen>
+    <dimen name="text_size_15">11sp</dimen>
+    <dimen name="text_size_14">10sp</dimen>
+    <dimen name="text_size_13">9sp</dimen>
+    <dimen name="text_size_12">8sp</dimen>
+    <dimen name="text_size_11">7sp</dimen>
+    <dimen name="text_size_10">6sp</dimen>
+    <dimen name="text_size_9">5sp</dimen>
+    <dimen name="text_size_8">4sp</dimen>
+    <!--end-->
+
 </resources>

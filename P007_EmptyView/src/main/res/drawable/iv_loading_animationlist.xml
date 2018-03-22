@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/ic_loading_white1_01"
+        android:duration="185" />
+    <item
+        android:drawable="@drawable/ic_loading_white1_02"
+        android:duration="180" />
+    <item
+        android:drawable="@drawable/ic_loading_white1_03"
+        android:duration="175" />
+    <item
+        android:drawable="@drawable/ic_loading_white1_04"
+        android:duration="170" />
+    <item
+        android:drawable="@drawable/ic_loading_white1_05"
+        android:duration="165" />
+    <item
+        android:drawable="@drawable/ic_loading_white1_06"
+        android:duration="160" />
+    <item
+        android:drawable="@drawable/ic_loading_white1_07"
+        android:duration="155" />
+    <item
+        android:drawable="@drawable/ic_loading_white1_08"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_loading_white1_09"
+        android:duration="145" />
+    <item
+        android:drawable="@drawable/ic_loading_white1_10"
+        android:duration="140" />
+    <item
+        android:drawable="@drawable/ic_loading_white1_11"
+        android:duration="135" />
+    <item
+        android:drawable="@drawable/ic_loading_white1_12"
+        android:duration="130" />
+
+
+</animation-list>

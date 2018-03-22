@@ -17,6 +17,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.shining.p022_hios20.R;
 import com.example.shining.p022_hios20.hois2.HiosHelper;
@@ -51,7 +52,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         loadUrl(mUrl);
     }
 
-    private void findview() {
+    protected void findview() {
         mBackImageView = findViewById(R.id.ic_back);
         mBackView = findViewById(R.id.back);
         mCloseView = findViewById(R.id.close);
@@ -59,7 +60,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         mProgressBar = (ProgressBar) findViewById(R.id.progress);
     }
 
-    private void onclickListener() {
+    protected void onclickListener() {
         mBackImageView.setOnClickListener(this);
         mBackView.setOnClickListener(this);
         mCloseView.setOnClickListener(this);
@@ -295,4 +296,36 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
 
 
     // *****end****
+
+
+    /**
+     * js调用此方法
+     */
+    @JavascriptInterface
+    public void actionFromJs() {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(WebViewActivity.this, "我可以跳转了~", Toast.LENGTH_LONG).show();
+
+            }
+        });
+    }
+
+    /**
+     * js调用此方法. 并且将参数传递过来
+     *
+     * @param str js  传递过来的参数
+     */
+    @JavascriptInterface
+    public void actionFromJsWithParam(final String str) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(WebViewActivity.this, "我可以拿到你给我的方法跳转了~" + str, Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+    }
 }

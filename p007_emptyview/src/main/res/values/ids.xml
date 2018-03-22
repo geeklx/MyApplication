@@ -4,4 +4,9 @@
     <item name="empty_nodata_notice" type="id" />
     <item name="empty_errnet_notice" type="id" />
     <item name="empty_errnet_btn" type="id" />
+    <item name="loading_notice" type="id" />
+    <item name="loading_iv" type="id" />
+    <item name="empty_unreachable_notice" type="id" />
+    <item name="empty_unreachable_btn" type="id" />
+
 </resources>
