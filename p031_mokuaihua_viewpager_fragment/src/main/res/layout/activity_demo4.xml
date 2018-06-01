@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />-->
 
-            <android.support.v4.view.ViewPager
+            <com.example.p031_mokuaihua_viewpager_fragment.demo4.widgets.ViewPagerSlide
                 android:id="@+id/viewpager_my"
                 android:layout_width="match_parent"
                 android:layout_height="350dp" />

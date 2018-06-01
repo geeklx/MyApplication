@@ -26,6 +26,7 @@ import com.example.p031_mokuaihua_viewpager_fragment.demo4.fragments.Demo4Fragme
 import com.example.p031_mokuaihua_viewpager_fragment.demo4.fragments.Demo4Fragment21;
 import com.example.p031_mokuaihua_viewpager_fragment.demo4.widgets.DotIndicatorView;
 import com.example.p031_mokuaihua_viewpager_fragment.demo4.widgets.IWithViewPager;
+import com.example.p031_mokuaihua_viewpager_fragment.demo4.widgets.ViewPagerSlide;
 import com.example.p031_mokuaihua_viewpager_fragment.utils.ComFragmentHelper;
 import com.example.p031_mokuaihua_viewpager_fragment.utils.MyLogUtil;
 
@@ -36,7 +37,7 @@ import static com.example.p031_mokuaihua_viewpager_fragment.demo4.configs.Demo4C
 
 public class Demo4Activity extends FragmentActivity implements OnClickListener, IWithViewPager {
 
-    private ViewPager mViewPager;
+    private ViewPagerSlide mViewPager;
     private DotIndicatorView mIndicator;
 
     //当前选中的项
@@ -68,9 +69,16 @@ public class Demo4Activity extends FragmentActivity implements OnClickListener, 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                mViewPager.setScroll(true);
+                showIndicator(true);
+            }
+        }, 10000);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
                 SendToFragment("Demo4Activity");
             }
-        },10000);
+        }, 20000);
     }
 
 
@@ -84,19 +92,20 @@ public class Demo4Activity extends FragmentActivity implements OnClickListener, 
 //        IndexFoodFragmentUpdateIds iff = new IndexFoodFragmentUpdateIds();
 //        iff.setFood_definition_id(id1);
 //        iff.setFood_name(id2);
-        callFragment(id1, Demo4Fragment10.class.getName());
-        callFragment(id1, Demo4Fragment11.class.getName());
-        callFragment(id1, Demo4Fragment20.class.getName());
-        callFragment(id1, Demo4Fragment21.class.getName());
+        callFragment("Demo4Activity1", Demo4Fragment10.class.getName());
+        callFragment("Demo4Activity2", Demo4Fragment11.class.getName());
+        callFragment("Demo4Activity3", Demo4Fragment20.class.getName());
+        callFragment("Demo4Activity4", Demo4Fragment21.class.getName());
     }
 
     private void setupViewPager() {
+        mViewPager.setScroll(false);
         mViewPager.setOffscreenPageLimit(PAGE_COUNT);
         mViewPager.setAdapter(new IndexPagerAdapter());
 
         mIndicator.create(PAGE_COUNT);
         mIndicator.setupWithViewPager(mViewPager);
-        showIndicator(true);
+        showIndicator(false);
         withViewPager(mViewPager);
 
         mViewPager.addOnPageChangeListener(new ViewPagerChangeAdapter() {
@@ -149,7 +158,7 @@ public class Demo4Activity extends FragmentActivity implements OnClickListener, 
     }
 
     private void findview() {
-        mViewPager = (ViewPager) findViewById(R.id.viewpager_my);
+        mViewPager = (ViewPagerSlide) findViewById(R.id.viewpager_my);
         mIndicator = (DotIndicatorView) findViewById(R.id.indicator);
     }
 

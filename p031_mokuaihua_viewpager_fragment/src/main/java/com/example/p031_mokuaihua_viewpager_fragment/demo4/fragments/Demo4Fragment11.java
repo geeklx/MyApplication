@@ -58,7 +58,7 @@ public class Demo4Fragment11 extends BaseIndexNetFragment {
         //举例
 //        IndexFoodFragmentUpdateIds iff = new IndexFoodFragmentUpdateIds();
 //        iff.setFood_definition_id(id1);
-//        iff.setFood_name(id2);
+////        iff.setFood_name(id2);
         if (getActivity() != null && getActivity() instanceof Demo4Activity) {
             ((Demo4Activity) getActivity()).callFragment(id1, Demo4Fragment20.class.getName());
         }
