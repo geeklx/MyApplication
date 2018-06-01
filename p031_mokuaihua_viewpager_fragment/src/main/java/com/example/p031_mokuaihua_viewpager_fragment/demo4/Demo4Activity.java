@@ -2,6 +2,7 @@ package com.example.p031_mokuaihua_viewpager_fragment.demo4;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -19,6 +20,10 @@ import com.example.p031_mokuaihua_viewpager_fragment.R;
 import com.example.p031_mokuaihua_viewpager_fragment.base.BaseFragment;
 import com.example.p031_mokuaihua_viewpager_fragment.demo3.utils.ViewPagerChangeAdapter;
 import com.example.p031_mokuaihua_viewpager_fragment.demo4.configs.Demo4Config;
+import com.example.p031_mokuaihua_viewpager_fragment.demo4.fragments.Demo4Fragment10;
+import com.example.p031_mokuaihua_viewpager_fragment.demo4.fragments.Demo4Fragment11;
+import com.example.p031_mokuaihua_viewpager_fragment.demo4.fragments.Demo4Fragment20;
+import com.example.p031_mokuaihua_viewpager_fragment.demo4.fragments.Demo4Fragment21;
 import com.example.p031_mokuaihua_viewpager_fragment.demo4.widgets.DotIndicatorView;
 import com.example.p031_mokuaihua_viewpager_fragment.demo4.widgets.IWithViewPager;
 import com.example.p031_mokuaihua_viewpager_fragment.utils.ComFragmentHelper;
@@ -58,14 +63,31 @@ public class Demo4Activity extends FragmentActivity implements OnClickListener, 
     private void doNetWork() {
         setupViewPager();
         setupFragments();
-//        fragmentList = new ArrayList<Fragment>();
-//        oneFragment = new ShezhimimaOneFragment();
-//        twoFragment = new ShezhimimaTwoFragment();
-//
-//        fragmentList.add(oneFragment);
-//        fragmentList.add(twoFragment);
 
-//        mViewPager.setAdapter(new MyFrageStatePagerAdapter(getSupportFragmentManager()));
+        //
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                SendToFragment("Demo4Activity");
+            }
+        },10000);
+    }
+
+
+    /**
+     * 页面传值操作部分
+     *
+     * @param id1
+     */
+    private void SendToFragment(String id1) {
+        //举例
+//        IndexFoodFragmentUpdateIds iff = new IndexFoodFragmentUpdateIds();
+//        iff.setFood_definition_id(id1);
+//        iff.setFood_name(id2);
+        callFragment(id1, Demo4Fragment10.class.getName());
+        callFragment(id1, Demo4Fragment11.class.getName());
+        callFragment(id1, Demo4Fragment20.class.getName());
+        callFragment(id1, Demo4Fragment21.class.getName());
     }
 
     private void setupViewPager() {

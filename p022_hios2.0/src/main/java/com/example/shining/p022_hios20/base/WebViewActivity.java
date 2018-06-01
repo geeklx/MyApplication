@@ -328,4 +328,29 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         });
 
     }
+
+    public void set_clear_history(){
+        mWebView.loadUrl("javascript:onDestroy()");
+
+        if (mWebView != null) {
+            ViewParent parent = mWebView.getParent();
+            if (parent != null) {
+                ((ViewGroup) parent).removeView(mWebView);
+            }
+
+            mWebView.clearCache(true);
+            mWebView.stopLoading();
+            mWebView.getSettings().setJavaScriptEnabled(false);
+            mWebView.clearHistory();
+            mWebView.clearView();
+            mWebView.removeAllViews();
+
+            try {
+                mWebView.destroy();
+            } catch (Throwable ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+
 }

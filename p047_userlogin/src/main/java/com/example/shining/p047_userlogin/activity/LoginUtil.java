@@ -52,7 +52,7 @@ public class LoginUtil {
 
     public void loginTowhere(Activity activity, Runnable runnable) {
         if (isUserLogin()) {
-            if (runnable == null) {
+            if (runnable != null) {
                 runnable.run();
             }
         }

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.p031_mokuaihua_viewpager_fragment.R;
 import com.example.p031_mokuaihua_viewpager_fragment.base.BaseIndexNetFragment;
@@ -15,7 +16,7 @@ import com.example.p031_mokuaihua_viewpager_fragment.demo4.Demo4Activity;
 
 public class Demo4Fragment10 extends BaseIndexNetFragment {
 
-
+    private TextView tv1;
     private Context mContext;
 
     @Override
@@ -26,7 +27,8 @@ public class Demo4Fragment10 extends BaseIndexNetFragment {
 
     @Override
     public void call(Object value) {
-
+        String ids = (String) value;
+        tv1.setText(ids);
     }
 
     @Override
@@ -37,7 +39,8 @@ public class Demo4Fragment10 extends BaseIndexNetFragment {
     @Override
     protected void setup(View rootView, @Nullable Bundle savedInstanceState) {
         super.setup(rootView, savedInstanceState);
-        rootView.findViewById(R.id.tv1).setOnClickListener(new View.OnClickListener() {
+        tv1= (TextView) rootView.findViewById(R.id.tv1);
+        tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 SendToFragment("demo4的fragment1页面");

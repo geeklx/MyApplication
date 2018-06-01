@@ -63,8 +63,6 @@ public class MainActivity extends AppCompatActivity {
                     mImgDir.getAbsolutePath());
             mGirdView.setAdapter(mAdapter);
         }
-
-        ;
     };
 
     @Override

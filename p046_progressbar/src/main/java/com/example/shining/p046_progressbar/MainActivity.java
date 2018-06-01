@@ -10,7 +10,9 @@ import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Thread thread;
     private ProgressBar progressBar;
+    private boolean stateChange = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +20,40 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         progressBar = (ProgressBar) findViewById(R.id.progress_horizontal);
         progressBar.setVisibility(View.VISIBLE);
-        setProgresss(70, "f25252");
+//        setProgresss(70, "f25252");
+        //动态进度条bufen
+        thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                // TODO Auto-generated method stub
+                while(true){
+                    int currentValue = progressBar.getProgress();
+                    int currentMaxValue = progressBar.getMax();
+                    int currentSecondaryValue = progressBar.getSecondaryProgress();
+                    if(stateChange == false){
+                        if(currentValue >= currentMaxValue){
+                            stateChange = true;
+                        }else{
+                            progressBar.setProgress(currentValue + 1);
+                            progressBar.setSecondaryProgress(currentValue+1);
+                        }
+                    }else{
+                        if(currentValue <= 0){
+                            stateChange = false;
+                        }else{
+//                            progressBar.setProgress(currentValue - 1);
+                            thread=null;
+                        }
+                    }
+                    try{
+                        Thread.sleep(50);
+                    }catch(InterruptedException e){
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+        thread.start();
 
     }
 

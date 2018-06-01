@@ -201,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private boolean decrTime(long ms) {
         mCurrentTime -= ms;
-        if (mCurrentTime <= 0) {
+        if (mCurrentTime - 1000 <= 1000) {
             // 已结束
             doCancel();
             return false;

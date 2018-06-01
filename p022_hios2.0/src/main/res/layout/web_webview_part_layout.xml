@@ -12,25 +12,32 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <include layout="@layout/web_web_toolbar" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swip_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/container"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical">
 
-            <!--<WebView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:id="@+id/wb_hios"-->
-            <!--android:layout_height="match_parent"></WebView>-->
+            <include layout="@layout/web_web_toolbar" />
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--<WebView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:id="@+id/wb_hios"-->
+                <!--android:layout_height="match_parent"></WebView>-->
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
 
 </LinearLayout>
