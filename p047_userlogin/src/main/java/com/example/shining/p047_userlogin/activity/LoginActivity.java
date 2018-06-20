@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         btn_ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                donetloginout();
+                donetlogin();
             }
         });
     }
@@ -56,11 +56,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     /**
-     * 登出操作
+     * 登录操作
      */
-    private void donetloginout() {
+    private void donetlogin() {
         //step 请求服务器成功后清除sp中的数据
-        SpUtils.get(this).get("", "");
+//        SpUtils.get(this).get("", "");
         onLoginSuccess();
     }
 

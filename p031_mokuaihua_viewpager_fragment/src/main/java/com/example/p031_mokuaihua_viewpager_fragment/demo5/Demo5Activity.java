@@ -28,7 +28,15 @@ public class Demo5Activity extends AppCompatActivity {
     private FragmentContent mShopGoodsListFragment; // 商城商品列表
 
     private FragmentManager mFragmentManager;
+    private boolean once;
 
+    /**
+     * 当系统内存不足，Fragment 的宿主 Activity 回收的时候，Fragment 的实例并没有随之被回收。
+     * Activity 被系统回收时，会主动调用 onSaveInstance() 方法来保存视图层（View Hierarchy），
+     * 所以当 Activity 通过导航再次被重建时，之前被实例化过的 Fragment 依然会出现在 Activity 中，
+     * 此时的 FragmentTransaction 中的相当于又再次 add 了 fragment 进去的，hide()和show()方法对之前保存的fragment已经失效了，所以就出现了重叠。
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +45,10 @@ public class Demo5Activity extends AppCompatActivity {
         onclick();
 
         mFragmentManager = getSupportFragmentManager();
+        if (savedInstanceState!=null){
+            mShopIndexFragment = (FragmentIndex) mFragmentManager.findFragmentByTag(INDEX_TAG);
+            mShopGoodsListFragment = (FragmentContent) mFragmentManager.findFragmentByTag(LIST_TAG);
+        }
         donetwork();
     }
 
@@ -51,6 +63,10 @@ public class Demo5Activity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 String tag = (String) tab.getTag();
+                if (!once) {
+                    once = true;
+                    return;
+                }
                 if (TextUtils.isEmpty(tag)) {
                     return;
                 }
