@@ -8,7 +8,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 
 import com.example.shining.p047_userlogin.R;
-import com.example.shining.p047_userlogin.application.DemoApplication;
 import com.example.shining.p047_userlogin.utils.SpUtils;
 
 public class LoginOutActivity extends AppCompatActivity {
@@ -48,12 +47,12 @@ public class LoginOutActivity extends AppCompatActivity {
     }
 
     private void onLoginSuccess() {
-        setResult(DemoApplication.LOGINOUT_RESULT_OK);
+        setResult(LoginUtil.LOGINOUT_RESULT_OK);
         finish();
     }
 
     private void onLoginCanceled() {
-        setResult(DemoApplication.LOGINOUT_RESULT_CANCELED);
+        setResult(LoginUtil.LOGINOUT_RESULT_CANCELED);
         finish();
     }
 

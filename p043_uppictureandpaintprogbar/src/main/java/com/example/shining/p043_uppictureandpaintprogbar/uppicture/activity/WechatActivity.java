@@ -16,6 +16,8 @@ import com.lzy.imagepicker.bean.ImageItem;
 import com.lzy.imagepicker.ui.ImageGridActivity;
 import com.lzy.imagepicker.ui.ImagePreviewDelActivity;
 import com.lzy.imagepicker.view.CropImageView;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +45,8 @@ public class WechatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wechat);
 
+        ImageLoaderConfiguration config = ImageLoaderConfiguration.createDefault(this);
+        ImageLoader.getInstance().init(config);     //UniversalImageLoader初始化
         //最好放到 Application oncreate执行
         initImagePicker();
         initWidget();

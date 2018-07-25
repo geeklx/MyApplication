@@ -31,8 +31,7 @@ public class DemoUppictureApplication extends MultiDexApplication {
         sInstance = this;
         mContext = getApplicationContext();
 
-        ImageLoaderConfiguration config = ImageLoaderConfiguration.createDefault(this);
-        ImageLoader.getInstance().init(config);     //UniversalImageLoader初始化
+
     }
 
 }

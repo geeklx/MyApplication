@@ -13,13 +13,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 import com.example.p031_mokuaihua_viewpager_fragment.R;
-import com.example.p031_mokuaihua_viewpager_fragment.applications.ConstantNetUtil;
-import com.example.p031_mokuaihua_viewpager_fragment.applications.NetConfig;
 import com.example.p031_mokuaihua_viewpager_fragment.base.BaseActivity;
 import com.example.p031_mokuaihua_viewpager_fragment.base.BaseFragment;
 import com.example.p031_mokuaihua_viewpager_fragment.base.BaseIndexFragment;
-import com.example.p031_mokuaihua_viewpager_fragment.demo2.configs.Demo2Config1;
-import com.example.p031_mokuaihua_viewpager_fragment.demo2.configs.Demo2Config2;
+import com.example.p031_mokuaihua_viewpager_fragment.demo2.configs.Demo2Config;
 import com.example.p031_mokuaihua_viewpager_fragment.utils.ComFragmentHelper;
 import com.example.p031_mokuaihua_viewpager_fragment.utils.MyLogUtil;
 
@@ -62,20 +59,16 @@ public class Demo2Activity extends BaseActivity implements OnClickListener {
         }
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        if (ConstantNetUtil.VERSION_APK == NetConfig.version_name1) {
-            Demo2Config1.config();
-        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name2) {
-            Demo2Config2.config();
-        }
-        config();
-        super.onCreate(savedInstanceState);
-        setupFragments();
-        findview();
-        onclickListener();
-        doNetWork();
-    }
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//
+//        super.onCreate(savedInstanceState);
+//
+//        setupFragments();
+//        findview();
+//        onclickListener();
+//        doNetWork();
+//    }
 
     @Override
     protected int getLayoutId() {
@@ -85,10 +78,13 @@ public class Demo2Activity extends BaseActivity implements OnClickListener {
     @Override
     protected void setup(@Nullable Bundle savedInstanceState) {
         super.setup(savedInstanceState);
-//        setupFragments();
-//        findview();
-//        onclickListener();
-//        doNetWork();
+        Demo2Config.config();
+        config();
+        setupFragments();
+        findview();
+        onclickListener();
+        doNetWork();
+
     }
 
     /**
@@ -97,7 +93,7 @@ public class Demo2Activity extends BaseActivity implements OnClickListener {
     private void setupFragments() {
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         //TODO 多版本模式bufen
-        SparseArrayCompat<Class<? extends BaseFragment>> array = which_version_fragment_config();//
+        SparseArrayCompat<Class<? extends BaseFragment>> array = Demo2Config.getFragments();//
         int size = array.size();
         BaseFragment item;
         for (int i = 0; i < size; i++) {
@@ -107,14 +103,14 @@ public class Demo2Activity extends BaseActivity implements OnClickListener {
         ft.commitAllowingStateLoss();
     }
 
-    private SparseArrayCompat<Class<? extends BaseFragment>> which_version_fragment_config() {
-        if (ConstantNetUtil.VERSION_APK == NetConfig.version_name1) {
-            return Demo2Config1.getFragments();
-        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name2) {
-            return Demo2Config2.getFragments();
-        }
-        return Demo2Config1.getFragments();
-    }
+//    private SparseArrayCompat<Class<? extends BaseFragment>> which_version_fragment_config() {
+//        if (ConstantNetUtil.VERSION_APK == NetConfig.version_name1) {
+//            return Demo2Config1.getFragments();
+//        } else if (ConstantNetUtil.VERSION_APK == NetConfig.version_name2) {
+//            return Demo2Config2.getFragments();
+//        }
+//        return Demo2Config1.getFragments();
+//    }
 
     private void doNetWork() {
 

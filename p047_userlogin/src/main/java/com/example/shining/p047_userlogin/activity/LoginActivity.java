@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.shining.p047_userlogin.R;
-import com.example.shining.p047_userlogin.application.DemoApplication;
-import com.example.shining.p047_userlogin.utils.SpUtils;
 import com.example.shining.p047_userlogin.utils.ToastUtil;
 
 public class LoginActivity extends AppCompatActivity {
@@ -46,12 +44,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void onLoginSuccess() {
-        setResult(DemoApplication.LOGIN_RESULT_OK);
+        setResult(LoginUtil.LOGIN_RESULT_OK);
         finish();
     }
 
     private void onLoginCanceled() {
-        setResult(DemoApplication.LOGIN_RESULT_CANCELED);
+        setResult(LoginUtil.LOGIN_RESULT_CANCELED);
         finish();
     }
 
