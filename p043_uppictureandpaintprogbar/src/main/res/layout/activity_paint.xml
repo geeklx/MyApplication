@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.shining.p043_calendarviewandpaintprogressbarview.countview.CountDownView
+    <com.example.shining.p043_uppictureandpaintprogbar.countview.CountDownView
         android:id="@+id/countDownView"
         android:layout_width="200dp"
         android:layout_height="200dp"

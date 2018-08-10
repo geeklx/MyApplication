@@ -29,12 +29,17 @@ android {
 
     compileSdkVersion 26
     buildToolsVersion "26.0.2"
-    sourceSets {
-        main {
-            jniLibs.srcDirs = ['libs']
-        }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
-
+    dexOptions {
+        javaMaxHeapSize "4g"
+        keepRuntimeAnnotatedClasses false
+    }
+    lintOptions {
+        abortOnError false
+    }
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
         exclude 'META-INF/NOTICE'
@@ -50,7 +55,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        multiDexEnabled true
+//        multiDexEnabled true
         renderscriptTargetApi 19
         renderscriptSupportModeEnabled true
         javaCompileOptions {
@@ -90,7 +95,7 @@ android {
     }
 
     def int minSdk = 18;
-    def int targetSdk = 23;
+    def int targetSdk = 26;
     def String appId = 'com.shining.p010_recycleviewall';
 
     def int vCode = 1;
@@ -114,7 +119,7 @@ android {
             targetSdkVersion targetSdk
             versionCode vCode
 
-            multiDexEnabled true
+//            multiDexEnabled true
             renderscriptTargetApi 19
             renderscriptSupportModeEnabled true
             ndk {
@@ -179,7 +184,9 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
+//    compile ("com.geeklx:library_hios:1.0.4") {
+//        exclude group: 'com.android.support:multidex'
+//    }
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
@@ -193,8 +200,8 @@ dependencies {
     annotationProcessor  'com.jakewharton:butterknife-compiler:8.6.0'
     compile 'com.jakewharton:butterknife:8.6.0'
     testCompile 'junit:junit:4.12'
-    compile 'com.geeklx:library_hios:1.0.4'
-    compile 'com.android.support:multidex:1.0.1'
+//    compile 'com.geeklx:library_hios:1.0.4'
+//    compile 'com.android.support:multidex:1.0.1'
 
 
     compile project(':glin')

@@ -15,6 +15,7 @@ import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.shining.p010_recycleviewall.R;
 import com.shining.p010_recycleviewall.api.FoodManagerApi;
 import com.shining.p010_recycleviewall.domain.FoodmanagerrightgetParams;
 import com.shining.p010_recycleviewall.domain.LabOne;
@@ -179,9 +180,9 @@ public class MainActivity3 extends AppCompatActivity implements
 
     private void createAdapter() {
         ll_header = (LinearLayout) View.inflate(this,
-                com.shining.p010_recycleviewall.R.layout.activity_addheader, null);
+                R.layout.activity_addheader, null);
         ll_footer = (LinearLayout) View.inflate(this,
-                com.shining.p010_recycleviewall.R.layout.activity_addfooter, null);
+                R.layout.activity_addfooter, null);
         mAdapter = new RecycleAdapter3(this);
         LinearLayoutManager mLinearLayoutManager1 = new LinearLayoutManager(this);
         mLinearLayoutManager1.setOrientation(OrientationHelper.VERTICAL);

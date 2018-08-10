@@ -3,6 +3,7 @@ package com.example.shining.p044_wechat_record.audiomanagerset.domain;
 import org.greenrobot.greendao.annotation.Entity;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Generated;
+import org.greenrobot.greendao.annotation.Keep;
 
 /**
  * Created by shining on 2017/10/16.
@@ -31,15 +32,13 @@ public class Recorder {
     public void setId(Long id) {
         this.id = id;
     }
-    @Generated(hash = 845739284)
+    @Keep
     public Recorder(Long id, float time, String filePath) {
         this.id = id;
         this.time = time;
         this.filePath = filePath;
     }
-    @Generated(hash = 1244939113)
+    @Keep
     public Recorder() {
     }
-
-
 }

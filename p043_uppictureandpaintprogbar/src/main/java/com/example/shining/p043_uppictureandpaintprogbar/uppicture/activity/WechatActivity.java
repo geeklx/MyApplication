@@ -168,6 +168,7 @@ public class WechatActivity extends AppCompatActivity {
                 //移除当前图片刷新界面
                 mImageItems = adapter.getImages();
                 mImageItems.remove(mCurrentPosition);
+                selImageList.remove(mCurrentPosition);
                 if (mImageItems.size() >= 0) {
                     adapter.setImages(mImageItems);
                 } else {

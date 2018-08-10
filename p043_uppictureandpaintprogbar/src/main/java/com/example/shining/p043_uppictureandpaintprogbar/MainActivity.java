@@ -21,5 +21,12 @@ public class MainActivity extends AppCompatActivity {
 //                startActivity(intent);
             }
         });
+        findViewById(R.id.tv2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, PaintProgressBarViewActivity.class));
+            }
+        });
+
     }
 }

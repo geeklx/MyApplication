@@ -8,6 +8,7 @@ import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.shining.p010_recycleviewall.R;
 import com.shining.p010_recycleviewall.domain.Biaoge_listBean2;
 
 import java.util.ArrayList;
@@ -31,7 +32,7 @@ public class MainActivityDff extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.shining.p010_recycleviewall.R.layout.activity_main_recyclelistview_dff);
+        setContentView(R.layout.activity_main_recyclelistview_dff);
         findView();
         addlisteners();
 //        Data1();
@@ -39,8 +40,8 @@ public class MainActivityDff extends AppCompatActivity implements View.OnClickLi
     }
 
     private void findView() {
-        recyclerView1 = (RecyclerView) findViewById(com.shining.p010_recycleviewall.R.id.recycler_view1);
-        recyclerView2 = (RecyclerView) findViewById(com.shining.p010_recycleviewall.R.id.recycler_view11);
+        recyclerView1 = (RecyclerView) findViewById(R.id.recycler_view1);
+        recyclerView2 = (RecyclerView) findViewById(R.id.recycler_view11);
 
         mAdapter1 = new RecycleAdapterdff(this);
         LinearLayoutManager mLinearLayoutManager1 = new LinearLayoutManager(this);
